@@ -40,7 +40,11 @@ An interactive map application for exploring designated historic landmarks in th
   - Clickable architect and architectural style badges that open biographical cards.
   - One-click links to the official City Heritage Board website, Wikidata, Wikipedia, Wikimedia Commons, and OpenStreetMap.
   - Directions button for instant turn-by-turn navigation.
-  - Expandable viewer for raw OpenStreetMap tags.
+- **Data Quality & Completeness Audit Page**:
+  - Live progress dashboard tracking missing construction dates, architectural styles, architects, photos, and notable residents across all 155 landmarks.
+  - Direct 1-click **"Edit OSM"** and **"Wikidata"** links for each landmark to rapidly contribute data.
+  - Filterable by missing field, sortable, and exportable to CSV or clipboard.
+  - Accessible via the **"Data Status"** button in the header or directly at `/#status`.
 
 ---
 

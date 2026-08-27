@@ -1,6 +1,6 @@
 import React from 'react';
 import { FilterState } from '../types';
-import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, RefreshCw } from 'lucide-react';
+import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, RefreshCw, ClipboardCheck } from 'lucide-react';
 
 interface NavbarProps {
   filters: FilterState;
@@ -14,9 +14,9 @@ interface NavbarProps {
   onViewModeChange: (mode: 'split' | 'map' | 'list') => void;
   onLocateUser: () => void;
   isLocating: boolean;
-  onResetFilters: () => void;
-  onSyncLive: () => void;
   isSyncing: boolean;
+  onOpenStatusPage: () => void;
+  isStatusPage?: boolean;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -34,6 +34,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onResetFilters,
   onSyncLive,
   isSyncing,
+  onOpenStatusPage,
+  isStatusPage,
 }) => {
   const hasActiveFilters =
     filters.searchQuery !== '' ||
@@ -102,6 +104,20 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls */}
         <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+          {/* Data Status Audit Button */}
+          <button
+            onClick={onOpenStatusPage}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold shadow-sm transition shrink-0 ${
+              isStatusPage
+                ? 'bg-rose-700 text-white border-rose-800'
+                : 'border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-900'
+            }`}
+            title="View data completeness audit for dates, styles, architects, and residents"
+          >
+            <ClipboardCheck className="w-3.5 h-3.5 text-rose-700" />
+            <span>Data Status</span>
+          </button>
+
           {/* Explore Tags Button */}
           <button
             onClick={onOpenTagExplorer}

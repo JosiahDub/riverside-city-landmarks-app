@@ -10,6 +10,7 @@ import { ArchitectModal } from './components/ArchitectModal';
 import { StyleModal } from './components/StyleModal';
 import { Navbar } from './components/Navbar';
 import { LandmarkListView } from './components/LandmarkListView';
+import { StatusPage } from './components/StatusPage';
 
 export const App: React.FC = () => {
   const [landmarksData, setLandmarksData] = useState<Landmark[]>(rawLandmarks as Landmark[]);
@@ -23,6 +24,17 @@ export const App: React.FC = () => {
   const [selectedStyleModal, setSelectedStyleModal] = useState<string | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [syncNotice, setSyncNotice] = useState<string | null>(null);
+  const [showStatusPage, setShowStatusPage] = useState<boolean>(() => {
+    return typeof window !== 'undefined' && window.location.hash === '#status';
+  });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setShowStatusPage(window.location.hash === '#status');
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   const [filters, setFilters] = useState<FilterState>({
     searchQuery: '',
@@ -201,6 +213,28 @@ export const App: React.FC = () => {
     }
   };
 
+  if (showStatusPage) {
+    return (
+      <StatusPage
+        landmarks={landmarksData}
+        onBackToMap={() => {
+          setShowStatusPage(false);
+          if (window.location.hash === '#status') {
+            window.history.pushState(null, '', window.location.pathname);
+          }
+        }}
+        onSelectLandmarkOnMap={(landmark) => {
+          setSelectedLandmark(landmark);
+          setShowStatusPage(false);
+          if (window.location.hash === '#status') {
+            window.history.pushState(null, '', window.location.pathname);
+          }
+          setViewMode('split');
+        }}
+      />
+    );
+  }
+
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden bg-stone-100 text-stone-900">
       {/* Top Navigation */}
@@ -219,6 +253,11 @@ export const App: React.FC = () => {
         onResetFilters={handleResetFilters}
         onSyncLive={handleLiveSync}
         isSyncing={isSyncing}
+        onOpenStatusPage={() => {
+          setShowStatusPage(true);
+          window.location.hash = '#status';
+        }}
+        isStatusPage={showStatusPage}
       />
 
       {/* Sync notification toast */}

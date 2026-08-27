@@ -217,6 +217,16 @@ export async function processLandmarks() {
     const imageUrl = getCommonsImageUrl(commonsImage, 800);
     const thumbnail = getCommonsImageUrl(commonsImage, 400);
 
+    // Notable residents (support semicolon separated)
+    const notableResidents = [];
+    const rawResidents = tags.notable_resident || tags.resident || tags['notable_resident:wikidata'] || null;
+    if (rawResidents) {
+      rawResidents.split(';').forEach(r => {
+        const trimmed = r.trim();
+        if (trimmed) notableResidents.push(trimmed);
+      });
+    }
+
     return {
       id: `osm-${el.type}-${el.id}`,
       osmType: el.type,
@@ -231,6 +241,7 @@ export async function processLandmarks() {
       year: year || null,
       architects,
       architectureStyles,
+      notableResidents,
       address,
       wikidata: qid,
       wikidataUrl: qid ? `https://www.wikidata.org/wiki/${qid}` : null,
