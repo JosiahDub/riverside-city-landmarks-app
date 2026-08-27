@@ -202,11 +202,52 @@ export const App: React.FC = () => {
 
       if (!res.ok) throw new Error(`Overpass returned status ${res.status}`);
       const data = await res.json();
-      setSyncNotice(`Synced ${data.elements?.length || 0} live landmark features from OSM!`);
+      const elements = data.elements || [];
+
+      if (elements.length > 0) {
+        setLandmarksData((prev) => {
+          const map = new Map(prev.map((l) => [`${l.osmType}-${l.osmId}`, l]));
+          elements.forEach((el: any) => {
+            const key = `${el.type}-${el.id}`;
+            const existing = map.get(key);
+            if (existing && el.tags) {
+              const tags = el.tags;
+              const architects = tags.architect
+                ? tags.architect.split(';').map((a: string) => a.trim()).filter(Boolean)
+                : existing.architects;
+              const styles = tags['building:architecture']
+                ? tags['building:architecture'].split(';').map((s: string) => s.trim().toLowerCase().replace(/[\s-]/g, '_')).filter(Boolean)
+                : existing.architectureStyles;
+              let year = existing.year;
+              if (tags.start_date) {
+                const match = tags.start_date.match(/(\d{4})/);
+                if (match) year = parseInt(match[1], 10);
+              }
+              const residents = tags.notable_resident || tags.resident
+                ? (tags.notable_resident || tags.resident).split(';').map((r: string) => r.trim()).filter(Boolean)
+                : existing.notableResidents;
+
+              map.set(key, {
+                ...existing,
+                name: tags.name || existing.name,
+                startDate: tags.start_date || existing.startDate,
+                year,
+                architects,
+                architectureStyles: styles,
+                notableResidents: residents,
+                allTags: tags,
+              });
+            }
+          });
+          return Array.from(map.values());
+        });
+      }
+
+      setSyncNotice(`Synced ${elements.length} live landmark features from OSM!`);
       setTimeout(() => setSyncNotice(null), 4000);
     } catch (err: any) {
       console.warn('Live sync fallback to local cache:', err.message);
-      setSyncNotice('Using verified local dataset (155 landmarks from OSM & Wikidata)');
+      setSyncNotice('Using verified local dataset (155 landmarks)');
       setTimeout(() => setSyncNotice(null), 4000);
     } finally {
       setIsSyncing(false);
@@ -231,6 +272,8 @@ export const App: React.FC = () => {
           }
           setViewMode('split');
         }}
+        onSyncLive={handleLiveSync}
+        isSyncing={isSyncing}
       />
     );
   }

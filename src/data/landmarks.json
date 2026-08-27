@@ -211,9 +211,11 @@
     "lat": 33.9345039,
     "lon": -117.4225571,
     "description": "museum in Riverside, California, United States",
-    "startDate": null,
-    "year": null,
-    "architects": [],
+    "startDate": "1891",
+    "year": 1891,
+    "architects": [
+      "John A. Walls"
+    ],
     "architectureStyles": [],
     "notableResidents": [],
     "address": null,

@@ -3,13 +3,16 @@ import { Landmark } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { 
   CheckCircle2, XCircle, AlertCircle, ExternalLink, Search, 
-  ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users
+  ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users,
+  RefreshCw, HelpCircle, Info
 } from 'lucide-react';
 
 interface StatusPageProps {
   landmarks: Landmark[];
   onBackToMap: () => void;
   onSelectLandmarkOnMap: (landmark: Landmark) => void;
+  onSyncLive?: () => void;
+  isSyncing?: boolean;
 }
 
 type MissingFilter = 'all' | 'missing_any' | 'missing_date' | 'missing_style' | 'missing_architect' | 'missing_image' | 'missing_residents' | 'complete';
@@ -19,6 +22,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
   landmarks,
   onBackToMap,
   onSelectLandmarkOnMap,
+  onSyncLive,
+  isSyncing,
 }) => {
   const [filterType, setFilterType] = useState<MissingFilter>('missing_any');
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,6 +31,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
   const [sortField, setSortField] = useState<SortField>('ref');
   const [sortAsc, setSortAsc] = useState(true);
   const [copiedNotification, setCopiedNotification] = useState(false);
+  const [showWorkflowGuide, setShowWorkflowGuide] = useState(false);
 
   // Categorize landmarks
   const isNatureLandmark = (l: Landmark) => Boolean(l.natural || l.allTags.species || l.allTags.genus);
@@ -191,7 +197,30 @@ export const StatusPage: React.FC<StatusPageProps> = ({
           </div>
 
           {/* Quick Actions */}
-          <div className="flex items-center gap-2 self-end sm:self-auto">
+          <div className="flex items-center gap-2 self-end sm:self-auto flex-wrap">
+            {onSyncLive && (
+              <button
+                onClick={onSyncLive}
+                disabled={isSyncing}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs font-semibold shadow-sm transition"
+                title="Fetch latest edits live from OpenStreetMap Overpass API"
+              >
+                <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-terracotta' : 'text-amber-700'}`} />
+                <span>{isSyncing ? 'Syncing...' : 'Sync Live'}</span>
+              </button>
+            )}
+
+            <button
+              onClick={() => setShowWorkflowGuide(!showWorkflowGuide)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-medium shadow-sm transition ${
+                showWorkflowGuide ? 'bg-stone-800 text-white border-stone-900' : 'border-stone-200 bg-white hover:bg-stone-50 text-stone-700'
+              }`}
+              title="How to update data and publish changes"
+            >
+              <HelpCircle className="w-3.5 h-3.5" />
+              <span>How to Update</span>
+            </button>
+
             <button
               onClick={handleCopyRefs}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-stone-200 bg-white hover:bg-stone-50 text-stone-700 text-xs font-medium shadow-sm transition"
@@ -215,6 +244,62 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
       {/* Main Container */}
       <main className="max-w-7xl mx-auto px-4 py-6 pb-20 w-full space-y-6 flex-1">
+        {/* Workflow Guide Banner (Collapsible) */}
+        {showWorkflowGuide && (
+          <div className="bg-stone-900 text-white rounded-2xl p-5 shadow-xl border border-stone-800 space-y-4 animate-fade-in">
+            <div className="flex items-center justify-between border-b border-stone-800 pb-3">
+              <div className="flex items-center gap-2">
+                <Info className="w-4 h-4 text-amber-400" />
+                <h3 className="font-serif font-bold text-base text-white">How to Update Landmark Data & Publish</h3>
+              </div>
+              <button onClick={() => setShowWorkflowGuide(false)} className="text-xs text-stone-400 hover:text-white">
+                Dismiss
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+              <div className="bg-stone-800/80 p-3.5 rounded-xl border border-stone-700/60 space-y-1.5">
+                <span className="inline-block bg-amber-500/20 text-amber-300 font-bold px-2 py-0.5 rounded text-[11px]">
+                  Step 1: Edit in OSM or Wikidata
+                </span>
+                <p className="text-stone-300 leading-relaxed">
+                  Click the <strong className="text-white">"Edit OSM"</strong> or <strong className="text-white">"Wikidata"</strong> button in any landmark row below to add missing tags:
+                </p>
+                <ul className="text-stone-400 list-disc list-inside space-y-0.5 text-[11px]">
+                  <li><code className="text-amber-200">architect=Arthur Benton</code></li>
+                  <li><code className="text-amber-200">building:architecture=mission_revival</code></li>
+                  <li><code className="text-amber-200">start_date=1903</code></li>
+                </ul>
+              </div>
+
+              <div className="bg-stone-800/80 p-3.5 rounded-xl border border-stone-700/60 space-y-1.5">
+                <span className="inline-block bg-blue-500/20 text-blue-300 font-bold px-2 py-0.5 rounded text-[11px]">
+                  Step 2: Preview in Browser (~2 min)
+                </span>
+                <p className="text-stone-300 leading-relaxed">
+                  Once you save your changeset, OpenStreetMap replicates to the Overpass API in about 1–3 minutes.
+                </p>
+                <p className="text-stone-400 leading-relaxed">
+                  Click the <strong className="text-white">"Sync Live"</strong> button in the header above to pull the fresh tags directly into your active browser session!
+                </p>
+              </div>
+
+              <div className="bg-stone-800/80 p-3.5 rounded-xl border border-stone-700/60 space-y-1.5">
+                <span className="inline-block bg-emerald-500/20 text-emerald-300 font-bold px-2 py-0.5 rounded text-[11px]">
+                  Step 3: Publish to Cloudflare
+                </span>
+                <p className="text-stone-300 leading-relaxed">
+                  To permanently publish the updated dataset to <code className="text-amber-200">landmarks.inlandempire.place</code> for all visitors, run in your terminal:
+                </p>
+                <div className="bg-black/60 p-2 rounded text-[11px] font-mono text-emerald-400 select-all border border-stone-700">
+                  npm run update-data<br/>
+                  git commit -am "Update landmarks"<br/>
+                  git push
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         {/* Progress Metric Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {/* Total */}
