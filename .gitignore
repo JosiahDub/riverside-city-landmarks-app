@@ -5,6 +5,8 @@ node_modules/
 dist/
 dist-ssr/
 
+public/
+
 # Raw Overpass cache
 overpass_landmarks.json
 
