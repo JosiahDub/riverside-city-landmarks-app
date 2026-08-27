@@ -783,7 +783,7 @@
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/278271423",
     "natural": null,
-    "building": "yes",
+    "building": "school",
     "historic": null,
     "amenity": null,
     "allTags": {
@@ -792,8 +792,8 @@
       "addr:postcode": "92503",
       "addr:street": "Magnolia Avenue",
       "architect": "Wilcox and Rose",
-      "architect:wiki": "Q68497172",
-      "building": "yes",
+      "architect:wikidata": "Q68497172",
+      "building": "school",
       "building:architecture": "mission_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -802,7 +802,6 @@
       "operator": "Sherman Indian High School",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "16",
       "start_date": "1901",
-      "tourism": "museum",
       "website": "http://www.shermanindianmuseum.org/",
       "wikidata": "Q66503498",
       "wikimedia_commons": "File:Sherman Indian Museum Exterior.jpg"
