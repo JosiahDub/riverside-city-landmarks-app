@@ -1628,7 +1628,9 @@
     "description": "historic house in Riverside, California",
     "startDate": "1906",
     "year": 1906,
-    "architects": [],
+    "architects": [
+      "Seehorn & Preston"
+    ],
     "architectureStyles": [],
     "notableResidents": [],
     "address": "3115 Brockton Avenue Riverside CA 92501",
