@@ -169,10 +169,14 @@
     "lat": 33.9441757,
     "lon": -117.4037552,
     "description": "presbyterian church in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "architects": [],
-    "architectureStyles": [],
+    "startDate": "1881",
+    "year": 1881,
+    "architects": [
+      "A. W. Boggs"
+    ],
+    "architectureStyles": [
+      "gothic_revival"
+    ],
     "notableResidents": [],
     "address": "7200 Magnolia Avenue Riverside CA 92504",
     "wikidata": "Q140544722",
@@ -195,7 +199,10 @@
       "addr:state": "CA",
       "addr:street": "Magnolia Avenue",
       "amenity": "place_of_worship",
+      "architect": "A. W. Boggs",
+      "architect:wikidata": "Q141193839",
       "building": "yes",
+      "building:architecture": "gothic_revival",
       "denomination": "presbyterian",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -203,6 +210,7 @@
       "name": "Magnolia Presbyterian Church",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "4",
       "religion": "christian",
+      "start_date": "1881",
       "wikidata": "Q140544722",
       "wikimedia_commons": "File:Magnolia United Presbyterian Church.jpg"
     }

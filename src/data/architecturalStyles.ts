@@ -139,6 +139,76 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     description: 'Inspired by Italian High Renaissance palazzi, marked by formal symmetry, rusticated ground floors, pronounced horizontal stringcourses, and decorative cornice friezes.',
     era: '1890–1930',
     characteristics: ['Symmetrical facade articulation', 'Rusticated masonry ground levels', 'Prominent decorative cornices', 'Round arched windows & pediments']
+  },
+  gothic_revival: {
+    key: 'gothic_revival',
+    name: 'Gothic Revival',
+    wikipediaTitle: 'Gothic Revival architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Gothic_Revival_architecture',
+    wikidataId: 'Q186363',
+    description: 'Popularized in 19th-century church and residential design, characterized by pointed arches, steep gables, lancet windows, decorative vergeboards, and vertical board-and-batten siding.',
+    era: '1840–1890',
+    characteristics: ['Pointed lancet arches', 'Steeply pitched gable roofs', 'Ornate vergeboards & gingerbread trim', 'Board-and-batten vertical siding']
+  },
+  neoclassical: {
+    key: 'neoclassical',
+    name: 'Neoclassical',
+    wikipediaTitle: 'Neoclassical architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Neoclassical_architecture',
+    wikidataId: 'Q54111',
+    description: 'Revival of classical Greek and Roman architecture featuring full-height porticos with monumental columns, triangular pediments, and strict formal symmetry.',
+    era: '1895–1950',
+    characteristics: ['Full-height columned portico', 'Triangular pediment', 'Strict formal symmetry', 'Classical entablatures & balustrades']
+  },
+  art_deco: {
+    key: 'art_deco',
+    name: 'Art Deco',
+    wikipediaTitle: 'Art Deco',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Art_Deco',
+    wikidataId: 'Q34636',
+    description: 'Visual arts and architecture style of the 1920s and 30s characterized by sleek geometric forms, zigzags, chevrons, vertical reeding, stepped towers, and stylized decorative bas-reliefs.',
+    era: '1925–1940',
+    characteristics: ['Geometric & chevron motifs', 'Stepped setbacks & towers', 'Stylized relief carvings', 'Smooth wall finishes with metallic accents']
+  },
+  streamline_moderne: {
+    key: 'streamline_moderne',
+    name: 'Streamline Moderne',
+    wikipediaTitle: 'Streamline Moderne',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Streamline_Moderne',
+    wikidataId: 'Q1479471',
+    description: 'Late Art Deco style inspired by aerodynamic industrial design, featuring rounded corners, flat roofs, horizontal speed lines, glass block walls, and nautical porthole windows.',
+    era: '1930–1945',
+    characteristics: ['Curved aerodynamic corners', 'Horizontal speed lines & banding', 'Glass block windows', 'Flat roofs with coping']
+  },
+  churrigueresque: {
+    key: 'churrigueresque',
+    name: 'Churrigueresque',
+    wikipediaTitle: 'Churrigueresque',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Churrigueresque',
+    wikidataId: 'Q1089947',
+    description: 'Elaborately ornate Spanish Baroque architectural style featuring rich sculptural embellishments, carved pilasters, spirals, and dense portal ornamentation.',
+    era: '1915–1935',
+    characteristics: ['Intricate sculptural ornamentation', 'Elaborate entrance portals', 'Spiraling columns & estipites', 'Dense decorative cresting']
+  },
+  italianate: {
+    key: 'italianate',
+    name: 'Italianate',
+    wikipediaTitle: 'Italianate architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Italianate_architecture',
+    wikidataId: 'Q2470987',
+    description: '19th-century Romantic architecture style inspired by Italian farmhouses, featuring low-pitched roofs, wide overhanging eaves with large decorative brackets, and tall narrow arched windows.',
+    era: '1850–1890',
+    characteristics: ['Prominent decorative eave brackets', 'Tall narrow round-arched windows', 'Low-pitched hip roofs with cupolas', 'Quoins & bay windows']
+  },
+  french_normandy: {
+    key: 'french_normandy',
+    name: 'French Normandy',
+    wikipediaTitle: 'Norman Revival architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Norman_Revival_architecture',
+    wikidataId: 'Q3333333',
+    description: 'Picturesque residential revival style inspired by rural French cottages and Norman manors, distinguished by a prominent circular round tower with a conical roof housing the main entryway.',
+    era: '1920–1940',
+    characteristics: ['Round circular entry tower with conical roof', 'Steeply pitched hip roof', 'Brick, stone, and stucco cladding', 'Dormer windows breaking the roofline']
   }
 };
 

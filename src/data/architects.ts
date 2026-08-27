@@ -99,6 +99,16 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Myron_Hunt',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Myron_Hunt.jpg/330px-Myron_Hunt.jpg',
     bio: 'Myron Hunt (1868–1952) was a legendary American architect who shaped Southern California landmark architecture, designing the First Congregational Church of Riverside (1913), the Rose Bowl, and the Huntington Library.'
+  },
+  'A. W. Boggs': {
+    name: 'A. W. Boggs',
+    wikidataId: 'Q141193839',
+    bio: 'A. W. Boggs was an American architect active in 19th-century Southern California, known for designing Riverside’s historic Magnolia Presbyterian Church (1881) in the Gothic Revival style.'
+  },
+  'Seehorn & Preston': {
+    name: 'Seehorn & Preston',
+    wikidataId: 'Q141193069',
+    bio: 'Architectural partnership of Elihu Seehorn and William Preston, active in Riverside during the early 1900s, who designed the Romanesque Revival Irvine House (1906).'
   }
 };
 
