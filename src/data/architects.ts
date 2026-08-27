@@ -86,6 +86,19 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   'Lester S. Moore': {
     name: 'Lester S. Moore',
     bio: 'Lester S. Moore was an early 20th-century Southern California architect who designed civic and commercial landmarks across the Inland Empire during Riverside’s citrus boom era.'
+  },
+  'John A. Walls': {
+    name: 'John A. Walls',
+    wikidataId: 'Q124968149',
+    bio: 'John A. Walls was an American architect known for designing Riverside’s celebrated Heritage House (1891), an exceptional and picturesque example of high Queen Anne Victorian residential architecture.'
+  },
+  'Myron Hunt': {
+    name: 'Myron Hunt',
+    wikidataId: 'Q6948452',
+    wikipediaTitle: 'Myron Hunt',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Myron_Hunt',
+    portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Myron_Hunt.jpg/330px-Myron_Hunt.jpg',
+    bio: 'Myron Hunt (1868–1952) was a legendary American architect who shaped Southern California landmark architecture, designing the First Congregational Church of Riverside (1913), the Rose Bowl, and the Huntington Library.'
   }
 };
 

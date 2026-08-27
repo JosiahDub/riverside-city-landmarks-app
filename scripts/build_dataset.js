@@ -55,30 +55,56 @@ async function fetchWikidataEntities(qids) {
 }
 
 export async function processLandmarks() {
+  console.log('Querying live Overpass API for latest OpenStreetMap landmarks...');
   let elements = [];
-  if (fs.existsSync(overpassPath)) {
-    const rawOverpass = JSON.parse(fs.readFileSync(overpassPath, 'utf8'));
-    elements = rawOverpass.elements || [];
-  } else {
-    console.log('overpass_landmarks.json not found, fetching live from Overpass API...');
-    try {
-      const query = '[out:json][timeout:60]; nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"]; out center tags;';
-      const res = await fetch('https://overpass-api.de/api/interpreter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'data=' + encodeURIComponent(query),
-      });
-      if (res.ok) {
-        const rawOverpass = await res.json();
-        elements = rawOverpass.elements || [];
-        fs.writeFileSync(overpassPath, JSON.stringify(rawOverpass, null, 2));
+  try {
+    const query = '[out:json][timeout:120]; nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"]; out center tags;';
+    const params = new URLSearchParams();
+    params.append('data', query);
+
+    const endpoints = [
+      'https://overpass-api.de/api/interpreter',
+      'https://overpass.kumi.systems/api/interpreter'
+    ];
+
+    let success = false;
+    for (const endpoint of endpoints) {
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: params,
+          headers: {
+            'Accept': '*/*',
+            'User-Agent': 'curl/8.7.1'
+          }
+        });
+        if (res.ok) {
+          const rawOverpass = await res.json();
+          elements = rawOverpass.elements || [];
+          fs.writeFileSync(overpassPath, JSON.stringify(rawOverpass, null, 2));
+          console.log(`Successfully fetched ${elements.length} fresh elements live from ${endpoint}.`);
+          success = true;
+          break;
+        }
+      } catch (e) {
+        console.warn(`Endpoint ${endpoint} failed, trying next...`);
       }
-    } catch (e) {
-      console.error('Failed to fetch from Overpass API:', e.message);
+    }
+
+    if (!success) {
+      throw new Error('All Overpass API endpoints failed');
+    }
+  } catch (err) {
+    console.warn(`Live Overpass fetch error: ${err.message}. Checking local cache...`);
+    if (fs.existsSync(overpassPath)) {
+      const rawOverpass = JSON.parse(fs.readFileSync(overpassPath, 'utf8'));
+      elements = rawOverpass.elements || [];
+      console.log(`Loaded ${elements.length} elements from local cache.`);
+    } else {
+      console.error('No local cache found and live fetch failed.');
       return;
     }
   }
-  console.log(`Processing ${elements.length} raw Overpass elements...`);
 
   // Extract all wikidata IDs, splitting on semicolons
   const rawQids = [];

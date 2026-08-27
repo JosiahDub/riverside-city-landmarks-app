@@ -194,14 +194,34 @@ export const App: React.FC = () => {
     setSyncNotice('Connecting to OpenStreetMap Overpass API...');
     try {
       const overpassQuery = `[out:json][timeout:60]; nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"]; out center tags;`;
-      const res = await fetch('https://overpass-api.de/api/interpreter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'data=' + encodeURIComponent(overpassQuery),
-      });
+      const params = new URLSearchParams();
+      params.append('data', overpassQuery);
 
-      if (!res.ok) throw new Error(`Overpass returned status ${res.status}`);
-      const data = await res.json();
+      let data: any = null;
+      const endpoints = [
+        'https://overpass-api.de/api/interpreter',
+        'https://overpass.kumi.systems/api/interpreter'
+      ];
+
+      for (const endpoint of endpoints) {
+        try {
+          const res = await fetch(endpoint, {
+            method: 'POST',
+            body: params,
+            headers: {
+              'Accept': '*/*',
+            },
+          });
+          if (res.ok) {
+            data = await res.json();
+            break;
+          }
+        } catch (e) {
+          // try next
+        }
+      }
+
+      if (!data || !data.elements) throw new Error('Overpass sync request failed');
       const elements = data.elements || [];
 
       if (elements.length > 0) {

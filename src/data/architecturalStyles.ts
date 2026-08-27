@@ -119,6 +119,26 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     description: 'An iconic American domestic architectural style with a sprawling single-story footprint, low-pitched gable roofs, wide eaves, and deep connection to private backyard patios.',
     era: '1935–1975',
     characteristics: ['Single-story horizontal footprint', 'Low-pitched roof with wide eaves', 'Large picture windows', 'Open interior layout']
+  },
+  romanesque: {
+    key: 'romanesque',
+    name: 'Romanesque Revival',
+    wikipediaTitle: 'Romanesque Revival architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Romanesque_Revival_architecture',
+    wikidataId: 'Q744373',
+    description: 'Late 19th-century revival characterized by heavy masonry walls, dramatic semi-circular round arches over doorways and windows, belt courses, and rough-faced stone masonry.',
+    era: '1880–1905',
+    characteristics: ['Heavy masonry & stonework', 'Round semi-circular arches', 'Sturdy masonry piers', 'Squat columns with carved capitals']
+  },
+  renaissance: {
+    key: 'renaissance',
+    name: 'Renaissance Revival',
+    wikipediaTitle: 'Renaissance Revival architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Renaissance_Revival_architecture',
+    wikidataId: 'Q1058444',
+    description: 'Inspired by Italian High Renaissance palazzi, marked by formal symmetry, rusticated ground floors, pronounced horizontal stringcourses, and decorative cornice friezes.',
+    era: '1890–1930',
+    characteristics: ['Symmetrical facade articulation', 'Rusticated masonry ground levels', 'Prominent decorative cornices', 'Round arched windows & pediments']
   }
 };
 

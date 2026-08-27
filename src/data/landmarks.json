@@ -109,12 +109,14 @@
     "lat": 33.9822299,
     "lon": -117.3715081,
     "description": "church building in Riverside, California, USA",
-    "startDate": "1892",
-    "year": 1892,
+    "startDate": "1891",
+    "year": 1891,
     "architects": [
       "Adam C. Willard"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "gothic_revival"
+    ],
     "notableResidents": [],
     "address": "3525 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q7894186",
@@ -136,7 +138,10 @@
       "addr:postcode": "92501",
       "addr:street": "Mission Inn Avenue",
       "amenity": "place_of_worship",
+      "architect": "Adam C. Willard",
+      "architect:wikidata": "Q140778690",
       "building": "church",
+      "building:architecture": "gothic_revival",
       "denomination": "unitarian",
       "gnis:feature_id": "1848777",
       "heritage": "8",
@@ -147,6 +152,7 @@
       "phone": "+1 951-686-6515",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "3",
       "religion": "unitarian_universalist",
+      "start_date": "1891",
       "website": "https://uuchurchofriverside.org/",
       "wikidata": "Q7894186",
       "wikimedia_commons": "File:All Souls Universalist Church.jpg",
@@ -216,7 +222,9 @@
     "architects": [
       "John A. Walls"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "queen_anne"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q25209703",
@@ -233,12 +241,16 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "John A. Walls",
+      "architect:wikidata": "Q124968149",
       "building": "yes",
+      "building:architecture": "queen_anne",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Heritage House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "5",
+      "start_date": "1891",
       "tourism": "museum",
       "wikidata": "Q25209703",
       "wikimedia_commons": "File:Riverside Heritage House.jpg"
@@ -253,17 +265,19 @@
     "name": "First Congregational Church",
     "lat": 33.9817216,
     "lon": -117.3720364,
-    "description": "church in Riverside, California",
+    "description": "church building in Riverside, California, United States of America",
     "startDate": "1913",
     "year": 1913,
     "architects": [
       "Myron Hunt"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": null,
-    "wikidata": "Q23016847",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q23016847",
+    "wikidata": "Q5452861",
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q5452861",
     "wikipedia": "First Congregational Church (Riverside, California)",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Congregational_Church_(Riverside%2C_California)",
     "commonsImage": "File:FirstCongregationalChurch20090821f.jpg",
@@ -277,7 +291,11 @@
     "amenity": "place_of_worship",
     "allTags": {
       "amenity": "place_of_worship",
+      "architect": "Myron Hunt",
+      "architect:wikidata": "Q6948452",
+      "architect:wikipedia": "en:Myron Hunt",
       "building": "yes",
+      "building:architecture": "spanish_revival",
       "building:levels": "0",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -285,7 +303,8 @@
       "name": "First Congregational Church",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "6",
       "religion": "christian",
-      "wikidata": "Q23016847",
+      "start_date": "1913",
+      "wikidata": "Q5452861",
       "wikimedia_commons": "File:FirstCongregationalChurch20090821f.jpg",
       "wikipedia": "en:First Congregational Church (Riverside, California)"
     }
@@ -305,7 +324,9 @@
     "architects": [
       "Arthur Benton"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mission_revival"
+    ],
     "notableResidents": [],
     "address": "3606 Lemon Street Riverside CA 92501",
     "wikidata": "Q5452705",
@@ -329,8 +350,10 @@
       "addr:street": "Lemon Street",
       "amenity": "place_of_worship",
       "architect": "Arthur Benton",
+      "architect:wikidata": "Q24203374",
       "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "yes",
+      "building:architecture": "mission_revival",
       "denomination": "christ_scientist",
       "ele": "262",
       "gnis:feature_id": "1848797",
@@ -402,7 +425,9 @@
     "startDate": "1904",
     "year": 1904,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mission_revival"
+    ],
     "notableResidents": [],
     "address": "3751 Vine Street Riverside CA",
     "wikidata": "Q104215471",
@@ -423,12 +448,14 @@
       "addr:housenumber": "3751",
       "addr:street": "Vine Street",
       "building": "yes",
+      "building:architecture": "mission_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Union Pacific Depot",
       "note": "This Mission Revival style depot was built in 1904 by the San Pedro, Los Angeles, and Salt Lake Railroad, which became part of the Union Pacific in 1921. Passenger service was discontinued in 1971.",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "9",
+      "start_date": "1904",
       "wikidata": "Q104215471",
       "wikimedia_commons": "File:North face of RR Depot, erected 1904 sign, also note street lights special to the down town Riverside area with a connection to Mission Inn.JPG",
       "wikipedia": "en:Riverside station (Union Pacific Railroad)"
@@ -1631,7 +1658,9 @@
     "architects": [
       "Seehorn & Preston"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "romanesque"
+    ],
     "notableResidents": [],
     "address": "3115 Brockton Avenue Riverside CA 92501",
     "wikidata": "Q140640973",
@@ -1653,7 +1682,10 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "Brockton Avenue",
+      "architect": "Seehorn & Preston",
+      "architect:wikidata": "Q141193069",
       "building": "house",
+      "building:architecture": "romanesque",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -1661,6 +1693,7 @@
       "name": "Irvine House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "35",
       "source": "microsoft/BuildingFootprints",
+      "start_date": "1906",
       "wikidata": "Q140640973",
       "wikimedia_commons": "File:Irvine House.jpg"
     }
@@ -1824,7 +1857,9 @@
     "architects": [
       "Clifford Balch"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "3801 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q7338490",
@@ -1851,10 +1886,13 @@
       "architect:wikidata": "Q124968137",
       "architect:wikipedia": "en:Clifford Balch",
       "building": "retail",
+      "building:architecture": "spanish_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Fox Theatre",
+      "operator": "Live Nation Entertainment",
+      "operator:wikidata": "Q7338490",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "39",
       "start_date": "1929",
       "wikidata": "Q7338490",
@@ -1916,7 +1954,9 @@
     "architects": [
       "Arthur Benton"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "renaissance"
+    ],
     "notableResidents": [],
     "address": "3485 University Avenue Riverside CA 92501",
     "wikidata": "Q8045931",
@@ -1942,6 +1982,7 @@
       "architect:wikidata": "Q24203374",
       "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "retail",
+      "building:architecture": "renaissance",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -3834,7 +3875,7 @@
     "osmId": 923888988,
     "ref": "81",
     "refNumber": 81,
-    "name": "WIlliam Childs House",
+    "name": "William Childs House",
     "lat": 33.9593114,
     "lon": -117.3367111,
     "description": "historic house in Riverside, California",
@@ -3869,7 +3910,7 @@
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "house": "detached",
-      "name": "WIlliam Childs House",
+      "name": "William Childs House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "81",
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1910",
