@@ -526,7 +526,9 @@
     "architects": [
       "James Knox Taylor"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "neoclassical"
+    ],
     "notableResidents": [],
     "address": "8193 Mission Inn Avenue Riverside CA 92504",
     "wikidata": "Q7338538",
@@ -552,6 +554,7 @@
       "architect:wikidata": "Q6137444",
       "architect:wikipedia": "en:James Knox Taylor",
       "building": "yes",
+      "building:architecture": "neoclassical",
       "fee": "yes",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -756,18 +759,22 @@
     "osmId": 278271423,
     "ref": "16",
     "refNumber": 16,
-    "name": "Sherman Indian Museum",
+    "name": "Sherman Institute Administration Building",
     "lat": 33.925059,
     "lon": -117.4373804,
-    "description": "museum in Riverside, California, United States",
-    "startDate": "1970",
-    "year": 1970,
-    "architects": [],
-    "architectureStyles": [],
+    "description": "historic building on the campus of Sherman Indian High School, Riverside, California, USA",
+    "startDate": "1901",
+    "year": 1901,
+    "architects": [
+      "Wilcox and Rose"
+    ],
+    "architectureStyles": [
+      "mission_revival"
+    ],
     "notableResidents": [],
     "address": "9010 Magnolia Avenue Riverside CA 92503",
-    "wikidata": "Q59278105",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q59278105",
+    "wikidata": "Q66503498",
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q66503498",
     "wikipedia": null,
     "wikipediaUrl": null,
     "commonsImage": "File:Sherman Indian Museum Exterior.jpg",
@@ -784,16 +791,20 @@
       "addr:housenumber": "9010",
       "addr:postcode": "92503",
       "addr:street": "Magnolia Avenue",
+      "architect": "Wilcox and Rose",
+      "architect:wiki": "Q68497172",
       "building": "yes",
+      "building:architecture": "mission_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
-      "name": "Sherman Indian Museum",
+      "name": "Sherman Institute Administration Building",
       "operator": "Sherman Indian High School",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "16",
+      "start_date": "1901",
       "tourism": "museum",
       "website": "http://www.shermanindianmuseum.org/",
-      "wikidata": "Q59278105",
+      "wikidata": "Q66503498",
       "wikimedia_commons": "File:Sherman Indian Museum Exterior.jpg"
     }
   },
