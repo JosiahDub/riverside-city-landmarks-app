@@ -577,8 +577,8 @@
     "lat": 33.938118,
     "lon": -117.4097174,
     "description": "historical house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1874",
+    "year": 1874,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -611,6 +611,7 @@
       "name": "S. C. Evans Residence",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "12",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1874",
       "wikidata": "Q140588604"
     }
   },
@@ -624,9 +625,11 @@
     "lat": 33.9500675,
     "lon": -117.3474704,
     "description": "historical Mexican-Spanish style castle in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "architects": [],
+    "startDate": "1921",
+    "year": 1921,
+    "architects": [
+      "Henry L. A. Jekel"
+    ],
     "architectureStyles": [],
     "notableResidents": [],
     "address": "1850 Benedict Avenue Riverside CA",
@@ -648,6 +651,8 @@
       "addr:housenumber": "1850",
       "addr:state": "CA",
       "addr:street": "Benedict Avenue",
+      "architect": "Henry L. A. Jekel",
+      "architect:wikidata": "Q55488034",
       "building": "yes",
       "height": "24.29",
       "heritage": "8",
@@ -655,6 +660,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "13",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1921",
       "wikidata": "Q140588497"
     }
   },
@@ -822,7 +828,9 @@
     "architects": [
       "Arthur Benton"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mission_revival"
+    ],
     "notableResidents": [],
     "address": "3485 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q7338545",
@@ -847,6 +855,7 @@
       "architect:wikidata": "Q24203374",
       "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "yes",
+      "building:architecture": "mission_revival",
       "building:levels": "2",
       "contact:facebook": "RiversideMunicipalAuditorium",
       "contact:instagram": "rmariverside",
@@ -883,7 +892,9 @@
     "architects": [
       "Julia Morgan"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mediterranean_revival"
+    ],
     "notableResidents": [],
     "address": "3425 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q7338423",
@@ -908,6 +919,7 @@
       "architect": "Julia Morgan",
       "architect:wikipedia": "en:Julia Morgan",
       "building": "yes",
+      "building:architecture": "mediterranean_revival",
       "ele": "261",
       "gnis:feature_id": "1848811",
       "heritage": "8",
@@ -978,8 +990,12 @@
     "description": "historical house in Riverside, California",
     "startDate": "1911",
     "year": 1911,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "H. L. Evans"
+    ],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "4532 6th Street Riverside CA",
     "wikidata": "Q140610785",
@@ -1000,7 +1016,10 @@
       "addr:housenumber": "4532",
       "addr:state": "CA",
       "addr:street": "6th Street",
+      "architect": "H. L. Evans",
+      "architect:wikidata": "Q141194783",
       "building": "house",
+      "building:architecture": "craftsman",
       "building:levels": "2",
       "height": "9.17",
       "heritage": "8",
@@ -1112,8 +1131,8 @@
     "lat": 33.9851044,
     "lon": -117.3690583,
     "description": "historic house in California, United States",
-    "startDate": null,
-    "year": null,
+    "startDate": "1880",
+    "year": 1880,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1143,6 +1162,7 @@
       "name": "Harada House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "23",
       "smoking": "no",
+      "start_date": "1880",
       "website": "https://riversideca.gov/museum/haradahouse/",
       "wikidata": "Q5653555",
       "wikimedia_commons": "File:Harada House 20091024c.jpg",
@@ -1289,8 +1309,8 @@
     "lat": 33.9796143,
     "lon": -117.368028,
     "description": "park in Riverside County, California, United States of America",
-    "startDate": null,
-    "year": null,
+    "startDate": "1927",
+    "year": 1927,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1322,6 +1342,7 @@
       "operator:wikidata": "Q139000354",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "27",
       "source": "bing_imagery_0.25m_201005;TIGER09;GNIS",
+      "start_date": "1927",
       "tiger:ALAND": "7740",
       "tiger:AREAID": "110458305502",
       "tiger:AWATER": "0",
