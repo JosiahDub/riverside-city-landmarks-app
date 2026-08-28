@@ -3715,6 +3715,7 @@
       "addr:state": "CA",
       "addr:street": "Mary Street",
       "building": "house",
+      "building:architecture": "craftsman",
       "building:levels": "2",
       "height": "8.17",
       "heritage": "8",
@@ -3724,6 +3725,7 @@
       "name": "Wilson House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "75",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1929",
       "wikidata": "Q140725518"
     }
   },
