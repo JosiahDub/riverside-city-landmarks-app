@@ -12,7 +12,10 @@
     "startDate": "1876",
     "year": 1876,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mission_revival",
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "3649 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q1920529",
@@ -777,7 +780,9 @@
     "architectureStyles": [
       "mission_revival"
     ],
-    "notableResidents": [],
+    "notableResidents": [
+      "Sherman Indian Museum"
+    ],
     "address": "9010 Magnolia Avenue Riverside CA 92503",
     "wikidata": "Q66503498",
     "wikidataUrl": "https://www.wikidata.org/wiki/Q66503498",
@@ -893,7 +898,8 @@
       "Julia Morgan"
     ],
     "architectureStyles": [
-      "mediterranean_revival"
+      "mediterranean_revival",
+      "spanish_revival"
     ],
     "notableResidents": [],
     "address": "3425 Mission Inn Avenue Riverside CA 92501",
@@ -1368,7 +1374,9 @@
     "architects": [
       "G. Stanley Wilson"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q139083261",
@@ -1385,12 +1393,17 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "G. Stanley Wilson",
+      "architect:wikidata": "Q55126528",
+      "architect:wikipedia": "en:G. Stanley Wilson",
       "building": "commercial",
+      "building:architecture": "spanish_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Old City Hall",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "28",
+      "start_date": "1924",
       "wikidata": "Q139083261",
       "wikimedia_commons": "File:Old Riverside City Hall.jpg"
     }
@@ -1453,8 +1466,13 @@
     "description": "historic house in Riverside, California",
     "startDate": "1888",
     "year": 1888,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "John C. Pelton Jr."
+    ],
+    "architectureStyles": [
+      "queen_anne",
+      "american_foursquare"
+    ],
     "notableResidents": [],
     "address": "4475 12th Street Riverside CA",
     "wikidata": "Q140640734",
@@ -1475,7 +1493,10 @@
       "addr:housenumber": "4475",
       "addr:state": "CA",
       "addr:street": "12th Street",
+      "architect": "John C. Pelton Jr.",
+      "architect:wikidata": "Q55508624",
       "building": "house",
+      "building:architecture": "queen_anne",
       "building:levels": "2",
       "height": "10.91",
       "heritage": "8",
@@ -1484,6 +1505,7 @@
       "name": "Devine House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "30",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1888",
       "wikidata": "Q140640734",
       "wikimedia_commons": "File:Devine House.jpg"
     }
@@ -1551,7 +1573,9 @@
     "architects": [
       "Walker & Eisen"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mediterranean_revival"
+    ],
     "notableResidents": [],
     "address": "3602 University Avenue Riverside CA 92501",
     "wikidata": "Q140640812",
@@ -1598,7 +1622,9 @@
     "startDate": "1908",
     "year": 1908,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "3800 Orange Street Riverside CA 92501",
     "wikidata": "Q140640830",
@@ -1647,7 +1673,9 @@
     "architects": [
       "Seely Pillar"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "california_bungalow"
+    ],
     "notableResidents": [],
     "address": "4515 6th Street Riverside CA",
     "wikidata": "Q140640954",
@@ -1753,7 +1781,8 @@
     "year": 1890,
     "architects": [],
     "architectureStyles": [
-      "queen_anne"
+      "queen_anne",
+      "american_foursquare"
     ],
     "notableResidents": [],
     "address": "3121 Mulberry Street Riverside CA",
@@ -1857,7 +1886,9 @@
       "G. Stanley Wilson",
       "Peter J. Weber"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mission_revival"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q139545665",
@@ -2048,7 +2079,9 @@
     "startDate": "1902",
     "year": 1902,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "neoclassical"
+    ],
     "notableResidents": [],
     "address": "6190 Hawarden Drive Riverside CA",
     "wikidata": "Q139257099",
@@ -2070,13 +2103,16 @@
       "addr:state": "CA",
       "addr:street": "Hawarden Drive",
       "building": "house",
+      "building:architecture": "neoclassical",
       "building:levels": "2",
       "height": "10.49",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
+      "house": "detached",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "42",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1902",
       "wikidata": "Q139257099"
     }
   },
@@ -2094,7 +2130,8 @@
     "year": 1927,
     "architects": [],
     "architectureStyles": [
-      "italian_renaissance"
+      "italian_renaissance",
+      "renaissance"
     ],
     "notableResidents": [],
     "address": null,
@@ -2226,8 +2263,12 @@
     "description": "public library in Riverside, California, USA",
     "startDate": "1909",
     "year": 1909,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "Seeley L. Pillar"
+    ],
+    "architectureStyles": [
+      "neoclassical"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q66364163",
@@ -2244,11 +2285,15 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "Seeley L. Pillar",
+      "architect:wikidata": "Q140737813",
       "building": "public",
+      "building:architecture": "neoclassical",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "46",
+      "start_date": "1909",
       "wikidata": "Q66364163"
     }
   },
@@ -2266,7 +2311,8 @@
     "year": 1896,
     "architects": [],
     "architectureStyles": [
-      "queen_anne"
+      "queen_anne",
+      "american_foursquare"
     ],
     "notableResidents": [],
     "address": "4539 Rubidoux Avenue Riverside CA 92506",
@@ -2817,7 +2863,9 @@
     "startDate": "1920",
     "year": 1920,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "tudor_revival"
+    ],
     "notableResidents": [],
     "address": "6499 Hawarden Drive Riverside CA",
     "wikidata": "Q140694906",
@@ -3264,7 +3312,8 @@
     "year": 1893,
     "architects": [],
     "architectureStyles": [
-      "queen_anne"
+      "queen_anne",
+      "american_foursquare"
     ],
     "notableResidents": [],
     "address": "3209 Mulberry Street Riverside CA",
@@ -3373,7 +3422,9 @@
     "startDate": "1909",
     "year": 1909,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "4570 University Avenue Riverside CA 92501",
     "wikidata": "Q140724534",
@@ -3712,7 +3763,9 @@
     "architects": [
       "Henry L. A. Jekel"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "3563 Prospect Avenue Riverside CA 92501",
     "wikidata": "Q140742588",
@@ -3814,7 +3867,8 @@
     "year": 1895,
     "architects": [],
     "architectureStyles": [
-      "queen_anne"
+      "queen_anne",
+      "american_foursquare"
     ],
     "notableResidents": [],
     "address": "3092 Lime Street Riverside CA 92501",
@@ -3923,7 +3977,9 @@
     "startDate": "1910",
     "year": 1910,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "1151 Monte Vista Drive Riverside CA",
     "wikidata": "Q140766068",
@@ -4068,7 +4124,9 @@
     "architects": [
       "G. Stanley Wilson"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "art_deco"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140766076",
@@ -4116,7 +4174,9 @@
       "Peter J. Weber",
       "G. Stanley Wilson"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "3425 Market Street Riverside CA",
     "wikidata": "Q140766084",
@@ -4162,7 +4222,9 @@
     "startDate": "1901",
     "year": 1901,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "2575 Madison Street Riverside CA 92504",
     "wikidata": "Q140775747",
@@ -4252,7 +4314,9 @@
     "architects": [
       "Henry A. Westbrook"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "victorian"
+    ],
     "notableResidents": [],
     "address": "5211 Central Avenue Riverside CA 92504",
     "wikidata": "Q140775760",
@@ -4449,7 +4513,9 @@
       "G. Stanley Wilson",
       "Peter J. Weber"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "4336 Market Street Riverside CA 92501",
     "wikidata": "Q140777120",
@@ -4596,7 +4662,9 @@
     "startDate": "1887",
     "year": 1887,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "gothic_revival"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140879120",
@@ -4806,7 +4874,9 @@
     "startDate": null,
     "year": null,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "pueblo_revival"
+    ],
     "notableResidents": [],
     "address": "3750 Santa Fe Street Riverside CA",
     "wikidata": "Q140588309",
@@ -4992,7 +5062,9 @@
     "startDate": "1913",
     "year": 1913,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "4536 Beacon Way Riverside CA 92501",
     "wikidata": "Q140892425",
@@ -5042,7 +5114,9 @@
     "startDate": "1924",
     "year": 1924,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "3504 Larchwood Place Riverside CA 92506",
     "wikidata": "Q140745351",
@@ -5091,7 +5165,9 @@
     "startDate": "1899",
     "year": 1899,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "neoclassical"
+    ],
     "notableResidents": [],
     "address": "3245 Orange Street Riverside CA",
     "wikidata": "Q140877874",
@@ -5193,7 +5269,8 @@
     "year": 1888,
     "architects": [],
     "architectureStyles": [
-      "queen_anne"
+      "queen_anne",
+      "american_foursquare"
     ],
     "notableResidents": [],
     "address": "4811 Brockton Avenue Riverside CA 92506",
@@ -5287,7 +5364,9 @@
     "architects": [
       "Henry L. A. Jekel"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "4385 Houghton Avenue Riverside CA 92501",
     "wikidata": "Q140902179",
@@ -5334,7 +5413,9 @@
     "startDate": "1927",
     "year": 1927,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "4648 Ladera Lane Riverside CA 92501",
     "wikidata": "Q140928251",
@@ -5384,7 +5465,9 @@
     "startDate": "1908",
     "year": 1908,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "4480 Mission Inn Avenue Unit 92501 Riverside CA",
     "wikidata": "Q140928358",
@@ -5434,7 +5517,9 @@
     "startDate": "1900",
     "year": 1900,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "4654 Sierra Street Riverside CA 92504",
     "wikidata": "Q140894301",
@@ -5525,7 +5610,9 @@
     "architects": [
       "Robert H. Spurgeon, Jr."
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "4527 Mission Inn Avenue Riverside CA",
     "wikidata": "Q140933084",
@@ -5576,7 +5663,9 @@
     "startDate": "1928",
     "year": 1928,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "3456 Ramona Drive Riverside CA 92506",
     "wikidata": "Q140745785",
@@ -5626,7 +5715,9 @@
     "architects": [
       "G. Stanley Wilson"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "4622 Indian Hill Road Riverside CA 92501",
     "wikidata": "Q140927703",
@@ -5720,7 +5811,9 @@
     "architects": [
       "Henry L. A. Jekel"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "tudor_revival"
+    ],
     "notableResidents": [],
     "address": "3105 Pine Street Riverside CA 92501",
     "wikidata": "Q140800730",
@@ -5831,8 +5924,12 @@
     "startDate": "1957",
     "year": 1957,
     "architects": [],
-    "architectureStyles": [],
-    "notableResidents": [],
+    "architectureStyles": [
+      "monterey_colonial"
+    ],
+    "notableResidents": [
+      "Bobby Bonds"
+    ],
     "address": "2112 Vasquez Place Riverside CA 92507",
     "wikidata": "Q140927560",
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140927560",
@@ -5928,7 +6025,9 @@
     "startDate": "1889",
     "year": 1889,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "prairie_school"
+    ],
     "notableResidents": [],
     "address": "3747 Monroe Street Riverside CA 92504",
     "wikidata": "Q140903463",
@@ -6067,7 +6166,9 @@
     "architects": [
       "Philip Esbensen"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "notableResidents": [],
     "address": "4259 Quail Road Riverside CA 92507",
     "wikidata": "Q140893030",
@@ -6221,7 +6322,8 @@
     "year": 1899,
     "architects": [],
     "architectureStyles": [
-      "queen_anne"
+      "queen_anne",
+      "american_foursquare"
     ],
     "notableResidents": [],
     "address": "8410 Cleveland Avenue Riverside CA 92504",
@@ -6315,7 +6417,8 @@
       "Walter C. See"
     ],
     "architectureStyles": [
-      "ranch"
+      "ranch",
+      "monterey_colonial"
     ],
     "notableResidents": [],
     "address": "5022 Myrtle Avenue Riverside CA 92506",
@@ -6463,7 +6566,9 @@
     "startDate": "1966",
     "year": 1966,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "notableResidents": [],
     "address": "5050 Sedgwick Avenue Riverside CA 92506",
     "wikidata": "Q140917174",
@@ -6571,7 +6676,9 @@
     "startDate": "1930",
     "year": 1930,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "neoclassical"
+    ],
     "notableResidents": [],
     "address": "2530 Prince Albert Drive Riverside CA 92507",
     "wikidata": "Q140917201",
@@ -6625,7 +6732,9 @@
     "architectureStyles": [
       "craftsman"
     ],
-    "notableResidents": [],
+    "notableResidents": [
+      "George Tyler Bigelow III"
+    ],
     "address": "4625 Glenwood Drive Riverside CA 92501",
     "wikidata": "Q140963135",
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140963135",
@@ -6947,7 +7056,9 @@
     "architects": [
       "Clinton Marr"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "notableResidents": [],
     "address": "6744 Oleander Court Riverside CA 92506",
     "wikidata": "Q140927289",
@@ -6999,7 +7110,9 @@
     "architects": [
       "Knowlton Fernald Jr."
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "notableResidents": [],
     "address": "5050 Myrtle Avenue Riverside CA 92506",
     "wikidata": "Q140927408",
@@ -7100,7 +7213,9 @@
     "startDate": null,
     "year": null,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "6268 Palm Avenue Riverside CA 92506",
     "wikidata": "Q140893838",
@@ -7148,7 +7263,9 @@
     "startDate": "1948",
     "year": 1948,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "streamline_moderne"
+    ],
     "notableResidents": [],
     "address": "3881 Loring Drive Riverside CA 92501",
     "wikidata": "Q140933106",
@@ -7198,7 +7315,9 @@
     "year": null,
     "architects": [],
     "architectureStyles": [],
-    "notableResidents": [],
+    "notableResidents": [
+      "Miné Okubo"
+    ],
     "address": "2365 11th Street Riverside CA",
     "wikidata": "Q140893704",
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140893704",
@@ -7392,7 +7511,10 @@
     "startDate": "1903",
     "year": 1903,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mission_revival",
+      "craftsman"
+    ],
     "notableResidents": [],
     "address": "3611 Mount Rubidoux Drive Riverside CA 92501",
     "wikidata": "Q140933127",

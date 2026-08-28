@@ -209,6 +209,56 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     description: 'Picturesque residential revival style inspired by rural French cottages and Norman manors, distinguished by a prominent circular round tower with a conical roof housing the main entryway.',
     era: '1920–1940',
     characteristics: ['Round circular entry tower with conical roof', 'Steeply pitched hip roof', 'Brick, stone, and stucco cladding', 'Dormer windows breaking the roofline']
+  },
+  american_foursquare: {
+    key: 'american_foursquare',
+    name: 'American Foursquare',
+    wikipediaTitle: 'American Foursquare',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/American_Foursquare',
+    wikidataId: 'Q529819',
+    description: 'Popular early 20th-century post-Victorian domestic architectural style featuring a boxy two-and-a-half-story square footprint, four-room floorplan on each floor, center dormer, and a wide front porch.',
+    era: '1895–1930',
+    characteristics: ['Square boxy two-story massing', 'Pyramidal hip roof with center dormer', 'Full-width front porch with wide stairs', 'Simple Craftsman or Prairie detailing']
+  },
+  mediterranean_revival: {
+    key: 'mediterranean_revival',
+    name: 'Mediterranean Revival',
+    wikipediaTitle: 'Mediterranean Revival architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Mediterranean_Revival_architecture',
+    wikidataId: 'Q3399545',
+    description: 'Eclectic style drawing from Spanish Renaissance, Spanish Colonial, Beaux-Arts, and Italian Renaissance palaces, featuring multi-level tiled roofs, arched windows, and stucco walls.',
+    era: '1915–1940',
+    characteristics: ['Low-pitched tile roofs', 'Arched door and window openings', 'Wrought-iron grilles and balconies', 'Stucco exterior walls']
+  },
+  california_bungalow: {
+    key: 'california_bungalow',
+    name: 'California Bungalow',
+    wikipediaTitle: 'California bungalow',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/California_bungalow',
+    wikidataId: 'Q5021201',
+    description: 'Classic 1- to 1.5-story residential architecture popular in Southern California, emphasizing low-pitched sloping gable roofs, broad verandas, rustic river-rock stone piers, and wood trim.',
+    era: '1905–1930',
+    characteristics: ['1 to 1.5-story low profile', 'Deep front veranda with battered piers', 'Exposed rafter tails and purlins', 'River-rock stone and shingle siding']
+  },
+  monterey_colonial: {
+    key: 'monterey_colonial',
+    name: 'Monterey Colonial',
+    wikipediaTitle: 'Monterey Colonial architecture',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Monterey_Colonial_architecture',
+    wikidataId: 'Q2130555',
+    description: 'Distinctive California architectural style originating in Monterey, blending Spanish colonial adobe and New England colonial frames, recognized by a prominent cantilevered second-story front balcony.',
+    era: '1925–1955',
+    characteristics: ['Cantilevered second-story wooden balcony', 'Two-story massing with low-pitched hip or gable roof', 'Plastered or stucco exterior walls', 'Symmetrical window placement with shutters']
+  },
+  prairie_school: {
+    key: 'prairie_school',
+    name: 'Prairie School',
+    wikipediaTitle: 'Prairie School',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Prairie_School',
+    wikidataId: 'Q2256729',
+    description: 'Pioneering American architectural style marked by horizontal lines, flat or hipped roofs with broad overhanging eaves, ribbons of windows, and integration with the surrounding landscape.',
+    era: '1900–1920',
+    characteristics: ['Strong horizontal emphasis', 'Low-pitched roof with broad eaves', 'Ribbons of casement windows', 'Open flowing interior spaces']
   }
 };
 

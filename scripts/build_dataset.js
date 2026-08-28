@@ -54,6 +54,46 @@ async function fetchWikidataEntities(qids) {
   return entities;
 }
 
+const STYLE_QID_MAP = {
+  'Q3645460': 'spanish_revival',
+  'Q7937337': 'spanish_revival',
+  'Q2700522': 'mission_revival',
+  'Q186363': 'gothic_revival',
+  'Q7270218': 'queen_anne',
+  'Q7270243': 'queen_anne',
+  'Q54111': 'neoclassical',
+  'Q463382': 'craftsman',
+  'Q463806': 'craftsman',
+  'Q529819': 'american_foursquare',
+  'Q3399545': 'mediterranean_revival',
+  'Q5021201': 'california_bungalow',
+  'Q136693': 'romanesque',
+  'Q744373': 'romanesque',
+  'Q9159144': 'renaissance',
+  'Q1058444': 'renaissance',
+  'Q7851317': 'tudor_revival',
+  'Q953258': 'tudor_revival',
+  'Q565165': 'victorian',
+  'Q565970': 'victorian',
+  'Q74156': 'art_deco',
+  'Q34636': 'art_deco',
+  'Q5148367': 'colonial_revival',
+  'Q1110996': 'colonial_revival',
+  'Q7258468': 'pueblo_revival',
+  'Q1622345': 'pueblo_revival',
+  'Q2130555': 'monterey_colonial',
+  'Q2256729': 'prairie_school',
+  'Q6840667': 'midcentury_modern',
+  'Q3312702': 'midcentury_modern',
+  'Q245188': 'streamline_moderne',
+  'Q1479471': 'streamline_moderne',
+  'Q1642273': 'ranch',
+  'Q200789': 'beaux_arts',
+  'Q1089947': 'churrigueresque',
+  'Q2470987': 'italianate',
+  'Q3333333': 'french_normandy'
+};
+
 export async function processLandmarks() {
   console.log('Querying live Overpass API for latest OpenStreetMap landmarks...');
   let elements = [];
@@ -120,21 +160,31 @@ export async function processLandmarks() {
   console.log(`Fetching Wikidata details for entities...`);
   const wikidataEntities = await fetchWikidataEntities(rawQids);
 
-  // Also collect any architect QIDs from P84 claims to resolve their names if needed
-  const architectQids = new Set();
+  // Also collect secondary QIDs from claims (P84 architects, P149 styles, P466/P3320 occupants)
+  const secondaryQids = new Set();
   Object.values(wikidataEntities).forEach(ent => {
-    const p84 = ent.claims?.P84;
-    if (Array.isArray(p84)) {
-      p84.forEach(stmt => {
-        const qid = stmt.mainsnak?.datavalue?.value?.id;
-        if (qid && !wikidataEntities[qid]) {
-          architectQids.add(qid);
-        }
-      });
-    }
+    // Architects (P84)
+    ent.claims?.P84?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
+    // Styles (P149)
+    ent.claims?.P149?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid] && !STYLE_QID_MAP[qid]) secondaryQids.add(qid);
+    });
+    // Occupants (P466) & Residents (P3320)
+    ent.claims?.P466?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
+    ent.claims?.P3320?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
   });
-  if (architectQids.size > 0) {
-    const extraEntities = await fetchWikidataEntities(Array.from(architectQids));
+  if (secondaryQids.size > 0) {
+    const extraEntities = await fetchWikidataEntities(Array.from(secondaryQids));
     Object.assign(wikidataEntities, extraEntities);
   }
 
@@ -203,14 +253,62 @@ export async function processLandmarks() {
     }
     const architects = Array.from(architectSet);
 
-    // Architecture styles (split by semicolon)
-    let architectureStyles = [];
+    // Architecture styles (from OSM tags + Wikidata P149)
+    const styleSet = new Set();
     if (tags['building:architecture']) {
-      architectureStyles = tags['building:architecture']
+      tags['building:architecture']
         .split(';')
         .map(s => s.trim().toLowerCase().replace(/[\s-]/g, '_'))
-        .filter(Boolean);
+        .filter(Boolean)
+        .forEach(s => styleSet.add(s));
     }
+    if (wdEntity?.claims?.P149) {
+      wdEntity.claims.P149.forEach(stmt => {
+        const sQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (sQid) {
+          const mappedKey = STYLE_QID_MAP[sQid];
+          if (mappedKey) {
+            styleSet.add(mappedKey);
+          } else if (wikidataEntities[sQid]?.labels?.en?.value) {
+            const raw = wikidataEntities[sQid].labels.en.value
+              .toLowerCase()
+              .replace(/ architecture$/, '')
+              .replace(/ style$/, '')
+              .trim()
+              .replace(/[\s-]/g, '_');
+            styleSet.add(raw);
+          }
+        }
+      });
+    }
+    const architectureStyles = Array.from(styleSet);
+
+    // Notable residents (from OSM tags + Wikidata P466 occupant / P3320 resident)
+    const residentSet = new Set();
+    const rawOsmResidents = tags.notable_resident || tags.resident || tags.notable_residents;
+    if (rawOsmResidents) {
+      rawOsmResidents.split(';').forEach(r => {
+        const tr = r.trim();
+        if (tr) residentSet.add(tr);
+      });
+    }
+    if (wdEntity?.claims?.P466) {
+      wdEntity.claims.P466.forEach(stmt => {
+        const rQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (rQid && wikidataEntities[rQid]?.labels?.en?.value) {
+          residentSet.add(wikidataEntities[rQid].labels.en.value);
+        }
+      });
+    }
+    if (wdEntity?.claims?.P3320) {
+      wdEntity.claims.P3320.forEach(stmt => {
+        const rQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (rQid && wikidataEntities[rQid]?.labels?.en?.value) {
+          residentSet.add(wikidataEntities[rQid].labels.en.value);
+        }
+      });
+    }
+    const notableResidents = Array.from(residentSet);
 
     // Address
     const addressParts = [
@@ -242,17 +340,6 @@ export async function processLandmarks() {
     }
     const imageUrl = getCommonsImageUrl(commonsImage, 800);
     const thumbnail = getCommonsImageUrl(commonsImage, 400);
-
-    // Notable residents (support semicolon separated)
-    const notableResidents = [];
-    const rawResidents = tags.notable_resident || tags.resident || tags['notable_resident:wikidata'] || null;
-    if (rawResidents) {
-      rawResidents.split(';').forEach(r => {
-        const trimmed = r.trim();
-        if (trimmed) notableResidents.push(trimmed);
-      });
-    }
-
     return {
       id: `osm-${el.type}-${el.id}`,
       osmType: el.type,
