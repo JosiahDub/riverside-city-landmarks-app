@@ -3787,8 +3787,8 @@
     "lat": 33.9732276,
     "lon": -117.3782871,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1926",
+    "year": 1926,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -3828,6 +3828,7 @@
       "name": "Hammer-Wallihan House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "77",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1926",
       "wikidata": "Q140742588"
     }
   },
@@ -4298,10 +4299,14 @@
     "lat": 33.9770762,
     "lon": -117.3788973,
     "description": "historic building complex in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "architects": [],
-    "architectureStyles": [],
+    "startDate": "1925",
+    "year": 1925,
+    "architects": [
+      "G. Stanley Wilson"
+    ],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140690551",
@@ -4318,12 +4323,17 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "G. Stanley Wilson",
+      "architect:wikidata": "Q55126528",
+      "architect:wikipedia": "en:G. Stanley Wilson",
       "building": "commercial",
+      "building:architecture": "spanish_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Tetley Buildings",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "87",
+      "start_date": "1925",
       "wikidata": "Q140690551",
       "wikimedia_commons": "File:Tetley Building Riverside.jpg"
     }
@@ -4446,10 +4456,15 @@
     "lat": 33.9812489,
     "lon": -117.373843,
     "description": "historical building in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "architects": [],
-    "architectureStyles": [],
+    "startDate": "1904",
+    "year": 1904,
+    "architects": [
+      "Franklin Pierce Burnham",
+      "William J. Bliesner Jr."
+    ],
+    "architectureStyles": [
+      "italianate"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140187530",
@@ -4466,12 +4481,17 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "Franklin Pierce Burnham;William J. Bliesner Jr.",
+      "architect:wikidata": "Q5491744;Q141216318",
+      "architect:wikipedia": "en:Franklin Pierce Burnham",
       "building": "retail",
+      "building:architecture": "italianate",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Roosevelt Building",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "90",
+      "start_date": "1904",
       "wikidata": "Q140187530",
       "wikimedia_commons": "File:Roosevelt Building Exterior.jpg"
     }
@@ -4900,8 +4920,8 @@
     "lat": 33.9793087,
     "lon": -117.3674515,
     "description": "former railroad station in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1924",
+    "year": 1924,
     "architects": [],
     "architectureStyles": [
       "pueblo_revival"
@@ -4926,6 +4946,7 @@
       "addr:housenumber": "3750",
       "addr:street": "Santa Fe Street",
       "building": "yes",
+      "building:architecture": "pueblo_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -4935,6 +4956,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "100",
       "source": "bing_imagery_0.06m_200706;survey;image",
       "source_ref": "AM909_DSCX8306;AM909_DSCX8307",
+      "start_date": "1924",
       "wikidata": "Q140588309",
       "wikimedia_commons": "File:Santa Fe Depot Riverside.jpg"
     }
@@ -5593,8 +5615,8 @@
     "lat": 33.9818077,
     "lon": -117.3736945,
     "description": "historical building in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1886",
+    "year": 1886,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5620,6 +5642,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Jackson Building",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "114",
+      "start_date": "1886",
       "wikidata": "Q140187508",
       "wikimedia_commons": "File:Jackson Building Exterior.jpg"
     }
