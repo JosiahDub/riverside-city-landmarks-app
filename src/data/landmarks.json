@@ -5079,12 +5079,16 @@
     "lat": 33.9918311,
     "lon": -117.3816755,
     "description": "historical house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1906",
+    "year": 1906,
     "designationDate": null,
     "designationYear": null,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "craftsman",
+      "swiss_chalet",
+      "prairie_school"
+    ],
     "notableResidents": [],
     "address": "4581 Indian Hill Road Riverside CA",
     "wikidata": "Q139257161",
@@ -5106,6 +5110,7 @@
       "addr:state": "CA",
       "addr:street": "Indian Hill Road",
       "building": "house",
+      "building:architecture": "craftsman;swiss_chalet",
       "building:levels": "2",
       "height": "9.91",
       "heritage": "8",
@@ -5115,6 +5120,7 @@
       "name": "Benjamin Rockhold Family House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "99",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1906",
       "wikidata": "Q139257161"
     }
   },
@@ -7829,7 +7835,10 @@
     "architects": [
       "Herman O. Ruhnau"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "brutalist",
+      "new_formalism"
+    ],
     "notableResidents": [],
     "address": "3900 Main Street Riverside CA 92522",
     "wikidata": "Q139083291",
@@ -7856,6 +7865,7 @@
       "architect:wikidata": "Q16017899",
       "architect:wikipedia": "en:Herman O. Ruhnau",
       "building": "yes",
+      "building:architecture": "brutalist;new_formalism",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
