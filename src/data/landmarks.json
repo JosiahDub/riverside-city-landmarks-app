@@ -11,7 +11,11 @@
     "description": "hotel in Riverside, California",
     "startDate": "1876",
     "year": 1876,
-    "architects": [],
+    "architects": [
+      "Arthur Burnett Benton",
+      "G. Stanley Wilson",
+      "Peter J. Weber"
+    ],
     "architectureStyles": [
       "mission_revival",
       "spanish_revival"
@@ -35,13 +39,18 @@
       "addr:housenumber": "3649",
       "addr:postcode": "92501",
       "addr:street": "Mission Inn Avenue",
+      "architect": "Arthur Burnett Benton;G. Stanley Wilson;Peter J. Weber",
+      "architect:wikidata": "Q24203374;Q55126528;Q124822219",
+      "architect:wikipedia": "en:Arthur Burnett Benton;en:G. Stanley Wilson;en:Peter J. Weber",
       "building": "hotel",
+      "building:architecture": "mission_revival",
       "building:levels": "4",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "The Mission Inn",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "1",
+      "start_date": "1876",
       "wikidata": "Q1920529",
       "wikimedia_commons": "File:MissionInn SpanishWing.jpg"
     }
@@ -5369,8 +5378,8 @@
     "lat": 33.9796336,
     "lon": -117.369288,
     "description": "historic irrigation canal in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1871",
+    "year": 1871,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5394,6 +5403,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Riverside Canal",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "109",
+      "start_date": "1871",
       "type": "waterway",
       "waterway": "drain",
       "wikidata": "Q140936076",
@@ -6026,10 +6036,15 @@
     "lat": 33.9576106,
     "lon": -117.3712398,
     "description": "historic house in riverside, California",
-    "startDate": null,
-    "year": null,
-    "architects": [],
-    "architectureStyles": [],
+    "startDate": "1966",
+    "year": 1966,
+    "architects": [
+      "Martin Williamson",
+      "Don O'Neill"
+    ],
+    "architectureStyles": [
+      "french_provincial"
+    ],
     "notableResidents": [],
     "address": "5175 Myrtle Avenue Riverside CA",
     "wikidata": "Q140903346",
@@ -6050,7 +6065,9 @@
       "addr:housenumber": "5175",
       "addr:state": "CA",
       "addr:street": "Myrtle Avenue",
+      "architect": "Martin Williamson;Don O'Neill",
       "building": "house",
+      "building:architecture": "french_provincial",
       "building:levels": "2",
       "height": "9.24",
       "heritage": "8",
@@ -6060,6 +6077,7 @@
       "name": "Jasper Austin Payton Residence",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "122",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1966",
       "wikidata": "Q140903346",
       "wikimedia_commons": "File:Jasper Austin Payton Residence Exterior.jpg"
     }
@@ -6213,8 +6231,8 @@
     "lat": 33.9707452,
     "lon": -117.3110073,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1965",
+    "year": 1965,
     "architects": [
       "Philip Esbensen"
     ],
@@ -6252,6 +6270,7 @@
       "name": "Philip Esbensen House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "126",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1965",
       "wikidata": "Q140893030"
     }
   },
@@ -6666,8 +6685,8 @@
     "lat": 33.9827589,
     "lon": -117.371588,
     "description": "American academic center and art museum",
-    "startDate": null,
-    "year": null,
+    "startDate": "1964",
+    "year": 1964,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6707,6 +6726,7 @@
       "operator": "Riverside Art Museum",
       "phone": "+1-951-684-7111",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "135",
+      "start_date": "1964",
       "tourism": "museum",
       "website": "https://riversideartmuseum.org/museum/cheech-center/",
       "wheelchair": "yes",
@@ -7054,9 +7074,11 @@
     "lat": 33.9936351,
     "lon": -117.3778892,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "architects": [],
+    "startDate": "1924",
+    "year": 1924,
+    "architects": [
+      "Henry L. A. Jekel"
+    ],
     "architectureStyles": [],
     "notableResidents": [],
     "address": "4428 Houghton Avenue Riverside CA 92501",
@@ -7079,6 +7101,8 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "Houghton Avenue",
+      "architect": "Henry L. A. Jekel",
+      "architect:wikidata": "Q55488034",
       "building": "house",
       "building:levels": "2",
       "height": "7.83",
@@ -7089,6 +7113,7 @@
       "name": "David S. Bell House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "143",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1924",
       "wikidata": "Q140963340",
       "wikimedia_commons": "File:David S. Bell House Exterior.jpg"
     }
