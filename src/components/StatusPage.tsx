@@ -4,7 +4,7 @@ import { getStyleInfo } from '../data/architecturalStyles';
 import { 
   CheckCircle2, XCircle, AlertCircle, ExternalLink, Search, 
   ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users,
-  RefreshCw, HelpCircle, Info, Award
+  RefreshCw, HelpCircle, Info, Award, Star
 } from 'lucide-react';
 
 interface StatusPageProps {
@@ -141,7 +141,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
   // Export to CSV
   const handleExportCSV = () => {
-    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
+    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
     const rows = sortedLandmarks.map((l) => [
       `"${l.ref}"`,
       `"${l.name.replace(/"/g, '""')}"`,
@@ -149,6 +149,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       l.year || l.startDate ? 'YES' : 'NO',
       `"${l.designationDate || ''}"`,
       l.designationDate ? 'YES' : 'NO',
+      l.isNationalHistoricLandmark ? 'YES' : 'NO',
+      `"${l.nationalHistoricLandmarkDate || ''}"`,
       `"${l.architectureStyles.join('; ')}"`,
       l.architectureStyles.length > 0 ? 'YES' : 'NO',
       `"${l.architects.join('; ')}"`,
@@ -662,13 +664,21 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                             </div>
                           )}
                           <div className="min-w-0">
-                            <button
-                              onClick={() => onSelectLandmarkOnMap(landmark)}
-                              className="font-serif font-bold text-stone-900 hover:text-amber-800 hover:underline text-left block truncate max-w-xs"
-                              title="View on Map"
-                            >
-                              {landmark.name}
-                            </button>
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              <button
+                                onClick={() => onSelectLandmarkOnMap(landmark)}
+                                className="font-serif font-bold text-stone-900 hover:text-amber-800 hover:underline text-left block truncate max-w-xs"
+                                title="View on Map"
+                              >
+                                {landmark.name}
+                              </button>
+                              {landmark.isNationalHistoricLandmark && (
+                                <span className="inline-flex items-center gap-0.5 bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-bold px-1.5 py-0.2 rounded shrink-0">
+                                  <Star className="w-2.5 h-2.5 text-amber-600 fill-amber-500" />
+                                  NHL {landmark.nationalHistoricLandmarkDate ? `(${landmark.nationalHistoricLandmarkDate})` : ''}
+                                </span>
+                              )}
+                            </div>
                             {landmark.address && (
                               <p className="text-[11px] text-stone-400 truncate mt-0.5">
                                 {landmark.address}

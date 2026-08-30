@@ -384,9 +384,50 @@ export async function processLandmarks() {
       }
     }
 
-    if (designationDate && !designationYear) {
-      const ym = designationDate.match(/(\d{4})/);
-      if (ym) designationYear = parseInt(ym[1], 10);
+    // National Historic Landmark Designation (Wikidata P1435: Q624232 -> qualifier P580 "start time")
+    let isNationalHistoricLandmark = false;
+    let nationalHistoricLandmarkDate = null;
+    let nationalHistoricLandmarkYear = null;
+
+    if (wdEntity?.claims?.P1435) {
+      const nhlStmt = wdEntity.claims.P1435.find(s => s.mainsnak?.datavalue?.value?.id === 'Q624232');
+      if (nhlStmt) {
+        isNationalHistoricLandmark = true;
+        const p580Nhl = nhlStmt.qualifiers?.P580?.[0]?.datavalue?.value?.time || null;
+        if (p580Nhl) {
+          const timeMatch = p580Nhl.match(/[+-](\d{4})-(\d{2})-(\d{2})/);
+          if (timeMatch) {
+            const y = parseInt(timeMatch[1], 10);
+            const m = parseInt(timeMatch[2], 10);
+            const d = parseInt(timeMatch[3], 10);
+            nationalHistoricLandmarkYear = y;
+            if (m > 0 && d > 0) {
+              const dateObj = new Date(Date.UTC(y, m - 1, d));
+              nationalHistoricLandmarkDate = dateObj.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                timeZone: 'UTC'
+              });
+            } else if (m > 0) {
+              const dateObj = new Date(Date.UTC(y, m - 1, 1));
+              nationalHistoricLandmarkDate = dateObj.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                timeZone: 'UTC'
+              });
+            } else {
+              nationalHistoricLandmarkDate = String(y);
+            }
+          } else {
+            const yearMatch = p580Nhl.match(/[+-](\d{4})/);
+            if (yearMatch) {
+              nationalHistoricLandmarkYear = parseInt(yearMatch[1], 10);
+              nationalHistoricLandmarkDate = String(nationalHistoricLandmarkYear);
+            }
+          }
+        }
+      }
     }
 
     return {
@@ -403,6 +444,9 @@ export async function processLandmarks() {
       year: year || null,
       designationDate,
       designationYear,
+      isNationalHistoricLandmark,
+      nationalHistoricLandmarkDate,
+      nationalHistoricLandmarkYear,
       architects,
       architectureStyles,
       notableResidents,

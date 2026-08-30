@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Landmark, UserLocation } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown } from 'lucide-react';
+import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star } from 'lucide-react';
 
 interface LandmarkListViewProps {
   landmarks: Landmark[];
@@ -91,6 +91,12 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
                     <span className="text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200 px-1.5 py-0.2 rounded">
                       #{landmark.ref || landmark.refNumber}
                     </span>
+                    {landmark.isNationalHistoricLandmark && (
+                      <span className="text-[10px] font-bold bg-amber-100/90 text-amber-900 border border-amber-300 px-1.5 py-0.2 rounded flex items-center gap-0.5">
+                        <Star className="w-2.5 h-2.5 text-amber-600 fill-amber-500 shrink-0" />
+                        NHL
+                      </span>
+                    )}
                     {landmark.year && (
                       <span className="text-[11px] text-stone-500 font-medium flex items-center gap-0.5">
                         <Calendar className="w-3 h-3 text-stone-400" />

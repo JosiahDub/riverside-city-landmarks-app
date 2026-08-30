@@ -29,6 +29,9 @@ export interface Landmark {
   notableResidents?: string[];
   designationDate?: string | null;
   designationYear?: number | null;
+  isNationalHistoricLandmark?: boolean;
+  nationalHistoricLandmarkDate?: string | null;
+  nationalHistoricLandmarkYear?: number | null;
   allTags: Record<string, string>;
   distanceMiles?: number;
 }

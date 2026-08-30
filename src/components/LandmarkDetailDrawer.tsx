@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Landmark } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -84,6 +84,14 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
         <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
           {/* Title */}
           <div>
+            {landmark.isNationalHistoricLandmark && (
+              <div className="mb-2">
+                <span className="inline-flex items-center gap-1.5 bg-amber-100/90 text-amber-900 border border-amber-300 text-xs font-bold px-2.5 py-1 rounded-lg shadow-xs">
+                  <Star className="w-3.5 h-3.5 text-amber-600 fill-amber-500 shrink-0" />
+                  <span>National Historic Landmark{landmark.nationalHistoricLandmarkDate ? ` (Designated ${landmark.nationalHistoricLandmarkDate})` : ''}</span>
+                </span>
+              </div>
+            )}
             <h2 className="font-serif font-bold text-2xl text-stone-900 leading-snug">
               {landmark.name}
             </h2>
@@ -132,23 +140,34 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
           )}
 
           {/* Quick Facts Grid */}
-          <div className="grid grid-cols-2 gap-3 bg-stone-50 p-4 rounded-xl border border-stone-200 text-sm">
+          <div className={`grid ${landmark.isNationalHistoricLandmark ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'} gap-3 bg-stone-50 p-4 rounded-xl border border-stone-200 text-sm`}>
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 block mb-0.5">Year Built / Era</span>
               <div className="flex items-center gap-1.5 font-medium text-stone-800">
-                <Calendar className="w-4 h-4 text-amber-700" />
+                <Calendar className="w-4 h-4 text-amber-700 shrink-0" />
                 <span>{landmark.year || landmark.startDate || 'Date Unlisted'}</span>
               </div>
             </div>
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 block mb-0.5">Official Designation</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 block mb-0.5">City Landmark</span>
               <div className="flex items-center gap-1.5 font-medium text-stone-800">
                 <Award className="w-4 h-4 text-purple-700 shrink-0" />
                 <span className="truncate">
-                  {landmark.designationDate ? `Designated ${landmark.designationDate}` : 'City Landmark'}
+                  {landmark.designationDate ? `Designated ${landmark.designationDate}` : 'City of Riverside'}
                 </span>
               </div>
             </div>
+            {landmark.isNationalHistoricLandmark && (
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-amber-800 block mb-0.5">National Landmark</span>
+                <div className="flex items-center gap-1.5 font-semibold text-amber-950">
+                  <Star className="w-4 h-4 text-amber-600 fill-amber-500 shrink-0" />
+                  <span className="truncate">
+                    {landmark.nationalHistoricLandmarkDate ? `Designated ${landmark.nationalHistoricLandmarkDate}` : 'National Landmark'}
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Architects Section */}

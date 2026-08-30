@@ -13,6 +13,9 @@
     "year": 1876,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": true,
+    "nationalHistoricLandmarkDate": "May 5, 1977",
+    "nationalHistoricLandmarkYear": 1977,
     "architects": [
       "Arthur Burnett Benton",
       "G. Stanley Wilson",
@@ -72,6 +75,9 @@
     "year": 1903,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Franklin Pierce Burnham"
     ],
@@ -130,6 +136,9 @@
     "year": 1891,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Adam C. Willard"
     ],
@@ -192,6 +201,9 @@
     "year": 1881,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "A. W. Boggs"
     ],
@@ -250,6 +262,9 @@
     "year": 1891,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "John A. Walls"
     ],
@@ -301,6 +316,9 @@
     "year": 1913,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Myron Hunt"
     ],
@@ -356,6 +374,9 @@
     "year": 1900,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Arthur Benton"
     ],
@@ -419,6 +440,9 @@
     "year": 1892,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -463,6 +487,9 @@
     "year": 1904,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -514,6 +541,9 @@
     "year": 1920,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -558,6 +588,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "James Knox Taylor"
     ],
@@ -616,6 +649,9 @@
     "year": 1874,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -666,6 +702,9 @@
     "year": 1921,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -717,6 +756,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -769,6 +811,9 @@
     "year": 1873,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -816,6 +861,9 @@
     "year": 1901,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Wilcox and Rose"
     ],
@@ -874,6 +922,9 @@
     "year": 1928,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Arthur Benton"
     ],
@@ -940,6 +991,9 @@
     "year": 1967,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Julia Morgan"
     ],
@@ -1001,6 +1055,9 @@
     "year": 1885,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1046,6 +1103,9 @@
     "year": 1911,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "H. L. Evans"
     ],
@@ -1103,6 +1163,9 @@
     "year": 1890,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1145,6 +1208,9 @@
     "year": 1904,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1195,6 +1261,9 @@
     "year": 1880,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": true,
+    "nationalHistoricLandmarkDate": "December 14, 1990",
+    "nationalHistoricLandmarkYear": 1990,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1245,6 +1314,9 @@
     "year": 1888,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1287,6 +1359,9 @@
     "year": 1891,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1337,6 +1412,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1383,6 +1461,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1439,6 +1520,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -1490,6 +1574,9 @@
     "year": 1889,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -1543,6 +1630,9 @@
     "year": 1888,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "John C. Pelton Jr."
     ],
@@ -1601,6 +1691,9 @@
     "year": 1897,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1651,6 +1744,9 @@
     "year": 1928,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Walker & Eisen"
     ],
@@ -1704,6 +1800,9 @@
     "year": 1908,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -1755,6 +1854,9 @@
     "year": 1911,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Seely Pillar"
     ],
@@ -1811,6 +1913,9 @@
     "year": 1906,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Seehorn & Preston"
     ],
@@ -1868,6 +1973,9 @@
     "year": 1890,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -1922,6 +2030,9 @@
     "year": 1902,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -1975,6 +2086,9 @@
     "year": 1935,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
@@ -2021,6 +2135,9 @@
     "year": 1929,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Clifford Balch"
     ],
@@ -2080,6 +2197,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2122,6 +2242,9 @@
     "year": 1909,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Arthur Benton"
     ],
@@ -2179,6 +2302,9 @@
     "year": 1902,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -2231,6 +2357,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "italian_renaissance",
@@ -2278,6 +2407,9 @@
     "year": 1915,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2322,6 +2454,9 @@
     "year": 1900,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2372,6 +2507,9 @@
     "year": 1909,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Seeley L. Pillar"
     ],
@@ -2420,6 +2558,9 @@
     "year": 1896,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -2474,6 +2615,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -2519,6 +2663,9 @@
     "year": 1928,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2569,6 +2716,9 @@
     "year": 1895,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2628,6 +2778,9 @@
     "year": 1887,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2678,6 +2831,9 @@
     "year": 1934,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Peter J. Weber"
     ],
@@ -2740,6 +2896,9 @@
     "year": 1899,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -2791,6 +2950,9 @@
     "year": 1928,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Robert V. Leeson"
     ],
@@ -2847,6 +3009,9 @@
     "year": 1908,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2898,6 +3063,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Peter J. Weber"
     ],
@@ -2950,6 +3118,9 @@
     "year": 1883,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3007,6 +3178,9 @@
     "year": 1920,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "tudor_revival"
@@ -3058,6 +3232,9 @@
     "year": 1892,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3107,6 +3284,9 @@
     "year": 1914,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3154,6 +3334,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3202,6 +3385,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3244,6 +3430,9 @@
     "year": 1962,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3288,6 +3477,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3335,6 +3527,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3383,6 +3578,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3425,6 +3623,9 @@
     "year": 1872,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3476,6 +3677,9 @@
     "year": 1893,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -3531,6 +3735,9 @@
     "year": 1911,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3592,6 +3799,9 @@
     "year": 1909,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -3646,6 +3856,9 @@
     "year": 1887,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3700,6 +3913,9 @@
     "year": 1892,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3750,6 +3966,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3804,6 +4023,9 @@
     "year": 1931,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3850,6 +4072,9 @@
     "year": 1929,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -3903,6 +4128,9 @@
     "year": 1926,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3953,6 +4181,9 @@
     "year": 1926,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -4010,6 +4241,9 @@
     "year": 1888,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -4063,6 +4297,9 @@
     "year": 1895,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -4117,6 +4354,9 @@
     "year": 1925,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -4178,6 +4418,9 @@
     "year": 1910,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4230,6 +4473,9 @@
     "year": 1892,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4280,6 +4526,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4329,6 +4578,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -4380,6 +4632,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -4433,6 +4688,9 @@
     "year": 1901,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4485,6 +4743,9 @@
     "year": 1925,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -4536,6 +4797,9 @@
     "year": 1888,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry A. Westbrook"
     ],
@@ -4590,6 +4854,9 @@
     "year": 1891,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Adam C. Willard",
       "James M. Wood"
@@ -4648,6 +4915,9 @@
     "year": 1904,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Franklin Pierce Burnham",
       "William J. Bliesner Jr."
@@ -4700,6 +4970,9 @@
     "year": 1913,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -4752,6 +5025,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
@@ -4806,6 +5082,9 @@
     "year": 1885,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -4860,6 +5139,9 @@
     "year": 1950,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4910,6 +5192,9 @@
     "year": 1887,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "gothic_revival"
@@ -4955,6 +5240,9 @@
     "year": 1917,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4997,6 +5285,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5040,6 +5331,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5083,6 +5377,9 @@
     "year": 1906,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman",
@@ -5138,6 +5435,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "pueblo_revival"
@@ -5191,6 +5491,9 @@
     "year": 1895,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -5245,6 +5548,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5285,6 +5591,9 @@
     "year": 1907,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5336,6 +5645,9 @@
     "year": 1913,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5390,6 +5702,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -5443,6 +5758,9 @@
     "year": 1899,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -5496,6 +5814,9 @@
     "year": 1923,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "tudor_revival"
@@ -5550,6 +5871,9 @@
     "year": 1888,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -5605,6 +5929,9 @@
     "year": 1871,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5649,6 +5976,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -5702,6 +6032,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -5756,6 +6089,9 @@
     "year": 1908,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5810,6 +6146,9 @@
     "year": 1900,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5862,6 +6201,9 @@
     "year": 1886,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5906,6 +6248,9 @@
     "year": 1920,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Robert H. Spurgeon, Jr."
     ],
@@ -5963,6 +6308,9 @@
     "year": 1928,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -6015,6 +6363,9 @@
     "year": 1908,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -6072,6 +6423,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6115,6 +6469,9 @@
     "year": 1927,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -6172,6 +6529,9 @@
     "year": 1949,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -6234,6 +6594,9 @@
     "year": 1957,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "monterey_colonial"
@@ -6289,6 +6652,9 @@
     "year": 1966,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Martin Williamson",
       "Don O'Neill"
@@ -6347,6 +6713,9 @@
     "year": 1889,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "prairie_school"
@@ -6396,6 +6765,9 @@
     "year": 1957,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Herman O. Ruhnau"
     ],
@@ -6439,6 +6811,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Clinton Marr"
     ],
@@ -6492,6 +6867,9 @@
     "year": 1965,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Philip Esbensen"
     ],
@@ -6547,6 +6925,9 @@
     "year": 1971,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Lois Gottlieb"
     ],
@@ -6606,6 +6987,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6656,6 +7040,9 @@
     "year": 1899,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -6711,6 +7098,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6753,6 +7143,9 @@
     "year": 1955,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Walter C. See"
     ],
@@ -6809,6 +7202,9 @@
     "year": 1930,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Welmer P. Lamar"
     ],
@@ -6865,6 +7261,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6911,6 +7310,9 @@
     "year": 1966,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "midcentury_modern"
@@ -6964,6 +7366,9 @@
     "year": 1964,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7016,6 +7421,9 @@
     "year": 1930,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -7069,6 +7477,9 @@
     "year": 1911,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Lester S. Moore"
     ],
@@ -7129,6 +7540,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7175,6 +7589,9 @@
     "year": 1931,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7223,6 +7640,9 @@
     "year": 1953,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7264,6 +7684,9 @@
     "year": 1929,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -7313,6 +7736,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7359,6 +7785,9 @@
     "year": 1924,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7415,6 +7844,9 @@
     "year": 1966,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Clinton Marr"
     ],
@@ -7471,6 +7903,9 @@
     "year": 1956,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Knowlton Fernald Jr."
     ],
@@ -7526,6 +7961,9 @@
     "year": 1930,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7580,6 +8018,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -7632,6 +8073,9 @@
     "year": 1948,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "streamline_moderne"
@@ -7685,6 +8129,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [
@@ -7736,6 +8183,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7783,6 +8233,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7832,6 +8285,9 @@
     "year": 1975,
     "designationDate": "July 15, 2025",
     "designationYear": 2025,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [
       "Herman O. Ruhnau"
     ],
@@ -7894,6 +8350,9 @@
     "year": 1903,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival",
@@ -7949,6 +8408,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7999,6 +8461,9 @@
     "year": null,
     "designationDate": null,
     "designationYear": null,
+    "isNationalHistoricLandmark": false,
+    "nationalHistoricLandmarkDate": null,
+    "nationalHistoricLandmarkYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],

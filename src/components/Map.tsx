@@ -169,6 +169,11 @@ export const Map: React.FC<MapProps> = ({
         ${landmark.architects.length > 0 ? `
           <p class="text-xs text-stone-600 mb-1"><span class="font-semibold text-stone-700">Architect:</span> ${landmark.architects.join(', ')}</p>
         ` : ''}
+        ${landmark.isNationalHistoricLandmark ? `
+          <div class="inline-flex items-center gap-1 bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-bold px-2 py-0.5 rounded-full mb-1 shadow-xs">
+            <span>⭐ National Historic Landmark${landmark.nationalHistoricLandmarkDate ? ` (${landmark.nationalHistoricLandmarkDate})` : ''}</span>
+          </div>
+        ` : ''}
         ${landmark.designationDate ? `
           <p class="text-[11px] text-purple-800 mb-1.5 font-medium">🏛️ Designated ${landmark.designationDate}</p>
         ` : ''}
