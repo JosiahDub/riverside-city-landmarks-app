@@ -4,7 +4,7 @@ import { getStyleInfo } from '../data/architecturalStyles';
 import { 
   CheckCircle2, XCircle, AlertCircle, ExternalLink, Search, 
   ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users,
-  RefreshCw, HelpCircle, Info, Award, Star
+  RefreshCw, HelpCircle, Info, Award, Star, ScrollText
 } from 'lucide-react';
 
 interface StatusPageProps {
@@ -141,7 +141,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
   // Export to CSV
   const handleExportCSV = () => {
-    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
+    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
     const rows = sortedLandmarks.map((l) => [
       `"${l.ref}"`,
       `"${l.name.replace(/"/g, '""')}"`,
@@ -151,6 +151,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       l.designationDate ? 'YES' : 'NO',
       l.isNationalHistoricLandmark ? 'YES' : 'NO',
       `"${l.nationalHistoricLandmarkDate || ''}"`,
+      l.hasPlaque ? 'YES' : 'NO',
+      l.plaques?.length || 0,
       `"${l.architectureStyles.join('; ')}"`,
       l.architectureStyles.length > 0 ? 'YES' : 'NO',
       `"${l.architects.join('; ')}"`,
@@ -676,6 +678,12 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                                 <span className="inline-flex items-center gap-0.5 bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-bold px-1.5 py-0.2 rounded shrink-0">
                                   <Star className="w-2.5 h-2.5 text-amber-600 fill-amber-500" />
                                   NHL {landmark.nationalHistoricLandmarkDate ? `(${landmark.nationalHistoricLandmarkDate})` : ''}
+                                </span>
+                              )}
+                              {landmark.hasPlaque && (
+                                <span className="inline-flex items-center gap-0.5 bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-semibold px-1.5 py-0.2 rounded shrink-0" title={`${landmark.plaques?.length || 1} plaque(s) mapped on OSM`}>
+                                  <ScrollText className="w-2.5 h-2.5 text-emerald-600" />
+                                  Plaque ({landmark.plaques?.length || 1})
                                 </span>
                               )}
                             </div>

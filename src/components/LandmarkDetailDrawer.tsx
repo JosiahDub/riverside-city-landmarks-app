@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Landmark } from '../types';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Landmark, Plaque } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -24,6 +24,36 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
   const [loadingWiki, setLoadingWiki] = useState(false);
   const [showAllTags, setShowAllTags] = useState(false);
   const [imageModalOpen, setImageModalOpen] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState<number>(0);
+
+  // Gallery images combining main building photo and on-site plaque photos
+  const galleryImages = useMemo(() => {
+    if (!landmark) return [];
+    const list: { url: string; title: string; subtitle?: string; commons?: string; type: 'building' | 'plaque'; osmUrl?: string }[] = [];
+    if (landmark.imageUrl) {
+      list.push({
+        url: landmark.imageUrl,
+        title: landmark.name,
+        subtitle: 'Landmark Building / Feature',
+        commons: landmark.commonsImage || undefined,
+        type: 'building',
+        osmUrl: landmark.osmUrl
+      });
+    }
+    (landmark.plaques || []).forEach((pl, idx) => {
+      if (pl.imageUrl) {
+        list.push({
+          url: pl.imageUrl,
+          title: pl.name || `Historical Plaque ${idx + 1}`,
+          subtitle: 'On-Site Historical Plaque',
+          commons: pl.commonsImage || undefined,
+          type: 'plaque',
+          osmUrl: pl.osmUrl
+        });
+      }
+    });
+    return list;
+  }, [landmark]);
 
   // Fetch Wikipedia summary if article title exists
   useEffect(() => {
@@ -82,16 +112,22 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
 
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
-          {/* Title */}
+          {/* Title & Badges */}
           <div>
-            {landmark.isNationalHistoricLandmark && (
-              <div className="mb-2">
+            <div className="flex items-center gap-1.5 flex-wrap mb-2">
+              {landmark.isNationalHistoricLandmark && (
                 <span className="inline-flex items-center gap-1.5 bg-amber-100/90 text-amber-900 border border-amber-300 text-xs font-bold px-2.5 py-1 rounded-lg shadow-xs">
                   <Star className="w-3.5 h-3.5 text-amber-600 fill-amber-500 shrink-0" />
                   <span>National Historic Landmark{landmark.nationalHistoricLandmarkDate ? ` (Designated ${landmark.nationalHistoricLandmarkDate})` : ''}</span>
                 </span>
-              </div>
-            )}
+              )}
+              {landmark.hasPlaque && (
+                <span className="inline-flex items-center gap-1 bg-emerald-100/90 text-emerald-900 border border-emerald-300 text-xs font-semibold px-2 py-0.5 rounded-lg shadow-xs">
+                  <ScrollText className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
+                  <span>{landmark.plaques?.length || 1} Historical Plaque{(landmark.plaques?.length || 1) > 1 ? 's' : ''}</span>
+                </span>
+              )}
+            </div>
             <h2 className="font-serif font-bold text-2xl text-stone-900 leading-snug">
               {landmark.name}
             </h2>
@@ -103,21 +139,43 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
             )}
           </div>
 
-          {/* Image */}
+          {/* Image Block */}
           {landmark.imageUrl ? (
             <div className="relative group rounded-xl overflow-hidden shadow-md bg-stone-100 border border-stone-200">
               <img
                 src={landmark.imageUrl}
                 alt={landmark.name}
                 className="w-full h-64 object-cover cursor-pointer group-hover:scale-105 transition duration-300"
-                onClick={() => setImageModalOpen(true)}
+                onClick={() => {
+                  setModalImageIndex(0);
+                  setImageModalOpen(true);
+                }}
               />
-              <button
-                onClick={() => setImageModalOpen(true)}
-                className="absolute bottom-2.5 right-2.5 bg-black/70 hover:bg-black text-white text-xs px-2.5 py-1.5 rounded-md flex items-center gap-1.5 backdrop-blur transition"
-              >
-                <ImageIcon className="w-3.5 h-3.5" /> Full Image
-              </button>
+              <div className="absolute bottom-2.5 right-2.5 flex items-center gap-2">
+                {landmark.plaques && landmark.plaques.some(p => p.imageUrl) && (
+                  <button
+                    onClick={() => {
+                      const firstPlaqueIdx = galleryImages.findIndex(g => g.type === 'plaque');
+                      setModalImageIndex(firstPlaqueIdx !== -1 ? firstPlaqueIdx : 0);
+                      setImageModalOpen(true);
+                    }}
+                    className="bg-amber-900/90 hover:bg-amber-950 text-white text-xs px-2.5 py-1.5 rounded-md flex items-center gap-1.5 backdrop-blur transition shadow-md font-medium"
+                    title="View historical plaque photo"
+                  >
+                    <ScrollText className="w-3.5 h-3.5 text-amber-300" />
+                    <span>View Plaque{landmark.plaques.length > 1 ? ` (${landmark.plaques.length})` : ''}</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => {
+                    setModalImageIndex(0);
+                    setImageModalOpen(true);
+                  }}
+                  className="bg-black/70 hover:bg-black text-white text-xs px-2.5 py-1.5 rounded-md flex items-center gap-1.5 backdrop-blur transition shadow-md"
+                >
+                  <ImageIcon className="w-3.5 h-3.5" /> Full Image
+                </button>
+              </div>
               {landmark.commonsImage && (
                 <div className="p-2 text-[11px] text-stone-500 bg-stone-50 border-t border-stone-200 flex justify-between items-center">
                   <span className="truncate">Wikimedia Commons: {landmark.commonsImage.replace('File:', '')}</span>
@@ -131,6 +189,32 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                   </a>
                 </div>
               )}
+            </div>
+          ) : landmark.plaques && landmark.plaques.some(p => p.imageUrl) ? (
+            /* Fallback to first plaque image if main building photo is missing */
+            <div className="relative group rounded-xl overflow-hidden shadow-md bg-stone-100 border border-stone-200">
+              <img
+                src={landmark.plaques.find(p => p.imageUrl)!.imageUrl!}
+                alt="Historical Plaque"
+                className="w-full h-64 object-cover cursor-pointer group-hover:scale-105 transition duration-300"
+                onClick={() => {
+                  setModalImageIndex(0);
+                  setImageModalOpen(true);
+                }}
+              />
+              <div className="absolute top-2.5 left-2.5 bg-amber-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-md backdrop-blur flex items-center gap-1 shadow-xs">
+                <ScrollText className="w-3 h-3 text-amber-300" />
+                <span>On-Site Historical Plaque</span>
+              </div>
+              <button
+                onClick={() => {
+                  setModalImageIndex(0);
+                  setImageModalOpen(true);
+                }}
+                className="absolute bottom-2.5 right-2.5 bg-black/70 hover:bg-black text-white text-xs px-2.5 py-1.5 rounded-md flex items-center gap-1.5 backdrop-blur transition shadow-md font-medium"
+              >
+                <ImageIcon className="w-3.5 h-3.5" /> View Plaque Photo
+              </button>
             </div>
           ) : (
             <div className="h-28 rounded-xl border border-dashed border-stone-300 bg-stone-50 flex flex-col items-center justify-center text-stone-400 text-xs">
@@ -169,6 +253,96 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
               </div>
             )}
           </div>
+
+          {/* Historical Plaques Section */}
+          {landmark.plaques && landmark.plaques.length > 0 && (
+            <div className="space-y-3 bg-amber-50/60 p-4 rounded-xl border border-amber-200">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+                  <ScrollText className="w-4 h-4 text-amber-700" />
+                  Historical Plaque{landmark.plaques.length > 1 ? `s (${landmark.plaques.length})` : ''}
+                </h3>
+                <span className="text-[11px] text-amber-800 font-medium bg-amber-100 px-2 py-0.5 rounded-full border border-amber-300">
+                  Mapped on OSM
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {landmark.plaques.map((plaque, idx) => (
+                  <div
+                    key={plaque.id || idx}
+                    className="bg-white rounded-lg border border-amber-200 overflow-hidden shadow-xs flex flex-col justify-between"
+                  >
+                    {plaque.imageUrl ? (
+                      <div
+                        className="relative group h-36 bg-stone-100 cursor-pointer overflow-hidden"
+                        onClick={() => {
+                          const plIdx = galleryImages.findIndex(g => g.url === plaque.imageUrl);
+                          setModalImageIndex(plIdx !== -1 ? plIdx : 0);
+                          setImageModalOpen(true);
+                        }}
+                      >
+                        <img
+                          src={plaque.imageUrl}
+                          alt={plaque.name || 'Historical Plaque'}
+                          className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition flex items-center justify-center">
+                          <span className="opacity-0 group-hover:opacity-100 bg-black/75 text-white text-xs px-2.5 py-1 rounded-md font-medium flex items-center gap-1 transition">
+                            <ImageIcon className="w-3.5 h-3.5" /> View Plaque
+                          </span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="h-24 bg-amber-50/50 flex flex-col items-center justify-center text-amber-800/60 text-xs">
+                        <ScrollText className="w-5 h-5 mb-1" />
+                        <span>Plaque mapped on OSM</span>
+                      </div>
+                    )}
+
+                    <div className="p-2.5">
+                      <h4 className="font-serif font-bold text-xs text-stone-900 leading-tight">
+                        {plaque.name || 'Historical Plaque'}
+                      </h4>
+                      {plaque.material && (
+                        <span className="text-[10px] text-stone-500 capitalize block mt-0.5">
+                          Material: {plaque.material}
+                        </span>
+                      )}
+
+                      <div className="flex items-center justify-between gap-2 mt-2 pt-2 border-t border-stone-100 text-[11px]">
+                        {plaque.imageUrl ? (
+                          <button
+                            onClick={() => {
+                              const plIdx = galleryImages.findIndex(g => g.url === plaque.imageUrl);
+                              setModalImageIndex(plIdx !== -1 ? plIdx : 0);
+                              setImageModalOpen(true);
+                            }}
+                            className="text-amber-800 hover:text-amber-950 font-semibold flex items-center gap-1 hover:underline"
+                          >
+                            <span>View Plaque</span>
+                          </button>
+                        ) : (
+                          <span className="text-stone-400 text-[10px]">Photo unlisted</span>
+                        )}
+
+                        <a
+                          href={plaque.osmUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-stone-500 hover:text-stone-800 flex items-center gap-0.5 ml-auto text-[10px]"
+                          title="View node on OpenStreetMap"
+                        >
+                          <span>OSM Plaque</span>
+                          <ExternalLink className="w-2.5 h-2.5" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Architects Section */}
           {landmark.architects.length > 0 && (
@@ -351,30 +525,110 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
         </div>
       </div>
 
-      {/* Full Image Modal */}
-      {imageModalOpen && landmark.imageUrl && (
+      {/* Gallery / Full Image Modal (Building + Plaques) */}
+      {imageModalOpen && galleryImages.length > 0 && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-between p-4"
           onClick={() => setImageModalOpen(false)}
         >
-          <button
-            onClick={() => setImageModalOpen(false)}
-            className="absolute top-4 right-4 p-2 text-white/80 hover:text-white rounded-full bg-stone-800/80 transition"
-          >
-            <X className="w-6 h-6" />
-          </button>
-          <img
-            src={landmark.imageUrl}
-            alt={landmark.name}
-            className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          />
-          <div className="text-white text-center mt-3" onClick={(e) => e.stopPropagation()}>
-            <p className="font-serif font-medium text-lg">{landmark.name}</p>
-            {landmark.commonsImage && (
-              <p className="text-stone-400 text-xs mt-1">
-                Wikimedia Commons: {landmark.commonsImage}
+          {/* Top Bar */}
+          <div className="w-full flex items-center justify-between text-white max-w-4xl px-2 py-1" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-stone-800 text-stone-300 border border-stone-700">
+                {modalImageIndex + 1} / {galleryImages.length}
+              </span>
+              <span className="text-xs font-medium text-stone-300">
+                {galleryImages[modalImageIndex]?.subtitle}
+              </span>
+            </div>
+            <button
+              onClick={() => setImageModalOpen(false)}
+              className="p-2 text-white/80 hover:text-white rounded-full bg-stone-800/80 hover:bg-stone-700 transition"
+              title="Close image viewer"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+
+          {/* Main Image Container with Left/Right Navigation */}
+          <div className="relative flex-1 w-full max-w-4xl flex items-center justify-center min-h-0 py-2" onClick={(e) => e.stopPropagation()}>
+            {galleryImages.length > 1 && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setModalImageIndex((prev) => (prev > 0 ? prev - 1 : galleryImages.length - 1));
+                }}
+                className="absolute left-2 z-10 p-2.5 rounded-full bg-black/60 hover:bg-black/90 text-white transition backdrop-blur border border-white/10"
+                title="Previous image"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+            )}
+
+            <img
+              src={galleryImages[modalImageIndex]?.url}
+              alt={galleryImages[modalImageIndex]?.title}
+              className="max-h-full max-w-full object-contain rounded-lg shadow-2xl select-none"
+            />
+
+            {galleryImages.length > 1 && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setModalImageIndex((prev) => (prev < galleryImages.length - 1 ? prev + 1 : 0));
+                }}
+                className="absolute right-2 z-10 p-2.5 rounded-full bg-black/60 hover:bg-black/90 text-white transition backdrop-blur border border-white/10"
+                title="Next image"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            )}
+          </div>
+
+          {/* Bottom Info & Selector Tabs */}
+          <div className="w-full max-w-4xl text-center space-y-2 pb-2" onClick={(e) => e.stopPropagation()}>
+            <div>
+              <p className="text-white font-serif font-bold text-base sm:text-lg leading-snug">
+                {galleryImages[modalImageIndex]?.title}
               </p>
+              <div className="flex items-center justify-center gap-4 text-xs text-stone-400 mt-1 flex-wrap">
+                {galleryImages[modalImageIndex]?.commons && (
+                  <span>Wikimedia Commons: <strong className="text-stone-300 font-mono">{galleryImages[modalImageIndex].commons}</strong></span>
+                )}
+                {galleryImages[modalImageIndex]?.osmUrl && (
+                  <a
+                    href={galleryImages[modalImageIndex].osmUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-amber-400 hover:underline inline-flex items-center gap-1"
+                  >
+                    <span>View on OpenStreetMap</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+              </div>
+            </div>
+
+            {/* Thumbnail Selector */}
+            {galleryImages.length > 1 && (
+              <div className="flex items-center justify-center gap-2 pt-1 overflow-x-auto max-w-full px-4">
+                {galleryImages.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setModalImageIndex(i)}
+                    className={`relative w-14 h-14 rounded-lg overflow-hidden border-2 transition shrink-0 ${
+                      i === modalImageIndex ? 'border-amber-400 ring-2 ring-amber-400/40 scale-105' : 'border-stone-700 opacity-60 hover:opacity-100'
+                    }`}
+                  >
+                    <img src={img.url} alt={img.title} className="w-full h-full object-cover" />
+                    {img.type === 'plaque' && (
+                      <span className="absolute bottom-0 inset-x-0 bg-amber-900/90 text-[8px] text-amber-200 text-center font-bold">
+                        Plaque
+                      </span>
+                    )}
+                  </button>
+                ))}
+              </div>
             )}
           </div>
         </div>

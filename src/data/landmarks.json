@@ -16,6 +16,54 @@
     "isNationalHistoricLandmark": true,
     "nationalHistoricLandmarkDate": "May 5, 1977",
     "nationalHistoricLandmarkYear": 1977,
+    "plaques": [
+      {
+        "id": "osm-node-14115875818",
+        "osmId": 14115875818,
+        "osmType": "node",
+        "name": "Mission Inn City Landmark",
+        "lat": 33.9830079,
+        "lon": -117.3728264,
+        "subjectWikidata": "Q1920529",
+        "commonsImage": "File:Mission Inn City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mission_Inn_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Mission_Inn_City_Landmark_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875818"
+      },
+      {
+        "id": "osm-node-14115875819",
+        "osmId": 14115875819,
+        "osmType": "node",
+        "name": "Mission Inn National Historic Landmark",
+        "lat": 33.9830146,
+        "lon": -117.3728226,
+        "subjectWikidata": "Q1920529",
+        "commonsImage": "File:Mission Inn National Historic Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mission_Inn_National_Historic_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Mission_Inn_National_Historic_Landmark_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875819"
+      },
+      {
+        "id": "osm-node-14115875820",
+        "osmId": 14115875820,
+        "osmType": "node",
+        "name": "Mission Inn California Landmark",
+        "lat": 33.9830012,
+        "lon": -117.3728303,
+        "subjectWikidata": "Q1920529",
+        "commonsImage": "File:Mission Inn California Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mission_Inn_California_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Mission_Inn_California_Landmark_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875820"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Arthur Burnett Benton",
       "G. Stanley Wilson",
@@ -78,6 +126,39 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14058957774",
+        "osmId": 14058957774,
+        "osmType": "node",
+        "name": "Riverside County Courthouse City Landmark",
+        "lat": 33.9793605,
+        "lon": -117.3757197,
+        "subjectWikidata": "Q135923668",
+        "commonsImage": "File:Riverside County Courthouse Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_County_Courthouse_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_County_Courthouse_Landmark_Plaque.jpg?width=400",
+        "direction": "295",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14058957774"
+      },
+      {
+        "id": "osm-node-14059023382",
+        "osmId": 14059023382,
+        "osmType": "node",
+        "name": "Riverside County Courthouse County Landmark",
+        "lat": 33.9792885,
+        "lon": -117.3757636,
+        "subjectWikidata": "Q135923668",
+        "commonsImage": "File:Riverside County Courthouse County Historical Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_County_Courthouse_County_Historical_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_County_Courthouse_County_Historical_Plaque.jpg?width=400",
+        "direction": "300",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14059023382"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Franklin Pierce Burnham"
     ],
@@ -139,6 +220,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Adam C. Willard"
     ],
@@ -204,6 +287,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "A. W. Boggs"
     ],
@@ -265,6 +350,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "John A. Walls"
     ],
@@ -319,6 +406,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Myron Hunt"
     ],
@@ -377,6 +466,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14075565818",
+        "osmId": 14075565818,
+        "osmType": "node",
+        "name": "First Church of Christ, Scientist City Landmark",
+        "lat": 33.9826779,
+        "lon": -117.3707636,
+        "subjectWikidata": "Q5452705",
+        "commonsImage": "File:First Church of Christ, Scientist City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Church_of_Christ%2C_Scientist_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Church_of_Christ%2C_Scientist_City_Landmark_Plaque.jpg?width=400",
+        "direction": "295",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14075565818"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Arthur Benton"
     ],
@@ -443,6 +550,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14084121131",
+        "osmId": 14084121131,
+        "osmType": "node",
+        "name": "Victoria Avenue City Landmark",
+        "lat": 33.9571291,
+        "lon": -117.3704239,
+        "subjectWikidata": "Q7926571",
+        "commonsImage": "File:Victoria Avenue City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria_Avenue_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria_Avenue_City_Landmark_Plaque.jpg?width=400",
+        "direction": "0",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14084121131"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -490,6 +615,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -544,6 +671,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -591,6 +720,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "James Knox Taylor"
     ],
@@ -652,6 +783,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -705,6 +838,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -759,6 +894,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -814,6 +951,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -864,6 +1003,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Wilcox and Rose"
     ],
@@ -925,6 +1066,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Arthur Benton"
     ],
@@ -994,6 +1137,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14069651999",
+        "osmId": 14069651999,
+        "osmType": "node",
+        "name": "Riverside Art Center and Museum Landmark",
+        "lat": 33.9816809,
+        "lon": -117.3705569,
+        "subjectWikidata": "Q7338423",
+        "commonsImage": "File:Riverside Art Center and Museum City Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_Art_Center_and_Museum_City_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_Art_Center_and_Museum_City_Plaque.jpg?width=400",
+        "direction": "200",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14069651999"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Julia Morgan"
     ],
@@ -1058,6 +1219,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1106,6 +1269,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14047426646",
+        "osmId": 14047426646,
+        "osmType": "node",
+        "name": "Fred Stebler House",
+        "lat": 33.9885746,
+        "lon": -117.3833467,
+        "subjectWikidata": "Q140610785",
+        "commonsImage": "File:Fred Stebler House.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fred_Stebler_House.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Fred_Stebler_House.jpg?width=400",
+        "direction": "30",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14047426646"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "H. L. Evans"
     ],
@@ -1166,6 +1347,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14088714905",
+        "osmId": 14088714905,
+        "osmType": "node",
+        "name": "Loring Building City Landmark Plaque",
+        "lat": 33.9831407,
+        "lon": -117.373856,
+        "subjectWikidata": "Q140610865",
+        "commonsImage": "File:Loring Building City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Loring_Building_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Loring_Building_City_Landmark_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14088714905"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1211,6 +1410,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1264,6 +1465,39 @@
     "isNationalHistoricLandmark": true,
     "nationalHistoricLandmarkDate": "December 14, 1990",
     "nationalHistoricLandmarkYear": 1990,
+    "plaques": [
+      {
+        "id": "osm-node-14070869775",
+        "osmId": 14070869775,
+        "osmType": "node",
+        "name": "Harada House National Historic Landmark",
+        "lat": 33.9851524,
+        "lon": -117.369135,
+        "subjectWikidata": "Q5653555",
+        "commonsImage": "File:Harada House Plaque 20091024b.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harada_House_Plaque_20091024b.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Harada_House_Plaque_20091024b.jpg?width=400",
+        "direction": "295",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14070869775"
+      },
+      {
+        "id": "osm-node-14135985850",
+        "osmId": 14135985850,
+        "osmType": "node",
+        "name": "Harada House City Landmark",
+        "lat": 33.9851291,
+        "lon": -117.3691519,
+        "subjectWikidata": "Q5653555",
+        "commonsImage": "File:Harada House Plaque 20091024a.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harada_House_Plaque_20091024a.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Harada_House_Plaque_20091024a.jpg?width=400",
+        "direction": "300",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14135985850"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1317,6 +1551,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1362,6 +1598,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1415,6 +1653,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1464,6 +1704,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14092776703",
+        "osmId": 14092776703,
+        "osmType": "node",
+        "name": "North Park City Landmark",
+        "lat": 33.979669,
+        "lon": -117.3679572,
+        "subjectWikidata": "Q49532671",
+        "commonsImage": "File:John W. North Park Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John_W._North_Park_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/John_W._North_Park_Plaque.jpg?width=400",
+        "direction": "210",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14092776703"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1523,6 +1781,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14088714906",
+        "osmId": 14088714906,
+        "osmType": "node",
+        "name": "Old City Hall City Landmark Plaque",
+        "lat": 33.982282,
+        "lon": -117.3727999,
+        "subjectWikidata": "Q139083261",
+        "commonsImage": "File:Old Riverside City Hall City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_Riverside_City_Hall_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_Riverside_City_Hall_City_Landmark_Plaque.jpg?width=400",
+        "direction": "115",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14088714906"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -1577,6 +1853,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -1633,6 +1911,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "John C. Pelton Jr."
     ],
@@ -1694,6 +1974,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1747,6 +2029,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14062755498",
+        "osmId": 14062755498,
+        "osmType": "node",
+        "name": "Arcade Building Landmark",
+        "lat": 33.9812873,
+        "lon": -117.3734794,
+        "subjectWikidata": "Q140640812",
+        "commonsImage": "File:Arcade Building Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Arcade_Building_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Arcade_Building_Plaque.jpg?width=400",
+        "direction": "35",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14062755498"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Walker & Eisen"
     ],
@@ -1803,6 +2103,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14062755497",
+        "osmId": 14062755497,
+        "osmType": "node",
+        "name": "Bonnett Building Landmark",
+        "lat": 33.9810724,
+        "lon": -117.3733363,
+        "subjectWikidata": "Q140640830",
+        "commonsImage": "File:Bonnett Building Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonnett_Building_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonnett_Building_Plaque.jpg?width=400",
+        "direction": "290",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14062755497"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -1857,6 +2175,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14047426645",
+        "osmId": 14047426645,
+        "osmType": "node",
+        "name": "Estudillo House",
+        "lat": 33.9886077,
+        "lon": -117.3829632,
+        "subjectWikidata": "Q140640954",
+        "commonsImage": "File:Estudillo House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Estudillo_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Estudillo_House_Plaque.jpg?width=400",
+        "direction": "115",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14047426645"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Seely Pillar"
     ],
@@ -1916,6 +2252,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Seehorn & Preston"
     ],
@@ -1976,6 +2314,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -2033,6 +2373,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -2089,6 +2431,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
@@ -2138,6 +2482,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14088714904",
+        "osmId": 14088714904,
+        "osmType": "node",
+        "name": "Fox Theater City Landmark Plaque",
+        "lat": 33.9836869,
+        "lon": -117.375067,
+        "subjectWikidata": "Q7338490",
+        "commonsImage": "File:Fox Theater City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater_City_Landmark_Plaque.jpg?width=400",
+        "direction": "165",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14088714904"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Clifford Balch"
     ],
@@ -2200,6 +2562,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2245,6 +2609,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Arthur Benton"
     ],
@@ -2305,6 +2671,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -2360,6 +2728,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "italian_renaissance",
@@ -2410,6 +2780,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2457,6 +2829,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14115875825",
+        "osmId": 14115875825,
+        "osmType": "node",
+        "name": "Collins-Seaton House City Landmark",
+        "lat": 33.9771299,
+        "lon": -117.3606023,
+        "subjectWikidata": "Q140680297",
+        "commonsImage": "File:Collins-Seaton House Exterior.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Collins-Seaton_House_Exterior.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Collins-Seaton_House_Exterior.jpg?width=400",
+        "direction": "5",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875825"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2510,6 +2900,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Seeley L. Pillar"
     ],
@@ -2561,6 +2953,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -2618,6 +3012,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14063052242",
+        "osmId": 14063052242,
+        "osmType": "node",
+        "name": "RCC Quad Landmark",
+        "lat": 33.9709678,
+        "lon": -117.3826887,
+        "subjectWikidata": "Q140680312",
+        "commonsImage": "File:Riverside City College Quadrangle Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_City_College_Quadrangle_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_City_College_Quadrangle_Plaque.jpg?width=400",
+        "direction": "300",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14063052242"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -2666,6 +3078,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2719,6 +3133,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14092776704",
+        "osmId": 14092776704,
+        "osmType": "node",
+        "name": "Former Rouse's Department Store City Landmark",
+        "lat": 33.9813031,
+        "lon": -117.3747127,
+        "subjectWikidata": "Q140680714",
+        "commonsImage": "File:UCR Photography and Rouse's Department Store Plaques.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/UCR_Photography_and_Rouse's_Department_Store_Plaques.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/UCR_Photography_and_Rouse's_Department_Store_Plaques.jpg?width=400",
+        "direction": "25",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14092776704"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2781,6 +3213,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14115875824",
+        "osmId": 14115875824,
+        "osmType": "node",
+        "name": "Ward House City Landmark Plaque",
+        "lat": 33.9789283,
+        "lon": -117.3648134,
+        "subjectWikidata": "Q140680754",
+        "commonsImage": "File:Ward House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ward_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Ward_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "210",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875824"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2834,6 +3284,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14074135445",
+        "osmId": 14074135445,
+        "osmType": "node",
+        "name": "Weber House City Landmark",
+        "lat": 33.9752147,
+        "lon": -117.3444881,
+        "subjectWikidata": "Q121590627",
+        "commonsImage": "File:Weber House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Weber_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Weber_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "45",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14074135445"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Peter J. Weber"
     ],
@@ -2899,6 +3367,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -2953,6 +3423,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14084121133",
+        "osmId": 14084121133,
+        "osmType": "node",
+        "name": "Victoria Bridge City Landmark",
+        "lat": 33.9612409,
+        "lon": -117.370261,
+        "subjectWikidata": "Q136870322",
+        "commonsImage": "File:Landmark 54.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Landmark_54.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Landmark_54.jpg?width=400",
+        "direction": "270",
+        "material": null,
+        "osmUrl": "https://www.openstreetmap.org/node/14084121133"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Robert V. Leeson"
     ],
@@ -3012,6 +3500,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3066,6 +3556,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Peter J. Weber"
     ],
@@ -3121,6 +3613,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14075565819",
+        "osmId": 14075565819,
+        "osmType": "node",
+        "name": "White Park City Landmark",
+        "lat": 33.9816063,
+        "lon": -117.3765372,
+        "subjectWikidata": "Q49579974",
+        "commonsImage": "File:White Park City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Park_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Park_City_Landmark_Plaque.jpg?width=400",
+        "direction": "115",
+        "material": null,
+        "osmUrl": "https://www.openstreetmap.org/node/14075565819"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3181,6 +3691,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "tudor_revival"
@@ -3235,6 +3747,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3287,6 +3801,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14084121128",
+        "osmId": 14084121128,
+        "osmType": "node",
+        "name": "Chicago White Sox Redwood Tree",
+        "lat": 33.9468154,
+        "lon": -117.4009229,
+        "subjectWikidata": "Q140613826",
+        "commonsImage": "File:Chicago White Sox Redwood Tree Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicago_White_Sox_Redwood_Tree_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicago_White_Sox_Redwood_Tree_Plaque.jpg?width=400",
+        "direction": "180",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14084121128"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3337,6 +3869,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3388,6 +3922,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3433,6 +3969,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3480,6 +4018,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14084121132",
+        "osmId": 14084121132,
+        "osmType": "node",
+        "name": "Roosevelt Palm",
+        "lat": 33.957273,
+        "lon": -117.3703682,
+        "subjectWikidata": "Q140723663",
+        "commonsImage": "File:Roosevelt Palm Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Roosevelt_Palm_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Roosevelt_Palm_Plaque.jpg?width=400",
+        "direction": "240",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14084121132"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3530,6 +4086,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3581,6 +4139,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3626,6 +4186,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3680,6 +4242,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -3738,6 +4302,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3802,6 +4368,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14055415293",
+        "osmId": 14055415293,
+        "osmType": "node",
+        "name": "Harwood Hall",
+        "lat": 33.9868054,
+        "lon": -117.385379,
+        "subjectWikidata": "Q140724534",
+        "commonsImage": "File:Harwood Hall House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harwood_Hall_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Harwood_Hall_House_Plaque.jpg?width=400",
+        "direction": "35",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14055415293"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -3859,6 +4443,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3916,6 +4502,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3969,6 +4557,39 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14062242518",
+        "osmId": 14062242518,
+        "osmType": "node",
+        "name": "Newman Park and De Anza Statue Landmark",
+        "lat": 33.9763104,
+        "lon": -117.3796178,
+        "subjectWikidata": "Q49531392",
+        "commonsImage": "File:Newman Park and De Anza Statue Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Newman_Park_and_De_Anza_Statue_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Newman_Park_and_De_Anza_Statue_Landmark_Plaque.jpg?width=400",
+        "direction": "290",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14062242518"
+      },
+      {
+        "id": "osm-node-14062242519",
+        "osmId": 14062242519,
+        "osmType": "node",
+        "name": "Newman Park",
+        "lat": 33.9761678,
+        "lon": -117.3797834,
+        "subjectWikidata": "Q49531392",
+        "commonsImage": "File:Newman Park Donation Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Newman_Park_Donation_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Newman_Park_Donation_Plaque.jpg?width=400",
+        "direction": "245",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14062242519"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4026,6 +4647,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4075,6 +4698,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4131,6 +4756,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4184,6 +4811,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -4244,6 +4873,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14055415292",
+        "osmId": 14055415292,
+        "osmType": "node",
+        "name": "Jarvis House",
+        "lat": 33.9824044,
+        "lon": -117.3866066,
+        "subjectWikidata": "Q140731714",
+        "commonsImage": "File:Jarvis House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jarvis_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Jarvis_House_Plaque.jpg?width=400",
+        "direction": "30",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14055415292"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -4300,6 +4947,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14067341209",
+        "osmId": 14067341209,
+        "osmType": "node",
+        "name": "William Collier House Landmark",
+        "lat": 33.9870338,
+        "lon": -117.3659791,
+        "subjectWikidata": "Q140743068",
+        "commonsImage": "File:William Collier House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/William_Collier_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/William_Collier_House_Plaque.jpg?width=400",
+        "direction": "295",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14067341209"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -4357,6 +5022,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14059023383",
+        "osmId": 14059023383,
+        "osmType": "node",
+        "name": "M.H. Simon's Undertaking Chapel Landmark",
+        "lat": 33.9783914,
+        "lon": -117.3755021,
+        "subjectWikidata": "Q133440785",
+        "commonsImage": "File:Former M. H. Simons Undertaking Chapel Historic Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Former_M._H._Simons_Undertaking_Chapel_Historic_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Former_M._H._Simons_Undertaking_Chapel_Historic_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14059023383"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -4421,6 +5104,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4476,6 +5161,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4529,6 +5216,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14115875823",
+        "osmId": 14115875823,
+        "osmType": "node",
+        "name": "First Christian Church Parsonage City Landmark",
+        "lat": 33.9786897,
+        "lon": -117.3643248,
+        "subjectWikidata": "Q139254877",
+        "commonsImage": "File:First Christian Church Parsonage City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Christian_Church_Parsonage_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Christian_Church_Parsonage_City_Landmark_Plaque.jpg?width=400",
+        "direction": "205",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875823"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4581,6 +5286,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -4635,6 +5342,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14073601778",
+        "osmId": 14073601778,
+        "osmType": "node",
+        "name": "Casa De Anza Motel City Landmark",
+        "lat": 33.9862331,
+        "lon": -117.3734268,
+        "subjectWikidata": "Q140766084",
+        "commonsImage": "File:Casa De Anza Motel City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Casa_De_Anza_Motel_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Casa_De_Anza_Motel_City_Landmark_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14073601778"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -4691,6 +5416,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4746,6 +5473,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -4800,6 +5529,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry A. Westbrook"
     ],
@@ -4857,6 +5588,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Adam C. Willard",
       "James M. Wood"
@@ -4918,6 +5651,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14062755499",
+        "osmId": 14062755499,
+        "osmType": "node",
+        "name": "Roosevelt Building Landmark",
+        "lat": 33.9814511,
+        "lon": -117.3738171,
+        "subjectWikidata": "Q140187530",
+        "commonsImage": "File:Roosevelt Building Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Roosevelt_Building_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Roosevelt_Building_Plaque.jpg?width=400",
+        "direction": "30",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14062755499"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Franklin Pierce Burnham",
       "William J. Bliesner Jr."
@@ -4973,6 +5724,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -5028,6 +5781,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14063059874",
+        "osmId": 14063059874,
+        "osmType": "node",
+        "name": "J.R. Willis Building Landmark",
+        "lat": 33.9773276,
+        "lon": -117.3789674,
+        "subjectWikidata": "Q140777120",
+        "commonsImage": "File:J.R. Willis Building Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/J.R._Willis_Building_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/J.R._Willis_Building_Plaque.jpg?width=400",
+        "direction": "35",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14063059874"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
@@ -5085,6 +5856,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14067341210",
+        "osmId": 14067341210,
+        "osmType": "node",
+        "name": "John J. Hewitt House Landmark",
+        "lat": 33.9885206,
+        "lon": -117.3681866,
+        "subjectWikidata": "Q140790521",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "295",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14067341210"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -5142,6 +5931,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5195,6 +5986,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14115875822",
+        "osmId": 14115875822,
+        "osmType": "node",
+        "name": "First United Brethren in Christ City Landmark",
+        "lat": 33.979651,
+        "lon": -117.3634869,
+        "subjectWikidata": "Q140879120",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "210",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14115875822"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "gothic_revival"
@@ -5243,6 +6052,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5288,6 +6099,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5334,6 +6147,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14073601777",
+        "osmId": 14073601777,
+        "osmType": "node",
+        "name": "White Park Building City Landmark",
+        "lat": 33.9812849,
+        "lon": -117.3763472,
+        "subjectWikidata": "Q140650834",
+        "commonsImage": "File:White Park Building City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Park_Building_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Park_Building_City_Landmark_Plaque.jpg?width=400",
+        "direction": "300",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14073601777"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5380,6 +6211,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14055415294",
+        "osmId": 14055415294,
+        "osmType": "node",
+        "name": "Benjamin Rockhold House",
+        "lat": 33.9920326,
+        "lon": -117.3817702,
+        "subjectWikidata": "Q139257161",
+        "commonsImage": "File:Benjamin Rockhold House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Rockhold_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Rockhold_House_Plaque.jpg?width=400",
+        "direction": "25",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14055415294"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "craftsman",
@@ -5438,6 +6287,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14092776705",
+        "osmId": 14092776705,
+        "osmType": "node",
+        "name": "Santa Fe Depot City Landmark",
+        "lat": 33.9793263,
+        "lon": -117.3675141,
+        "subjectWikidata": "Q140588309",
+        "commonsImage": "File:Santa Fe Depot Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Fe_Depot_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Fe_Depot_Plaque.jpg?width=400",
+        "direction": "295",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14092776705"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "pueblo_revival"
@@ -5494,6 +6361,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14075565816",
+        "osmId": 14075565816,
+        "osmType": "node",
+        "name": "Elmer A. Day House City Landmark",
+        "lat": 33.9868326,
+        "lon": -117.3741636,
+        "subjectWikidata": "Q140882261",
+        "commonsImage": "File:Elmer A. Day House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Elmer_A._Day_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Elmer_A._Day_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "30",
+        "material": null,
+        "osmUrl": "https://www.openstreetmap.org/node/14075565816"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -5551,6 +6436,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5594,6 +6481,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5648,6 +6537,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14075565815",
+        "osmId": 14075565815,
+        "osmType": "node",
+        "name": "Raymond Cree-Criddle House City Landmark",
+        "lat": 33.9908811,
+        "lon": -117.3825712,
+        "subjectWikidata": "Q140892425",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "75",
+        "material": null,
+        "osmUrl": "https://www.openstreetmap.org/node/14075565815"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5705,6 +6612,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14057088771",
+        "osmId": 14057088771,
+        "osmType": "node",
+        "name": "Emerson and Mary Holt House Plaque",
+        "lat": 33.967291,
+        "lon": -117.3808636,
+        "subjectWikidata": "Q140745351",
+        "commonsImage": "File:Emerson and Mary Holt House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Emerson_and_Mary_Holt_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Emerson_and_Mary_Holt_House_Plaque.jpg?width=400",
+        "direction": "30",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14057088771"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -5761,6 +6686,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -5817,6 +6744,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "tudor_revival"
@@ -5874,6 +6803,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -5932,6 +6863,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5979,6 +6912,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -6035,6 +6970,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14093436222",
+        "osmId": 14093436222,
+        "osmType": "node",
+        "name": "Lillian M. Spurgeon Residence City Landmark",
+        "lat": 33.9894398,
+        "lon": -117.3859336,
+        "subjectWikidata": "Q140928251",
+        "commonsImage": "File:Lillian M. Spurgeon Residence City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillian_M._Spurgeon_Residence_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillian_M._Spurgeon_Residence_City_Landmark_Plaque.jpg?width=400",
+        "direction": "85",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14093436222"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -6092,6 +7045,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14084769150",
+        "osmId": 14084769150,
+        "osmType": "node",
+        "name": "Harry W. Hammond Residence City Landmark",
+        "lat": 33.9871817,
+        "lon": -117.3832844,
+        "subjectWikidata": "Q140928358",
+        "commonsImage": "File:Hammond House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammond_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammond_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "30",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14084769150"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -6149,6 +7120,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14124010546",
+        "osmId": 14124010546,
+        "osmType": "node",
+        "name": "John Swanson Residence City Landmark Plaque",
+        "lat": 33.94974,
+        "lon": -117.4044064,
+        "subjectWikidata": "Q140894301",
+        "commonsImage": "File:John Swanson Residence City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Swanson_Residence_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Swanson_Residence_City_Landmark_Plaque.jpg?width=400",
+        "direction": "0",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14124010546"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -6204,6 +7193,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14062755500",
+        "osmId": 14062755500,
+        "osmType": "node",
+        "name": "Jackson Building Landmark",
+        "lat": 33.9817386,
+        "lon": -117.3737822,
+        "subjectWikidata": "Q140187508",
+        "commonsImage": "File:Jackson Building Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackson_Building_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackson_Building_Plaque.jpg?width=400",
+        "direction": "210",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14062755500"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6251,6 +7258,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Robert H. Spurgeon, Jr."
     ],
@@ -6311,6 +7320,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14057088772",
+        "osmId": 14057088772,
+        "osmType": "node",
+        "name": "Ernest and Louise Clarke House Plaque",
+        "lat": 33.966314,
+        "lon": -117.3813959,
+        "subjectWikidata": "Q140745785",
+        "commonsImage": "File:Ernest and Louise Clarke House Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ernest_and_Louise_Clarke_House_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Ernest_and_Louise_Clarke_House_Plaque.jpg?width=400",
+        "direction": "125",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14057088772"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -6366,6 +7393,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14093436223",
+        "osmId": 14093436223,
+        "osmType": "node",
+        "name": "C. O. Evans Residence City Landmark",
+        "lat": 33.9917099,
+        "lon": -117.3832863,
+        "subjectWikidata": "Q140927703",
+        "commonsImage": "File:C. O. Evans Residence City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/C._O._Evans_Residence_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/C._O._Evans_Residence_City_Landmark_Plaque.jpg?width=400",
+        "direction": "255",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14093436223"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -6426,6 +7471,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6472,6 +7519,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -6532,6 +7581,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -6597,6 +7648,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "monterey_colonial"
@@ -6655,6 +7708,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Martin Williamson",
       "Don O'Neill"
@@ -6716,6 +7771,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "prairie_school"
@@ -6768,6 +7825,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Herman O. Ruhnau"
     ],
@@ -6814,6 +7873,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Clinton Marr"
     ],
@@ -6870,6 +7931,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Philip Esbensen"
     ],
@@ -6928,6 +7991,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Lois Gottlieb"
     ],
@@ -6990,6 +8055,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7043,6 +8110,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -7101,6 +8170,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7146,6 +8217,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Walter C. See"
     ],
@@ -7205,6 +8278,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Welmer P. Lamar"
     ],
@@ -7264,6 +8339,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7313,6 +8390,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "midcentury_modern"
@@ -7369,6 +8448,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7424,6 +8505,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -7480,6 +8563,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Lester S. Moore"
     ],
@@ -7543,6 +8628,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7592,6 +8679,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7643,6 +8732,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7687,6 +8778,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -7739,6 +8832,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7788,6 +8883,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14084769149",
+        "osmId": 14084769149,
+        "osmType": "node",
+        "name": "David S. Bell City Landmark Plaque",
+        "lat": 33.9937043,
+        "lon": -117.3778089,
+        "subjectWikidata": "Q140963340",
+        "commonsImage": "File:David and Miriam Bell House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David_and_Miriam_Bell_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/David_and_Miriam_Bell_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "45",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14084769149"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7847,6 +8960,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Clinton Marr"
     ],
@@ -7906,6 +9021,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Knowlton Fernald Jr."
     ],
@@ -7964,6 +9081,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -8021,6 +9140,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -8076,6 +9197,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "streamline_moderne"
@@ -8132,6 +9255,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [
@@ -8186,6 +9311,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -8236,6 +9363,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -8288,6 +9417,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [
+      {
+        "id": "osm-node-14049687378",
+        "osmId": 14049687378,
+        "osmType": "node",
+        "name": "Riverside City Hall Heritage",
+        "lat": 33.9805735,
+        "lon": -117.3753809,
+        "subjectWikidata": "Q139083291",
+        "commonsImage": "File:Riverside City Hall Heritage Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_City_Hall_Heritage_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_City_Hall_Heritage_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14049687378"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Herman O. Ruhnau"
     ],
@@ -8353,6 +9500,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
       "mission_revival",
@@ -8411,6 +9560,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -8464,6 +9615,8 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
+    "plaques": [],
+    "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],

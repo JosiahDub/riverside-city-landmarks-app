@@ -32,8 +32,26 @@ export interface Landmark {
   isNationalHistoricLandmark?: boolean;
   nationalHistoricLandmarkDate?: string | null;
   nationalHistoricLandmarkYear?: number | null;
+  plaques?: Plaque[];
+  hasPlaque?: boolean;
   allTags: Record<string, string>;
   distanceMiles?: number;
+}
+
+export interface Plaque {
+  id: string;
+  osmId: number;
+  osmType: 'node' | 'way' | 'relation';
+  name?: string;
+  lat: number;
+  lon: number;
+  subjectWikidata: string;
+  commonsImage?: string | null;
+  imageUrl?: string | null;
+  thumbnail?: string | null;
+  direction?: string | null;
+  material?: string | null;
+  osmUrl: string;
 }
 
 export interface FilterState {

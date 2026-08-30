@@ -174,6 +174,11 @@ export const Map: React.FC<MapProps> = ({
             <span>⭐ National Historic Landmark${landmark.nationalHistoricLandmarkDate ? ` (${landmark.nationalHistoricLandmarkDate})` : ''}</span>
           </div>
         ` : ''}
+        ${landmark.hasPlaque ? `
+          <div class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-900 border border-emerald-200 text-[10px] font-semibold px-2 py-0.5 rounded-full mb-1">
+            <span>📜 Historical Plaque On Site</span>
+          </div>
+        ` : ''}
         ${landmark.designationDate ? `
           <p class="text-[11px] text-purple-800 mb-1.5 font-medium">🏛️ Designated ${landmark.designationDate}</p>
         ` : ''}
