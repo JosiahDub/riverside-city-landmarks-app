@@ -11,10 +11,13 @@
     "description": "hotel in Riverside, California",
     "startDate": "1876",
     "year": 1876,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Arthur Burnett Benton",
       "G. Stanley Wilson",
-      "Peter J. Weber"
+      "Peter J. Weber",
+      "Myron Hunt"
     ],
     "architectureStyles": [
       "mission_revival",
@@ -67,6 +70,8 @@
     "description": "",
     "startDate": "1903",
     "year": 1903,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Franklin Pierce Burnham"
     ],
@@ -123,6 +128,8 @@
     "description": "church building in Riverside, California, USA",
     "startDate": "1891",
     "year": 1891,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Adam C. Willard"
     ],
@@ -183,6 +190,8 @@
     "description": "presbyterian church in Riverside, California",
     "startDate": "1881",
     "year": 1881,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "A. W. Boggs"
     ],
@@ -239,6 +248,8 @@
     "description": "museum in Riverside, California, United States",
     "startDate": "1891",
     "year": 1891,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "John A. Walls"
     ],
@@ -288,6 +299,8 @@
     "description": "church building in Riverside, California, United States of America",
     "startDate": "1913",
     "year": 1913,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Myron Hunt"
     ],
@@ -341,6 +354,8 @@
     "description": "church building in Riverside, California, United States",
     "startDate": "1900-10-24",
     "year": 1900,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Arthur Benton"
     ],
@@ -402,6 +417,8 @@
     "description": "street in Riverside, California, United States of America",
     "startDate": "1892",
     "year": 1892,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -444,6 +461,8 @@
     "description": "former railway station in Riverside, California",
     "startDate": "1904",
     "year": 1904,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -493,6 +512,8 @@
     "description": "bandstand in Fairmount Park, Riverside, California",
     "startDate": "1920",
     "year": 1920,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -535,6 +556,8 @@
     "description": "California regional history and culture, Indigenous culture, and natural history",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "James Knox Taylor"
     ],
@@ -591,6 +614,8 @@
     "description": "historical house in Riverside, California",
     "startDate": "1874",
     "year": 1874,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -639,6 +664,8 @@
     "description": "historical Mexican-Spanish style castle in Riverside, California",
     "startDate": "1921",
     "year": 1921,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -688,6 +715,8 @@
     "description": "park in Riverside County, California, United States of America",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -738,6 +767,8 @@
     "description": "One of the first navel orange trees planted in Riverside, California",
     "startDate": "1873",
     "year": 1873,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -783,6 +814,8 @@
     "description": "historic building on the campus of Sherman Indian High School, Riverside, California, USA",
     "startDate": "1901",
     "year": 1901,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Wilcox and Rose"
     ],
@@ -839,6 +872,8 @@
     "description": "event venue in Riverside, California, U.S",
     "startDate": "1928-11-28",
     "year": 1928,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Arthur Benton"
     ],
@@ -903,6 +938,8 @@
     "description": "art museum in Riverside, California",
     "startDate": "1967",
     "year": 1967,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Julia Morgan"
     ],
@@ -962,6 +999,8 @@
     "description": "former Chinatown neighborhood in Riverside, California",
     "startDate": "1885",
     "year": 1885,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1005,6 +1044,8 @@
     "description": "historical house in Riverside, California",
     "startDate": "1911",
     "year": 1911,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "H. L. Evans"
     ],
@@ -1060,6 +1101,8 @@
     "description": "historical building in Riverside, California",
     "startDate": "1890",
     "year": 1890,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1100,6 +1143,8 @@
     "description": "historical church in Riverside, California",
     "startDate": "1904-03-03",
     "year": 1904,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1148,6 +1193,8 @@
     "description": "historic house in California, United States",
     "startDate": "1880",
     "year": 1880,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1196,6 +1243,8 @@
     "description": "canal in Riverside County, California, United States of America",
     "startDate": "1888",
     "year": 1888,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1236,6 +1285,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1891",
     "year": 1891,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1284,6 +1335,8 @@
     "description": "mountain in United States of America",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1328,6 +1381,8 @@
     "description": "park in Riverside County, California, United States of America",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1382,6 +1437,8 @@
     "description": "Former city hall of Riverside, California",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -1431,6 +1488,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1889",
     "year": 1889,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -1482,6 +1541,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1888",
     "year": 1888,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "John C. Pelton Jr."
     ],
@@ -1538,6 +1599,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1897",
     "year": 1897,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1586,6 +1649,8 @@
     "description": "historic building in Riverside, California",
     "startDate": "1928",
     "year": 1928,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Walker & Eisen"
     ],
@@ -1637,6 +1702,8 @@
     "description": "historic building in Riverside, California",
     "startDate": "1908",
     "year": 1908,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -1686,6 +1753,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1911",
     "year": 1911,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Seely Pillar"
     ],
@@ -1740,6 +1809,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1906",
     "year": 1906,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Seehorn & Preston"
     ],
@@ -1795,6 +1866,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1890",
     "year": 1890,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -1847,6 +1920,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1902",
     "year": 1902,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -1898,6 +1973,8 @@
     "description": "former elementary school in Riverside, California",
     "startDate": "1935",
     "year": 1935,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
@@ -1942,6 +2019,8 @@
     "description": "theater and movie theater in Riverside, California, United States",
     "startDate": "1929",
     "year": 1929,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Clifford Balch"
     ],
@@ -1999,6 +2078,8 @@
     "description": "historic street in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2039,6 +2120,8 @@
     "description": "building in Riverside, California",
     "startDate": "1909",
     "year": 1909,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Arthur Benton"
     ],
@@ -2094,6 +2177,8 @@
     "description": "historical house in Riverside, California",
     "startDate": "1902",
     "year": 1902,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -2144,6 +2229,8 @@
     "description": "historic building in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "italian_renaissance",
@@ -2189,6 +2276,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1915",
     "year": 1915,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2231,6 +2320,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1900",
     "year": 1900,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2279,6 +2370,8 @@
     "description": "public library in Riverside, California, USA",
     "startDate": "1909",
     "year": 1909,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Seeley L. Pillar"
     ],
@@ -2325,6 +2418,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1896",
     "year": 1896,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -2377,6 +2472,8 @@
     "description": "historic quadrangle in Riverside, California",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -2420,6 +2517,8 @@
     "description": "historic former school and current community center in Riverside, California",
     "startDate": "1928",
     "year": 1928,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2468,6 +2567,8 @@
     "description": "historic former department store building in Riverside, California",
     "startDate": "1895",
     "year": 1895,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2525,6 +2626,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1887",
     "year": 1887,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2573,6 +2676,8 @@
     "description": "landmark eclectic Depression-era home built 1934 - 1938",
     "startDate": "1934",
     "year": 1934,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Peter J. Weber"
     ],
@@ -2633,6 +2738,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1899",
     "year": 1899,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -2682,6 +2789,8 @@
     "description": "",
     "startDate": "1928",
     "year": 1928,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Robert V. Leeson"
     ],
@@ -2736,6 +2845,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1908",
     "year": 1908,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2785,6 +2896,8 @@
     "description": "historic school building in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Peter J. Weber"
     ],
@@ -2835,6 +2948,8 @@
     "description": "park in Riverside County, California, United States of America",
     "startDate": "1883",
     "year": 1883,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2890,6 +3005,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1920",
     "year": 1920,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "tudor_revival"
@@ -2939,6 +3056,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1892",
     "year": 1892,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -2986,6 +3105,8 @@
     "description": "redwood tree planted by the Chicago White Sox in Riverside, California",
     "startDate": "1914",
     "year": 1914,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3031,6 +3152,8 @@
     "description": "historic trees in Fairmount Park, Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3077,6 +3200,8 @@
     "description": "historic median and managed vegetation along Magnolia Avenue in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3117,6 +3242,8 @@
     "description": "historic grove of trees in Hunter Park, Riverside, California",
     "startDate": "1962",
     "year": 1962,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3159,6 +3286,8 @@
     "description": "historic palm tree planted by President Roosevelt in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3204,6 +3333,8 @@
     "description": "historic tree in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3250,6 +3381,8 @@
     "description": "historic tree in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3290,6 +3423,8 @@
     "description": "cemetery in Riverside, California",
     "startDate": "1872",
     "year": 1872,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3339,6 +3474,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1893",
     "year": 1893,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -3392,6 +3529,8 @@
     "description": "park in Riverside, California, United States of America",
     "startDate": "1911",
     "year": 1911,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3451,6 +3590,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1909",
     "year": 1909,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -3503,6 +3644,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1887",
     "year": 1887,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3555,6 +3698,8 @@
     "description": "The four-bedroom McIntyre House was built in 1892 in the “Free Classic Victorian” style for William J. McIntyre, a former Civil War captain and lawyer who came from Washington, D.C., and served for a time as city attorney.",
     "startDate": "1892",
     "year": 1892,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3603,6 +3748,8 @@
     "description": "park in Riverside County, California, United States of America",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3655,6 +3802,8 @@
     "description": "historic bridge over Buena Vista Avenue, Riverside, California",
     "startDate": "1931",
     "year": 1931,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3699,6 +3848,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1929",
     "year": 1929,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -3750,6 +3901,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1926",
     "year": 1926,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -3798,6 +3951,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1926",
     "year": 1926,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -3853,6 +4008,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1888",
     "year": 1888,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -3904,6 +4061,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1895",
     "year": 1895,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -3956,6 +4115,8 @@
     "description": "historic building in Riverside, California, United States",
     "startDate": "1925",
     "year": 1925,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -4015,6 +4176,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1910",
     "year": 1910,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4065,6 +4228,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1892",
     "year": 1892,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4113,6 +4278,8 @@
     "description": "former parsonage in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4160,6 +4327,8 @@
     "description": "historic commercial building and former hotel",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -4209,6 +4378,8 @@
     "description": "historic motel in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -4260,6 +4431,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1901",
     "year": 1901,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -4310,6 +4483,8 @@
     "description": "historic building complex in Riverside, California",
     "startDate": "1925",
     "year": 1925,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -4359,6 +4534,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1888",
     "year": 1888,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry A. Westbrook"
     ],
@@ -4411,6 +4588,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1891",
     "year": 1891,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Adam C. Willard",
       "James M. Wood"
@@ -4467,6 +4646,8 @@
     "description": "historical building in Riverside, California",
     "startDate": "1904",
     "year": 1904,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Franklin Pierce Burnham",
       "William J. Bliesner Jr."
@@ -4517,6 +4698,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1913",
     "year": 1913,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival"
@@ -4567,6 +4750,8 @@
     "description": "historic building in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
@@ -4619,6 +4804,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1885",
     "year": 1885,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -4671,6 +4858,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1950",
     "year": 1950,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4719,6 +4908,8 @@
     "description": "historic church in Riverside, California",
     "startDate": "1887",
     "year": 1887,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "gothic_revival"
@@ -4762,6 +4953,8 @@
     "description": "historic school buildings in Riverside, California",
     "startDate": "1917",
     "year": 1917,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4802,6 +4995,8 @@
     "description": "former historic home in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4843,6 +5038,8 @@
     "description": "historic building in Riverside, California",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4884,6 +5081,8 @@
     "description": "historical house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -4931,6 +5130,8 @@
     "description": "former railroad station in Riverside, California",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "pueblo_revival"
@@ -4982,6 +5183,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1895",
     "year": 1895,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "victorian"
@@ -5034,6 +5237,8 @@
     "description": "historic industrial buildings in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5072,6 +5277,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1907",
     "year": 1907,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5121,6 +5328,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1913",
     "year": 1913,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5173,6 +5382,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -5224,6 +5435,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1899",
     "year": 1899,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -5275,6 +5488,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1923",
     "year": 1923,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "tudor_revival"
@@ -5327,6 +5542,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1888",
     "year": 1888,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -5380,6 +5597,8 @@
     "description": "historic irrigation canal in Riverside, California",
     "startDate": "1871",
     "year": 1871,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5422,6 +5641,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -5473,6 +5694,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -5525,6 +5748,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1908",
     "year": 1908,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5577,6 +5802,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1900",
     "year": 1900,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -5627,6 +5854,8 @@
     "description": "historical building in Riverside, California",
     "startDate": "1886",
     "year": 1886,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5669,6 +5898,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1920",
     "year": 1920,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Robert H. Spurgeon, Jr."
     ],
@@ -5724,6 +5955,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1928",
     "year": 1928,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "spanish_revival"
@@ -5774,6 +6007,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1908",
     "year": 1908,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "G. Stanley Wilson"
     ],
@@ -5829,6 +6064,8 @@
     "description": "historic intersection in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -5870,6 +6107,8 @@
     "description": "historic home in Riverside, California",
     "startDate": "1927",
     "year": 1927,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -5925,6 +6164,8 @@
     "description": "church in Riverside, California",
     "startDate": "1949",
     "year": 1949,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -5985,6 +6226,8 @@
     "description": "historic home in Riverside, California",
     "startDate": "1957",
     "year": 1957,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "monterey_colonial"
@@ -6038,6 +6281,8 @@
     "description": "historic house in riverside, California",
     "startDate": "1966",
     "year": 1966,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Martin Williamson",
       "Don O'Neill"
@@ -6094,6 +6339,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1889",
     "year": 1889,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "prairie_school"
@@ -6141,6 +6388,8 @@
     "description": "former library in Riverside, California",
     "startDate": "1957",
     "year": 1957,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Herman O. Ruhnau"
     ],
@@ -6182,6 +6431,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Clinton Marr"
     ],
@@ -6233,6 +6484,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1965",
     "year": 1965,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Philip Esbensen"
     ],
@@ -6286,6 +6539,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1971",
     "year": 1971,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Lois Gottlieb"
     ],
@@ -6343,6 +6598,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6391,6 +6648,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1899",
     "year": 1899,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "queen_anne",
@@ -6444,6 +6703,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6484,6 +6745,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1955",
     "year": 1955,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Walter C. See"
     ],
@@ -6538,6 +6801,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1930",
     "year": 1930,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Welmer P. Lamar"
     ],
@@ -6592,6 +6857,8 @@
     "description": "historic military building in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6636,6 +6903,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1966",
     "year": 1966,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "midcentury_modern"
@@ -6681,27 +6950,29 @@
     "osmId": 119281492,
     "ref": "135",
     "refNumber": 135,
-    "name": "The Cheech Marin Center for Chicano Art & Culture of the Riverside Art Museum",
+    "name": "Old Riverside Main Library",
     "lat": 33.9827589,
     "lon": -117.371588,
-    "description": "American academic center and art museum",
+    "description": "former library in Riverside, California",
     "startDate": "1964",
     "year": 1964,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
     "address": "3581 Mission Inn Avenue Riverside CA 92501",
-    "wikidata": "Q96408528",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q96408528",
-    "wikipedia": "The Cheech Marin Center for Chicano Art & Culture",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Cheech_Marin_Center_for_Chicano_Art_%26_Culture",
+    "wikidata": "Q140936130",
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q140936130",
+    "wikipedia": null,
+    "wikipediaUrl": null,
     "commonsImage": "File:The Cheech Exterior.jpg",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Cheech_Exterior.jpg?width=800",
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Cheech_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/119281492",
     "natural": null,
-    "building": "yes",
+    "building": "commercial",
     "historic": null,
     "amenity": null,
     "allTags": {
@@ -6710,29 +6981,19 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "Mission Inn Avenue",
-      "building": "yes",
+      "building": "commercial",
       "building:levels": "3",
-      "contact:facebook": "TheCheechCenter",
-      "contact:instagram": "thecheechcenter",
-      "contact:twitter": "thecheechcenter",
-      "fee": "yes",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "level": "2",
-      "museum": "art",
-      "name": "The Cheech Marin Center for Chicano Art & Culture of the Riverside Art Museum",
-      "opening_hours": "We-Sa 10:00-17:00; Su 12:00-17:00; Mo,Tu,PH off",
-      "operator": "Riverside Art Museum",
-      "phone": "+1-951-684-7111",
+      "name": "Old Riverside Main Library",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "135",
       "start_date": "1964",
-      "tourism": "museum",
       "website": "https://riversideartmuseum.org/museum/cheech-center/",
       "wheelchair": "yes",
-      "wikidata": "Q96408528;Q140936130",
-      "wikimedia_commons": "File:The Cheech Exterior.jpg",
-      "wikipedia": "en:The Cheech Marin Center for Chicano Art & Culture"
+      "wikidata": "Q140936130",
+      "wikimedia_commons": "File:The Cheech Exterior.jpg"
     }
   },
   {
@@ -6747,6 +7008,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1930",
     "year": 1930,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "neoclassical"
@@ -6798,6 +7061,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1911",
     "year": 1911,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Lester S. Moore"
     ],
@@ -6856,6 +7121,8 @@
     "description": "historic building in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6900,6 +7167,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1931",
     "year": 1931,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -6946,6 +7215,8 @@
     "description": "historic former motel in Riverside, California",
     "startDate": "1953",
     "year": 1953,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -6985,6 +7256,8 @@
     "description": "historic commercial building in Riverside, California",
     "startDate": "1929",
     "year": 1929,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Peter J. Weber",
       "G. Stanley Wilson"
@@ -7032,6 +7305,8 @@
     "description": "historic building in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7076,6 +7351,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1924",
     "year": 1924,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7130,6 +7407,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1966",
     "year": 1966,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Clinton Marr"
     ],
@@ -7184,6 +7463,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1956",
     "year": 1956,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Knowlton Fernald Jr."
     ],
@@ -7237,6 +7518,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1930",
     "year": 1930,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7289,6 +7572,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "craftsman"
@@ -7339,6 +7624,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1948",
     "year": 1948,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "streamline_moderne"
@@ -7390,6 +7677,8 @@
     "description": "historic house and childhood home of Miné Okubo in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [
@@ -7439,6 +7728,8 @@
     "description": "historic clubhouse in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7484,6 +7775,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7531,6 +7824,8 @@
     "description": "Current city hall of Riverside, California",
     "startDate": "1975",
     "year": 1975,
+    "designationDate": "July 15, 2025",
+    "designationYear": 2025,
     "architects": [
       "Herman O. Ruhnau"
     ],
@@ -7587,6 +7882,8 @@
     "description": "historic house in Riverside, California",
     "startDate": "1903",
     "year": 1903,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [
       "mission_revival",
@@ -7640,6 +7937,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -7688,6 +7987,8 @@
     "description": "historic house in Riverside, California",
     "startDate": null,
     "year": null,
+    "designationDate": null,
+    "designationYear": null,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],

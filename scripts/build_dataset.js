@@ -340,6 +340,55 @@ export async function processLandmarks() {
     }
     const imageUrl = getCommonsImageUrl(commonsImage, 800);
     const thumbnail = getCommonsImageUrl(commonsImage, 400);
+    // Official Designation Date (strictly Wikidata P1435: Q140544645 "City of Riverside Landmark" -> qualifier P580 "start time")
+    let designationDate = null;
+    let designationYear = null;
+
+    if (wdEntity?.claims?.P1435) {
+      // Strictly match statement for City of Riverside Landmark (Q140544645)
+      const cityLandmarkStmt = wdEntity.claims.P1435.find(s => s.mainsnak?.datavalue?.value?.id === 'Q140544645');
+      const p580Time = cityLandmarkStmt?.qualifiers?.P580?.[0]?.datavalue?.value?.time || null;
+
+      if (p580Time) {
+        const timeMatch = p580Time.match(/[+-](\d{4})-(\d{2})-(\d{2})/);
+        if (timeMatch) {
+          const y = parseInt(timeMatch[1], 10);
+          const m = parseInt(timeMatch[2], 10);
+          const d = parseInt(timeMatch[3], 10);
+          designationYear = y;
+          if (m > 0 && d > 0) {
+            const dateObj = new Date(Date.UTC(y, m - 1, d));
+            designationDate = dateObj.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              timeZone: 'UTC'
+            });
+          } else if (m > 0) {
+            const dateObj = new Date(Date.UTC(y, m - 1, 1));
+            designationDate = dateObj.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              timeZone: 'UTC'
+            });
+          } else {
+            designationDate = String(y);
+          }
+        } else {
+          const yearMatch = p580Time.match(/[+-](\d{4})/);
+          if (yearMatch) {
+            designationYear = parseInt(yearMatch[1], 10);
+            if (!designationDate) designationDate = String(designationYear);
+          }
+        }
+      }
+    }
+
+    if (designationDate && !designationYear) {
+      const ym = designationDate.match(/(\d{4})/);
+      if (ym) designationYear = parseInt(ym[1], 10);
+    }
+
     return {
       id: `osm-${el.type}-${el.id}`,
       osmType: el.type,
@@ -352,6 +401,8 @@ export async function processLandmarks() {
       description,
       startDate: rawDate || null,
       year: year || null,
+      designationDate,
+      designationYear,
       architects,
       architectureStyles,
       notableResidents,

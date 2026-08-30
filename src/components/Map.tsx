@@ -169,6 +169,9 @@ export const Map: React.FC<MapProps> = ({
         ${landmark.architects.length > 0 ? `
           <p class="text-xs text-stone-600 mb-1"><span class="font-semibold text-stone-700">Architect:</span> ${landmark.architects.join(', ')}</p>
         ` : ''}
+        ${landmark.designationDate ? `
+          <p class="text-[11px] text-purple-800 mb-1.5 font-medium">🏛️ Designated ${landmark.designationDate}</p>
+        ` : ''}
         ${landmark.address ? `
           <p class="text-xs text-stone-500 mb-2 truncate">${landmark.address}</p>
         ` : ''}

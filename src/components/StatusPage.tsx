@@ -4,7 +4,7 @@ import { getStyleInfo } from '../data/architecturalStyles';
 import { 
   CheckCircle2, XCircle, AlertCircle, ExternalLink, Search, 
   ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users,
-  RefreshCw, HelpCircle, Info
+  RefreshCw, HelpCircle, Info, Award
 } from 'lucide-react';
 
 interface StatusPageProps {
@@ -15,7 +15,7 @@ interface StatusPageProps {
   isSyncing?: boolean;
 }
 
-type MissingFilter = 'all' | 'missing_any' | 'missing_date' | 'missing_style' | 'missing_architect' | 'missing_image' | 'missing_residents' | 'complete';
+type MissingFilter = 'all' | 'missing_any' | 'missing_date' | 'missing_designation' | 'missing_style' | 'missing_architect' | 'missing_image' | 'missing_residents' | 'complete';
 type SortField = 'ref' | 'name' | 'missingCount';
 
 export const StatusPage: React.FC<StatusPageProps> = ({
@@ -47,6 +47,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
   const stats = useMemo(() => {
     const total = baseList.length;
     let hasDate = 0;
+    let hasDesignation = 0;
     let hasStyle = 0;
     let hasArchitect = 0;
     let hasImage = 0;
@@ -55,12 +56,14 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
     baseList.forEach((l) => {
       const dateOk = Boolean(l.year || l.startDate);
+      const desigOk = Boolean(l.designationDate);
       const styleOk = l.architectureStyles && l.architectureStyles.length > 0;
       const archOk = l.architects && l.architects.length > 0;
       const imgOk = Boolean(l.imageUrl);
       const resOk = Boolean(l.notableResidents && l.notableResidents.length > 0);
 
       if (dateOk) hasDate++;
+      if (desigOk) hasDesignation++;
       if (styleOk) hasStyle++;
       if (archOk) hasArchitect++;
       if (imgOk) hasImage++;
@@ -72,6 +75,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       total,
       hasDate,
       missingDate: total - hasDate,
+      hasDesignation,
+      missingDesignation: total - hasDesignation,
       hasStyle,
       missingStyle: total - hasStyle,
       hasArchitect,
@@ -88,6 +93,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
   const filteredLandmarks = useMemo(() => {
     return baseList.filter((l) => {
       const hasDate = Boolean(l.year || l.startDate);
+      const hasDesignation = Boolean(l.designationDate);
       const hasStyle = l.architectureStyles && l.architectureStyles.length > 0;
       const hasArchitect = l.architects && l.architects.length > 0;
       const hasImage = Boolean(l.imageUrl);
@@ -96,6 +102,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       // Status filter
       if (filterType === 'missing_any' && hasDate && hasStyle && hasArchitect) return false;
       if (filterType === 'missing_date' && hasDate) return false;
+      if (filterType === 'missing_designation' && hasDesignation) return false;
       if (filterType === 'missing_style' && hasStyle) return false;
       if (filterType === 'missing_architect' && hasArchitect) return false;
       if (filterType === 'missing_image' && hasImage) return false;
@@ -134,12 +141,14 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
   // Export to CSV
   const handleExportCSV = () => {
-    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
+    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
     const rows = sortedLandmarks.map((l) => [
       `"${l.ref}"`,
       `"${l.name.replace(/"/g, '""')}"`,
       `"${l.year || l.startDate || ''}"`,
       l.year || l.startDate ? 'YES' : 'NO',
+      `"${l.designationDate || ''}"`,
+      l.designationDate ? 'YES' : 'NO',
       `"${l.architectureStyles.join('; ')}"`,
       l.architectureStyles.length > 0 ? 'YES' : 'NO',
       `"${l.architects.join('; ')}"`,
@@ -269,6 +278,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   <li><code className="text-amber-200">architect=Arthur Benton</code></li>
                   <li><code className="text-amber-200">building:architecture=mission_revival</code></li>
                   <li><code className="text-amber-200">start_date=1903</code></li>
+                  <li><code className="text-purple-300">Wikidata P1435 -&gt; P580 (Designation Date)</code></li>
                 </ul>
               </div>
 
@@ -301,7 +311,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
           </div>
         )}
         {/* Progress Metric Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
           {/* Total */}
           <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
             <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500">Total Audited</span>
@@ -323,7 +333,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
           >
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1">
-                <Calendar className="w-3 h-3 text-amber-700" /> Date / Year
+                <Calendar className="w-3 h-3 text-amber-700" /> Year Built
               </span>
               <span className="text-xs font-bold text-amber-900">{stats.hasDate}/{stats.total}</span>
             </div>
@@ -337,6 +347,31 @@ export const StatusPage: React.FC<StatusPageProps> = ({
               </div>
             </div>
             <div className="text-[10px] text-stone-500 mt-1">{Math.round((stats.hasDate / stats.total) * 100)}% filled</div>
+          </div>
+
+          {/* Designation Date */}
+          <div 
+            onClick={() => setFilterType('missing_designation')}
+            className={`p-3.5 rounded-xl border shadow-sm cursor-pointer transition flex flex-col justify-between ${
+              filterType === 'missing_designation' ? 'bg-purple-50/80 border-purple-400 ring-2 ring-purple-400/20' : 'bg-white border-stone-200 hover:border-stone-300'
+            }`}
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1">
+                <Award className="w-3 h-3 text-purple-700" /> Designated
+              </span>
+              <span className="text-xs font-bold text-purple-900">{stats.hasDesignation}/{stats.total}</span>
+            </div>
+            <div className="mt-2">
+              <div className="flex items-baseline gap-1">
+                <span className="text-xl font-bold text-stone-900">{stats.missingDesignation}</span>
+                <span className="text-[11px] font-semibold text-rose-600">missing</span>
+              </div>
+              <div className="w-full bg-stone-100 rounded-full h-1.5 mt-2 overflow-hidden">
+                <div className="bg-purple-600 h-1.5 rounded-full" style={{ width: `${(stats.hasDesignation / stats.total) * 100}%` }}></div>
+              </div>
+            </div>
+            <div className="text-[10px] text-stone-500 mt-1">P1435 &#8594; P580</div>
           </div>
 
           {/* Styles */}
@@ -464,6 +499,14 @@ export const StatusPage: React.FC<StatusPageProps> = ({
               Missing Date ({stats.missingDate})
             </button>
             <button
+              onClick={() => setFilterType('missing_designation')}
+              className={`text-xs px-2.5 py-1 rounded-lg font-medium transition ${
+                filterType === 'missing_designation' ? 'bg-purple-600 text-white shadow-xs' : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+              }`}
+            >
+              Missing Designation ({stats.missingDesignation})
+            </button>
+            <button
               onClick={() => setFilterType('missing_style')}
               className={`text-xs px-2.5 py-1 rounded-lg font-medium transition ${
                 filterType === 'missing_style' ? 'bg-amber-600 text-white shadow-xs' : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
@@ -574,11 +617,12 @@ export const StatusPage: React.FC<StatusPageProps> = ({
               <thead>
                 <tr className="bg-stone-50 border-b border-stone-200 font-semibold text-stone-600 uppercase tracking-wider text-[11px]">
                   <th className="py-3 px-4 w-14">#</th>
-                  <th className="py-3 px-4 min-w-[220px]">Landmark</th>
-                  <th className="py-3 px-3 w-28">Date / Year</th>
+                  <th className="py-3 px-4 min-w-[200px]">Landmark</th>
+                  <th className="py-3 px-3 w-28">Year Built</th>
+                  <th className="py-3 px-3 min-w-[140px]">Designated (P580)</th>
                   <th className="py-3 px-3 min-w-[150px]">Architecture Style</th>
-                  <th className="py-3 px-3 min-w-[170px]">Architect</th>
-                  <th className="py-3 px-3 w-24">Photo</th>
+                  <th className="py-3 px-3 min-w-[160px]">Architect</th>
+                  <th className="py-3 px-3 w-20">Photo</th>
                   <th className="py-3 px-3 min-w-[130px]">Notable Residents</th>
                   <th className="py-3 px-4 text-right w-36">Contribute / Edit</th>
                 </tr>
@@ -645,6 +689,21 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                           <span className="inline-flex items-center gap-1 text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded font-medium">
                             <XCircle className="w-3 h-3 text-rose-500" />
                             Missing
+                          </span>
+                        )}
+                      </td>
+
+                      {/* Official Designation Date */}
+                      <td className="py-3 px-3">
+                        {landmark.designationDate ? (
+                          <span className="inline-flex items-center gap-1 text-purple-900 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded font-medium whitespace-nowrap">
+                            <Award className="w-3 h-3 text-purple-600 shrink-0" />
+                            <span>{landmark.designationDate}</span>
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 text-stone-400 bg-stone-50 border border-stone-200 px-2 py-0.5 rounded text-[11px]">
+                            <XCircle className="w-3 h-3 text-stone-300 shrink-0" />
+                            Missing P580
                           </span>
                         )}
                       </td>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Landmark } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -141,8 +141,13 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
               </div>
             </div>
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 block mb-0.5">Designation</span>
-              <span className="font-medium text-stone-800">City Landmark</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 block mb-0.5">Official Designation</span>
+              <div className="flex items-center gap-1.5 font-medium text-stone-800">
+                <Award className="w-4 h-4 text-purple-700 shrink-0" />
+                <span className="truncate">
+                  {landmark.designationDate ? `Designated ${landmark.designationDate}` : 'City Landmark'}
+                </span>
+              </div>
             </div>
           </div>
 
