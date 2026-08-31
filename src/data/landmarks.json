@@ -99,12 +99,15 @@
       "building": "hotel",
       "building:architecture": "mission_revival",
       "building:levels": "4",
+      "facebook": "TheMissionInn",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
+      "instagram": "missioninnhotel",
       "name": "The Mission Inn",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "1",
       "start_date": "1876",
+      "website": "https://missioninn.com/",
       "wikidata": "Q1920529",
       "wikimedia_commons": "File:MissionInn SpanishWing.jpg"
     }
@@ -7287,6 +7290,7 @@
       "addr:state": "CA",
       "addr:street": "Mission Inn Avenue",
       "architect": "Robert H. Spurgeon, Jr.",
+      "architect:wikidata": "Q141239958",
       "builder": "G. C. Berner",
       "building": "house",
       "building:levels": "2",
@@ -7866,8 +7870,8 @@
     "lat": 33.9249544,
     "lon": -117.3773489,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1961",
+    "year": 1961,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -7878,8 +7882,13 @@
     "architects": [
       "Clinton Marr"
     ],
-    "architectureStyles": [],
-    "notableResidents": [],
+    "architectureStyles": [
+      "modern",
+      "streamline_moderne"
+    ],
+    "notableResidents": [
+      "Clinton Marr"
+    ],
     "address": "6816 Hawarden Drive Riverside CA 92506",
     "wikidata": "Q140935478",
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140935478",
@@ -7901,7 +7910,9 @@
       "addr:state": "CA",
       "addr:street": "Hawarden Drive",
       "architect": "Clinton Marr",
+      "architect:wikidata": "Q141239795",
       "building": "house",
+      "building:architecture": "modern",
       "building:levels": "1",
       "height": "3.87",
       "heritage": "8",
@@ -7911,6 +7922,7 @@
       "name": "Clinton and Geraldine Marr Residence",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "125",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1961",
       "wikidata": "Q140935478"
     }
   },
@@ -8048,8 +8060,8 @@
     "lat": 33.960643,
     "lon": -117.3542091,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1926",
+    "year": 1926,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -8057,8 +8069,12 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "Robert H. Spurgeon, Jr."
+    ],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "1945 Arroyo Drive Riverside CA 92506",
     "wikidata": "Q140935493",
@@ -8080,7 +8096,10 @@
       "addr:postcode": "92506",
       "addr:state": "CA",
       "addr:street": "Arroyo Drive",
+      "architect": "Robert H. Spurgeon, Jr.",
+      "architect:wikidata": "Q141239958",
       "building": "house",
+      "building:architecture": "spanish_revival",
       "building:levels": "3",
       "height": "8.17",
       "heritage": "8",
@@ -8090,6 +8109,7 @@
       "name": "Wells-O'Toole House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "128",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1926",
       "wikidata": "Q140935493"
     }
   },
@@ -8332,8 +8352,8 @@
     "lat": 33.9403035,
     "lon": -117.4622299,
     "description": "historic military building in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1942",
+    "year": 1942,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -8355,7 +8375,7 @@
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/960881702",
     "natural": null,
-    "building": "yes",
+    "building": "community_center",
     "historic": null,
     "amenity": null,
     "allTags": {
@@ -8363,13 +8383,14 @@
       "addr:housenumber": "5797",
       "addr:state": "CA",
       "addr:street": "Picker Street",
-      "building": "yes",
+      "building": "community_center",
       "height": "7.77",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "133",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1942",
       "wikidata": "Q140898969"
     }
   },
@@ -9248,8 +9269,8 @@
     "lat": 33.9729343,
     "lon": -117.3608631,
     "description": "historic house and childhood home of Miné Okubo in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1900",
+    "year": 1900,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -9291,6 +9312,7 @@
       "name": "Okubo Residence",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "149",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1900",
       "wikidata": "Q140893704"
     }
   },
@@ -9304,8 +9326,8 @@
     "lat": 33.9738664,
     "lon": -117.3676345,
     "description": "historic clubhouse in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1902",
+    "year": 1902,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -9342,6 +9364,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Orange Valley Lodge #13",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "150",
+      "start_date": "1902",
       "wikidata": "Q140963474",
       "wikimedia_commons": "File:Mercantile Hall-Orange Valley Masonic Lodge 13 Exterior.jpg"
     }
