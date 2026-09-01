@@ -55,43 +55,62 @@ async function fetchWikidataEntities(qids) {
 }
 
 const STYLE_QID_MAP = {
+  // Spanish Colonial Revival
   'Q3645460': 'spanish_revival',
-  'Q7937337': 'spanish_revival',
+
+  // Mission Revival
   'Q2700522': 'mission_revival',
-  'Q186363': 'gothic_revival',
+
+  // Mediterranean Revival
+  'Q7937337': 'mediterranean_revival',
+
+  // Queen Anne (Q529819 is Queen Anne style; Q7270218 is Queen Anne style in the US)
+  'Q529819': 'queen_anne',
   'Q7270218': 'queen_anne',
-  'Q7270243': 'queen_anne',
-  'Q54111': 'neoclassical',
+
+  // American Foursquare
+  'Q4743854': 'american_foursquare',
+
+  // Craftsman
   'Q463382': 'craftsman',
-  'Q463806': 'craftsman',
-  'Q529819': 'american_foursquare',
-  'Q3399545': 'mediterranean_revival',
+
+  // California Bungalow
   'Q5021201': 'california_bungalow',
-  'Q136693': 'romanesque',
+
+  // Neoclassical
+  'Q54111': 'neoclassical',
+
+  // Gothic Revival
+  'Q186363': 'gothic_revival',
+
+  // Romanesque Revival
   'Q744373': 'romanesque',
+
+  // Renaissance Revival / Italian Renaissance
   'Q9159144': 'renaissance',
-  'Q1058444': 'renaissance',
+
+  // Tudor Revival
   'Q7851317': 'tudor_revival',
-  'Q953258': 'tudor_revival',
+
+  // Victorian
   'Q565165': 'victorian',
-  'Q565970': 'victorian',
-  'Q74156': 'art_deco',
-  'Q34636': 'art_deco',
+
+  // Colonial Revival
   'Q5148367': 'colonial_revival',
-  'Q1110996': 'colonial_revival',
+
+  // Pueblo Revival
   'Q7258468': 'pueblo_revival',
-  'Q1622345': 'pueblo_revival',
-  'Q2130555': 'monterey_colonial',
-  'Q2256729': 'prairie_school',
+
+  // Mid-century Modern
   'Q6840667': 'midcentury_modern',
-  'Q3312702': 'midcentury_modern',
-  'Q245188': 'streamline_moderne',
-  'Q1479471': 'streamline_moderne',
-  'Q1642273': 'ranch',
-  'Q200789': 'beaux_arts',
-  'Q1089947': 'churrigueresque',
-  'Q2470987': 'italianate',
-  'Q3333333': 'french_normandy'
+
+  // Art Deco & Moorish Revival
+  'Q173782': 'art_deco',
+  'Q74156': 'moorish_revival',
+  'Q34636': 'art_nouveau',
+
+  // Ranch
+  'Q2130555': 'ranch'
 };
 
 export async function processLandmarks() {
@@ -122,7 +141,8 @@ export async function processLandmarks() {
           headers: {
             'Accept': '*/*',
             'User-Agent': 'curl/8.7.1'
-          }
+          },
+          signal: AbortSignal.timeout(10000)
         });
         if (res.ok) {
           const rawOverpass = await res.json();

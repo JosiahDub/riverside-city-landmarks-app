@@ -72,7 +72,8 @@
     ],
     "architectureStyles": [
       "mission_revival",
-      "spanish_revival"
+      "spanish_revival",
+      "mediterranean_revival"
     ],
     "notableResidents": [],
     "address": "3649 Mission Inn Avenue Riverside CA 92501",
@@ -1162,8 +1163,7 @@
       "Julia Morgan"
     ],
     "architectureStyles": [
-      "mediterranean_revival",
-      "spanish_revival"
+      "mediterranean_revival"
     ],
     "notableResidents": [],
     "address": "3425 Mission Inn Avenue Riverside CA 92501",
@@ -2053,7 +2053,7 @@
       "Walker & Eisen"
     ],
     "architectureStyles": [
-      "mediterranean_revival"
+      "spanish_renaissance"
     ],
     "notableResidents": [],
     "address": "3602 University Avenue Riverside CA 92501",
@@ -2260,7 +2260,8 @@
       "Seehorn & Preston"
     ],
     "architectureStyles": [
-      "romanesque"
+      "romanesque",
+      "norman"
     ],
     "notableResidents": [],
     "address": "3115 Brockton Avenue Riverside CA 92501",
@@ -2915,9 +2916,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q66364163",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Riverside Library.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_Library.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_Library.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/118530713",
     "natural": null,
@@ -2934,7 +2935,8 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "46",
       "start_date": "1909",
-      "wikidata": "Q66364163"
+      "wikidata": "Q66364163",
+      "wikimedia_commons": "File:Riverside Library.jpg"
     }
   },
   {
@@ -3556,8 +3558,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14140524867",
+        "osmId": 14140524867,
+        "osmType": "node",
+        "name": "Palm Elementary School City Landmark",
+        "lat": 33.9513194,
+        "lon": -117.3983544,
+        "subjectWikidata": "Q140689197",
+        "commonsImage": "File:Palm Elementary School City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Palm_Elementary_School_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Palm_Elementary_School_City_Landmark_Plaque.jpg?width=400",
+        "direction": "35",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14140524867"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Peter J. Weber"
     ],
@@ -5290,7 +5308,7 @@
       "G. Stanley Wilson"
     ],
     "architectureStyles": [
-      "art_deco"
+      "moorish_revival"
     ],
     "notableResidents": [],
     "address": null,
@@ -7257,7 +7275,7 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [
-      "Robert H. Spurgeon, Jr."
+      "Robert H. Spurgeon Jr."
     ],
     "architectureStyles": [
       "spanish_revival"
@@ -7282,7 +7300,7 @@
       "addr:housenumber": "4527",
       "addr:state": "CA",
       "addr:street": "Mission Inn Avenue",
-      "architect": "Robert H. Spurgeon, Jr.",
+      "architect": "Robert H. Spurgeon Jr.",
       "architect:wikidata": "Q141239958",
       "builder": "G. C. Berner",
       "building": "house",
@@ -7649,7 +7667,7 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
-      "monterey_colonial"
+      "ranch"
     ],
     "notableResidents": [
       "Bobby Bonds"
@@ -7772,7 +7790,7 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
-      "prairie_school"
+      "swiss_chalet"
     ],
     "notableResidents": [],
     "address": "3747 Monroe Street Riverside CA 92504",
@@ -7876,8 +7894,7 @@
       "Clinton Marr"
     ],
     "architectureStyles": [
-      "modern",
-      "streamline_moderne"
+      "modern"
     ],
     "notableResidents": [
       "Clinton Marr"
@@ -8063,7 +8080,7 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [
-      "Robert H. Spurgeon, Jr."
+      "Robert H. Spurgeon Jr."
     ],
     "architectureStyles": [
       "spanish_revival"
@@ -8089,7 +8106,7 @@
       "addr:postcode": "92506",
       "addr:state": "CA",
       "addr:street": "Arroyo Drive",
-      "architect": "Robert H. Spurgeon, Jr.",
+      "architect": "Robert H. Spurgeon Jr.",
       "architect:wikidata": "Q141239958",
       "building": "house",
       "building:architecture": "spanish_revival",
@@ -8235,8 +8252,7 @@
       "Walter C. See"
     ],
     "architectureStyles": [
-      "ranch",
-      "monterey_colonial"
+      "ranch"
     ],
     "notableResidents": [],
     "address": "5022 Myrtle Avenue Riverside CA 92506",
@@ -8651,9 +8667,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140936194",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:E.T. Wall Packing House 1 Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/E.T._Wall_Packing_House_1_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/E.T._Wall_Packing_House_1_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/235391948",
     "natural": null,
@@ -8672,7 +8688,8 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "E. T. Wall Packing House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "138",
-      "wikidata": "Q140936194"
+      "wikidata": "Q140936194",
+      "wikimedia_commons": "File:E.T. Wall Packing House 1 Exterior.jpg"
     }
   },
   {
@@ -8804,9 +8821,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140917556",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Freelander Tractor Co. Showroom Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Freelander_Tractor_Co._Showroom_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Freelander_Tractor_Co._Showroom_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/694168131",
     "natural": null,
@@ -8825,7 +8842,8 @@
       "name": "Avila's Historic 1929",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "141",
       "start_date": "1929",
-      "wikidata": "Q140917556"
+      "wikidata": "Q140917556",
+      "wikimedia_commons": "File:Freelander Tractor Co. Showroom Exterior.jpg"
     }
   },
   {
@@ -8855,9 +8873,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140936220",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:E.T. Wall Packing House 2 Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/E.T._Wall_Packing_House_2_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/E.T._Wall_Packing_House_2_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/235391949",
     "natural": null,
@@ -8876,7 +8894,8 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "E. T. Wall Packing House #2",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "142",
-      "wikidata": "Q140936220"
+      "wikidata": "Q140936220",
+      "wikimedia_commons": "File:E.T. Wall Packing House 2 Exterior.jpg"
     }
   },
   {
@@ -9214,7 +9233,7 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
-      "streamline_moderne"
+      "modern"
     ],
     "notableResidents": [],
     "address": "3881 Loring Drive Riverside CA 92501",
@@ -9668,4 +9687,3 @@
     }
   }
 ]
-
