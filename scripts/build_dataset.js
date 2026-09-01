@@ -122,6 +122,9 @@ export async function processLandmarks() {
       nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"];
       nwr["subject:wikidata"](33.80, -117.60, 34.10, -117.20);
       nwr["memorial"="plaque"](33.80, -117.60, 34.10, -117.20);
+      nwr["historic"="memorial"](33.80, -117.60, 34.10, -117.20);
+      nwr["historic"="plaque"](33.80, -117.60, 34.10, -117.20);
+      nwr["memorial:type"="plaque"](33.80, -117.60, 34.10, -117.20);
     );
     out center tags;`;
     const params = new URLSearchParams();
@@ -129,7 +132,9 @@ export async function processLandmarks() {
 
     const endpoints = [
       'https://overpass-api.de/api/interpreter',
-      'https://overpass.kumi.systems/api/interpreter'
+      'https://overpass.kumi.systems/api/interpreter',
+      'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+      'https://overpass.private.coffee/api/interpreter'
     ];
 
     let success = false;
@@ -142,7 +147,7 @@ export async function processLandmarks() {
             'Accept': '*/*',
             'User-Agent': 'curl/8.7.1'
           },
-          signal: AbortSignal.timeout(10000)
+          signal: AbortSignal.timeout(20000)
         });
         if (res.ok) {
           const rawOverpass = await res.json();
@@ -173,18 +178,31 @@ export async function processLandmarks() {
   }
 
   // Separate landmark features from plaque/memorial features
-  const landmarkElements = elements.filter(e => e.tags?.['ref:US-CA:city_of_riverside_cultural_heritage_board']);
-  const rawPlaqueElements = elements.filter(e => !e.tags?.['ref:US-CA:city_of_riverside_cultural_heritage_board'] && (e.tags?.['subject:wikidata'] || e.tags?.memorial === 'plaque' || e.tags?.historic === 'memorial'));
+  const landmarkElements = elements.filter(e => {
+    const t = e.tags || {};
+    if (!t['ref:US-CA:city_of_riverside_cultural_heritage_board']) return false;
+    // If it's explicitly a plaque node, don't treat it as the primary landmark building
+    const isPlaque = t.memorial === 'plaque' || t.historic === 'plaque' || t['memorial:type'] === 'plaque' || (t.name && /plaque/i.test(t.name) && t['subject:wikidata']);
+    return !isPlaque;
+  });
 
-  // Index plaques by subject:wikidata QIDs
+  const rawPlaqueElements = elements.filter(e => {
+    const t = e.tags || {};
+    const isPlaque = t.memorial === 'plaque' || t.historic === 'plaque' || t.historic === 'memorial' || t['memorial:type'] === 'plaque' || t['subject:wikidata'] || (t.name && /plaque/i.test(t.name));
+    return isPlaque && !landmarkElements.includes(e);
+  });
+
+  // Index plaques by subject:wikidata QIDs and by landmark Ref #
   const plaquesByQid = {};
+  const plaquesByRef = {};
   rawPlaqueElements.forEach(p => {
     const tags = p.tags || {};
-    const subjectWd = tags['subject:wikidata'] || '';
-    const qids = subjectWd.split(';').map(s => s.trim()).filter(id => /^Q\d+$/.test(id));
-    const commonsImage = tags.wikimedia_commons || tags.image || tags['image:plaque'] || null;
+    const subjectWd = tags['subject:wikidata'] || tags['subject_wikidata'] || tags['subject:wikidata:uri'] || tags['wikidata'] || '';
+    const qidMatches = subjectWd.match(/Q\d+/g) || [];
+    const commonsImage = tags.wikimedia_commons || tags.image || tags['image:plaque'] || tags['photo'] || tags['memorial:image'] || null;
     const imageUrl = getCommonsImageUrl(commonsImage, 1000);
     const thumbnail = getCommonsImageUrl(commonsImage, 400);
+    const plaqueRef = tags['ref:US-CA:city_of_riverside_cultural_heritage_board'] || tags['subject:ref'] || tags['ref'] || null;
 
     const plaqueObj = {
       id: `osm-${p.type}-${p.id}`,
@@ -202,10 +220,16 @@ export async function processLandmarks() {
       osmUrl: `https://www.openstreetmap.org/${p.type}/${p.id}`
     };
 
-    qids.forEach(q => {
+    qidMatches.forEach(q => {
       if (!plaquesByQid[q]) plaquesByQid[q] = [];
       plaquesByQid[q].push(plaqueObj);
     });
+
+    if (plaqueRef) {
+      const cleanRef = plaqueRef.trim();
+      if (!plaquesByRef[cleanRef]) plaquesByRef[cleanRef] = [];
+      plaquesByRef[cleanRef].push(plaqueObj);
+    }
   });
 
   // Extract all wikidata IDs from landmarks, splitting on semicolons
@@ -492,7 +516,7 @@ export async function processLandmarks() {
       }
     }
 
-    // Plaques associated with this landmark's Wikidata QIDs
+    // Plaques associated with this landmark (by Wikidata QID or Landmark Ref #)
     const matchingPlaques = [];
     const seenPlaqueIds = new Set();
     itemQids.forEach(q => {
@@ -503,6 +527,14 @@ export async function processLandmarks() {
         }
       });
     });
+    if (ref && plaquesByRef[ref]) {
+      plaquesByRef[ref].forEach(pl => {
+        if (!seenPlaqueIds.has(pl.id)) {
+          seenPlaqueIds.add(pl.id);
+          matchingPlaques.push(pl);
+        }
+      });
+    }
 
     return {
       id: `osm-${el.type}-${el.id}`,
