@@ -164,7 +164,7 @@
     ],
     "hasPlaque": true,
     "architects": [
-      "Franklin Pierce Burnham"
+      "Burnham and Bliesner"
     ],
     "architectureStyles": [
       "beaux_arts"
@@ -186,9 +186,8 @@
     "amenity": "courthouse",
     "allTags": {
       "amenity": "courthouse",
-      "architect": "Franklin Pierce Burnham",
-      "architect:wikidata": "Q5491744",
-      "architect:wikipedia": "en:Franklin Pierce Burnham",
+      "architect": "Burnham and Bliesner",
+      "architect:wikidata": "Q141249811",
       "building": "yes",
       "building:architecture": "beaux_arts",
       "building:levels": "2",
@@ -2110,7 +2109,7 @@
         "id": "osm-node-14062755497",
         "osmId": 14062755497,
         "osmType": "node",
-        "name": "Bonnett Building Landmark",
+        "name": "Bonnett Building City Landmark",
         "lat": 33.9810724,
         "lon": -117.3733363,
         "subjectWikidata": "Q140640830",
@@ -2377,7 +2376,9 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
+    "architects": [
+      "Burnham and Bliesner"
+    ],
     "architectureStyles": [
       "mission_revival"
     ],
@@ -2401,6 +2402,8 @@
       "addr:housenumber": "3390",
       "addr:state": "CA",
       "addr:street": "Orange Street",
+      "architect": "Burnham and Bliesner",
+      "architect:wikidata": "Q141249811",
       "building": "house",
       "building:architecture": "mission_revival",
       "building:levels": "2",
@@ -5703,6 +5706,7 @@
     ],
     "hasPlaque": true,
     "architects": [
+      "Burnham and Bliesner",
       "Franklin Pierce Burnham",
       "William J. Bliesner Jr."
     ],
@@ -5725,9 +5729,8 @@
     "historic": null,
     "amenity": null,
     "allTags": {
-      "architect": "Franklin Pierce Burnham;William J. Bliesner Jr.",
-      "architect:wikidata": "Q5491744;Q141216318",
-      "architect:wikipedia": "en:Franklin Pierce Burnham",
+      "architect": "Burnham and Bliesner",
+      "architect:wikidata": "Q141249811",
       "building": "retail",
       "building:architecture": "italianate",
       "heritage": "8",
@@ -6199,7 +6202,9 @@
     ],
     "hasPlaque": true,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "mediterranean_revival"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140650834",
@@ -6217,6 +6222,7 @@
     "amenity": null,
     "allTags": {
       "building": "commercial",
+      "building:architecture": "mediterranean_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -7229,7 +7235,7 @@
         "id": "osm-node-14062755500",
         "osmId": 14062755500,
         "osmType": "node",
-        "name": "Jackson Building Landmark",
+        "name": "Jackson Building City Landmark",
         "lat": 33.9817386,
         "lon": -117.3737822,
         "subjectWikidata": "Q140187508",
@@ -8953,7 +8959,9 @@
     "architects": [
       "Henry L. A. Jekel"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "monterey_revival"
+    ],
     "notableResidents": [],
     "address": "4428 Houghton Avenue Riverside CA 92501",
     "wikidata": "Q140963340",
@@ -8978,6 +8986,7 @@
       "architect": "Henry L. A. Jekel",
       "architect:wikidata": "Q55488034",
       "building": "house",
+      "building:architecture": "monterey_revival",
       "building:levels": "2",
       "height": "7.83",
       "heritage": "8",
@@ -9407,17 +9416,21 @@
     "lat": 33.9860422,
     "lon": -117.3869997,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "designationDate": null,
-    "designationYear": null,
+    "startDate": "1955",
+    "year": 1955,
+    "designationDate": "July 15, 2025",
+    "designationYear": 2025,
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "Charles Ormrod Matcham Sr."
+    ],
+    "architectureStyles": [
+      "hollywood_regency"
+    ],
     "notableResidents": [],
     "address": "4649 9th Street Riverside CA 92501",
     "wikidata": "Q140963535",
@@ -9439,7 +9452,10 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "9th Street",
+      "architect": "Charles Ormrod Matcham Sr.",
+      "architect:wikidata": "Q124959569",
       "building": "house",
+      "building:architecture": "hollywood_regency",
       "height": "8.05",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -9448,6 +9464,7 @@
       "name": "Boyd Residence",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "151",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1955",
       "wikidata": "Q140963535"
     }
   },
