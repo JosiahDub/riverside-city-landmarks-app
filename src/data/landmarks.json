@@ -5490,8 +5490,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-13289831277",
+        "osmId": 13289831277,
+        "osmType": "node",
+        "name": "The Tetley Buildings City Landmark",
+        "lat": 33.9770955,
+        "lon": -117.3791556,
+        "subjectWikidata": "Q140690551",
+        "commonsImage": "File:The Tetley Buildings Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Tetley_Buildings_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Tetley_Buildings_Plaque.jpg?width=400",
+        "direction": "300",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/13289831277"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "G. Stanley Wilson"
     ],
