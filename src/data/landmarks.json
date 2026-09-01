@@ -5706,9 +5706,7 @@
     ],
     "hasPlaque": true,
     "architects": [
-      "Burnham and Bliesner",
-      "Franklin Pierce Burnham",
-      "William J. Bliesner Jr."
+      "Burnham and Bliesner"
     ],
     "architectureStyles": [
       "italianate"
@@ -9563,14 +9561,16 @@
     "description": "historic house in Riverside, California",
     "startDate": "1903",
     "year": 1903,
-    "designationDate": null,
-    "designationYear": null,
+    "designationDate": "January 13, 2026",
+    "designationYear": 2026,
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
+    "architects": [
+      "Franklin Pierce Burnham"
+    ],
     "architectureStyles": [
       "mission_revival",
       "craftsman"
