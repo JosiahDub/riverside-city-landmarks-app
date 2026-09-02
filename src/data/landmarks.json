@@ -1222,8 +1222,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14143249625",
+        "osmId": 14143249625,
+        "osmType": "node",
+        "name": "Chinatown City Landmark",
+        "lat": 33.9776305,
+        "lon": -117.3880693,
+        "subjectWikidata": "Q140591393",
+        "commonsImage": "File:Chinatown City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_City_Landmark_Plaque.jpg?width=400",
+        "direction": "240",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14143249625"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "notableResidents": [],
@@ -1368,8 +1384,14 @@
       }
     ],
     "hasPlaque": true,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "Adam C. Willard",
+      "G. Stanley Wilson"
+    ],
+    "architectureStyles": [
+      "richardsonian_romanesque",
+      "mission_revival"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140610865",
@@ -1386,12 +1408,16 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "Adam C. Willard;G. Stanley Wilson",
+      "architect:wikidata": "Q140778690;Q55126528",
       "building": "commercial",
+      "building:architecture": "richardsonian_romanesque;mission_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Loring Building",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "21",
+      "start_date": "1890",
       "wikidata": "Q140610865",
       "wikimedia_commons": "File:Loring Building Exterior.jpg"
     }
@@ -1413,10 +1439,29 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14142928567",
+        "osmId": 14142928567,
+        "osmType": "node",
+        "name": "New Jerusalem City Landmark",
+        "lat": 33.98622,
+        "lon": -117.3794785,
+        "subjectWikidata": "Q140610933",
+        "commonsImage": "File:New Jerusalem Church City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/New_Jerusalem_Church_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/New_Jerusalem_Church_City_Landmark_Plaque.jpg?width=400",
+        "direction": "115",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14142928567"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "neoclassical",
+      "gothic_revival"
+    ],
     "notableResidents": [],
     "address": "3645 Locust Street Riverside CA 92501",
     "wikidata": "Q140610933",
@@ -1440,6 +1485,7 @@
       "addr:street": "Locust Street",
       "amenity": "place_of_worship",
       "building": "yes",
+      "building:architecture": "neoclassical;gothic_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -1502,7 +1548,9 @@
     ],
     "hasPlaque": true,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "saltbox"
+    ],
     "notableResidents": [],
     "address": "3356 Lemon Street Lemon CA",
     "wikidata": "Q5653555",
@@ -1523,6 +1571,7 @@
       "addr:housenumber": "3356",
       "addr:street": "Lemon Street",
       "building": "house",
+      "building:architecture": "saltbox",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -2788,7 +2837,9 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
+    "architects": [
+      "Arthur Burnett Benton"
+    ],
     "architectureStyles": [],
     "notableResidents": [],
     "address": null,
@@ -2808,6 +2859,9 @@
     "allTags": {
       "addr:city": "Riverside",
       "addr:state": "CA",
+      "architect": "Arthur Burnett Benton",
+      "architect:wikidata": "Q24203374",
+      "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "church",
       "height": "9.33",
       "heritage": "8",
@@ -2815,6 +2869,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "44",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1915",
       "wikidata": "Q140680291"
     }
   },
@@ -2853,8 +2908,12 @@
       }
     ],
     "hasPlaque": true,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "Oliver Perry Dennis"
+    ],
+    "architectureStyles": [
+      "neoclassical"
+    ],
     "notableResidents": [],
     "address": "2374 Mission Inn Avenue Riverside CA 92507",
     "wikidata": "Q140680297",
@@ -2876,7 +2935,11 @@
       "addr:postcode": "92507",
       "addr:state": "CA",
       "addr:street": "Mission Inn Avenue",
+      "architect": "Oliver Perry Dennis",
+      "architect:wikidata": "Q99192959",
+      "architect:wikipedia": "en:Oliver Perry Dennis",
       "building": "house",
+      "building:architecture": "neoclassical",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -3039,7 +3102,10 @@
     "architects": [
       "G. Stanley Wilson"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "italian_renaissance",
+      "renaissance"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140680312",
@@ -3057,6 +3123,7 @@
     "amenity": null,
     "allTags": {
       "building": "college",
+      "building:architecture": "italian_renaissance",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -3086,8 +3153,12 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "John C. Austin"
+    ],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "2060 University Avenue Riverside CA 92507",
     "wikidata": "Q140680331",
@@ -3110,7 +3181,11 @@
       "addr:state": "CA",
       "addr:street": "University Avenue",
       "amenity": "community_centre",
+      "architect": "John C. Austin",
+      "architect:wikidata": "Q6224265",
+      "architect:wikipedia": "en:John C. Austin",
       "building": "yes",
+      "building:architecture": "spanish_revival",
       "community_centre": "community_hall",
       "ele": "284",
       "gnis:feature_id": "250819",
@@ -3119,6 +3194,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "name": "Cesar E. Chavez Community Center",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "49",
+      "start_date": "1928",
       "wikidata": "Q140680331"
     }
   },
@@ -4642,6 +4718,7 @@
       "operator:wikidata": "Q139000354",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "73",
       "source": "Tiger2009",
+      "start_date": "1917",
       "tiger:ALAND": "8073",
       "tiger:AREAID": "110458305528",
       "tiger:AWATER": "0",
@@ -8674,8 +8751,8 @@
     "description": "historic building in Riverside, California",
     "startDate": null,
     "year": null,
-    "designationDate": null,
-    "designationYear": null,
+    "designationDate": "December 18, 2018",
+    "designationYear": 2018,
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
