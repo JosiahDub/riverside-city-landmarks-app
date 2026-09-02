@@ -9189,10 +9189,10 @@
     "lat": 33.957567,
     "lon": -117.4007765,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
-    "designationDate": null,
-    "designationYear": null,
+    "startDate": "1919",
+    "year": 1919,
+    "designationDate": "May 9, 2023",
+    "designationYear": 2023,
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
@@ -9200,7 +9200,7 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [
-      "craftsman"
+      "airplane_bungalow"
     ],
     "notableResidents": [],
     "address": "6268 Palm Avenue Riverside CA 92506",
