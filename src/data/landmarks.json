@@ -3660,7 +3660,9 @@
       "Peter J. Weber",
       "G. Stanley Wilson"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "spanish_revival"
+    ],
     "notableResidents": [],
     "address": "6735 Magnolia Avenue Riverside CA 92506",
     "wikidata": "Q140689197",
@@ -3686,6 +3688,7 @@
       "architect:wikidata": "Q124822219",
       "architect:wikipedia": "en:Peter J. Weber",
       "building": "school",
+      "building:architecture": "spanish_revival",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -7928,7 +7931,7 @@
     "osmId": 233267697,
     "ref": "124",
     "refNumber": 124,
-    "name": "Marcy Branch Library",
+    "name": "Old Marcy Library",
     "lat": 33.9538603,
     "lon": -117.3946888,
     "description": "former library in Riverside, California",
@@ -7944,7 +7947,9 @@
     "architects": [
       "Herman O. Ruhnau"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140903531",
@@ -7961,11 +7966,17 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "architect": "Herman O. Ruhnau",
+      "architect:wikidata": "Q16017899",
+      "architect:wikipedia": "en:Herman O. Ruhnau",
       "building": "commercial",
+      "building:architecture": "midcentury_modern",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
+      "name": "Old Marcy Library",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "124",
+      "start_date": "1957",
       "wikidata": "Q140903531",
       "wikimedia_commons": "File:Old Marcy Library Exterior.jpg"
     }
@@ -8578,8 +8589,12 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
-    "architectureStyles": [],
+    "architects": [
+      "Moise, Harbach and Hewlett"
+    ],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "notableResidents": [],
     "address": "3581 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q140936130",
@@ -8601,7 +8616,10 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "Mission Inn Avenue",
+      "architect": "Moise, Harbach and Hewlett",
+      "architect:wikidata": "Q141260363",
       "building": "commercial",
+      "building:architecture": "midcentury_modern",
       "building:levels": "3",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -9220,7 +9238,9 @@
     "architects": [
       "Henry L. A. Jekel"
     ],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "monterey_revival"
+    ],
     "notableResidents": [],
     "address": "3860 El Hijo Street Riverside CA 92504",
     "wikidata": "Q140963411",
@@ -9245,6 +9265,7 @@
       "architect": "Henry L. A. Jekel",
       "architect:wikidata": "Q55488034",
       "building": "house",
+      "building:architecture": "monterey_revival",
       "building:levels": "2",
       "height": "7.19",
       "heritage": "8",
