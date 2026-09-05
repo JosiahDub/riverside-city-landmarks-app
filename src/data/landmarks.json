@@ -362,7 +362,7 @@
       "queen_anne"
     ],
     "notableResidents": [],
-    "address": null,
+    "address": "8193 Magnolia Avenue Riverside CA 92504",
     "wikidata": "Q25209703",
     "wikidataUrl": "https://www.wikidata.org/wiki/Q25209703",
     "wikipedia": "Heritage House (Riverside, California)",
@@ -377,6 +377,11 @@
     "historic": null,
     "amenity": null,
     "allTags": {
+      "addr:city": "Riverside",
+      "addr:housenumber": "8193",
+      "addr:postcode": "92504",
+      "addr:state": "CA",
+      "addr:street": "Magnolia Avenue",
       "architect": "John A. Walls",
       "architect:wikidata": "Q124968149",
       "building": "yes",
@@ -409,8 +414,39 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14069651998",
+        "osmId": 14069651998,
+        "osmType": "node",
+        "name": "First Congregational Church County Landmark",
+        "lat": 33.9818787,
+        "lon": -117.3720327,
+        "subjectWikidata": "Q5452861",
+        "commonsImage": "File:First Congregational Church County Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Congregational_Church_County_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Congregational_Church_County_Plaque.jpg?width=400",
+        "direction": "30",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14069651998"
+      },
+      {
+        "id": "osm-node-14075565817",
+        "osmId": 14075565817,
+        "osmType": "node",
+        "name": "First Congregational Church City Landmark",
+        "lat": 33.981866,
+        "lon": -117.3720268,
+        "subjectWikidata": "Q5452861",
+        "commonsImage": "File:First Congregational Church City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Congregational_Church_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/First_Congregational_Church_City_Landmark_Plaque.jpg?width=400",
+        "direction": "120",
+        "material": null,
+        "osmUrl": "https://www.openstreetmap.org/node/14075565817"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Myron Hunt"
     ],
@@ -2664,8 +2700,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-13315012080",
+        "osmId": 13315012080,
+        "osmType": "node",
+        "name": "Former YMCA City Landmark",
+        "lat": 33.9809066,
+        "lon": -117.3719969,
+        "subjectWikidata": "Q8045931",
+        "commonsImage": "File:Former YMCA City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Former_YMCA_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Former_YMCA_City_Landmark_Plaque.jpg?width=400",
+        "direction": "175",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/13315012080"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Arthur Benton"
     ],
