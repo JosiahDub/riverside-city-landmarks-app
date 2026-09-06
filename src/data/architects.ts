@@ -7,7 +7,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Peter J. Weber',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Peter_J._Weber',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Peter_J_Weber.jpg/330px-Peter_J_Weber.jpg',
-    bio: 'Peter Joseph Weber (1893–1983) was an innovative American architect and craftsman based in Riverside. He served as the principal designer for G. Stanley Wilson, shaping iconic elements of the Mission Inn and designing the legendary Peter J. Weber House, famed for its intricate hand-carved woodwork, repurposed citrus crate materials, and unique solar water system.'
+    bio: 'Peter Joseph Weber (1893–1983) was an American architect who worked in California from 1906 to 1958. Trained in the Beaux-Arts style and technique, he is known primarily for his work in Inland Southern California for the firm of G. Stanley Wilson, Architect as its lead designer. Nine of his designs for Wilson are listed on the National Register of Historic Places.'
   },
   'G. Stanley Wilson': {
     name: 'G. Stanley Wilson',
@@ -15,7 +15,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'G. Stanley Wilson',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/G._Stanley_Wilson',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/G._Stanley_Wilson.jpg/330px-G._Stanley_Wilson.jpg',
-    bio: 'George Stanley Wilson (1879–1958) was Riverside’s most prolific architect. Raised in Riverside, he worked under Frank Miller on the Mission Inn, designing the International Rotunda and Authors Row. He also designed the Aurea Vista Hotel, Santa Cruz Inn, schools, libraries, and major civic landmarks throughout the Inland Empire.'
+    bio: 'George Stanley Wilson (1879–1958) was an English-born American architect based in Riverside, California. He began his career as a carpenter and quickly ascended as builder, architect, owner of his own firm, and civic icon. His firm produced over 1,000 projects between 1909 and 1956—primarily in Riverside, but spanning an area from the High Sierras to the Mexico Border, the Pacific Ocean to the Colorado River. 11 of his firm’s projects are listed in the National Register of Historic Places.'
   },
   'Arthur Benton': {
     name: 'Arthur Benton',
@@ -23,7 +23,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Arthur Burnett Benton',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Arthur_Burnett_Benton',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Arthur_Burnett_Benton.png/330px-Arthur_Burnett_Benton.png',
-    bio: 'Arthur Burnett Benton (1858–1920) was a founding champion of the Mission Revival and Spanish Colonial Revival styles in California. He was Frank Miller’s chief architect for the initial Mission Wing of the Mission Inn and designed the grand Riverside Municipal Auditorium with its Spanish churrigueresque detailing.'
+    bio: 'American architect.'
   },
   'Julia Morgan': {
     name: 'Julia Morgan',
@@ -31,21 +31,21 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Julia Morgan',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Julia_Morgan',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Julia_Morgan.jpg',
-    bio: 'Julia Morgan (1872–1957) was a legendary American architect and the first woman admitted to the Beaux-Arts program in Paris. Famous for William Randolph Hearst’s San Simeon estate, Morgan designed the historic Riverside YWCA building (1929), now home to the Riverside Art Museum, blending Mediterranean Revival with classical restraint.'
+    bio: 'American architect.'
   },
   'Franklin Pierce Burnham': {
     name: 'Franklin Pierce Burnham',
     wikidataId: 'Q5491744',
     wikipediaTitle: 'Franklin Pierce Burnham',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Franklin_Pierce_Burnham',
-    bio: 'Franklin Pierce Burnham (1853–1909) was an acclaimed architect from Chicago and Southern California who designed the monumental Beaux-Arts Riverside Historic Courthouse (1903), inspired by the Petit Palais in Paris with its majestic colonnade and classical pediment.'
+    bio: 'American architect.'
   },
   'Henry L. A. Jekel': {
     name: 'Henry L. A. Jekel',
     wikidataId: 'Q106517006',
     wikipediaTitle: 'Henry L. A. Jekel',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Henry_L._A._Jekel',
-    bio: 'Henry L. A. Jekel (1876–1960) was a prolific master architect responsible for over 40 landmark homes in Riverside, notably along Victoria Avenue and around Mount Rubidoux, specializing in picturesque Spanish Colonial Revival, Tudor Revival, and French Normandy chateaux.'
+    bio: 'American architect.'
   },
   'James Knox Taylor': {
     name: 'James Knox Taylor',
@@ -53,7 +53,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'James Knox Taylor',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/James_Knox_Taylor',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/James_Knox_Taylor.jpg/330px-James_Knox_Taylor.jpg',
-    bio: 'James Knox Taylor (1857–1929) served as Supervising Architect of the U.S. Treasury Department from 1897 to 1912. He designed the Spanish Renaissance Revival 1912 U.S. Post Office in Riverside, which today houses the Museum of Riverside.'
+    bio: 'American architect.'
   },
   'Herman O. Ruhnau': {
     name: 'Herman O. Ruhnau',
@@ -61,36 +61,36 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Herman O. Ruhnau',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Herman_O._Ruhnau',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Herman_Ruhnau%2C_Architect.jpeg/330px-Herman_Ruhnau%2C_Architect.jpeg',
-    bio: 'Herman O. Ruhnau (1912–2006) was a prominent mid-century and civic architect who founded Ruhnau Ruhnau Clarke. He designed Riverside’s striking modern City Hall building (1975), along with hundreds of educational and civic institutions across the region.'
+    bio: 'American architect.'
   },
   'Lois Gottlieb': {
     name: 'Lois Gottlieb',
     wikidataId: 'Q18686369',
     wikipediaTitle: 'Lois Gottlieb',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Lois_Gottlieb',
-    bio: 'Lois Davidson Gottlieb (1926–2018) was an American residential architect who apprenticed under Frank Lloyd Wright at Taliesin. She designed expressive mid-century modern residences in Riverside emphasizing organic integration with natural topography.'
+    bio: 'American architect.'
   },
   'Clifford Balch': {
     name: 'Clifford Balch',
     wikidataId: 'Q108888258',
-    bio: 'Clifford A. Balch (1880–1963) was a prominent theater and commercial architect based in Southern California, renowned for designing movie palaces and ornate entertainment architecture in the 1920s and 30s.'
+    bio: 'American architect.'
   },
   'Clinton Marr': {
     name: 'Clinton Marr',
-    bio: 'Clinton Marr (1920–2005) was an influential Riverside architect known for mid-century modern residences, medical facilities, and commercial buildings emphasizing crisp structural geometry and regional climate responsiveness.'
+    bio: 'American architect.'
   },
   'Robert H. Spurgeon, Jr.': {
     name: 'Robert H. Spurgeon, Jr.',
-    bio: 'Robert H. Spurgeon, Jr. was an esteemed regional architect recognized for exquisite Spanish Colonial Revival and Mediterranean residences characterized by handcrafted wrought iron, courtyards, and deep arches.'
+    bio: 'American architect.'
   },
   'Lester S. Moore': {
     name: 'Lester S. Moore',
-    bio: 'Lester S. Moore was an early 20th-century Southern California architect who designed civic and commercial landmarks across the Inland Empire during Riverside’s citrus boom era.'
+    bio: 'American architect.'
   },
   'John A. Walls': {
     name: 'John A. Walls',
     wikidataId: 'Q124968149',
-    bio: 'John A. Walls was an American architect known for designing Riverside’s celebrated Heritage House (1891), an exceptional and picturesque example of high Queen Anne Victorian residential architecture.'
+    bio: 'American architect.'
   },
   'Myron Hunt': {
     name: 'Myron Hunt',
@@ -98,17 +98,17 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Myron Hunt',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Myron_Hunt',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Myron_Hunt.jpg/330px-Myron_Hunt.jpg',
-    bio: 'Myron Hunt (1868–1952) was a legendary American architect who shaped Southern California landmark architecture, designing the First Congregational Church of Riverside (1913), the Rose Bowl, and the Huntington Library.'
+    bio: 'American architect.'
   },
   'A. W. Boggs': {
     name: 'A. W. Boggs',
     wikidataId: 'Q141193839',
-    bio: 'A. W. Boggs was an American architect active in 19th-century Southern California, known for designing Riverside’s historic Magnolia Presbyterian Church (1881) in the Gothic Revival style.'
+    bio: 'American architect.'
   },
   'Seehorn & Preston': {
     name: 'Seehorn & Preston',
     wikidataId: 'Q141193069',
-    bio: 'Architectural partnership of Elihu Seehorn and William Preston, active in Riverside during the early 1900s, who designed the Romanesque Revival Irvine House (1906).'
+    bio: 'American architect.'
   }
 };
 

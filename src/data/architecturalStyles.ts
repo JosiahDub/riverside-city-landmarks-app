@@ -16,7 +16,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Queen Anne style architecture in the United States',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Queen_Anne_style_architecture_in_the_United_States',
     wikidataId: 'Q7270243',
-    description: 'Distinguished by asymmetrical facades, wrap-around porches, corner turrets or towers, steeply pitched irregular rooflines, and ornate decorative woodwork.',
+    description: 'Architectural style',
     era: '1880–1910',
     characteristics: ['Wrap-around porches', 'Corner towers & turrets', 'Asymmetrical massing', 'Textured shingles & spindlework']
   },
@@ -26,7 +26,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Mission Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Mission_Revival_architecture',
     wikidataId: 'Q1276077',
-    description: 'Inspired by 18th and early 19th-century Spanish Franciscan missions in California, showcasing scalloped curvilinear parapets, low-pitched red tile roofs, arcades, and smooth stucco.',
+    description: 'Architectural style',
     era: '1890–1920',
     characteristics: ['Curvilinear mission parapets', 'Red clay barrel tile roofs', 'Arched cloister-like walkways', 'Smooth stucco walls']
   },
@@ -36,7 +36,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Spanish Colonial Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Spanish_Colonial_Revival_architecture',
     wikidataId: 'Q1753898',
-    description: 'Celebrated across California, incorporating Mediterranean and Spanish Baroque elements with low-pitched red tile roofs, courtyards, decorative wrought iron, and colorful ceramic tiles.',
+    description: 'Architectural style',
     era: '1915–1940',
     characteristics: ['Courtyards & fountain plazas', 'Wrought-iron grilles & balconies', 'Carved wooden doors & vigas', 'Ceramic decorative tiles']
   },
@@ -46,7 +46,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'American Craftsman',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/American_Craftsman',
     wikidataId: 'Q463806',
-    description: 'Stemming from the Arts and Crafts movement, emphasizing organic materials, honesty of construction, low-pitched gable roofs, wide eaves with exposed rafters, and river-rock masonry.',
+    description: 'Architectural style',
     era: '1905–1930',
     characteristics: ['Wide overhanging eaves', 'Exposed rafter tails & brackets', 'River-rock stone foundations', 'Handcrafted woodwork']
   },
@@ -56,7 +56,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Beaux-Arts architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Beaux-Arts_architecture',
     wikidataId: 'Q200789',
-    description: 'Grand classical design characterized by formal symmetry, monumental columns, rusticated stonework, elaborate statuary, cartouches, and palatial proportions.',
+    description: 'Architectural style',
     era: '1885–1925',
     characteristics: ['Monumental classical columns', 'Grand symmetrical facades', 'Richly decorated friezes & pediments', 'Rusticated masonry bases']
   },
@@ -66,7 +66,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Renaissance Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Renaissance_Revival_architecture',
     wikidataId: 'Q1058444',
-    description: 'Derived from 15th and 16th-century Italian palazzi, presenting formal symmetrical facades, low-pitched hip roofs with wide bracketed eaves, and arched arcades.',
+    description: 'Architectural style',
     era: '1890–1935',
     characteristics: ['Bracketed overhanging eaves', 'Round-arched first-floor windows', 'Classical pilasters & balustrades', 'Formal rectangular massing']
   },
@@ -76,7 +76,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Colonial Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Colonial_Revival_architecture',
     wikidataId: 'Q1110996',
-    description: 'Inspired by early American colonial architecture, emphasizing symmetrical facades, centered accent front doors with pediments and fanlights, and multi-pane double-hung windows.',
+    description: 'Architectural style',
     era: '1880–1955',
     characteristics: ['Symmetrical window placement', 'Portico or pedimented doorway', 'Shutters & fanlights', 'Gable or gambrel roof']
   },
@@ -86,7 +86,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Tudor Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Tudor_Revival_architecture',
     wikidataId: 'Q953258',
-    description: 'Evoking medieval English manor cottages with steeply pitched front-facing gables, decorative half-timbering, tall narrow multi-pane casement windows, and massive masonry chimneys.',
+    description: 'Architectural style',
     era: '1890–1940',
     characteristics: ['Decorative half-timbering', 'Steeply pitched gables', 'Prominent brick/stone chimneys', 'Tall narrow casement windows']
   },
@@ -96,7 +96,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Victorian architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Victorian_architecture',
     wikidataId: 'Q565970',
-    description: 'A broad category of late 19th-century architectural styles marked by decorative complexity, ornate fretwork, steep roofs, decorative brackets, and historicist revivals.',
+    description: 'Architectural style',
     era: '1837–1901',
     characteristics: ['Intricate scrollwork & fretwork', 'Steep gables & bay windows', 'Tall proportions', 'Patterned shingle siding']
   },
@@ -106,7 +106,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Mid-century modern',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Mid-century_modern',
     wikidataId: 'Q3312702',
-    description: 'Post-WWII modernist design characterized by flat or low-pitch roofs, expansive walls of glass, open structural plans, and an emphasis on bringing the outdoors inside.',
+    description: 'Architectural style',
     era: '1945–1969',
     characteristics: ['Expansive glass walls', 'Flat or butterfly roof planes', 'Integrated indoor-outdoor living', 'Geometric minimalist forms']
   },
@@ -116,7 +116,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Ranch-style house',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Ranch-style_house',
     wikidataId: 'Q1642273',
-    description: 'An iconic American domestic architectural style with a sprawling single-story footprint, low-pitched gable roofs, wide eaves, and deep connection to private backyard patios.',
+    description: 'Architectural style',
     era: '1935–1975',
     characteristics: ['Single-story horizontal footprint', 'Low-pitched roof with wide eaves', 'Large picture windows', 'Open interior layout']
   },
@@ -126,7 +126,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Romanesque Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Romanesque_Revival_architecture',
     wikidataId: 'Q744373',
-    description: 'Late 19th-century revival characterized by heavy masonry walls, dramatic semi-circular round arches over doorways and windows, belt courses, and rough-faced stone masonry.',
+    description: 'Architectural style',
     era: '1880–1905',
     characteristics: ['Heavy masonry & stonework', 'Round semi-circular arches', 'Sturdy masonry piers', 'Squat columns with carved capitals']
   },
@@ -136,7 +136,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Renaissance Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Renaissance_Revival_architecture',
     wikidataId: 'Q1058444',
-    description: 'Inspired by Italian High Renaissance palazzi, marked by formal symmetry, rusticated ground floors, pronounced horizontal stringcourses, and decorative cornice friezes.',
+    description: 'Architectural style',
     era: '1890–1930',
     characteristics: ['Symmetrical facade articulation', 'Rusticated masonry ground levels', 'Prominent decorative cornices', 'Round arched windows & pediments']
   },
@@ -146,7 +146,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Gothic Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Gothic_Revival_architecture',
     wikidataId: 'Q186363',
-    description: 'Popularized in 19th-century church and residential design, characterized by pointed arches, steep gables, lancet windows, decorative vergeboards, and vertical board-and-batten siding.',
+    description: 'Architectural style',
     era: '1840–1890',
     characteristics: ['Pointed lancet arches', 'Steeply pitched gable roofs', 'Ornate vergeboards & gingerbread trim', 'Board-and-batten vertical siding']
   },
@@ -156,7 +156,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Neoclassical architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Neoclassical_architecture',
     wikidataId: 'Q54111',
-    description: 'Revival of classical Greek and Roman architecture featuring full-height porticos with monumental columns, triangular pediments, and strict formal symmetry.',
+    description: 'Architectural style',
     era: '1895–1950',
     characteristics: ['Full-height columned portico', 'Triangular pediment', 'Strict formal symmetry', 'Classical entablatures & balustrades']
   },
@@ -166,7 +166,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Art Deco',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Art_Deco',
     wikidataId: 'Q34636',
-    description: 'Visual arts and architecture style of the 1920s and 30s characterized by sleek geometric forms, zigzags, chevrons, vertical reeding, stepped towers, and stylized decorative bas-reliefs.',
+    description: 'Architectural style',
     era: '1925–1940',
     characteristics: ['Geometric & chevron motifs', 'Stepped setbacks & towers', 'Stylized relief carvings', 'Smooth wall finishes with metallic accents']
   },
@@ -176,7 +176,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Streamline Moderne',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Streamline_Moderne',
     wikidataId: 'Q1479471',
-    description: 'Late Art Deco style inspired by aerodynamic industrial design, featuring rounded corners, flat roofs, horizontal speed lines, glass block walls, and nautical porthole windows.',
+    description: 'Architectural style',
     era: '1930–1945',
     characteristics: ['Curved aerodynamic corners', 'Horizontal speed lines & banding', 'Glass block windows', 'Flat roofs with coping']
   },
@@ -186,7 +186,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Churrigueresque',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Churrigueresque',
     wikidataId: 'Q1089947',
-    description: 'Elaborately ornate Spanish Baroque architectural style featuring rich sculptural embellishments, carved pilasters, spirals, and dense portal ornamentation.',
+    description: 'Architectural style',
     era: '1915–1935',
     characteristics: ['Intricate sculptural ornamentation', 'Elaborate entrance portals', 'Spiraling columns & estipites', 'Dense decorative cresting']
   },
@@ -196,7 +196,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Italianate architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Italianate_architecture',
     wikidataId: 'Q2470987',
-    description: '19th-century Romantic architecture style inspired by Italian farmhouses, featuring low-pitched roofs, wide overhanging eaves with large decorative brackets, and tall narrow arched windows.',
+    description: 'Architectural style',
     era: '1850–1890',
     characteristics: ['Prominent decorative eave brackets', 'Tall narrow round-arched windows', 'Low-pitched hip roofs with cupolas', 'Quoins & bay windows']
   },
@@ -206,7 +206,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Norman Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Norman_Revival_architecture',
     wikidataId: 'Q3333333',
-    description: 'Picturesque residential revival style inspired by rural French cottages and Norman manors, distinguished by a prominent circular round tower with a conical roof housing the main entryway.',
+    description: 'Architectural style',
     era: '1920–1940',
     characteristics: ['Round circular entry tower with conical roof', 'Steeply pitched hip roof', 'Brick, stone, and stucco cladding', 'Dormer windows breaking the roofline']
   },
@@ -216,7 +216,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'American Foursquare',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/American_Foursquare',
     wikidataId: 'Q529819',
-    description: 'Popular early 20th-century post-Victorian domestic architectural style featuring a boxy two-and-a-half-story square footprint, four-room floorplan on each floor, center dormer, and a wide front porch.',
+    description: 'Architectural style',
     era: '1895–1930',
     characteristics: ['Square boxy two-story massing', 'Pyramidal hip roof with center dormer', 'Full-width front porch with wide stairs', 'Simple Craftsman or Prairie detailing']
   },
@@ -226,7 +226,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Mediterranean Revival architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Mediterranean_Revival_architecture',
     wikidataId: 'Q3399545',
-    description: 'Eclectic style drawing from Spanish Renaissance, Spanish Colonial, Beaux-Arts, and Italian Renaissance palaces, featuring multi-level tiled roofs, arched windows, and stucco walls.',
+    description: 'Architectural style',
     era: '1915–1940',
     characteristics: ['Low-pitched tile roofs', 'Arched door and window openings', 'Wrought-iron grilles and balconies', 'Stucco exterior walls']
   },
@@ -236,7 +236,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'California bungalow',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/California_bungalow',
     wikidataId: 'Q5021201',
-    description: 'Classic 1- to 1.5-story residential architecture popular in Southern California, emphasizing low-pitched sloping gable roofs, broad verandas, rustic river-rock stone piers, and wood trim.',
+    description: 'Architectural style',
     era: '1905–1930',
     characteristics: ['1 to 1.5-story low profile', 'Deep front veranda with battered piers', 'Exposed rafter tails and purlins', 'River-rock stone and shingle siding']
   },
@@ -246,7 +246,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Monterey Colonial architecture',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Monterey_Colonial_architecture',
     wikidataId: 'Q2130555',
-    description: 'Distinctive California architectural style originating in Monterey, blending Spanish colonial adobe and New England colonial frames, recognized by a prominent cantilevered second-story front balcony.',
+    description: 'Architectural style',
     era: '1925–1955',
     characteristics: ['Cantilevered second-story wooden balcony', 'Two-story massing with low-pitched hip or gable roof', 'Plastered or stucco exterior walls', 'Symmetrical window placement with shutters']
   },
@@ -256,7 +256,7 @@ export const ARCHITECTURE_STYLES: Record<string, ArchitectureStyleInfo> = {
     wikipediaTitle: 'Prairie School',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Prairie_School',
     wikidataId: 'Q2256729',
-    description: 'Pioneering American architectural style marked by horizontal lines, flat or hipped roofs with broad overhanging eaves, ribbons of windows, and integration with the surrounding landscape.',
+    description: 'Architectural style',
     era: '1900–1920',
     characteristics: ['Strong horizontal emphasis', 'Low-pitched roof with broad eaves', 'Ribbons of casement windows', 'Open flowing interior spaces']
   }
