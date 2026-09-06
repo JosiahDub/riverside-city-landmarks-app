@@ -44,7 +44,7 @@ export const ArchitectModal: React.FC<ArchitectModalProps> = ({
             )}
             <div>
               <span className="text-xs uppercase font-bold tracking-wider text-purple-700 block">
-                Master Architect
+                Architect
               </span>
               <h2 className="font-serif font-bold text-2xl text-stone-900 leading-tight">
                 {info.name}
