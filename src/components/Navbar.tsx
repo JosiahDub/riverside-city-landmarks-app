@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FilterState } from '../types';
-import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, RefreshCw, ClipboardCheck } from 'lucide-react';
+import { HISTORIC_DISTRICTS } from '../data/historicDistricts';
+import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, RefreshCw, ClipboardCheck, Landmark as LandmarkIcon, ChevronDown } from 'lucide-react';
 
 interface NavbarProps {
   filters: FilterState;
@@ -14,6 +15,8 @@ interface NavbarProps {
   onViewModeChange: (mode: 'split' | 'map' | 'list') => void;
   onLocateUser: () => void;
   isLocating: boolean;
+  onResetFilters: () => void;
+  onSyncLive: () => void;
   isSyncing: boolean;
   onOpenStatusPage: () => void;
   isStatusPage?: boolean;
@@ -37,10 +40,13 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenStatusPage,
   isStatusPage,
 }) => {
+  const [districtsDropdownOpen, setDistrictsDropdownOpen] = useState(false);
+
   const hasActiveFilters =
     filters.searchQuery !== '' ||
     filters.selectedArchitects.length > 0 ||
     filters.selectedStyles.length > 0 ||
+    (filters.selectedDistricts && filters.selectedDistricts.length > 0) ||
     filters.yearMin !== null ||
     filters.yearMax !== null ||
     filters.hasImageOnly ||
@@ -126,6 +132,86 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Tag className="w-3.5 h-3.5 text-purple-700" />
             <span>Tags Explorer</span>
           </button>
+
+          {/* Districts Dropdown Filter */}
+          <div className="relative shrink-0">
+            <button
+              onClick={() => setDistrictsDropdownOpen(!districtsDropdownOpen)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold shadow-sm transition ${
+                filters.selectedDistricts && filters.selectedDistricts.length > 0
+                  ? 'bg-teal-700 text-white border-teal-800'
+                  : 'border-teal-200 bg-teal-50 hover:bg-teal-100 text-teal-900'
+              }`}
+              title="Filter landmarks by Historic District"
+            >
+              <LandmarkIcon className="w-3.5 h-3.5" />
+              <span>Districts{filters.selectedDistricts && filters.selectedDistricts.length > 0 ? ` (${filters.selectedDistricts.length})` : ''}</span>
+              <ChevronDown className={`w-3 h-3 transition-transform ${districtsDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {districtsDropdownOpen && (
+              <>
+                <div
+                  className="fixed inset-0 z-30"
+                  onClick={() => setDistrictsDropdownOpen(false)}
+                />
+                <div className="absolute right-0 sm:left-0 sm:right-auto mt-2 w-80 bg-white rounded-xl shadow-xl border border-stone-200 p-3 z-40 space-y-2 animate-fade-in">
+                  <div className="flex items-center justify-between border-b border-stone-100 pb-2">
+                    <div>
+                      <h4 className="font-serif font-bold text-xs text-stone-900">Historic Districts</h4>
+                      <p className="text-[11px] text-stone-500">Wikidata P276 (Historic District Q15243209)</p>
+                    </div>
+                    {filters.selectedDistricts && filters.selectedDistricts.length > 0 && (
+                      <button
+                        onClick={() => onFilterChange({ ...filters, selectedDistricts: [] })}
+                        className="text-[11px] text-terracotta hover:underline font-medium"
+                      >
+                        Clear
+                      </button>
+                    )}
+                  </div>
+
+                  <div className="space-y-1.5 max-h-64 overflow-y-auto pt-1">
+                    {Object.values(HISTORIC_DISTRICTS).map((district) => {
+                      const isSelected = (filters.selectedDistricts || []).includes(district.name);
+                      return (
+                        <div
+                          key={district.name}
+                          onClick={() => {
+                            const cur = filters.selectedDistricts || [];
+                            const newSelected = isSelected
+                              ? cur.filter((d) => d !== district.name)
+                              : [...cur, district.name];
+                            onFilterChange({ ...filters, selectedDistricts: newSelected });
+                          }}
+                          className={`p-2.5 rounded-lg border text-left cursor-pointer transition flex flex-col gap-1 ${
+                            isSelected
+                              ? 'bg-teal-50 border-teal-400 ring-1 ring-teal-400/20'
+                              : 'border-stone-200 hover:bg-stone-50'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="font-serif font-bold text-xs text-stone-900">
+                              {district.name}
+                            </span>
+                            <span className={`text-[10px] px-1.5 py-0.2 rounded font-bold ${isSelected ? 'bg-teal-600 text-white' : 'bg-stone-100 text-stone-600'}`}>
+                              {isSelected ? 'Filtered' : 'Select'}
+                            </span>
+                          </div>
+                          <p className="text-[11px] text-stone-600 leading-tight">
+                            {district.description}
+                          </p>
+                          <span className="text-[10px] text-stone-400 italic">
+                            No viewable polygon currently
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
 
           {/* Timeline Toggle */}
           <button
@@ -244,7 +330,26 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             ))}
 
-            {/* Year Range */}
+            {/* Selected Districts */}
+            {(filters.selectedDistricts || []).map((district) => (
+              <span
+                key={district}
+                className="inline-flex items-center gap-1 bg-teal-100 text-teal-900 border border-teal-300 px-2 py-0.5 rounded-full font-medium"
+              >
+                <span>District: {district}</span>
+                <button
+                  onClick={() =>
+                    onFilterChange({
+                      ...filters,
+                      selectedDistricts: (filters.selectedDistricts || []).filter((d) => d !== district),
+                    })
+                  }
+                  className="hover:text-teal-700"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            ))}
             {(filters.yearMin !== null || filters.yearMax !== null) && (
               <span className="inline-flex items-center gap-1 bg-stone-200 text-stone-900 border border-stone-300 px-2 py-0.5 rounded-full font-medium">
                 <span>

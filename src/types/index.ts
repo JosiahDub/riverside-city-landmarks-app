@@ -26,6 +26,8 @@ export interface Landmark {
   building: string | null;
   historic: string | null;
   amenity: string | null;
+  historicDistricts?: string[];
+  historicDistrict?: string[];
   notableResidents?: string[];
   designationDate?: string | null;
   designationYear?: number | null;
@@ -58,6 +60,7 @@ export interface FilterState {
   searchQuery: string;
   selectedArchitects: string[];
   selectedStyles: string[];
+  selectedDistricts: string[];
   yearMin: number | null;
   yearMax: number | null;
   hasImageOnly: boolean;
@@ -77,5 +80,16 @@ export interface ArchitectInfo {
   wikipediaUrl?: string;
   portraitUrl?: string;
   bio?: string;
+  landmarkCount?: number;
+}
+
+export interface HistoricDistrictInfo {
+  id?: string;
+  name: string;
+  description: string;
+  wikidataId?: string;
+  wikidataUrl?: string;
+  polygon?: any;
+  hasPolygon: boolean;
   landmarkCount?: number;
 }

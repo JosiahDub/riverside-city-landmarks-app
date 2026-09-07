@@ -2,7 +2,8 @@ import React, { useState, useMemo } from 'react';
 import { Landmark } from '../types';
 import { ARCHITECTS_DIRECTORY, getArchitectInfo } from '../data/architects';
 import { ARCHITECTURE_STYLES, getStyleInfo } from '../data/architecturalStyles';
-import { X, User, Layers, Calendar, Trees, ExternalLink, Filter, Search } from 'lucide-react';
+import { getDistrictInfo } from '../data/historicDistricts';
+import { X, User, Layers, Calendar, Trees, ExternalLink, Filter, Search, Landmark as LandmarkIcon } from 'lucide-react';
 
 interface TagExplorerModalProps {
   isOpen: boolean;
@@ -10,10 +11,11 @@ interface TagExplorerModalProps {
   landmarks: Landmark[];
   onSelectArchitect: (architect: string) => void;
   onSelectStyle: (styleKey: string) => void;
+  onSelectDistrict: (district: string) => void;
   onSelectEra: (minYear: number, maxYear: number) => void;
 }
 
-type TabType = 'architects' | 'styles' | 'eras' | 'nature';
+type TabType = 'architects' | 'styles' | 'districts' | 'eras' | 'nature';
 
 export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
   isOpen,
@@ -21,6 +23,7 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
   landmarks,
   onSelectArchitect,
   onSelectStyle,
+  onSelectDistrict,
   onSelectEra,
 }) => {
   const [activeTab, setActiveTab] = useState<TabType>('architects');
@@ -56,6 +59,22 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
         count,
       }))
       .sort((a, b) => b.count - a.count);
+  }, [landmarks]);
+
+  // Extract all unique historic districts with counts
+  const districtCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    landmarks.forEach((l) => {
+      (l.historicDistricts || []).forEach((d) => {
+        counts[d] = (counts[d] || 0) + 1;
+      });
+    });
+    return Object.entries(counts)
+      .map(([name, count]) => ({
+        ...getDistrictInfo(name),
+        count,
+      }))
+      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
   }, [landmarks]);
 
   // Eras distribution
@@ -123,6 +142,18 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
             >
               <Layers className="w-3.5 h-3.5" />
               <span>Styles ({styleCounts.length})</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('districts')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition ${
+                activeTab === 'districts'
+                  ? 'bg-teal-700 text-white shadow-sm'
+                  : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+              }`}
+            >
+              <LandmarkIcon className="w-3.5 h-3.5" />
+              <span>Districts ({districtCounts.length})</span>
             </button>
 
             <button
@@ -313,6 +344,86 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
                         >
                           <Filter className="w-3 h-3" />
                           <span>Filter Map</span>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          )}
+
+          {/* TAB: HISTORIC DISTRICTS */}
+          {activeTab === 'districts' && (
+            <div className="space-y-4">
+              <div className="bg-teal-50 border border-teal-200 rounded-xl p-3.5 text-xs text-teal-900 flex items-start justify-between gap-3">
+                <div>
+                  <p className="font-semibold text-teal-950">Historic Districts in Riverside</p>
+                  <p className="text-teal-800 mt-0.5 leading-relaxed">
+                    Areas where registered landmarks reside (Wikidata P276 &rarr; instance of Q15243209). Filter landmarks located within each historic district boundary.
+                  </p>
+                </div>
+                <span className="text-[10px] bg-teal-100 border border-teal-300 font-bold px-2 py-0.5 rounded text-teal-900 shrink-0">
+                  Polygon Pending
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {districtCounts
+                  .filter((d) => d.name.toLowerCase().includes(searchTerm.toLowerCase()))
+                  .map((district) => (
+                    <div
+                      key={district.name}
+                      className="bg-white rounded-xl p-4 border border-teal-200 shadow-sm hover:shadow-md transition flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-start justify-between gap-3">
+                          <div>
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              <h3 className="font-serif font-bold text-base text-stone-900">
+                                {district.name}
+                              </h3>
+                              <span className="text-[10px] font-semibold bg-stone-100 text-stone-600 border border-stone-200 px-1.5 py-0.2 rounded">
+                                No viewable polygon
+                              </span>
+                            </div>
+                            <span className="inline-block mt-1 text-xs font-semibold bg-teal-50 text-teal-800 border border-teal-200 px-2 py-0.5 rounded-full">
+                              {district.count} Riverside landmark{district.count > 1 ? 's' : ''}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Filter description - filled with "Historic district" */}
+                        <p className="text-xs text-stone-600 mt-2.5 leading-relaxed">
+                          {district.description}
+                        </p>
+
+                        {district.wikidataUrl && (
+                          <a
+                            href={district.wikidataUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-1 text-[11px] text-teal-700 hover:underline mt-2"
+                          >
+                            <span>Wikidata ({district.id})</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        )}
+                      </div>
+
+                      <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between">
+                        <span className="text-[11px] text-stone-400">
+                          Residing landmarks: {district.count}
+                        </span>
+                        <button
+                          onClick={() => {
+                            onSelectDistrict(district.name);
+                            onClose();
+                          }}
+                          className="inline-flex items-center gap-1 text-xs bg-teal-700 hover:bg-teal-800 text-white font-medium px-3 py-1.5 rounded-lg shadow-xs transition"
+                          title={`Filter landmarks to ${district.name}`}
+                        >
+                          <Filter className="w-3 h-3" />
+                          <span>Filter District</span>
                         </button>
                       </div>
                     </div>

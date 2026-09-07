@@ -75,6 +75,14 @@
       "spanish_revival",
       "mediterranean_revival"
     ],
+    "historicDistricts": [
+      "Mission Inn Historic District",
+      "Seventh Street Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District",
+      "Seventh Street Historic District"
+    ],
     "notableResidents": [],
     "address": "3649 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q1920529",
@@ -169,6 +177,8 @@
     "architectureStyles": [
       "beaux_arts"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q135923668",
@@ -230,6 +240,12 @@
     ],
     "architectureStyles": [
       "gothic_revival"
+    ],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
     ],
     "notableResidents": [],
     "address": "3525 Mission Inn Avenue Riverside CA 92501",
@@ -298,6 +314,8 @@
     "architectureStyles": [
       "gothic_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "7200 Magnolia Avenue Riverside CA 92504",
     "wikidata": "Q140544722",
@@ -361,6 +379,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "8193 Magnolia Avenue Riverside CA 92504",
     "wikidata": "Q25209703",
@@ -453,6 +473,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q5452861",
@@ -529,6 +551,8 @@
     "architectureStyles": [
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3606 Lemon Street Riverside CA 92501",
     "wikidata": "Q5452705",
@@ -609,6 +633,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q7926571",
@@ -660,6 +686,8 @@
     "architectureStyles": [
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3751 Vine Street Riverside CA",
     "wikidata": "Q104215471",
@@ -714,6 +742,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140588399",
@@ -766,6 +796,12 @@
     ],
     "architectureStyles": [
       "neoclassical"
+    ],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
     ],
     "notableResidents": [],
     "address": "8193 Mission Inn Avenue Riverside CA 92504",
@@ -826,6 +862,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "7606 Mount Vernon Street Riverside CA",
     "wikidata": "Q140588604",
@@ -883,6 +921,8 @@
       "Henry L. A. Jekel"
     ],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "1850 Benedict Avenue Riverside CA",
     "wikidata": "Q140588497",
@@ -937,6 +977,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q49476985",
@@ -995,6 +1037,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q85814522",
@@ -1051,6 +1095,8 @@
     "architectureStyles": [
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [
       "Sherman Indian Museum"
     ],
@@ -1113,6 +1159,12 @@
     ],
     "architectureStyles": [
       "mission_revival"
+    ],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
     ],
     "notableResidents": [],
     "address": "3485 Mission Inn Avenue Riverside CA 92501",
@@ -1201,6 +1253,8 @@
     "architectureStyles": [
       "mediterranean_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3425 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q7338423",
@@ -1278,6 +1332,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140591393",
@@ -1348,6 +1404,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4532 6th Street Riverside CA",
     "wikidata": "Q140610785",
@@ -1428,6 +1486,8 @@
       "richardsonian_romanesque",
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140610865",
@@ -1498,6 +1558,8 @@
       "neoclassical",
       "gothic_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3645 Locust Street Riverside CA 92501",
     "wikidata": "Q140610933",
@@ -1587,6 +1649,8 @@
     "architectureStyles": [
       "saltbox"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3356 Lemon Street Lemon CA",
     "wikidata": "Q5653555",
@@ -1643,6 +1707,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q49248844",
@@ -1690,6 +1756,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2320 Mary Street Riverside CA",
     "wikidata": "Q140612732",
@@ -1745,6 +1813,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q8525771",
@@ -1812,6 +1882,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q49532671",
@@ -1893,6 +1965,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q139083261",
@@ -1947,6 +2021,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2812 Ivy Street Riverside CA",
     "wikidata": "Q140640718",
@@ -2007,6 +2083,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4475 12th Street Riverside CA",
     "wikidata": "Q140640734",
@@ -2065,6 +2143,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2508 Raeburn Drive Riverside CA 92506",
     "wikidata": "Q140640775",
@@ -2140,6 +2220,8 @@
     "architectureStyles": [
       "spanish_renaissance"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3602 University Avenue Riverside CA 92501",
     "wikidata": "Q140640812",
@@ -2212,6 +2294,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3800 Orange Street Riverside CA 92501",
     "wikidata": "Q140640830",
@@ -2286,6 +2370,8 @@
     "architectureStyles": [
       "california_bungalow"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4515 6th Street Riverside CA",
     "wikidata": "Q140640954",
@@ -2348,6 +2434,8 @@
       "romanesque",
       "norman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3115 Brockton Avenue Riverside CA 92501",
     "wikidata": "Q140640973",
@@ -2408,6 +2496,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3121 Mulberry Street Riverside CA",
     "wikidata": "Q140672990",
@@ -2468,6 +2558,8 @@
     "architectureStyles": [
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3390 Orange Street Riverside CA",
     "wikidata": "Q140672995",
@@ -2531,6 +2623,8 @@
     "architectureStyles": [
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q139545665",
@@ -2597,6 +2691,12 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
+    ],
     "notableResidents": [],
     "address": "3801 Mission Inn Avenue Riverside CA 92501",
     "wikidata": "Q7338490",
@@ -2657,6 +2757,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140673001",
@@ -2724,6 +2826,8 @@
     "architectureStyles": [
       "renaissance"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3485 University Avenue Riverside CA 92501",
     "wikidata": "Q8045931",
@@ -2784,6 +2888,8 @@
     "architectureStyles": [
       "neoclassical"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6190 Hawarden Drive Riverside CA",
     "wikidata": "Q139257099",
@@ -2842,6 +2948,8 @@
       "italian_renaissance",
       "renaissance"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140673036",
@@ -2893,6 +3001,8 @@
       "Arthur Burnett Benton"
     ],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140680291",
@@ -2966,6 +3076,8 @@
     "architectureStyles": [
       "neoclassical"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2374 Mission Inn Avenue Riverside CA 92507",
     "wikidata": "Q140680297",
@@ -3029,6 +3141,8 @@
     "architectureStyles": [
       "neoclassical"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q66364163",
@@ -3081,6 +3195,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4539 Rubidoux Avenue Riverside CA 92506",
     "wikidata": "Q140680303",
@@ -3158,6 +3274,8 @@
       "italian_renaissance",
       "renaissance"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140680312",
@@ -3211,6 +3329,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2060 University Avenue Riverside CA 92507",
     "wikidata": "Q140680331",
@@ -3287,6 +3407,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3834 Main Street Riverside CA 92501",
     "wikidata": "Q140680714",
@@ -3367,6 +3489,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2969 Mission Inn Avenue Riverside CA 92507",
     "wikidata": "Q140680754",
@@ -3442,6 +3566,8 @@
     "architectureStyles": [
       "eclectic"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "1510 University Avenue Unit 4468 Riverside CA 92507",
     "wikidata": "Q121590627",
@@ -3507,6 +3633,8 @@
     "architectureStyles": [
       "neoclassical"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "7335 Magnolia Avenue Riverside CA 92504",
     "wikidata": "Q140687911",
@@ -3579,6 +3707,8 @@
       "Robert V. Leeson"
     ],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q136870322",
@@ -3638,6 +3768,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3858 Redwood Drive Riverside CA",
     "wikidata": "Q140689182",
@@ -3715,6 +3847,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6735 Magnolia Avenue Riverside CA 92506",
     "wikidata": "Q140689197",
@@ -3787,6 +3921,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q49579974",
@@ -3851,6 +3987,8 @@
     "architectureStyles": [
       "tudor_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6499 Hawarden Drive Riverside CA",
     "wikidata": "Q140694906",
@@ -3905,6 +4043,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "7995 Magnolia Avenue Riverside CA 92504",
     "wikidata": "Q140694931",
@@ -3975,6 +4115,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140613826",
@@ -4027,6 +4169,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140698450",
@@ -4080,6 +4224,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140698479",
@@ -4127,6 +4273,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140723613",
@@ -4192,6 +4340,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140723663",
@@ -4244,6 +4394,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140723835",
@@ -4297,6 +4449,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140723876",
@@ -4344,6 +4498,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q5417190",
@@ -4402,6 +4558,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3209 Mulberry Street Riverside CA",
     "wikidata": "Q140723972",
@@ -4459,6 +4617,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2601 Fairmount Boulevard Riverside CA 92501",
     "wikidata": "Q5430650",
@@ -4543,6 +4703,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4570 University Avenue Riverside CA 92501",
     "wikidata": "Q140724534",
@@ -4602,6 +4764,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3620 15th Street Riverside CA",
     "wikidata": "Q140696095",
@@ -4661,6 +4825,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140696092",
@@ -4745,6 +4911,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q49531392",
@@ -4805,6 +4973,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140724477",
@@ -4858,6 +5028,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3241 Mary Street Riverside CA",
     "wikidata": "Q140725518",
@@ -4914,6 +5086,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2110 7th Street Riverside CA 92507",
     "wikidata": "Q140725113",
@@ -4973,6 +5147,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3563 Prospect Avenue Riverside CA 92501",
     "wikidata": "Q140742588",
@@ -5049,6 +5225,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4492 12th Street Riverside CA",
     "wikidata": "Q140731714",
@@ -5123,6 +5301,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3092 Lime Street Riverside CA 92501",
     "wikidata": "Q140743068",
@@ -5200,6 +5380,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3610 11th Street Riverside CA 92501",
     "wikidata": "Q133440785",
@@ -5263,6 +5445,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "1151 Monte Vista Drive Riverside CA",
     "wikidata": "Q140766068",
@@ -5318,6 +5502,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6475 Victoria Avenue Riverside CA",
     "wikidata": "Q140766075",
@@ -5389,6 +5575,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2933 Mission Inn Avenue Riverside CA 92507",
     "wikidata": "Q139254877",
@@ -5447,6 +5635,8 @@
     "architectureStyles": [
       "moorish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140766076",
@@ -5520,6 +5710,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3425 Market Street Riverside CA",
     "wikidata": "Q140766084",
@@ -5575,6 +5767,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2575 Madison Street Riverside CA 92504",
     "wikidata": "Q140775747",
@@ -5650,6 +5844,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140690551",
@@ -5706,6 +5902,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5211 Central Avenue Riverside CA 92504",
     "wikidata": "Q140775760",
@@ -5766,6 +5964,8 @@
     "architectureStyles": [
       "colonial_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2490 Prince Albert Drive Riverside CA",
     "wikidata": "Q140778633",
@@ -5844,6 +6044,8 @@
     "architectureStyles": [
       "italianate"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140187530",
@@ -5897,6 +6099,8 @@
     "architectureStyles": [
       "mission_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3261 Strong Street Riverside CA",
     "wikidata": "Q140789699",
@@ -5973,6 +6177,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4336 Market Street Riverside CA 92501",
     "wikidata": "Q140777120",
@@ -6045,6 +6251,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3050 Orange Street Riverside CA 92501",
     "wikidata": "Q140790521",
@@ -6102,6 +6310,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4465 6th Street Riverside CA",
     "wikidata": "Q140878996",
@@ -6175,6 +6385,8 @@
     "architectureStyles": [
       "gothic_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140879120",
@@ -6223,6 +6435,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140879305",
@@ -6270,6 +6484,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140879492",
@@ -6336,6 +6552,8 @@
     "architectureStyles": [
       "mediterranean_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140650834",
@@ -6404,6 +6622,8 @@
       "craftsman",
       "swiss_chalet"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4581 Indian Hill Road Riverside CA",
     "wikidata": "Q139257161",
@@ -6478,6 +6698,8 @@
     "architectureStyles": [
       "pueblo_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3750 Santa Fe Street Riverside CA",
     "wikidata": "Q140588309",
@@ -6552,6 +6774,8 @@
     "architectureStyles": [
       "victorian"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3894 4th Street Riverside CA",
     "wikidata": "Q140882261",
@@ -6609,6 +6833,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140892332",
@@ -6654,6 +6880,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4462 6th Street Riverside CA",
     "wikidata": "Q140690581",
@@ -6728,6 +6956,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4536 Beacon Way Riverside CA 92501",
     "wikidata": "Q140892425",
@@ -6803,6 +7033,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3504 Larchwood Place Riverside CA 92506",
     "wikidata": "Q140745351",
@@ -6861,6 +7093,8 @@
     "architectureStyles": [
       "neoclassical"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3245 Orange Street Riverside CA",
     "wikidata": "Q140877874",
@@ -6919,6 +7153,8 @@
     "architectureStyles": [
       "tudor_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "7355 Magnolia Avenue Riverside CA",
     "wikidata": "Q140892682",
@@ -6978,6 +7214,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4811 Brockton Avenue Riverside CA 92506",
     "wikidata": "Q140676599",
@@ -7035,6 +7273,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140936076",
@@ -7088,6 +7328,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4385 Houghton Avenue Riverside CA 92501",
     "wikidata": "Q140902179",
@@ -7160,6 +7402,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4648 Ladera Lane Riverside CA 92501",
     "wikidata": "Q140928251",
@@ -7235,6 +7479,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4480 Mission Inn Avenue Unit 92501 Riverside CA",
     "wikidata": "Q140928358",
@@ -7310,6 +7556,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4654 Sierra Street Riverside CA 92504",
     "wikidata": "Q140894301",
@@ -7381,6 +7629,8 @@
     "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140187508",
@@ -7433,6 +7683,12 @@
     ],
     "architectureStyles": [
       "spanish_revival"
+    ],
+    "historicDistricts": [
+      "Seventh Street Historic District"
+    ],
+    "historicDistrict": [
+      "Seventh Street Historic District"
     ],
     "notableResidents": [],
     "address": "4527 Mission Inn Avenue Riverside CA",
@@ -7511,6 +7767,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3456 Ramona Drive Riverside CA 92506",
     "wikidata": "Q140745785",
@@ -7586,6 +7844,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4622 Indian Hill Road Riverside CA 92501",
     "wikidata": "Q140927703",
@@ -7644,6 +7904,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140936103",
@@ -7696,6 +7958,8 @@
     "architectureStyles": [
       "tudor_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3105 Pine Street Riverside CA 92501",
     "wikidata": "Q140800730",
@@ -7759,6 +8023,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3847 Terracina Drive Riverside CA 92506",
     "wikidata": "Q140778170",
@@ -7823,6 +8089,8 @@
     "architectureStyles": [
       "ranch"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [
       "Bobby Bonds"
     ],
@@ -7886,6 +8154,8 @@
     "architectureStyles": [
       "french_provincial"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5175 Myrtle Avenue Riverside CA",
     "wikidata": "Q140903346",
@@ -7946,6 +8216,8 @@
     "architectureStyles": [
       "swiss_chalet"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3747 Monroe Street Riverside CA 92504",
     "wikidata": "Q140903463",
@@ -8002,6 +8274,8 @@
     "architectureStyles": [
       "midcentury_modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140903531",
@@ -8058,6 +8332,8 @@
     "architectureStyles": [
       "modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [
       "Clinton Marr"
     ],
@@ -8123,6 +8399,8 @@
     "architectureStyles": [
       "midcentury_modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4259 Quail Road Riverside CA 92507",
     "wikidata": "Q140893030",
@@ -8183,6 +8461,8 @@
     "architectureStyles": [
       "midcentury_modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6140 Tiburon Drive Riverside CA 92506",
     "wikidata": "Q140916594",
@@ -8247,6 +8527,8 @@
     "architectureStyles": [
       "spanish_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "1945 Arroyo Drive Riverside CA 92506",
     "wikidata": "Q140935493",
@@ -8308,6 +8590,8 @@
     "architectureStyles": [
       "queen_anne"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "8410 Cleveland Avenue Riverside CA 92504",
     "wikidata": "Q140916743",
@@ -8365,6 +8649,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140916817",
@@ -8416,6 +8702,8 @@
     "architectureStyles": [
       "ranch"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5022 Myrtle Avenue Riverside CA 92506",
     "wikidata": "Q140916909",
@@ -8476,6 +8764,8 @@
     "architectureStyles": [
       "tudor_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5036 Myrtle Avenue Riverside CA",
     "wikidata": "Q140917040",
@@ -8533,6 +8823,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5797 Picker Street Riverside CA",
     "wikidata": "Q140898969",
@@ -8587,6 +8879,8 @@
     "architectureStyles": [
       "midcentury_modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5050 Sedgwick Avenue Riverside CA 92506",
     "wikidata": "Q140917174",
@@ -8646,6 +8940,12 @@
     ],
     "architectureStyles": [
       "midcentury_modern"
+    ],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
     ],
     "notableResidents": [],
     "address": "3581 Mission Inn Avenue Riverside CA 92501",
@@ -8709,6 +9009,8 @@
     "architectureStyles": [
       "neoclassical"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2530 Prince Albert Drive Riverside CA 92507",
     "wikidata": "Q140917201",
@@ -8769,6 +9071,8 @@
     "architectureStyles": [
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [
       "George Tyler Bigelow III"
     ],
@@ -8830,6 +9134,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3280 Vine Street Riverside CA 92507",
     "wikidata": "Q140936194",
@@ -8884,6 +9190,8 @@
       "Henry L. A. Jekel"
     ],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140917320",
@@ -8935,6 +9243,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140893554",
@@ -8984,6 +9294,8 @@
       "G. Stanley Wilson"
     ],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q140917556",
@@ -9036,6 +9348,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3230 Vine Street Riverside CA 92507",
     "wikidata": "Q140936220",
@@ -9108,6 +9422,8 @@
     "architectureStyles": [
       "monterey_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4428 Houghton Avenue Riverside CA 92501",
     "wikidata": "Q140963340",
@@ -9172,6 +9488,8 @@
     "architectureStyles": [
       "midcentury_modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6744 Oleander Court Riverside CA 92506",
     "wikidata": "Q140927289",
@@ -9233,6 +9551,8 @@
     "architectureStyles": [
       "midcentury_modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5050 Myrtle Avenue Riverside CA 92506",
     "wikidata": "Q140927408",
@@ -9293,6 +9613,8 @@
     "architectureStyles": [
       "monterey_revival"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3860 El Hijo Street Riverside CA 92504",
     "wikidata": "Q140963411",
@@ -9353,6 +9675,8 @@
     "architectureStyles": [
       "airplane_bungalow"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "6268 Palm Avenue Riverside CA 92506",
     "wikidata": "Q140893838",
@@ -9410,6 +9734,8 @@
     "architectureStyles": [
       "modern"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3881 Loring Drive Riverside CA 92501",
     "wikidata": "Q140933106",
@@ -9466,6 +9792,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [
       "Miné Okubo"
     ],
@@ -9523,6 +9851,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2933 12th Street Riverside CA 92507",
     "wikidata": "Q140963474",
@@ -9580,6 +9910,8 @@
     "architectureStyles": [
       "hollywood_regency"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "4649 9th Street Riverside CA 92501",
     "wikidata": "Q140963535",
@@ -9659,6 +9991,8 @@
       "brutalist",
       "new_formalism"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3900 Main Street Riverside CA 92522",
     "wikidata": "Q139083291",
@@ -9726,6 +10060,8 @@
       "mission_revival",
       "craftsman"
     ],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "3611 Mount Rubidoux Drive Riverside CA 92501",
     "wikidata": "Q140933127",
@@ -9783,6 +10119,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "2881 Rumsey Drive Riverside CA 92506",
     "wikidata": "Q140963770",
@@ -9838,6 +10176,8 @@
     "hasPlaque": false,
     "architects": [],
     "architectureStyles": [],
+    "historicDistricts": [],
+    "historicDistrict": [],
     "notableResidents": [],
     "address": "5958 Edith Avenue Riverside CA",
     "wikidata": "Q140963880",

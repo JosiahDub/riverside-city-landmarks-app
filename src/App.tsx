@@ -40,6 +40,7 @@ export const App: React.FC = () => {
     searchQuery: '',
     selectedArchitects: [],
     selectedStyles: [],
+    selectedDistricts: [],
     yearMin: null,
     yearMax: null,
     hasImageOnly: false,
@@ -66,10 +67,11 @@ export const App: React.FC = () => {
         const matchesRef = landmark.ref.toLowerCase() === query || landmark.ref.includes(query);
         const matchesArchitect = landmark.architects.some((a) => a.toLowerCase().includes(query));
         const matchesStyle = landmark.architectureStyles.some((s) => s.toLowerCase().includes(query));
+        const matchesDistrict = (landmark.historicDistricts || []).some((d) => d.toLowerCase().includes(query));
         const matchesAddress = landmark.address ? landmark.address.toLowerCase().includes(query) : false;
         const matchesDesc = landmark.description.toLowerCase().includes(query);
 
-        if (!matchesName && !matchesRef && !matchesArchitect && !matchesStyle && !matchesAddress && !matchesDesc) {
+        if (!matchesName && !matchesRef && !matchesArchitect && !matchesStyle && !matchesDistrict && !matchesAddress && !matchesDesc) {
           return false;
         }
       }
@@ -88,6 +90,14 @@ export const App: React.FC = () => {
           landmark.architectureStyles.some((s) => s.toLowerCase() === targetStyle.toLowerCase())
         );
         if (!hasStyle) return false;
+      }
+
+      // Historic District filter
+      if (filters.selectedDistricts && filters.selectedDistricts.length > 0) {
+        const inDistrict = filters.selectedDistricts.some((targetDist) =>
+          (landmark.historicDistricts || []).some((d) => d.toLowerCase() === targetDist.toLowerCase())
+        );
+        if (!inDistrict) return false;
       }
 
       // Year range filter
@@ -168,6 +178,15 @@ export const App: React.FC = () => {
     }
   };
 
+  const handleSelectDistrict = (district: string) => {
+    if (!(filters.selectedDistricts || []).includes(district)) {
+      setFilters((prev) => ({
+        ...prev,
+        selectedDistricts: [...(prev.selectedDistricts || []), district],
+      }));
+    }
+  };
+
   const handleSelectEra = (minYear: number, maxYear: number) => {
     setFilters((prev) => ({
       ...prev,
@@ -181,6 +200,7 @@ export const App: React.FC = () => {
       searchQuery: '',
       selectedArchitects: [],
       selectedStyles: [],
+      selectedDistricts: [],
       yearMin: null,
       yearMax: null,
       hasImageOnly: false,
@@ -381,6 +401,7 @@ export const App: React.FC = () => {
           onClose={() => setSelectedLandmark(null)}
           onSelectArchitect={handleSelectArchitect}
           onSelectStyle={handleSelectStyle}
+          onSelectDistrict={handleSelectDistrict}
           onShowArchitectBio={(arch) => setSelectedArchitectModal(arch)}
           onShowStyleInfo={(styleKey) => setSelectedStyleModal(styleKey)}
         />
@@ -393,6 +414,7 @@ export const App: React.FC = () => {
         landmarks={landmarksData}
         onSelectArchitect={handleSelectArchitect}
         onSelectStyle={handleSelectStyle}
+        onSelectDistrict={handleSelectDistrict}
         onSelectEra={handleSelectEra}
       />
 

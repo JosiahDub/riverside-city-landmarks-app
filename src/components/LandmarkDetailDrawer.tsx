@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Landmark, Plaque } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight } from 'lucide-react';
+import { getDistrictInfo } from '../data/historicDistricts';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
   onClose: () => void;
   onSelectArchitect: (architect: string) => void;
   onSelectStyle: (styleKey: string) => void;
+  onSelectDistrict: (district: string) => void;
   onShowArchitectBio: (architect: string) => void;
   onShowStyleInfo: (styleKey: string) => void;
 }
@@ -17,6 +19,7 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
   onClose,
   onSelectArchitect,
   onSelectStyle,
+  onSelectDistrict,
   onShowArchitectBio,
   onShowStyleInfo,
 }) => {
@@ -404,6 +407,56 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                       >
                         Filter
                       </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Historic District(s) Section */}
+          {landmark.historicDistricts && landmark.historicDistricts.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-stone-500 flex items-center gap-1.5">
+                <LandmarkIcon className="w-3.5 h-3.5 text-teal-700" /> Historic District{landmark.historicDistricts.length > 1 ? 's' : ''}
+              </h3>
+              <div className="space-y-2">
+                {landmark.historicDistricts.map((districtName) => {
+                  const info = getDistrictInfo(districtName);
+                  return (
+                    <div
+                      key={districtName}
+                      className="bg-teal-50/80 text-teal-950 border border-teal-200 p-3 rounded-xl text-xs space-y-1.5"
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-serif font-bold text-sm text-teal-950">
+                          {districtName}
+                        </span>
+                        <button
+                          onClick={() => onSelectDistrict(districtName)}
+                          className="text-xs bg-teal-200 hover:bg-teal-300 text-teal-900 font-semibold px-2.5 py-1 rounded transition shadow-2xs"
+                          title={`Filter map to landmarks in ${districtName}`}
+                        >
+                          Filter
+                        </button>
+                      </div>
+                      <p className="text-xs text-teal-800 leading-snug">
+                        {info.description}
+                      </p>
+                      <div className="flex items-center justify-between text-[11px] text-teal-700 pt-1.5 border-t border-teal-200/70">
+                        <span className="italic">Boundary polygon: Currently not viewable</span>
+                        {info.wikidataUrl && (
+                          <a
+                            href={info.wikidataUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:underline inline-flex items-center gap-1 text-teal-800 font-medium"
+                          >
+                            <span>Wikidata ({info.id})</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        )}
+                      </div>
                     </div>
                   );
                 })}

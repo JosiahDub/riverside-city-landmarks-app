@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Landmark, UserLocation } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText } from 'lucide-react';
+import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon } from 'lucide-react';
 
 interface LandmarkListViewProps {
   landmarks: Landmark[];
@@ -150,6 +150,16 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
                     >
                       <Layers className="w-2.5 h-2.5 shrink-0" />
                       <span className="truncate">{getStyleInfo(style).name}</span>
+                    </span>
+                  ))}
+                  {landmark.historicDistricts && landmark.historicDistricts.slice(0, 1).map((dist) => (
+                    <span
+                      key={dist}
+                      className="text-[10px] bg-teal-50 text-teal-800 border border-teal-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[170px]"
+                      title={`Historic District: ${dist}`}
+                    >
+                      <LandmarkIcon className="w-2.5 h-2.5 shrink-0 text-teal-600" />
+                      <span className="truncate">{dist}</span>
                     </span>
                   ))}
                 </div>

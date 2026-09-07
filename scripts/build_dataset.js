@@ -268,10 +268,20 @@ export async function processLandmarks() {
       const qid = stmt.mainsnak?.datavalue?.value?.id;
       if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
     });
+    // Location / Historic districts (P276)
+    ent.claims?.P276?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
   });
   if (secondaryQids.size > 0) {
     const extraEntities = await fetchWikidataEntities(Array.from(secondaryQids));
     Object.assign(wikidataEntities, extraEntities);
+  }
+
+  function isHistoricDistrict(entity) {
+    if (!entity || !entity.claims?.P31) return false;
+    return entity.claims.P31.some(stmt => stmt.mainsnak?.datavalue?.value?.id === 'Q15243209');
   }
 
   const landmarks = landmarkElements.map(el => {
@@ -395,6 +405,21 @@ export async function processLandmarks() {
       });
     }
     const notableResidents = Array.from(residentSet);
+
+    // Historic districts (Wikidata P276 location where target is an instance of "historic district" Q15243209)
+    const districtSet = new Set();
+    if (wdEntity?.claims?.P276) {
+      wdEntity.claims.P276.forEach(stmt => {
+        const dQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (dQid && wikidataEntities[dQid] && isHistoricDistrict(wikidataEntities[dQid])) {
+          const districtName = wikidataEntities[dQid]?.labels?.en?.value;
+          if (districtName) {
+            districtSet.add(districtName);
+          }
+        }
+      });
+    }
+    const historicDistricts = Array.from(districtSet);
 
     // Address
     const addressParts = [
@@ -557,6 +582,8 @@ export async function processLandmarks() {
       hasPlaque: matchingPlaques.length > 0,
       architects,
       architectureStyles,
+      historicDistricts,
+      historicDistrict: historicDistricts,
       notableResidents,
       address,
       wikidata: qid,

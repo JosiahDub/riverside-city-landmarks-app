@@ -4,7 +4,7 @@ import { getStyleInfo } from '../data/architecturalStyles';
 import { 
   CheckCircle2, XCircle, AlertCircle, ExternalLink, Search, 
   ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users,
-  RefreshCw, HelpCircle, Info, Award, Star, ScrollText
+  RefreshCw, HelpCircle, Info, Award, Star, ScrollText, Landmark as LandmarkIcon
 } from 'lucide-react';
 
 interface StatusPageProps {
@@ -15,7 +15,7 @@ interface StatusPageProps {
   isSyncing?: boolean;
 }
 
-type MissingFilter = 'all' | 'missing_any' | 'missing_date' | 'missing_designation' | 'missing_style' | 'missing_architect' | 'missing_image' | 'missing_residents' | 'complete';
+type MissingFilter = 'all' | 'missing_any' | 'missing_date' | 'missing_designation' | 'missing_style' | 'missing_architect' | 'missing_image' | 'missing_residents' | 'has_district' | 'missing_district' | 'complete';
 type SortField = 'ref' | 'name' | 'missingCount';
 
 export const StatusPage: React.FC<StatusPageProps> = ({
@@ -52,6 +52,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
     let hasArchitect = 0;
     let hasImage = 0;
     let hasResidents = 0;
+    let hasDistrict = 0;
     let fullyComplete = 0;
 
     baseList.forEach((l) => {
@@ -61,6 +62,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       const archOk = l.architects && l.architects.length > 0;
       const imgOk = Boolean(l.imageUrl);
       const resOk = Boolean(l.notableResidents && l.notableResidents.length > 0);
+      const distOk = Boolean(l.historicDistricts && l.historicDistricts.length > 0);
 
       if (dateOk) hasDate++;
       if (desigOk) hasDesignation++;
@@ -68,6 +70,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       if (archOk) hasArchitect++;
       if (imgOk) hasImage++;
       if (resOk) hasResidents++;
+      if (distOk) hasDistrict++;
       if (dateOk && styleOk && archOk) fullyComplete++;
     });
 
@@ -85,6 +88,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       missingImage: total - hasImage,
       hasResidents,
       missingResidents: total - hasResidents,
+      hasDistrict,
+      missingDistrict: total - hasDistrict,
       fullyComplete,
     };
   }, [baseList]);
@@ -98,6 +103,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       const hasArchitect = l.architects && l.architects.length > 0;
       const hasImage = Boolean(l.imageUrl);
       const hasResidents = Boolean(l.notableResidents && l.notableResidents.length > 0);
+      const hasDistrict = Boolean(l.historicDistricts && l.historicDistricts.length > 0);
 
       // Status filter
       if (filterType === 'missing_any' && hasDate && hasStyle && hasArchitect) return false;
@@ -107,6 +113,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       if (filterType === 'missing_architect' && hasArchitect) return false;
       if (filterType === 'missing_image' && hasImage) return false;
       if (filterType === 'missing_residents' && hasResidents) return false;
+      if (filterType === 'has_district' && !hasDistrict) return false;
+      if (filterType === 'missing_district' && hasDistrict) return false;
       if (filterType === 'complete' && (!hasDate || !hasStyle || !hasArchitect)) return false;
 
       // Text search
@@ -141,7 +149,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
   // Export to CSV
   const handleExportCSV = () => {
-    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'WikidataID', 'OSMUrl'];
+    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'];
     const rows = sortedLandmarks.map((l) => [
       `"${l.ref}"`,
       `"${l.name.replace(/"/g, '""')}"`,
@@ -159,6 +167,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       l.architects.length > 0 ? 'YES' : 'NO',
       l.imageUrl ? 'YES' : 'NO',
       `"${(l.notableResidents || []).join('; ')}"`,
+      `"${(l.historicDistricts || []).join('; ')}"`,
+      l.historicDistricts && l.historicDistricts.length > 0 ? 'YES' : 'NO',
       `"${l.wikidata || ''}"`,
       `"${l.osmUrl}"`,
     ]);
@@ -283,6 +293,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   <li><code className="text-amber-200">building:architecture=mission_revival</code></li>
                   <li><code className="text-amber-200">start_date=1903</code></li>
                   <li><code className="text-purple-300">Wikidata P1435 -&gt; P580 (Designation Date)</code></li>
+                  <li><code className="text-teal-300">Wikidata P276 -&gt; Historic District (Q15243209)</code></li>
                 </ul>
               </div>
 
@@ -315,7 +326,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
           </div>
         )}
         {/* Progress Metric Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
           {/* Total */}
           <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
             <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500">Total Audited</span>
@@ -477,6 +488,31 @@ export const StatusPage: React.FC<StatusPageProps> = ({
             </div>
             <div className="text-[10px] text-stone-500 mt-1">Ready for research</div>
           </div>
+
+          {/* Historic Districts */}
+          <div 
+            onClick={() => setFilterType(filterType === 'has_district' ? 'all' : 'has_district')}
+            className={`p-3.5 rounded-xl border shadow-sm cursor-pointer transition flex flex-col justify-between ${
+              filterType === 'has_district' || filterType === 'missing_district' ? 'bg-teal-50/80 border-teal-400 ring-2 ring-teal-400/20' : 'bg-white border-stone-200 hover:border-stone-300'
+            }`}
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1">
+                <LandmarkIcon className="w-3 h-3 text-teal-700" /> District
+              </span>
+              <span className="text-xs font-bold text-teal-900">{stats.hasDistrict}/{stats.total}</span>
+            </div>
+            <div className="mt-2">
+              <div className="flex items-baseline gap-1">
+                <span className="text-xl font-bold text-stone-900">{stats.hasDistrict}</span>
+                <span className="text-[11px] font-semibold text-teal-700">in district</span>
+              </div>
+              <div className="w-full bg-stone-100 rounded-full h-1.5 mt-2 overflow-hidden">
+                <div className="bg-teal-600 h-1.5 rounded-full" style={{ width: `${(stats.hasDistrict / stats.total) * 100}%` }}></div>
+              </div>
+            </div>
+            <div className="text-[10px] text-stone-500 mt-1">P276 &#8594; Q15243209</div>
+          </div>
         </div>
 
         {/* Filters & Search Toolbar */}
@@ -533,6 +569,22 @@ export const StatusPage: React.FC<StatusPageProps> = ({
               }`}
             >
               Missing Photo ({stats.missingImage})
+            </button>
+            <button
+              onClick={() => setFilterType('has_district')}
+              className={`text-xs px-2.5 py-1 rounded-lg font-medium transition ${
+                filterType === 'has_district' ? 'bg-teal-700 text-white shadow-xs' : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+              }`}
+            >
+              In District ({stats.hasDistrict})
+            </button>
+            <button
+              onClick={() => setFilterType('missing_district')}
+              className={`text-xs px-2.5 py-1 rounded-lg font-medium transition ${
+                filterType === 'missing_district' ? 'bg-teal-600 text-white shadow-xs' : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+              }`}
+            >
+              No District ({stats.missingDistrict})
             </button>
             <button
               onClick={() => setFilterType('complete')}
@@ -628,6 +680,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   <th className="py-3 px-3 min-w-[160px]">Architect</th>
                   <th className="py-3 px-3 w-20">Photo</th>
                   <th className="py-3 px-3 min-w-[130px]">Notable Residents</th>
+                  <th className="py-3 px-3 min-w-[150px]">Historic District</th>
                   <th className="py-3 px-4 text-right w-36">Contribute / Edit</th>
                 </tr>
               </thead>
@@ -801,6 +854,25 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                           </div>
                         ) : (
                           <span className="text-stone-400 italic text-[11px]">Unlisted</span>
+                        )}
+                      </td>
+
+                      {/* Historic District */}
+                      <td className="py-3 px-3">
+                        {landmark.historicDistricts && landmark.historicDistricts.length > 0 ? (
+                          <div className="flex flex-wrap gap-1">
+                            {landmark.historicDistricts.map((d) => (
+                              <span
+                                key={d}
+                                className="inline-flex items-center gap-1 text-teal-900 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded font-medium text-[11px]"
+                              >
+                                <CheckCircle2 className="w-3 h-3 text-teal-600 shrink-0" />
+                                <span>{d}</span>
+                              </span>
+                            ))}
+                          </div>
+                        ) : (
+                          <span className="text-stone-400 italic text-[11px]">None</span>
                         )}
                       </td>
 
