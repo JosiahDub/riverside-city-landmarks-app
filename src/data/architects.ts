@@ -23,7 +23,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Arthur Burnett Benton',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Arthur_Burnett_Benton',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Arthur_Burnett_Benton.png/330px-Arthur_Burnett_Benton.png',
-    bio: 'American architect.'
+    bio: 'Arthur Burnett Benton (1858–1927) was an influential advocate of California’s Mission Revival and Arts & Crafts movements. After working for the Santa Fe Railway, he settled in Los Angeles and became a founding member of The Landmarks Club, one of California’s first preservation organizations. He was closely associated with Mission Inn owner Frank Miller, designing the hotel’s Mission and Cloister wings and several later additions. Benton’s wider body of work included churches, hotels, residences, and the San Gabriel Mission Playhouse. He served as president of the Southern California Chapter of the American Institute of Architects.'
   },
   'Julia Morgan': {
     name: 'Julia Morgan',
@@ -31,21 +31,21 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Julia Morgan',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Julia_Morgan',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Julia_Morgan.jpg',
-    bio: 'American architect.'
+    bio: 'Julia Morgan (1872–1957) was California’s first licensed female architect and one of the most prolific architects in American history, designing more than 700 buildings, including Hearst Castle and the Asilomar conference grounds. Her only Inland Empire commission was Riverside’s 1929 YWCA, now the Riverside Art Museum—a restrained Mediterranean Revival building designed to accommodate athletics, lodging, education, and community life. She pioneered the use of reinforced concrete in California, employing it to create buildings that combined architectural grace with exceptional durability and resistance to earthquakes and fire. Morgan was posthumously awarded the American Institute of Architects’ Gold Medal in 2014.'
   },
   'Franklin Pierce Burnham': {
     name: 'Franklin Pierce Burnham',
     wikidataId: 'Q5491744',
     wikipediaTitle: 'Franklin Pierce Burnham',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Franklin_Pierce_Burnham',
-    bio: 'American architect.'
+    bio: 'Franklin Pierce Burnham (1853–1909) and William J. Bliesner Jr. formed the Los Angeles architectural partnership of Burnham and Bliesner, which won competitions for two of Riverside’s most important civic buildings: the 1903 Mission Revival Carnegie Library and the Beaux-Arts Riverside County Courthouse. The library was demolished in 1964, but the courthouse remains one of the city’s most imposing public monuments and a defining feature of Main Street.'
   },
   'Henry L. A. Jekel': {
     name: 'Henry L. A. Jekel',
     wikidataId: 'Q106517006',
     wikipediaTitle: 'Henry L. A. Jekel',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Henry_L._A._Jekel',
-    bio: 'American architect.'
+    bio: 'Henry L. A. Jekel (1876–1960) was a Buffalo-born architect and engineer whose early career centered on steel-frame construction and skyscraper development in the East. After first visiting Riverside in 1909, he returned permanently in 1921 and developed an eclectic, playful, regional style combining Mission Revival, Spanish Colonial, Mediterranean, and Arts & Crafts influences. His carefully crafted houses and institutional buildings remain defining features of several Riverside historic districts.'
   },
   'James Knox Taylor': {
     name: 'James Knox Taylor',
@@ -81,7 +81,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   },
   'Robert H. Spurgeon, Jr.': {
     name: 'Robert H. Spurgeon, Jr.',
-    bio: 'American architect.'
+    bio: 'Robert H. Spurgeon Jr. (1892–1931) was a Columbia-trained architect who also studied in Paris before establishing a brief practice in Riverside during the 1920s. Specializing in Spanish Colonial and Mediterranean Revival residences, he designed approximately thirty-three Riverside homes. Spurgeon moved to Montecito in 1929 and died unexpectedly from a ruptured appendix only two years later.'
   },
   'Lester S. Moore': {
     name: 'Lester S. Moore',
@@ -90,7 +90,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   'John A. Walls': {
     name: 'John A. Walls',
     wikidataId: 'Q124968149',
-    bio: 'American architect.'
+    bio: 'John A. Walls was a Los Angeles architect best remembered in Riverside for several elaborate Victorian residences. His principal surviving work is the 1891 Bettner House—now the Museum of Riverside’s Heritage House—one of the city’s finest examples of Queen Anne domestic architecture; he is also associated with the 1888 Streeter House. Although his documented Riverside portfolio is relatively small, its quality gives him an important place in the city’s architectural history.'
   },
   'Myron Hunt': {
     name: 'Myron Hunt',
@@ -98,17 +98,27 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'Myron Hunt',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Myron_Hunt',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Myron_Hunt.jpg/330px-Myron_Hunt.jpg',
-    bio: 'American architect.'
+    bio: 'Myron Hunt (1868–1952) was one of Southern California’s leading early twentieth-century architects. Educated at Northwestern University and MIT, he helped define the region’s architectural identity through such major works as the Huntington Library, Rose Bowl, Ambassador Hotel, and buildings at Occidental and Pomona colleges (including the Bridges Hall of Music). In Riverside, Hunt designed the First Congregational Church and the Mission Inn’s Spanish Wing.'
   },
   'A. W. Boggs': {
-    name: 'A. W. Boggs',
+    name: 'Augustus Washington Boggs',
     wikidataId: 'Q141193839',
-    bio: 'American architect.'
+    bio: 'Augustus Washington Boggs (1854–1920) is generally regarded as Riverside’s first professional architect. Arriving in 1880, he worked as both designer and builder during the city’s formative years, producing churches, banks, houses, commercial buildings, and the 1882 Citrus Pavilion. His surviving 1881 Arlington Presbyterian Church is Riverside’s oldest church building, and his firm also performed early construction work at Frank Miller’s Glenwood Hotel.'
   },
   'Seehorn & Preston': {
     name: 'Seehorn & Preston',
     wikidataId: 'Q141193069',
     bio: 'American architect.'
+  },
+  'Adam Clark Willard': {
+    name: 'Adam Clark Willard',
+    wikidataId: 'Q140778690',
+    bio: 'Adam Clark Willard was one of Riverside’s leading late-nineteenth-century architects. His two most important commissions were the Richardsonian Romanesque Loring Office Building and Opera House of 1889–90 and the 1891–92 All Souls Universalist Church, an unusually accomplished interpretation of Norman and English Gothic architecture built from red Arizona sandstone. Together, they introduced a level of architectural sophistication and monumentality uncommon in early Riverside.'
+  },
+  'James Madison Wood': {
+    name: 'James Madison Wood',
+    wikidataId: 'Q140779110',
+    bio: 'James Madison Wood (1841–1923) was a nationally active specialist in theater and opera-house design whose projects extended from Canada to the American West. He came to Riverside in 1889 to design the interior and theatrical spaces of A. C. Willard’s Loring Opera House and subsequently designed his own 1891 Colonial Revival residence, now known as the Wood House. His work brought specialized theater-planning expertise to one of Riverside’s earliest major cultural institutions.'
   }
 };
 
