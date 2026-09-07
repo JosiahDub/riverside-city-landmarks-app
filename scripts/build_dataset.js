@@ -286,8 +286,8 @@ export async function processLandmarks() {
 
   const landmarks = landmarkElements.map(el => {
     const tags = el.tags || {};
-    const lat = el.lat ?? el.center?.lat;
-    const lon = el.lon ?? el.center?.lon;
+    let lat = el.lat ?? el.center?.lat;
+    let lon = el.lon ?? el.center?.lon;
     const ref = tags['ref:US-CA:city_of_riverside_cultural_heritage_board'] || '';
     
     // Extract first valid QID
@@ -302,6 +302,24 @@ export async function processLandmarks() {
         name = `${tags['addr:housenumber']} ${tags['addr:street']}`;
       } else {
         name = `Landmark #${ref || el.id}`;
+      }
+    }
+
+    // For long landmarks (such as landmarks with an OSM relation instead of a way),
+    // set the point on the map to the coordinate location (P625) from Wikidata.
+    const isLongLandmark = el.type === 'relation' ||
+      Boolean(tags.route) ||
+      (Boolean(tags.waterway) && !tags.building) ||
+      (Boolean(tags.highway) && !tags.building) ||
+      (tags.name && /(avenue.*median|canal)/i.test(tags.name) && !tags.building);
+
+    if (isLongLandmark) {
+      const p625 = wdEntity?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
+      if (p625 && typeof p625.latitude === 'number' && typeof p625.longitude === 'number') {
+        lat = p625.latitude;
+        lon = p625.longitude;
+      } else {
+        console.log(`[Missing P625 Coordinates] Long landmark #${ref || el.id} "${name}" (OSM: ${el.type}/${el.id}, Wikidata: ${qid || 'none'}) does not have a coordinate location (P625).`);
       }
     }
 

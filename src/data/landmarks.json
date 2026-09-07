@@ -177,8 +177,12 @@
     "architectureStyles": [
       "beaux_arts"
     ],
-    "historicDistricts": [],
-    "historicDistrict": [],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q135923668",
@@ -551,8 +555,12 @@
     "architectureStyles": [
       "mission_revival"
     ],
-    "historicDistricts": [],
-    "historicDistrict": [],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
+    ],
     "notableResidents": [],
     "address": "3606 Lemon Street Riverside CA 92501",
     "wikidata": "Q5452705",
@@ -603,8 +611,8 @@
     "ref": "8",
     "refNumber": 8,
     "name": "Victoria Avenue",
-    "lat": 33.9301261,
-    "lon": -117.4186135,
+    "lat": 33.936333169079866,
+    "lon": -117.37820988248008,
     "description": "street in Riverside, California, United States of America",
     "startDate": "1892",
     "year": 1892,
@@ -1693,8 +1701,8 @@
     "ref": "24",
     "refNumber": 24,
     "name": "Gage Canal",
-    "lat": 33.9648266,
-    "lon": -117.3734343,
+    "lat": 33.985833333333,
+    "lon": -117.33222222222,
     "description": "canal in Riverside County, California, United States of America",
     "startDate": "1888",
     "year": 1888,
@@ -1965,8 +1973,12 @@
     "architectureStyles": [
       "spanish_revival"
     ],
-    "historicDistricts": [],
-    "historicDistrict": [],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
+    ],
     "notableResidents": [],
     "address": null,
     "wikidata": "Q139083261",
@@ -2743,8 +2755,8 @@
     "ref": "40",
     "refNumber": 40,
     "name": "Mission Inn Avenue",
-    "lat": 33.9826834,
-    "lon": -117.3723869,
+    "lat": 33.98293964019687,
+    "lon": -117.37381620922328,
     "description": "historic street in Riverside, California",
     "startDate": null,
     "year": null,
@@ -3239,8 +3251,8 @@
     "ref": "48",
     "refNumber": 48,
     "name": "Quadrangle",
-    "lat": 33.9708646,
-    "lon": -117.3822274,
+    "lat": 33.97086195681867,
+    "lon": -117.38220795940896,
     "description": "historic quadrangle in Riverside, California",
     "startDate": "1924",
     "year": 1924,
@@ -3675,8 +3687,8 @@
     "ref": "54",
     "refNumber": 54,
     "name": "Victoria Avenue",
-    "lat": 33.9619236,
-    "lon": -117.3703254,
+    "lat": 33.96203776040199,
+    "lon": -117.37033362827971,
     "description": "",
     "startDate": "1928",
     "year": 1928,
@@ -4210,8 +4222,8 @@
     "ref": "62",
     "refNumber": 62,
     "name": "Magnolia Avenue Parkways and Center Median venue Parkways and Center Media",
-    "lat": 33.9449469,
-    "lon": -117.4033041,
+    "lat": 33.945467411506336,
+    "lon": -117.40236894089193,
     "description": "historic median and managed vegetation along Magnolia Avenue in Riverside, California",
     "startDate": null,
     "year": null,
@@ -7259,8 +7271,8 @@
     "ref": "109",
     "refNumber": 109,
     "name": "Riverside Canal",
-    "lat": 33.9796336,
-    "lon": -117.369288,
+    "lat": 34.011792856833985,
+    "lon": -117.3396295537537,
     "description": "historic irrigation canal in Riverside, California",
     "startDate": "1871",
     "year": 1871,
@@ -9956,8 +9968,8 @@
     "ref": "152",
     "refNumber": 152,
     "name": "Riverside City Hall",
-    "lat": 33.980658,
-    "lon": -117.375507,
+    "lat": 33.980663583702594,
+    "lon": -117.37548732201425,
     "description": "Current city hall of Riverside, California",
     "startDate": "1975",
     "year": 1975,
@@ -9991,8 +10003,12 @@
       "brutalist",
       "new_formalism"
     ],
-    "historicDistricts": [],
-    "historicDistrict": [],
+    "historicDistricts": [
+      "Mission Inn Historic District"
+    ],
+    "historicDistrict": [
+      "Mission Inn Historic District"
+    ],
     "notableResidents": [],
     "address": "3900 Main Street Riverside CA 92522",
     "wikidata": "Q139083291",
