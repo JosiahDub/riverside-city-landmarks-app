@@ -8932,7 +8932,9 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "historicDistricts": [],
     "historicDistrict": [],
     "notableResidents": [],
