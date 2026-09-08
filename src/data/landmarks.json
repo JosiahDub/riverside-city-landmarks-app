@@ -313,7 +313,8 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [
-      "A. W. Boggs"
+      "A. W. Boggs",
+      "Augustus Washington Boggs"
     ],
     "architectureStyles": [
       "gothic_revival"
@@ -2953,8 +2954,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14164976472",
+        "osmId": 14164976472,
+        "osmType": "node",
+        "name": "Lerner Building City Landmark",
+        "lat": 33.9795534,
+        "lon": -117.3746704,
+        "subjectWikidata": "Q140673036",
+        "commonsImage": "File:Lerner Building City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lerner_Building_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Lerner_Building_City_Landmark_Plaque.jpg?width=400",
+        "direction": "205",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14164976472"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [
       "italian_renaissance",
@@ -3388,7 +3405,7 @@
     "osmId": 232933223,
     "ref": "50",
     "refNumber": 50,
-    "name": "California Museum of Photography and the Barbara & Art Culver Center of the Arts",
+    "name": "Former Rouse's Department Store",
     "lat": 33.9812332,
     "lon": -117.3744729,
     "description": "historic former department store building in Riverside, California",
@@ -3442,23 +3459,14 @@
       "addr:street": "Main Street",
       "building": "office",
       "building:levels": "2",
-      "contact:facebook": "ucrarts",
-      "contact:instagram": "ucrarts",
-      "contact:twitter": "ucrarts",
-      "email": "ucrarts@ucr.edu",
-      "fee": "yes",
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
-      "internet_access": "wlan",
       "level": "2",
-      "name": "California Museum of Photography and the Barbara & Art Culver Center of the Arts",
-      "opening_hours": "Th 12:00-17:00; Sa-Su 11:00-17:00",
+      "name": "Former Rouse's Department Store",
       "phone": "+1-951-827-3755",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "50",
       "start_date": "1895",
-      "tourism": "museum",
-      "website": "http://ucrarts.ucr.edu/",
       "wheelchair": "yes",
       "wikidata": "Q140680714",
       "wikimedia_commons": "File:UCR Photography Museum.jpg"
@@ -6330,9 +6338,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140878996",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Dr. Edmund Jaeger House Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr._Edmund_Jaeger_House_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr._Edmund_Jaeger_House_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/899617717",
     "natural": null,
@@ -6355,7 +6363,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "94",
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1950",
-      "wikidata": "Q140878996"
+      "wikidata": "Q140878996",
+      "wikimedia_commons": "File:Dr. Edmund Jaeger House Exterior.jpg"
     }
   },
   {
@@ -6443,8 +6452,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14163177491",
+        "osmId": 14163177491,
+        "osmType": "node",
+        "name": "Irving School City Landmark",
+        "lat": 33.9709391,
+        "lon": -117.3664962,
+        "subjectWikidata": "Q140879305",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "205",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14163177491"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "architectureStyles": [],
     "historicDistricts": [],
@@ -7322,8 +7347,8 @@
     "ref": "110",
     "refNumber": 110,
     "name": "Piddington House",
-    "lat": 33.9936504,
-    "lon": -117.376982,
+    "lat": 33.9936451,
+    "lon": -117.3769807,
     "description": "historic house in Riverside, California",
     "startDate": "1927",
     "year": 1927,
@@ -7332,8 +7357,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14165009426",
+        "osmId": 14165009426,
+        "osmType": "node",
+        "name": "Piddington House City Landmark",
+        "lat": 33.9935628,
+        "lon": -117.3769694,
+        "subjectWikidata": "Q140902179",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "205",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14165009426"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -7348,9 +7389,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140902179",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Piddington House Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Piddington_House_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Piddington_House_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/881134297",
     "natural": null,
@@ -7372,7 +7413,8 @@
       "name": "Piddington House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "110",
       "source": "microsoft/BuildingFootprints",
-      "wikidata": "Q140902179"
+      "wikidata": "Q140902179",
+      "wikimedia_commons": "File:Piddington House Exterior.jpg"
     }
   },
   {
@@ -7576,9 +7618,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140894301",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:John Swanson House Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Swanson_House_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Swanson_House_Exterior.jpg?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/890783732",
     "natural": null,
@@ -7601,7 +7643,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "113",
       "source": "microsoft/BuildingFootprints",
       "start_date": "1900",
-      "wikidata": "Q140894301"
+      "wikidata": "Q140894301",
+      "wikimedia_commons": "File:John Swanson House Exterior.jpg"
     }
   },
   {
@@ -8771,7 +8814,7 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [
-      "Welmer P. Lamar"
+      "Welmer Parsons Lamar"
     ],
     "architectureStyles": [
       "tudor_revival"
@@ -8798,7 +8841,8 @@
       "addr:housenumber": "5036",
       "addr:state": "CA",
       "addr:street": "Myrtle Avenue",
-      "architect": "Welmer P. Lamar",
+      "architect": "Welmer Parsons Lamar",
+      "architect:wikidata": "Q141347258",
       "building": "house",
       "building:architecture": "tudor_revival",
       "building:levels": "2",
@@ -8874,10 +8918,10 @@
     "osmId": 959583620,
     "ref": "134",
     "refNumber": 134,
-    "name": "Nielson Pool House",
+    "name": "Nielsen Pool House",
     "lat": 33.9597241,
     "lon": -117.3602541,
-    "description": "historic house in Riverside, California",
+    "description": "Riverside City Landmark #134",
     "startDate": "1966",
     "year": 1966,
     "designationDate": null,
@@ -8888,20 +8932,18 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [],
-    "architectureStyles": [
-      "midcentury_modern"
-    ],
+    "architectureStyles": [],
     "historicDistricts": [],
     "historicDistrict": [],
     "notableResidents": [],
     "address": "5050 Sedgwick Avenue Riverside CA 92506",
-    "wikidata": "Q140917174",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q140917174",
-    "wikipedia": null,
-    "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "wikidata": "Q28455819",
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q28455819",
+    "wikipedia": "Nielsen Pool House",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Nielsen_Pool_House",
+    "commonsImage": "File:Nielsen Pool House - Front PNG.png",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nielsen_Pool_House_-_Front_PNG.png?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Nielsen_Pool_House_-_Front_PNG.png?width=400",
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/959583620",
     "natural": null,
@@ -8921,11 +8963,13 @@
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "house": "detached",
-      "name": "Nielson Pool House",
+      "name": "Nielsen Pool House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "134",
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1966",
-      "wikidata": "Q140917174"
+      "wikidata": "Q28455819",
+      "wikimedia_commons": "File:Nielsen Pool House - Front PNG.png",
+      "wikipedia": "en:Nielsen Pool House"
     }
   },
   {
