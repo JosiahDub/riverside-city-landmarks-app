@@ -885,17 +885,27 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
                       {/* Photo */}
                       <td className="py-3 px-3">
-                        {hasImage ? (
-                          <span className="inline-flex items-center gap-1 text-emerald-800 text-[11px] font-medium">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                            Photo
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 text-stone-400 text-[11px]">
-                            <XCircle className="w-3.5 h-3.5 text-stone-300" />
-                            None
-                          </span>
-                        )}
+                        <div className="flex flex-col gap-1 items-start">
+                          {hasImage ? (
+                            <span className="inline-flex items-center gap-1 text-emerald-800 text-[11px] font-medium">
+                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                              Photo
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center gap-1 text-stone-400 text-[11px]">
+                              <XCircle className="w-3.5 h-3.5 text-stone-300" />
+                              None
+                            </span>
+                          )}
+                          {landmark.historicalImages && landmark.historicalImages.length > 0 && (
+                            <span
+                              className="inline-flex items-center gap-1 text-amber-900 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded text-[10px] font-medium"
+                              title={`Historical image (${landmark.historicalImages[0].pointInTime})`}
+                            >
+                              Hist ({landmark.historicalImages[0].pointInTime})
+                            </span>
+                          )}
+                        </div>
                       </td>
 
                       {/* Notable Residents */}

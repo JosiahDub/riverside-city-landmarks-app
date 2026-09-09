@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Landmark, Plaque } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -29,20 +29,43 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
   const [imageModalOpen, setImageModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState<number>(0);
 
-  // Gallery images combining main building photo and on-site plaque photos
+  // Gallery images combining main building photo, historical photos, and on-site plaque photos
   const galleryImages = useMemo(() => {
     if (!landmark) return [];
-    const list: { url: string; title: string; subtitle?: string; commons?: string; type: 'building' | 'plaque'; osmUrl?: string }[] = [];
+    const list: {
+      url: string;
+      title: string;
+      subtitle?: string;
+      commons?: string;
+      type: 'building' | 'historical' | 'plaque';
+      osmUrl?: string;
+      pointInTime?: string;
+    }[] = [];
+
     if (landmark.imageUrl) {
       list.push({
         url: landmark.imageUrl,
         title: landmark.name,
-        subtitle: 'Landmark Building / Feature',
+        subtitle: 'Landmark Building / Modern View',
         commons: landmark.commonsImage || undefined,
         type: 'building',
-        osmUrl: landmark.osmUrl
+        osmUrl: landmark.osmUrl,
       });
     }
+
+    (landmark.historicalImages || []).forEach((hist) => {
+      if (hist.imageUrl) {
+        list.push({
+          url: hist.imageUrl,
+          title: landmark.name,
+          subtitle: `Historical Image${hist.pointInTime ? ` (${hist.pointInTime})` : ''}`,
+          commons: hist.commonsImage || undefined,
+          type: 'historical',
+          pointInTime: hist.pointInTime,
+        });
+      }
+    });
+
     (landmark.plaques || []).forEach((pl, idx) => {
       if (pl.imageUrl) {
         list.push({
@@ -51,10 +74,11 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
           subtitle: 'On-Site Historical Plaque',
           commons: pl.commonsImage || undefined,
           type: 'plaque',
-          osmUrl: pl.osmUrl
+          osmUrl: pl.osmUrl,
         });
       }
     });
+
     return list;
   }, [landmark]);
 
@@ -143,7 +167,135 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
           </div>
 
           {/* Image Block */}
-          {landmark.imageUrl ? (
+          {landmark.imageUrl && landmark.historicalImages && landmark.historicalImages.length > 0 ? (
+            /* Modern & Historical Images displayed alongside each other */
+            <div className="space-y-2">
+              <div className="flex items-center justify-between text-xs text-stone-500 font-semibold px-0.5">
+                <span className="flex items-center gap-1.5 text-stone-700">
+                  <ImageIcon className="w-3.5 h-3.5 text-stone-500" />
+                  <span>Modern & Historical Views</span>
+                </span>
+                <span className="text-[11px] font-normal text-stone-500">
+                  Side-by-side comparison
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Modern Image Card */}
+                <div className="rounded-xl overflow-hidden shadow-md bg-stone-100 border border-stone-200 flex flex-col justify-between">
+                  <div className="relative group h-48 sm:h-52 bg-stone-900 cursor-pointer overflow-hidden">
+                    <img
+                      src={landmark.imageUrl}
+                      alt={`${landmark.name} (Current)`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                      onClick={() => {
+                        const modIdx = galleryImages.findIndex(g => g.type === 'building');
+                        setModalImageIndex(modIdx !== -1 ? modIdx : 0);
+                        setImageModalOpen(true);
+                      }}
+                    />
+                    <div className="absolute top-2 left-2 bg-stone-900/80 text-white text-[11px] font-semibold px-2 py-0.5 rounded-md backdrop-blur shadow-xs">
+                      Current (OSM)
+                    </div>
+                    <div className="absolute bottom-2 right-2 flex items-center gap-1.5">
+                      {landmark.plaques && landmark.plaques.some(p => p.imageUrl) && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            const firstPlaqueIdx = galleryImages.findIndex(g => g.type === 'plaque');
+                            setModalImageIndex(firstPlaqueIdx !== -1 ? firstPlaqueIdx : 0);
+                            setImageModalOpen(true);
+                          }}
+                          className="bg-amber-900/90 hover:bg-amber-950 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur transition shadow-md font-medium"
+                          title="View plaque photo"
+                        >
+                          <ScrollText className="w-3.5 h-3.5 text-amber-300" />
+                          <span>Plaque</span>
+                        </button>
+                      )}
+                      <button
+                        onClick={() => {
+                          const modIdx = galleryImages.findIndex(g => g.type === 'building');
+                          setModalImageIndex(modIdx !== -1 ? modIdx : 0);
+                          setImageModalOpen(true);
+                        }}
+                        className="bg-black/70 hover:bg-black text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur transition shadow-md"
+                        title="View full modern image"
+                      >
+                        <ImageIcon className="w-3.5 h-3.5" /> Full View
+                      </button>
+                    </div>
+                  </div>
+                  {landmark.commonsImage && (
+                    <div className="p-2 text-[11px] text-stone-500 bg-stone-50 border-t border-stone-200 flex justify-between items-center">
+                      <span className="truncate text-stone-600">Modern View</span>
+                      <a
+                        href={`https://commons.wikimedia.org/wiki/${landmark.commonsImage}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-terracotta hover:underline shrink-0 ml-2"
+                      >
+                        Commons Page
+                      </a>
+                    </div>
+                  )}
+                </div>
+
+                {/* Historical Image Card(s) */}
+                {landmark.historicalImages.map((hist, hIdx) => (
+                  <div
+                    key={hist.commonsImage || hIdx}
+                    className="rounded-xl overflow-hidden shadow-md bg-amber-50/40 border border-amber-300/80 flex flex-col justify-between"
+                  >
+                    <div className="relative group h-48 sm:h-52 bg-stone-900 cursor-pointer overflow-hidden">
+                      <img
+                        src={hist.imageUrl}
+                        alt={`${landmark.name} (${hist.pointInTime})`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                        onClick={() => {
+                          const hImgIdx = galleryImages.findIndex(g => g.type === 'historical' && g.url === hist.imageUrl);
+                          setModalImageIndex(hImgIdx !== -1 ? hImgIdx : 0);
+                          setImageModalOpen(true);
+                        }}
+                      />
+                      <div className="absolute top-2 left-2 bg-amber-900/90 text-amber-100 text-[11px] font-semibold px-2 py-0.5 rounded-md backdrop-blur shadow-xs flex items-center gap-1">
+                        <History className="w-3 h-3 text-amber-300" />
+                        <span>Historical</span>
+                      </div>
+                      <button
+                        onClick={() => {
+                          const hImgIdx = galleryImages.findIndex(g => g.type === 'historical' && g.url === hist.imageUrl);
+                          setModalImageIndex(hImgIdx !== -1 ? hImgIdx : 0);
+                          setImageModalOpen(true);
+                        }}
+                        className="absolute bottom-2 right-2 bg-black/70 hover:bg-black text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur transition shadow-md"
+                        title="View full historical image"
+                      >
+                        <ImageIcon className="w-3.5 h-3.5" /> Full View
+                      </button>
+                    </div>
+
+                    {/* Point in time displayed under the image */}
+                    <div className="p-2 text-xs bg-amber-50/80 border-t border-amber-200 flex justify-between items-center">
+                      <div className="flex items-center gap-1.5 text-amber-950 font-medium truncate">
+                        <History className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+                        <span>Point in time: <strong className="font-bold text-amber-900">{hist.pointInTime}</strong></span>
+                      </div>
+                      {hist.commonsImage && (
+                        <a
+                          href={`https://commons.wikimedia.org/wiki/${hist.commonsImage}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-terracotta hover:underline text-[11px] shrink-0 ml-2"
+                        >
+                          Commons
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : landmark.imageUrl ? (
             <div className="relative group rounded-xl overflow-hidden shadow-md bg-stone-100 border border-stone-200">
               <img
                 src={landmark.imageUrl}
@@ -192,6 +344,62 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                   </a>
                 </div>
               )}
+            </div>
+          ) : landmark.historicalImages && landmark.historicalImages.length > 0 ? (
+            /* Fallback when only historical image(s) exist */
+            <div className="space-y-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {landmark.historicalImages.map((hist, hIdx) => (
+                  <div
+                    key={hist.commonsImage || hIdx}
+                    className="rounded-xl overflow-hidden shadow-md bg-amber-50/40 border border-amber-300/80 flex flex-col justify-between"
+                  >
+                    <div className="relative group h-64 bg-stone-900 cursor-pointer overflow-hidden">
+                      <img
+                        src={hist.imageUrl}
+                        alt={`${landmark.name} (${hist.pointInTime})`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                        onClick={() => {
+                          const hImgIdx = galleryImages.findIndex(g => g.type === 'historical' && g.url === hist.imageUrl);
+                          setModalImageIndex(hImgIdx !== -1 ? hImgIdx : 0);
+                          setImageModalOpen(true);
+                        }}
+                      />
+                      <div className="absolute top-2.5 left-2.5 bg-amber-900/90 text-amber-100 text-xs font-semibold px-2.5 py-1 rounded-md backdrop-blur shadow-xs flex items-center gap-1">
+                        <History className="w-3.5 h-3.5 text-amber-300" />
+                        <span>Historical Photo</span>
+                      </div>
+                      <button
+                        onClick={() => {
+                          const hImgIdx = galleryImages.findIndex(g => g.type === 'historical' && g.url === hist.imageUrl);
+                          setModalImageIndex(hImgIdx !== -1 ? hImgIdx : 0);
+                          setImageModalOpen(true);
+                        }}
+                        className="absolute bottom-2.5 right-2.5 bg-black/70 hover:bg-black text-white text-xs px-2.5 py-1.5 rounded-md flex items-center gap-1.5 backdrop-blur transition shadow-md"
+                      >
+                        <ImageIcon className="w-3.5 h-3.5" /> Full Image
+                      </button>
+                    </div>
+                    {/* Point in time displayed under the image */}
+                    <div className="p-2.5 text-xs bg-amber-50/80 border-t border-amber-200 flex justify-between items-center">
+                      <div className="flex items-center gap-1.5 text-amber-950 font-medium">
+                        <History className="w-4 h-4 text-amber-700 shrink-0" />
+                        <span>Point in time: <strong className="font-bold text-amber-900">{hist.pointInTime}</strong></span>
+                      </div>
+                      {hist.commonsImage && (
+                        <a
+                          href={`https://commons.wikimedia.org/wiki/${hist.commonsImage}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-terracotta hover:underline text-xs shrink-0 ml-2"
+                        >
+                          Commons Page
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           ) : landmark.plaques && landmark.plaques.some(p => p.imageUrl) ? (
             /* Fallback to first plaque image if main building photo is missing */
@@ -647,7 +855,10 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
               <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-stone-800 text-stone-300 border border-stone-700">
                 {modalImageIndex + 1} / {galleryImages.length}
               </span>
-              <span className="text-xs font-medium text-stone-300">
+              <span className="text-xs font-medium text-stone-300 flex items-center gap-1.5">
+                {galleryImages[modalImageIndex]?.type === 'historical' && (
+                  <History className="w-3.5 h-3.5 text-amber-400" />
+                )}
                 {galleryImages[modalImageIndex]?.subtitle}
               </span>
             </div>
@@ -701,9 +912,25 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
               <p className="text-white font-serif font-bold text-base sm:text-lg leading-snug">
                 {galleryImages[modalImageIndex]?.title}
               </p>
+              {galleryImages[modalImageIndex]?.pointInTime && (
+                <div className="inline-flex items-center gap-1.5 bg-amber-950/80 border border-amber-700/60 text-amber-200 text-xs font-semibold px-3 py-1 rounded-full mt-1.5 shadow-sm">
+                  <History className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Point in time: <strong className="text-white font-bold">{galleryImages[modalImageIndex].pointInTime}</strong></span>
+                </div>
+              )}
               <div className="flex items-center justify-center gap-4 text-xs text-stone-400 mt-1 flex-wrap">
                 {galleryImages[modalImageIndex]?.commons && (
-                  <span>Wikimedia Commons: <strong className="text-stone-300 font-mono">{galleryImages[modalImageIndex].commons}</strong></span>
+                  <span>
+                    Wikimedia Commons:{' '}
+                    <a
+                      href={`https://commons.wikimedia.org/wiki/${galleryImages[modalImageIndex].commons}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-amber-400 hover:underline font-mono"
+                    >
+                      {galleryImages[modalImageIndex].commons}
+                    </a>
+                  </span>
                 )}
                 {galleryImages[modalImageIndex]?.osmUrl && (
                   <a
@@ -734,6 +961,16 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                     {img.type === 'plaque' && (
                       <span className="absolute bottom-0 inset-x-0 bg-amber-900/90 text-[8px] text-amber-200 text-center font-bold">
                         Plaque
+                      </span>
+                    )}
+                    {img.type === 'historical' && (
+                      <span className="absolute bottom-0 inset-x-0 bg-amber-950/90 text-[8px] text-amber-300 text-center font-bold truncate px-0.5">
+                        {img.pointInTime || 'Hist'}
+                      </span>
+                    )}
+                    {img.type === 'building' && (
+                      <span className="absolute bottom-0 inset-x-0 bg-stone-900/80 text-[8px] text-stone-200 text-center font-medium">
+                        Current
                       </span>
                     )}
                   </button>

@@ -545,10 +545,65 @@ export async function processLandmarks() {
       wikipediaUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(wikipediaTitle.replace(/ /g, '_'))}`;
     }
 
-    // Image: OSM wikimedia_commons or image, or Wikidata P18
+    // Historical images: Wikidata P18 statements with qualifier P585 (point in time)
+    const historicalImages = [];
+    if (wdEntity?.claims?.P18) {
+      wdEntity.claims.P18.forEach(stmt => {
+        const p585 = stmt.qualifiers?.P585?.[0]?.datavalue?.value;
+        if (p585 && stmt.mainsnak?.datavalue?.value) {
+          const rawFile = stmt.mainsnak.datavalue.value;
+          const cleanFile = rawFile.startsWith('File:') ? rawFile : `File:${rawFile}`;
+          const timeStr = p585.time || '';
+          const precision = p585.precision ?? 9;
+          let pointInTime = '';
+          let histYear = null;
+
+          const dateMatch = timeStr.match(/[+-](\d{4})-(\d{2})-(\d{2})/);
+          if (dateMatch) {
+            const y = parseInt(dateMatch[1], 10);
+            const m = parseInt(dateMatch[2], 10);
+            const d = parseInt(dateMatch[3], 10);
+            histYear = y;
+            if (precision <= 9 || (m === 0 && d === 0)) {
+              pointInTime = String(y);
+            } else if (precision === 10 || d === 0) {
+              const dateObj = new Date(Date.UTC(y, m - 1, 1));
+              pointInTime = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', timeZone: 'UTC' });
+            } else {
+              const dateObj = new Date(Date.UTC(y, m - 1, d));
+              pointInTime = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+            }
+          } else {
+            const yearMatch = timeStr.match(/[+-](\d{4})/);
+            if (yearMatch) {
+              histYear = parseInt(yearMatch[1], 10);
+              pointInTime = String(histYear);
+            } else {
+              pointInTime = timeStr.replace(/^[+-]/, '').split('T')[0];
+            }
+          }
+
+          historicalImages.push({
+            commonsImage: cleanFile,
+            imageUrl: getCommonsImageUrl(cleanFile, 800),
+            thumbnail: getCommonsImageUrl(cleanFile, 400),
+            pointInTime,
+            year: histYear
+          });
+        }
+      });
+    }
+
+    // Default image for search and display: defaults to the current image tagged on OSM
     let commonsImage = tags.wikimedia_commons || tags.image || null;
-    if (!commonsImage && wdEntity?.claims?.P18?.[0]?.mainsnak?.datavalue?.value) {
-      commonsImage = `File:${wdEntity.claims.P18[0].mainsnak.datavalue.value}`;
+    if (!commonsImage && wdEntity?.claims?.P18) {
+      // Fallback to modern P18 statement (without P585) first
+      const modernP18 = wdEntity.claims.P18.find(s => !s.qualifiers?.P585 && s.mainsnak?.datavalue?.value);
+      if (modernP18) {
+        commonsImage = `File:${modernP18.mainsnak.datavalue.value}`;
+      } else if (wdEntity.claims.P18[0]?.mainsnak?.datavalue?.value) {
+        commonsImage = `File:${wdEntity.claims.P18[0].mainsnak.datavalue.value}`;
+      }
     }
     const imageUrl = getCommonsImageUrl(commonsImage, 800);
     const thumbnail = getCommonsImageUrl(commonsImage, 400);
@@ -700,6 +755,8 @@ export async function processLandmarks() {
       commonsImage,
       imageUrl,
       thumbnail,
+      historicalImages,
+      historicalImage: historicalImages[0] || null,
       heritageWebsite: tags['heritage:website'] || 'https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board',
       osmUrl: `https://www.openstreetmap.org/${el.type}/${el.id}`,
       natural: tags.natural || null,

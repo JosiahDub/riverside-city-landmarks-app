@@ -26,6 +26,8 @@ export interface Landmark {
   commonsImage: string | null;
   imageUrl: string | null;
   thumbnail: string | null;
+  historicalImages?: HistoricalImage[];
+  historicalImage?: HistoricalImage | null;
   heritageWebsite: string;
   osmUrl: string;
   natural: string | null;
@@ -60,6 +62,15 @@ export interface Plaque {
   direction?: string | null;
   material?: string | null;
   osmUrl: string;
+}
+
+export interface HistoricalImage {
+  commonsImage: string;
+  imageUrl: string;
+  thumbnail: string;
+  pointInTime: string;
+  year?: number | null;
+  description?: string;
 }
 
 export interface FilterState {
