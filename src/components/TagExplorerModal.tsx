@@ -15,7 +15,7 @@ interface TagExplorerModalProps {
   onSelectEra: (minYear: number, maxYear: number) => void;
 }
 
-type TabType = 'architects' | 'styles' | 'districts' | 'eras' | 'nature';
+type TabType = 'creators' | 'styles' | 'districts' | 'eras' | 'nature';
 
 export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
   isOpen,
@@ -26,22 +26,51 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
   onSelectDistrict,
   onSelectEra,
 }) => {
-  const [activeTab, setActiveTab] = useState<TabType>('architects');
+  const [activeTab, setActiveTab] = useState<TabType>('creators');
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Extract all unique architects with counts
-  const architectCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
+  // Extract all unique creators (architects, planners, structural engineers) with counts and roles
+  const creatorCounts = useMemo(() => {
+    const creatorsMap: Record<string, { landmarkIds: Set<string>; roles: Set<string> }> = {};
+
     landmarks.forEach((l) => {
-      l.architects.forEach((arch) => {
-        counts[arch] = (counts[arch] || 0) + 1;
+      // Architects
+      (l.architects || []).forEach((arch) => {
+        const name = arch.trim();
+        if (!name) return;
+        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
+        creatorsMap[name].landmarkIds.add(l.id);
+        creatorsMap[name].roles.add('Architect');
+      });
+
+      // Urban Planners
+      (l.planners || []).forEach((planner) => {
+        const name = planner.trim();
+        if (!name) return;
+        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
+        creatorsMap[name].landmarkIds.add(l.id);
+        creatorsMap[name].roles.add('Urban Planner');
+      });
+
+      // Structural Engineers
+      (l.structuralEngineers || []).forEach((eng) => {
+        const name = eng.trim();
+        if (!name) return;
+        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
+        creatorsMap[name].landmarkIds.add(l.id);
+        creatorsMap[name].roles.add('Structural Engineer');
       });
     });
-    return Object.entries(counts)
-      .map(([name, count]) => ({
-        ...getArchitectInfo(name),
-        count,
-      }))
+
+    return Object.entries(creatorsMap)
+      .map(([name, data]) => {
+        const info = getArchitectInfo(name);
+        return {
+          ...info,
+          count: data.landmarkIds.size,
+          roles: Array.from(data.roles),
+        };
+      })
       .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
   }, [landmarks]);
 
@@ -121,15 +150,15 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
         <div className="p-3 sm:p-4 border-b border-stone-200 bg-white flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
           <div className="flex flex-wrap gap-1.5 sm:gap-2">
             <button
-              onClick={() => setActiveTab('architects')}
+              onClick={() => setActiveTab('creators')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition ${
-                activeTab === 'architects'
+                activeTab === 'creators'
                   ? 'bg-purple-600 text-white shadow-sm'
                   : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
               }`}
             >
               <User className="w-3.5 h-3.5" />
-              <span>Architects ({architectCounts.length})</span>
+              <span>Creators ({creatorCounts.length})</span>
             </button>
 
             <button
@@ -195,52 +224,73 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
 
         {/* Tab Content */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-6 bg-stone-50/50">
-          {/* TAB 1: ARCHITECTS */}
-          {activeTab === 'architects' && (
+          {/* TAB 1: CREATORS (Architects, Planners, Structural Engineers) */}
+          {activeTab === 'creators' && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {architectCounts
-                .filter((a) => a.name.toLowerCase().includes(searchTerm.toLowerCase()))
-                .map((arch) => (
+              {creatorCounts
+                .filter((c) =>
+                  c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  c.roles.some((r) => r.toLowerCase().includes(searchTerm.toLowerCase()))
+                )
+                .map((creator) => (
                   <div
-                    key={arch.name}
+                    key={creator.name}
                     className="bg-white rounded-xl p-4 border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-start justify-between gap-3">
                         <div className="flex items-start gap-3">
-                          {arch.portraitUrl ? (
+                          {creator.portraitUrl ? (
                             <img
-                              src={arch.portraitUrl}
-                              alt={arch.name}
+                              src={creator.portraitUrl}
+                              alt={creator.name}
                               className="w-14 h-14 rounded-full object-cover border-2 border-purple-200 shadow-sm shrink-0"
                             />
                           ) : (
                             <div className="w-14 h-14 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-lg border border-purple-200 shrink-0">
-                              {arch.name.charAt(0)}
+                              {creator.name.charAt(0)}
                             </div>
                           )}
                           <div>
                             <h3 className="font-serif font-bold text-base text-stone-900">
-                              {arch.name}
+                              {creator.name}
                             </h3>
-                            <span className="inline-block mt-0.5 text-xs font-semibold bg-purple-50 text-purple-700 border border-purple-200 px-2 py-0.5 rounded-full">
-                              {arch.count} Riverside landmark{arch.count > 1 ? 's' : ''}
-                            </span>
+                            <div className="flex flex-wrap items-center gap-1.5 mt-1">
+                              {creator.roles.map((role) => {
+                                let badgeColor = 'bg-purple-50 text-purple-700 border-purple-200';
+                                if (role === 'Urban Planner') {
+                                  badgeColor = 'bg-teal-50 text-teal-700 border-teal-200';
+                                } else if (role === 'Structural Engineer') {
+                                  badgeColor = 'bg-sky-50 text-sky-700 border-sky-200';
+                                }
+                                return (
+                                  <span
+                                    key={role}
+                                    className={`text-[10px] font-semibold border px-2 py-0.5 rounded-full ${badgeColor}`}
+                                  >
+                                    {role}
+                                  </span>
+                                );
+                              })}
+                              <span className="text-[10px] font-semibold bg-stone-100 text-stone-600 border border-stone-200 px-2 py-0.5 rounded-full">
+                                {creator.count} landmark{creator.count > 1 ? 's' : ''}
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      {arch.bio && (
+                      {creator.bio && (
                         <p className="text-xs text-stone-600 mt-3 line-clamp-3 leading-relaxed">
-                          {arch.bio}
+                          {creator.bio}
                         </p>
                       )}
                     </div>
 
                     <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
-                        {arch.wikipediaUrl && (
+                        {creator.wikipediaUrl && (
                           <a
-                            href={arch.wikipediaUrl}
+                            href={creator.wikipediaUrl}
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-1 text-[11px] text-stone-600 hover:text-stone-900 hover:underline"
@@ -249,21 +299,21 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
                             <ExternalLink className="w-3 h-3 text-stone-400" />
                           </a>
                         )}
-                        {arch.wikidataId && (
+                        {creator.wikidataId && (
                           <a
-                            href={`https://www.wikidata.org/wiki/${arch.wikidataId}`}
+                            href={`https://www.wikidata.org/wiki/${creator.wikidataId}`}
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-1 text-[11px] text-stone-600 hover:text-stone-900 hover:underline"
                           >
-                            <span>Wikidata ({arch.wikidataId})</span>
+                            <span>Wikidata ({creator.wikidataId})</span>
                             <ExternalLink className="w-3 h-3 text-stone-400" />
                           </a>
                         )}
                       </div>
                       <button
                         onClick={() => {
-                          onSelectArchitect(arch.name);
+                          onSelectArchitect(creator.name);
                           onClose();
                         }}
                         className="inline-flex items-center gap-1 text-xs bg-purple-600 hover:bg-purple-700 text-white font-medium px-3 py-1.5 rounded-lg shadow-sm transition"

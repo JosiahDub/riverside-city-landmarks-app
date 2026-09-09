@@ -211,7 +211,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={arch}
                 className="inline-flex items-center gap-1 bg-purple-100 text-purple-900 border border-purple-300 px-2 py-0.5 rounded-full font-medium"
               >
-                <span>Architect: {arch}</span>
+                <span>Creator: {arch}</span>
                 <button
                   onClick={() =>
                     onFilterChange({
