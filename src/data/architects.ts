@@ -128,12 +128,12 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   'John Crockett Goldsworthy': {
     name: 'John Crockett Goldsworthy',
     wikidataId: 'Q141379792',
-    bio: 'John Crockett Goldsworthy (1823–1893) was an American surveyor and civil engineer who laid out early subdivisions, public rights-of-way, and street plans in Southern California, including the broad central corridor of Seventh Street (now Mission Inn Avenue) in Riverside.'
+    bio: 'American surveyer.'
   },
   'Robert V. Leeson': {
     name: 'Robert V. Leeson',
     wikidataId: 'Q141006869',
-    bio: 'Robert V. Leeson (1876–1936) was an American bridge engineer and chief engineer for the Topeka Bridge & Iron Co. who designed numerous concrete arch and girder bridges across the American West, including Riverside’s landmark 1928 Victoria Avenue Bridge.'
+    bio: 'American engineer.'
   }
 };
 
