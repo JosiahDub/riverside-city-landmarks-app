@@ -273,13 +273,10 @@ export async function processLandmarks() {
       const qid = stmt.mainsnak?.datavalue?.value?.id;
       if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
     });
-    // Planners (P287 where qualifier P2868 is Q131062)
+    // Designers and Planners (P287)
     ent.claims?.P287?.forEach(stmt => {
-      const roleQid = stmt.qualifiers?.P2868?.[0]?.datavalue?.value?.id;
-      if (roleQid === 'Q131062') {
-        const qid = stmt.mainsnak?.datavalue?.value?.id;
-        if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
-      }
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
     });
     // Structural Engineers (P631)
     ent.claims?.P631?.forEach(stmt => {
@@ -421,6 +418,29 @@ export async function processLandmarks() {
     }
     const builders = Array.from(builderSet);
 
+    // Designers (Wikidata P287 where qualifier P2868 is not Q131062, plus OSM tags)
+    const designerSet = new Set();
+    const rawOsmDesigners = tags.designer;
+    if (rawOsmDesigners) {
+      rawOsmDesigners.split(';').forEach(d => {
+        const tr = d.trim();
+        if (tr) designerSet.add(tr);
+      });
+    }
+    if (wdEntity?.claims?.P287) {
+      wdEntity.claims.P287.forEach(stmt => {
+        const roleQid = stmt.qualifiers?.P2868?.[0]?.datavalue?.value?.id;
+        // If it is specifically an urban planner, it belongs to planners, not generic designer
+        if (roleQid !== 'Q131062') {
+          const dQid = stmt.mainsnak?.datavalue?.value?.id;
+          if (dQid && wikidataEntities[dQid]?.labels?.en?.value) {
+            designerSet.add(wikidataEntities[dQid].labels.en.value);
+          }
+        }
+      });
+    }
+    const designers = Array.from(designerSet);
+
     // Architects (split by semicolon, and check Wikidata P84)
     const architectSet = new Set();
     if (tags.architect) {
@@ -443,10 +463,11 @@ export async function processLandmarks() {
         }
       });
     }
-    // If a landmark has planners, structural engineers, or builders, ensure those names do not fill in architect
+    // If a landmark has planners, structural engineers, builders, or designers, ensure those names do not fill in architect
     for (const p of planners) architectSet.delete(p);
     for (const se of structuralEngineers) architectSet.delete(se);
     for (const b of builders) architectSet.delete(b);
+    for (const d of designers) architectSet.delete(d);
 
     const architects = Array.from(architectSet);
 
@@ -743,6 +764,8 @@ export async function processLandmarks() {
       structuralEngineer: structuralEngineers,
       builders,
       builder: builders,
+      designers,
+      designer: designers,
       architectureStyles,
       historicDistricts,
       historicDistrict: historicDistricts,

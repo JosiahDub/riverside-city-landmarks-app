@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Landmark, Plaque } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -638,6 +638,38 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                     className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-900 border border-amber-200 px-3 py-1.5 rounded-lg text-sm font-medium"
                   >
                     <span>{builder}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Designers Section */}
+          {landmark.designers && landmark.designers.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-stone-500 flex items-center gap-1.5">
+                <DraftingCompass className="w-3.5 h-3.5 text-indigo-700" /> Designer{landmark.designers.length > 1 ? 's' : ''}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {landmark.designers.map((designer) => (
+                  <div
+                    key={designer}
+                    className="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-900 border border-indigo-200 px-3 py-1.5 rounded-lg text-sm font-medium"
+                  >
+                    <button
+                      onClick={() => onShowArchitectBio(designer)}
+                      className="hover:underline text-left font-semibold"
+                      title="View designer biography"
+                    >
+                      {designer}
+                    </button>
+                    <button
+                      onClick={() => onSelectArchitect(designer)}
+                      className="text-xs bg-indigo-200 hover:bg-indigo-300 text-indigo-900 px-1.5 py-0.5 rounded transition"
+                      title={`Filter map to landmarks by ${designer}`}
+                    >
+                      Filter
+                    </button>
                   </div>
                 ))}
               </div>

@@ -22,7 +22,11 @@ export const ArchitectModal: React.FC<ArchitectModalProps> = ({
 
   const info = getArchitectInfo(architectName);
   const works = landmarks.filter((l) =>
-    l.architects.some((a) => a.toLowerCase() === architectName.toLowerCase())
+    l.architects.some((a) => a.toLowerCase() === architectName.toLowerCase()) ||
+    (l.planners || []).some((p) => p.toLowerCase() === architectName.toLowerCase()) ||
+    (l.structuralEngineers || []).some((e) => e.toLowerCase() === architectName.toLowerCase()) ||
+    (l.designers || []).some((d) => d.toLowerCase() === architectName.toLowerCase()) ||
+    (l.builders || []).some((b) => b.toLowerCase() === architectName.toLowerCase())
   );
 
   return (
@@ -44,7 +48,7 @@ export const ArchitectModal: React.FC<ArchitectModalProps> = ({
             )}
             <div>
               <span className="text-xs uppercase font-bold tracking-wider text-purple-700 block">
-                Architect
+                Architect / Creator
               </span>
               <h2 className="font-serif font-bold text-2xl text-stone-900 leading-tight">
                 {info.name}

@@ -68,23 +68,27 @@ export const App: React.FC = () => {
         const matchesArchitect = landmark.architects.some((a) => a.toLowerCase().includes(query));
         const matchesPlanner = (landmark.planners || []).some((p) => p.toLowerCase().includes(query));
         const matchesEngineer = (landmark.structuralEngineers || []).some((e) => e.toLowerCase().includes(query));
+        const matchesDesigner = (landmark.designers || []).some((d) => d.toLowerCase().includes(query));
+        const matchesBuilder = (landmark.builders || []).some((b) => b.toLowerCase().includes(query));
         const matchesStyle = landmark.architectureStyles.some((s) => s.toLowerCase().includes(query));
         const matchesDistrict = (landmark.historicDistricts || []).some((d) => d.toLowerCase().includes(query));
         const matchesAddress = landmark.address ? landmark.address.toLowerCase().includes(query) : false;
         const matchesDesc = landmark.description.toLowerCase().includes(query);
 
-        if (!matchesName && !matchesRef && !matchesArchitect && !matchesPlanner && !matchesEngineer && !matchesStyle && !matchesDistrict && !matchesAddress && !matchesDesc) {
+        if (!matchesName && !matchesRef && !matchesArchitect && !matchesPlanner && !matchesEngineer && !matchesDesigner && !matchesBuilder && !matchesStyle && !matchesDistrict && !matchesAddress && !matchesDesc) {
           return false;
         }
       }
 
-      // Creator filter (supports multiple selection, matches if landmark has any selected creator: architect, planner, engineer)
+      // Creator filter (supports multiple selection, matches if landmark has any selected creator: architect, planner, engineer, designer, builder)
       if (filters.selectedArchitects.length > 0) {
         const hasCreator = filters.selectedArchitects.some((targetCreator) => {
           const target = targetCreator.toLowerCase();
           return landmark.architects.some((a) => a.toLowerCase() === target) ||
                  (landmark.planners || []).some((p) => p.toLowerCase() === target) ||
-                 (landmark.structuralEngineers || []).some((e) => e.toLowerCase() === target);
+                 (landmark.structuralEngineers || []).some((e) => e.toLowerCase() === target) ||
+                 (landmark.designers || []).some((d) => d.toLowerCase() === target) ||
+                 (landmark.builders || []).some((b) => b.toLowerCase() === target);
         });
         if (!hasCreator) return false;
       }

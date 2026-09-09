@@ -63,9 +63,10 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       const hasAltCreator = Boolean(
         (l.planners && l.planners.length > 0) ||
         (l.structuralEngineers && l.structuralEngineers.length > 0) ||
-        (l.builders && l.builders.length > 0)
+        (l.builders && l.builders.length > 0) ||
+        (l.designers && l.designers.length > 0)
       );
-      // If landmark has one of planner, structural engineer, or builder, architect is not required / not considered missing
+      // If landmark has one of planner, structural engineer, builder, or designer, architect is not required / not considered missing
       const archOk = hasArch || hasAltCreator;
       const imgOk = Boolean(l.imageUrl);
       const resOk = Boolean(l.notableResidents && l.notableResidents.length > 0);
@@ -111,7 +112,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       const hasAltCreator = Boolean(
         (l.planners && l.planners.length > 0) ||
         (l.structuralEngineers && l.structuralEngineers.length > 0) ||
-        (l.builders && l.builders.length > 0)
+        (l.builders && l.builders.length > 0) ||
+        (l.designers && l.designers.length > 0)
       );
       const archOk = hasArch || hasAltCreator;
       const hasImage = Boolean(l.imageUrl);
@@ -167,7 +169,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
     const headers = [
       'RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation',
       'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount',
-      'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'Planners', 'StructuralEngineers', 'Builders',
+      'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'Planners', 'StructuralEngineers', 'Builders', 'Designers',
       'HasImage', 'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'
     ];
     const rows = sortedLandmarks.map((l) => [
@@ -184,10 +186,11 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       `"${l.architectureStyles.join('; ')}"`,
       l.architectureStyles.length > 0 ? 'YES' : 'NO',
       `"${l.architects.join('; ')}"`,
-      l.architects.length > 0 ? 'YES' : ((l.planners?.length || 0) > 0 || (l.structuralEngineers?.length || 0) > 0 || (l.builders?.length || 0) > 0 ? 'N/A' : 'NO'),
+      l.architects.length > 0 ? 'YES' : ((l.planners?.length || 0) > 0 || (l.structuralEngineers?.length || 0) > 0 || (l.builders?.length || 0) > 0 || (l.designers?.length || 0) > 0 ? 'N/A' : 'NO'),
       `"${(l.planners || []).join('; ')}"`,
       `"${(l.structuralEngineers || []).join('; ')}"`,
       `"${(l.builders || []).join('; ')}"`,
+      `"${(l.designers || []).join('; ')}"`,
       l.imageUrl ? 'YES' : 'NO',
       `"${(l.notableResidents || []).join('; ')}"`,
       `"${(l.historicDistricts || []).join('; ')}"`,
@@ -715,7 +718,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   const hasPlanner = Boolean(landmark.planners && landmark.planners.length > 0);
                   const hasEngineer = Boolean(landmark.structuralEngineers && landmark.structuralEngineers.length > 0);
                   const hasBuilder = Boolean(landmark.builders && landmark.builders.length > 0);
-                  const hasAlternativeCreator = hasPlanner || hasEngineer || hasBuilder;
+                  const hasDesigner = Boolean(landmark.designers && landmark.designers.length > 0);
+                  const hasAlternativeCreator = hasPlanner || hasEngineer || hasBuilder || hasDesigner;
                   const hasImage = Boolean(landmark.imageUrl);
                   const hasResidents = Boolean(landmark.notableResidents && landmark.notableResidents.length > 0);
 
@@ -872,6 +876,17 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                                 <CheckCircle2 className="w-3 h-3 text-amber-600 shrink-0" />
                                 <span className="text-[10px] font-bold text-amber-700 uppercase">Builder:</span>
                                 <span>{b}</span>
+                              </span>
+                            ))}
+                            {landmark.designers?.map((d) => (
+                              <span
+                                key={d}
+                                className="inline-flex items-center gap-1 text-indigo-900 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded font-medium"
+                                title="Designer (Wikidata P287)"
+                              >
+                                <CheckCircle2 className="w-3 h-3 text-indigo-600 shrink-0" />
+                                <span className="text-[10px] font-bold text-indigo-700 uppercase">Designer:</span>
+                                <span>{d}</span>
                               </span>
                             ))}
                           </div>

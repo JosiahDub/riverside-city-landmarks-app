@@ -60,6 +60,24 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
         creatorsMap[name].landmarkIds.add(l.id);
         creatorsMap[name].roles.add('Structural Engineer');
       });
+
+      // Designers
+      (l.designers || []).forEach((designer) => {
+        const name = designer.trim();
+        if (!name) return;
+        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
+        creatorsMap[name].landmarkIds.add(l.id);
+        creatorsMap[name].roles.add('Designer');
+      });
+
+      // Builders
+      (l.builders || []).forEach((builder) => {
+        const name = builder.trim();
+        if (!name) return;
+        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
+        creatorsMap[name].landmarkIds.add(l.id);
+        creatorsMap[name].roles.add('Builder');
+      });
     });
 
     return Object.entries(creatorsMap)
@@ -262,6 +280,10 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
                                   badgeColor = 'bg-teal-50 text-teal-700 border-teal-200';
                                 } else if (role === 'Structural Engineer') {
                                   badgeColor = 'bg-sky-50 text-sky-700 border-sky-200';
+                                } else if (role === 'Designer') {
+                                  badgeColor = 'bg-indigo-50 text-indigo-700 border-indigo-200';
+                                } else if (role === 'Builder') {
+                                  badgeColor = 'bg-amber-50 text-amber-700 border-amber-200';
                                 }
                                 return (
                                   <span

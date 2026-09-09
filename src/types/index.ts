@@ -17,6 +17,8 @@ export interface Landmark {
   structuralEngineer?: string[];
   builders?: string[];
   builder?: string[];
+  designers?: string[];
+  designer?: string[];
   architectureStyles: string[];
   address: string | null;
   wikidata: string | null;
