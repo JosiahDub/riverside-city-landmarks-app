@@ -210,8 +210,22 @@
     "commonsImage": "File:Riverside County Court House 1903 2.jpg",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_County_Court_House_1903_2.jpg?width=800",
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_County_Court_House_1903_2.jpg?width=400",
-    "historicalImages": [],
-    "historicalImage": null,
+    "historicalImages": [
+      {
+        "commonsImage": "File:Exterior view of the Court House in Riverside, with an automobile parked in front, ca.1910 (CHS-5279).jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Court_House_in_Riverside%2C_with_an_automobile_parked_in_front%2C_ca.1910_(CHS-5279).jpg?width=800",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Court_House_in_Riverside%2C_with_an_automobile_parked_in_front%2C_ca.1910_(CHS-5279).jpg?width=400",
+        "pointInTime": "1910",
+        "year": 1910
+      }
+    ],
+    "historicalImage": {
+      "commonsImage": "File:Exterior view of the Court House in Riverside, with an automobile parked in front, ca.1910 (CHS-5279).jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Court_House_in_Riverside%2C_with_an_automobile_parked_in_front%2C_ca.1910_(CHS-5279).jpg?width=800",
+      "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Court_House_in_Riverside%2C_with_an_automobile_parked_in_front%2C_ca.1910_(CHS-5279).jpg?width=400",
+      "pointInTime": "1910",
+      "year": 1910
+    },
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/118524342",
     "natural": null,
@@ -801,8 +815,22 @@
     "commonsImage": "File:North face of RR Depot, erected 1904 sign, also note street lights special to the down town Riverside area with a connection to Mission Inn.JPG",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/North_face_of_RR_Depot%2C_erected_1904_sign%2C_also_note_street_lights_special_to_the_down_town_Riverside_area_with_a_connection_to_Mission_Inn.JPG?width=800",
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/North_face_of_RR_Depot%2C_erected_1904_sign%2C_also_note_street_lights_special_to_the_down_town_Riverside_area_with_a_connection_to_Mission_Inn.JPG?width=400",
-    "historicalImages": [],
-    "historicalImage": null,
+    "historicalImages": [
+      {
+        "commonsImage": "File:08103-Riverside, Cal.-1906-Depot-Brück & Sohn Kunstverlag.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/08103-Riverside%2C_Cal.-1906-Depot-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg?width=800",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/08103-Riverside%2C_Cal.-1906-Depot-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg?width=400",
+        "pointInTime": "1906",
+        "year": 1906
+      }
+    ],
+    "historicalImage": {
+      "commonsImage": "File:08103-Riverside, Cal.-1906-Depot-Brück & Sohn Kunstverlag.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/08103-Riverside%2C_Cal.-1906-Depot-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg?width=800",
+      "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/08103-Riverside%2C_Cal.-1906-Depot-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg?width=400",
+      "pointInTime": "1906",
+      "year": 1906
+    },
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/232577123",
     "natural": null,
@@ -936,8 +964,22 @@
     "commonsImage": "File:Museum of Riverside.jpg",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Museum_of_Riverside.jpg?width=800",
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Museum_of_Riverside.jpg?width=400",
-    "historicalImages": [],
-    "historicalImage": null,
+    "historicalImages": [
+      {
+        "commonsImage": "File:California - Riverside - NARA - 23934983.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/California_-_Riverside_-_NARA_-_23934983.jpg?width=800",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/California_-_Riverside_-_NARA_-_23934983.jpg?width=400",
+        "pointInTime": "May 5, 1945",
+        "year": 1945
+      }
+    ],
+    "historicalImage": {
+      "commonsImage": "File:California - Riverside - NARA - 23934983.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/California_-_Riverside_-_NARA_-_23934983.jpg?width=800",
+      "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/California_-_Riverside_-_NARA_-_23934983.jpg?width=400",
+      "pointInTime": "May 5, 1945",
+      "year": 1945
+    },
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/119281494",
     "natural": null,
@@ -3122,8 +3164,22 @@
     "commonsImage": "File:Fox Theater, Riverside CA.jpg",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater%2C_Riverside_CA.jpg?width=800",
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater%2C_Riverside_CA.jpg?width=400",
-    "historicalImages": [],
-    "historicalImage": null,
+    "historicalImages": [
+      {
+        "commonsImage": "File:Fox Theater, Riverside, California LCCN2017707868.tif",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater%2C_Riverside%2C_California_LCCN2017707868.tif?width=800",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater%2C_Riverside%2C_California_LCCN2017707868.tif?width=400",
+        "pointInTime": "1978",
+        "year": 1978
+      }
+    ],
+    "historicalImage": {
+      "commonsImage": "File:Fox Theater, Riverside, California LCCN2017707868.tif",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater%2C_Riverside%2C_California_LCCN2017707868.tif?width=800",
+      "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_Theater%2C_Riverside%2C_California_LCCN2017707868.tif?width=400",
+      "pointInTime": "1978",
+      "year": 1978
+    },
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/232932288",
     "natural": null,
