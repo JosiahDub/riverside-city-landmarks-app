@@ -17,8 +17,8 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/G._Stanley_Wilson.jpg/330px-G._Stanley_Wilson.jpg',
     bio: 'George Stanley Wilson (1879–1958) was an English-born American architect based in Riverside, California. He began his career as a carpenter and quickly ascended as builder, architect, owner of his own firm, and civic icon. His firm produced over 1,000 projects between 1909 and 1956—primarily in Riverside, but spanning an area from the High Sierras to the Mexico Border, the Pacific Ocean to the Colorado River. 11 of his firm’s projects are listed in the National Register of Historic Places.'
   },
-  'Arthur Benton': {
-    name: 'Arthur Benton',
+  'Arthur Burnett Benton': {
+    name: 'Arthur Burnett Benton',
     wikidataId: 'Q4797962',
     wikipediaTitle: 'Arthur Burnett Benton',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Arthur_Burnett_Benton',
