@@ -59,7 +59,14 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       const dateOk = Boolean(l.year || l.startDate);
       const desigOk = Boolean(l.designationDate);
       const styleOk = l.architectureStyles && l.architectureStyles.length > 0;
-      const archOk = l.architects && l.architects.length > 0;
+      const hasArch = Boolean(l.architects && l.architects.length > 0);
+      const hasAltCreator = Boolean(
+        (l.planners && l.planners.length > 0) ||
+        (l.structuralEngineers && l.structuralEngineers.length > 0) ||
+        (l.builders && l.builders.length > 0)
+      );
+      // If landmark has one of planner, structural engineer, or builder, architect is not required / not considered missing
+      const archOk = hasArch || hasAltCreator;
       const imgOk = Boolean(l.imageUrl);
       const resOk = Boolean(l.notableResidents && l.notableResidents.length > 0);
       const distOk = Boolean(l.historicDistricts && l.historicDistricts.length > 0);
@@ -100,22 +107,28 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       const hasDate = Boolean(l.year || l.startDate);
       const hasDesignation = Boolean(l.designationDate);
       const hasStyle = l.architectureStyles && l.architectureStyles.length > 0;
-      const hasArchitect = l.architects && l.architects.length > 0;
+      const hasArch = Boolean(l.architects && l.architects.length > 0);
+      const hasAltCreator = Boolean(
+        (l.planners && l.planners.length > 0) ||
+        (l.structuralEngineers && l.structuralEngineers.length > 0) ||
+        (l.builders && l.builders.length > 0)
+      );
+      const archOk = hasArch || hasAltCreator;
       const hasImage = Boolean(l.imageUrl);
       const hasResidents = Boolean(l.notableResidents && l.notableResidents.length > 0);
       const hasDistrict = Boolean(l.historicDistricts && l.historicDistricts.length > 0);
 
       // Status filter
-      if (filterType === 'missing_any' && hasDate && hasStyle && hasArchitect) return false;
+      if (filterType === 'missing_any' && hasDate && hasStyle && archOk) return false;
       if (filterType === 'missing_date' && hasDate) return false;
       if (filterType === 'missing_designation' && hasDesignation) return false;
       if (filterType === 'missing_style' && hasStyle) return false;
-      if (filterType === 'missing_architect' && hasArchitect) return false;
+      if (filterType === 'missing_architect' && archOk) return false;
       if (filterType === 'missing_image' && hasImage) return false;
       if (filterType === 'missing_residents' && hasResidents) return false;
       if (filterType === 'has_district' && !hasDistrict) return false;
       if (filterType === 'missing_district' && hasDistrict) return false;
-      if (filterType === 'complete' && (!hasDate || !hasStyle || !hasArchitect)) return false;
+      if (filterType === 'complete' && (!hasDate || !hasStyle || !archOk)) return false;
 
       // Text search
       if (searchQuery.trim()) {
@@ -139,8 +152,10 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       } else if (sortField === 'name') {
         comparison = a.name.localeCompare(b.name);
       } else if (sortField === 'missingCount') {
-        const aMissing = (a.year ? 0 : 1) + (a.architectureStyles.length ? 0 : 1) + (a.architects.length ? 0 : 1);
-        const bMissing = (b.year ? 0 : 1) + (b.architectureStyles.length ? 0 : 1) + (b.architects.length ? 0 : 1);
+        const aArchOk = Boolean((a.architects && a.architects.length > 0) || (a.planners && a.planners.length > 0) || (a.structuralEngineers && a.structuralEngineers.length > 0) || (a.builders && a.builders.length > 0));
+        const bArchOk = Boolean((b.architects && b.architects.length > 0) || (b.planners && b.planners.length > 0) || (b.structuralEngineers && b.structuralEngineers.length > 0) || (b.builders && b.builders.length > 0));
+        const aMissing = (a.year ? 0 : 1) + (a.architectureStyles.length ? 0 : 1) + (aArchOk ? 0 : 1);
+        const bMissing = (b.year ? 0 : 1) + (b.architectureStyles.length ? 0 : 1) + (bArchOk ? 0 : 1);
         comparison = bMissing - aMissing;
       }
       return sortAsc ? comparison : -comparison;
@@ -149,7 +164,12 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
   // Export to CSV
   const handleExportCSV = () => {
-    const headers = ['RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation', 'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount', 'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'HasImage', 'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'];
+    const headers = [
+      'RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation',
+      'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount',
+      'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'Planners', 'StructuralEngineers', 'Builders',
+      'HasImage', 'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'
+    ];
     const rows = sortedLandmarks.map((l) => [
       `"${l.ref}"`,
       `"${l.name.replace(/"/g, '""')}"`,
@@ -164,7 +184,10 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       `"${l.architectureStyles.join('; ')}"`,
       l.architectureStyles.length > 0 ? 'YES' : 'NO',
       `"${l.architects.join('; ')}"`,
-      l.architects.length > 0 ? 'YES' : 'NO',
+      l.architects.length > 0 ? 'YES' : ((l.planners?.length || 0) > 0 || (l.structuralEngineers?.length || 0) > 0 || (l.builders?.length || 0) > 0 ? 'N/A' : 'NO'),
+      `"${(l.planners || []).join('; ')}"`,
+      `"${(l.structuralEngineers || []).join('; ')}"`,
+      `"${(l.builders || []).join('; ')}"`,
       l.imageUrl ? 'YES' : 'NO',
       `"${(l.notableResidents || []).join('; ')}"`,
       `"${(l.historicDistricts || []).join('; ')}"`,
@@ -677,7 +700,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   <th className="py-3 px-3 w-28">Year Built</th>
                   <th className="py-3 px-3 min-w-[140px]">Designated (P580)</th>
                   <th className="py-3 px-3 min-w-[150px]">Architecture Style</th>
-                  <th className="py-3 px-3 min-w-[160px]">Architect</th>
+                  <th className="py-3 px-3 min-w-[160px]">Architect / Creator</th>
                   <th className="py-3 px-3 w-20">Photo</th>
                   <th className="py-3 px-3 min-w-[130px]">Notable Residents</th>
                   <th className="py-3 px-3 min-w-[150px]">Historic District</th>
@@ -689,6 +712,10 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   const hasDate = Boolean(landmark.year || landmark.startDate);
                   const hasStyle = landmark.architectureStyles.length > 0;
                   const hasArchitect = landmark.architects.length > 0;
+                  const hasPlanner = Boolean(landmark.planners && landmark.planners.length > 0);
+                  const hasEngineer = Boolean(landmark.structuralEngineers && landmark.structuralEngineers.length > 0);
+                  const hasBuilder = Boolean(landmark.builders && landmark.builders.length > 0);
+                  const hasAlternativeCreator = hasPlanner || hasEngineer || hasBuilder;
                   const hasImage = Boolean(landmark.imageUrl);
                   const hasResidents = Boolean(landmark.notableResidents && landmark.notableResidents.length > 0);
 
@@ -801,23 +828,56 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                         )}
                       </td>
 
-                      {/* Architect */}
+                      {/* Architect / Creator */}
                       <td className="py-3 px-3">
-                        {hasArchitect ? (
+                        {hasArchitect || hasAlternativeCreator ? (
                           <div className="flex flex-wrap gap-1">
                             {landmark.architects.map((a) => (
                               <span
                                 key={a}
                                 className="inline-flex items-center gap-1 text-purple-900 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded font-medium"
                               >
-                                <CheckCircle2 className="w-3 h-3 text-purple-600" />
-                                {a}
+                                <CheckCircle2 className="w-3 h-3 text-purple-600 shrink-0" />
+                                <span>{a}</span>
+                              </span>
+                            ))}
+                            {landmark.planners?.map((p) => (
+                              <span
+                                key={p}
+                                className="inline-flex items-center gap-1 text-teal-900 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded font-medium"
+                                title="Urban Planner (Wikidata P287 role Q131062)"
+                              >
+                                <CheckCircle2 className="w-3 h-3 text-teal-600 shrink-0" />
+                                <span className="text-[10px] font-bold text-teal-700 uppercase">Planner:</span>
+                                <span>{p}</span>
+                              </span>
+                            ))}
+                            {landmark.structuralEngineers?.map((se) => (
+                              <span
+                                key={se}
+                                className="inline-flex items-center gap-1 text-sky-900 bg-sky-50 border border-sky-200 px-2 py-0.5 rounded font-medium"
+                                title="Structural Engineer (Wikidata P631)"
+                              >
+                                <CheckCircle2 className="w-3 h-3 text-sky-600 shrink-0" />
+                                <span className="text-[10px] font-bold text-sky-700 uppercase">Engineer:</span>
+                                <span>{se}</span>
+                              </span>
+                            ))}
+                            {landmark.builders?.map((b) => (
+                              <span
+                                key={b}
+                                className="inline-flex items-center gap-1 text-amber-900 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded font-medium"
+                                title="Builder / Contractor (Wikidata P193)"
+                              >
+                                <CheckCircle2 className="w-3 h-3 text-amber-600 shrink-0" />
+                                <span className="text-[10px] font-bold text-amber-700 uppercase">Builder:</span>
+                                <span>{b}</span>
                               </span>
                             ))}
                           </div>
                         ) : (
                           <span className="inline-flex items-center gap-1 text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded font-medium">
-                            <XCircle className="w-3 h-3 text-rose-500" />
+                            <XCircle className="w-3 h-3 text-rose-500 shrink-0" />
                             Missing
                           </span>
                         )}

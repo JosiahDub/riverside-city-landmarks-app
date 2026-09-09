@@ -273,6 +273,24 @@ export async function processLandmarks() {
       const qid = stmt.mainsnak?.datavalue?.value?.id;
       if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
     });
+    // Planners (P287 where qualifier P2868 is Q131062)
+    ent.claims?.P287?.forEach(stmt => {
+      const roleQid = stmt.qualifiers?.P2868?.[0]?.datavalue?.value?.id;
+      if (roleQid === 'Q131062') {
+        const qid = stmt.mainsnak?.datavalue?.value?.id;
+        if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+      }
+    });
+    // Structural Engineers (P631)
+    ent.claims?.P631?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
+    // Builders / Main Building Contractor (P193)
+    ent.claims?.P193?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
   });
   if (secondaryQids.size > 0) {
     const extraEntities = await fetchWikidataEntities(Array.from(secondaryQids));
@@ -343,6 +361,66 @@ export async function processLandmarks() {
       }
     }
 
+    // Planners (Wikidata P287 where qualifier P2868 is Q131062, plus OSM tags)
+    const plannerSet = new Set();
+    const rawOsmPlanners = tags.planner || tags.urban_planner;
+    if (rawOsmPlanners) {
+      rawOsmPlanners.split(';').forEach(p => {
+        const tr = p.trim();
+        if (tr) plannerSet.add(tr);
+      });
+    }
+    if (wdEntity?.claims?.P287) {
+      wdEntity.claims.P287.forEach(stmt => {
+        const roleQid = stmt.qualifiers?.P2868?.[0]?.datavalue?.value?.id;
+        if (roleQid === 'Q131062') {
+          const pQid = stmt.mainsnak?.datavalue?.value?.id;
+          if (pQid && wikidataEntities[pQid]?.labels?.en?.value) {
+            plannerSet.add(wikidataEntities[pQid].labels.en.value);
+          }
+        }
+      });
+    }
+    const planners = Array.from(plannerSet);
+
+    // Structural Engineers (Wikidata P631, plus OSM tags)
+    const engineerSet = new Set();
+    const rawOsmEngineers = tags.structural_engineer || tags['engineer:structural'] || tags.engineer;
+    if (rawOsmEngineers) {
+      rawOsmEngineers.split(';').forEach(e => {
+        const tr = e.trim();
+        if (tr) engineerSet.add(tr);
+      });
+    }
+    if (wdEntity?.claims?.P631) {
+      wdEntity.claims.P631.forEach(stmt => {
+        const eQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (eQid && wikidataEntities[eQid]?.labels?.en?.value) {
+          engineerSet.add(wikidataEntities[eQid].labels.en.value);
+        }
+      });
+    }
+    const structuralEngineers = Array.from(engineerSet);
+
+    // Builders (Wikidata P193, plus OSM tags)
+    const builderSet = new Set();
+    const rawOsmBuilders = tags.builder || tags.contractor || tags['building:contractor'];
+    if (rawOsmBuilders) {
+      rawOsmBuilders.split(';').forEach(b => {
+        const tr = b.trim();
+        if (tr) builderSet.add(tr);
+      });
+    }
+    if (wdEntity?.claims?.P193) {
+      wdEntity.claims.P193.forEach(stmt => {
+        const bQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (bQid && wikidataEntities[bQid]?.labels?.en?.value) {
+          builderSet.add(wikidataEntities[bQid].labels.en.value);
+        }
+      });
+    }
+    const builders = Array.from(builderSet);
+
     // Architects (split by semicolon, and check Wikidata P84)
     const architectSet = new Set();
     if (tags.architect) {
@@ -365,6 +443,11 @@ export async function processLandmarks() {
         }
       });
     }
+    // If a landmark has planners, structural engineers, or builders, ensure those names do not fill in architect
+    for (const p of planners) architectSet.delete(p);
+    for (const se of structuralEngineers) architectSet.delete(se);
+    for (const b of builders) architectSet.delete(b);
+
     const architects = Array.from(architectSet);
 
     // Architecture styles (from OSM tags + Wikidata P149)
@@ -599,6 +682,12 @@ export async function processLandmarks() {
       plaques: matchingPlaques,
       hasPlaque: matchingPlaques.length > 0,
       architects,
+      planners,
+      planner: planners,
+      structuralEngineers,
+      structuralEngineer: structuralEngineers,
+      builders,
+      builder: builders,
       architectureStyles,
       historicDistricts,
       historicDistrict: historicDistricts,

@@ -119,6 +119,11 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     name: 'James Madison Wood',
     wikidataId: 'Q140779110',
     bio: 'James Madison Wood (1841–1923) was a nationally active specialist in theater and opera-house design whose projects extended from Canada to the American West. He came to Riverside in 1889 to design the interior and theatrical spaces of A. C. Willard’s Loring Opera House and subsequently designed his own 1891 Colonial Revival residence, now known as the Wood House. His work brought specialized theater-planning expertise to one of Riverside’s earliest major cultural institutions.'
+  },
+  'Welmer Parsons Lamar': {
+    name: 'Welmer Parsons Lamar',
+    wikidataId: 'Q141347258',
+    bio: 'Welmer Parsons Lamar (1886–1933) was a Riverside architect and draftsman whose understated career produced a surprisingly extensive local body of work. Active by the 1910s and operating his own office in the Loring Building during the 1920s, he designed residences, apartments, commercial buildings, and substantial remodels in styles ranging from California Bungalow and Mission Revival to Tudor and Spanish Colonial Revival. Recent research attributes nearly sixty Riverside projects or major alterations to him.'
   }
 };
 

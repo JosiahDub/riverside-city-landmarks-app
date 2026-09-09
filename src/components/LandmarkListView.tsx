@@ -134,15 +134,41 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
                 </div>
 
                 <div className="flex flex-wrap gap-1 mt-1.5">
-                  {landmark.architects.slice(0, 1).map((arch) => (
+                  {landmark.architects.length > 0 ? (
+                    landmark.architects.slice(0, 1).map((arch) => (
+                      <span
+                        key={arch}
+                        className="text-[10px] bg-purple-50 text-purple-800 border border-purple-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                      >
+                        <User className="w-2.5 h-2.5 shrink-0" />
+                        <span className="truncate">{arch}</span>
+                      </span>
+                    ))
+                  ) : landmark.structuralEngineers && landmark.structuralEngineers.length > 0 ? (
                     <span
-                      key={arch}
-                      className="text-[10px] bg-purple-50 text-purple-800 border border-purple-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                      className="text-[10px] bg-sky-50 text-sky-800 border border-sky-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                      title={`Structural Engineer: ${landmark.structuralEngineers[0]}`}
                     >
-                      <User className="w-2.5 h-2.5 shrink-0" />
-                      <span className="truncate">{arch}</span>
+                      <User className="w-2.5 h-2.5 shrink-0 text-sky-600" />
+                      <span className="truncate">{landmark.structuralEngineers[0]}</span>
                     </span>
-                  ))}
+                  ) : landmark.planners && landmark.planners.length > 0 ? (
+                    <span
+                      className="text-[10px] bg-teal-50 text-teal-800 border border-teal-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                      title={`Urban Planner: ${landmark.planners[0]}`}
+                    >
+                      <Compass className="w-2.5 h-2.5 shrink-0 text-teal-600" />
+                      <span className="truncate">{landmark.planners[0]}</span>
+                    </span>
+                  ) : landmark.builders && landmark.builders.length > 0 ? (
+                    <span
+                      className="text-[10px] bg-amber-50 text-amber-800 border border-amber-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                      title={`Builder: ${landmark.builders[0]}`}
+                    >
+                      <User className="w-2.5 h-2.5 shrink-0 text-amber-600" />
+                      <span className="truncate">{landmark.builders[0]}</span>
+                    </span>
+                  ) : null}
                   {landmark.architectureStyles.slice(0, 1).map((style) => (
                     <span
                       key={style}

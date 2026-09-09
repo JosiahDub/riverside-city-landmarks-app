@@ -11,6 +11,12 @@ export interface Landmark {
   startDate: string | null;
   year: number | null;
   architects: string[];
+  planners?: string[];
+  planner?: string[];
+  structuralEngineers?: string[];
+  structuralEngineer?: string[];
+  builders?: string[];
+  builder?: string[];
   architectureStyles: string[];
   address: string | null;
   wikidata: string | null;

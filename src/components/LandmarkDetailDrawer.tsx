@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Landmark, Plaque } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -373,6 +373,63 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                     >
                       Filter
                     </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Planners Section */}
+          {landmark.planners && landmark.planners.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-stone-500 flex items-center gap-1.5">
+                <Compass className="w-3.5 h-3.5 text-teal-700" /> Urban Planner{landmark.planners.length > 1 ? 's' : ''}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {landmark.planners.map((planner) => (
+                  <div
+                    key={planner}
+                    className="inline-flex items-center gap-1.5 bg-teal-50 text-teal-900 border border-teal-200 px-3 py-1.5 rounded-lg text-sm font-medium"
+                  >
+                    <span>{planner}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Structural Engineers Section */}
+          {landmark.structuralEngineers && landmark.structuralEngineers.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-stone-500 flex items-center gap-1.5">
+                <Wrench className="w-3.5 h-3.5 text-sky-700" /> Structural Engineer{landmark.structuralEngineers.length > 1 ? 's' : ''}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {landmark.structuralEngineers.map((eng) => (
+                  <div
+                    key={eng}
+                    className="inline-flex items-center gap-1.5 bg-sky-50 text-sky-900 border border-sky-200 px-3 py-1.5 rounded-lg text-sm font-medium"
+                  >
+                    <span>{eng}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Builders Section */}
+          {landmark.builders && landmark.builders.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-stone-500 flex items-center gap-1.5">
+                <Hammer className="w-3.5 h-3.5 text-amber-700" /> Builder{landmark.builders.length > 1 ? 's' : ''} / Contractor
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {landmark.builders.map((builder) => (
+                  <div
+                    key={builder}
+                    className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-900 border border-amber-200 px-3 py-1.5 rounded-lg text-sm font-medium"
+                  >
+                    <span>{builder}</span>
                   </div>
                 ))}
               </div>
