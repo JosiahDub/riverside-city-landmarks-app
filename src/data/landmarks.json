@@ -100,8 +100,22 @@
     "commonsImage": "File:MissionInn SpanishWing.jpg",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MissionInn_SpanishWing.jpg?width=800",
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/MissionInn_SpanishWing.jpg?width=400",
-    "historicalImages": [],
-    "historicalImage": null,
+    "historicalImages": [
+      {
+        "commonsImage": "File:Exterior view of the Frank Miller's Glenwood Mission Inn (hotel), Riverside, ca.1910 (CHS-5259).jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Frank_Miller's_Glenwood_Mission_Inn_(hotel)%2C_Riverside%2C_ca.1910_(CHS-5259).jpg?width=800",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Frank_Miller's_Glenwood_Mission_Inn_(hotel)%2C_Riverside%2C_ca.1910_(CHS-5259).jpg?width=400",
+        "pointInTime": "1910",
+        "year": 1910
+      }
+    ],
+    "historicalImage": {
+      "commonsImage": "File:Exterior view of the Frank Miller's Glenwood Mission Inn (hotel), Riverside, ca.1910 (CHS-5259).jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Frank_Miller's_Glenwood_Mission_Inn_(hotel)%2C_Riverside%2C_ca.1910_(CHS-5259).jpg?width=800",
+      "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_view_of_the_Frank_Miller's_Glenwood_Mission_Inn_(hotel)%2C_Riverside%2C_ca.1910_(CHS-5259).jpg?width=400",
+      "pointInTime": "1910",
+      "year": 1910
+    },
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
     "osmUrl": "https://www.openstreetmap.org/way/206742226",
     "natural": null,
@@ -628,7 +642,7 @@
     ],
     "hasPlaque": true,
     "architects": [
-      "Arthur Benton"
+      "Arthur Burnett Benton"
     ],
     "planners": [],
     "planner": [],
@@ -671,7 +685,7 @@
       "addr:state": "CA",
       "addr:street": "Lemon Street",
       "amenity": "place_of_worship",
-      "architect": "Arthur Benton",
+      "architect": "Arthur Burnett Benton",
       "architect:wikidata": "Q24203374",
       "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "yes",
@@ -1373,7 +1387,8 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [
-      "Arthur Benton"
+      "Arthur Burnett Benton",
+      "G. Stanley Wilson"
     ],
     "planners": [],
     "planner": [],
@@ -1414,7 +1429,7 @@
       "addr:postcode": "92501",
       "addr:street": "Mission Inn Avenue",
       "amenity": "events_venue",
-      "architect": "Arthur Benton",
+      "architect": "Arthur Burnett Benton",
       "architect:wikidata": "Q24203374",
       "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "yes",
@@ -3309,7 +3324,7 @@
     ],
     "hasPlaque": true,
     "architects": [
-      "Arthur Benton"
+      "Arthur Burnett Benton"
     ],
     "planners": [],
     "planner": [],
@@ -3347,7 +3362,7 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "University Avenue",
-      "architect": "Arthur Benton",
+      "architect": "Arthur Burnett Benton",
       "architect:wikidata": "Q24203374",
       "architect:wikipedia": "en:Arthur Burnett Benton",
       "building": "retail",
