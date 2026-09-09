@@ -331,7 +331,6 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [
-      "A. W. Boggs",
       "Augustus Washington Boggs"
     ],
     "planners": [],
@@ -367,7 +366,7 @@
       "addr:state": "CA",
       "addr:street": "Magnolia Avenue",
       "amenity": "place_of_worship",
-      "architect": "A. W. Boggs",
+      "architect": "Augustus Washington Boggs",
       "architect:wikidata": "Q141193839",
       "building": "yes",
       "building:architecture": "gothic_revival",
@@ -687,8 +686,12 @@
     ],
     "hasPlaque": true,
     "architects": [],
-    "planners": [],
-    "planner": [],
+    "planners": [
+      "Franz Philip Hosp"
+    ],
+    "planner": [
+      "Franz Philip Hosp"
+    ],
     "structuralEngineers": [],
     "structuralEngineer": [],
     "builders": [],
@@ -4039,7 +4042,7 @@
     "name": "Victoria Bridge",
     "lat": 33.9619159,
     "lon": -117.370323,
-    "description": "",
+    "description": "Bridge in Riverside, California",
     "startDate": "1928-09-18",
     "year": 1928,
     "designationDate": null,
