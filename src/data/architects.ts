@@ -68,16 +68,17 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikidataId: 'Q18686369',
     wikipediaTitle: 'Lois Gottlieb',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/Lois_Gottlieb',
-    bio: 'American architect.'
+    bio: 'Lois Gottlieb was a pioneering Modernist architect who studied at Stanford and Harvard and apprenticed with Frank Lloyd Wright at Taliesin in 1948–49. Her long residential career carried Wright’s principles of organic architecture into distinctly personal designs; while living in Riverside she designed several notable houses, including the 1966 Mackey House.'
   },
   'Clifford Balch': {
     name: 'Clifford Balch',
-    wikidataId: 'Q108888258',
-    bio: 'American architect.'
+    wikidataId: 'Q124968137',
+    bio: 'Los Angeles architect Clifford Allison Balch specialized in movie theaters and designed numerous cinemas for the West Coast Theatres and Fox chains throughout California. With engineer Floyd E. Stanbery, he designed Riverside’s 1929 Fox Theatre, whose Spanish Colonial Revival exterior and elaborate interior exemplify the grand movie palaces of the era.'
   },
   'Clinton Marr': {
     name: 'Clinton Marr',
-    bio: 'American architect.'
+    wikidataId: 'Q141239795',
+    bio: 'Clinton Marr was a prominent Riverside modernist architect whose work helped shape the city during its postwar growth. A USC School of Architecture graduate who studied under A. Quincy Jones, Marr worked for Clare Henry Day and Herman Ruhnau before establishing his own Riverside practice in 1956. His extensive residential, commercial and civic work included the Lily Tulip Cup Corporation building, Provident Federal Savings and Loan, Riverside Municipal Airport, and the Riverside County Hall of Justice. He was later elevated to Fellow of the American Institute of Architects.'
   },
   'Robert H. Spurgeon, Jr.': {
     name: 'Robert H. Spurgeon, Jr.',
@@ -134,6 +135,41 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     name: 'Robert V. Leeson',
     wikidataId: 'Q141006869',
     bio: 'American engineer.'
+  },
+  'John C. Austin': {
+    name: 'John C. Austin',
+    wikidataId: 'Q6224265',
+    bio: 'English-born architect John C. Austin became one of the leading architects of twentieth-century Los Angeles, with major works including Los Angeles City Hall, the Griffith Observatory and, with A. M. Edelman and G. Albert Lansburgh, the Shrine Auditorium. His work extended throughout Southern California, including Riverside’s building now known as the César E. Chávez Community Center.'
+  },
+  'Oliver Perry Dennis': {
+    name: 'Oliver Perry Dennis',
+    wikidataId: 'Q99192959',
+    bio: 'Oliver Perry Dennis was a Southern California architect best known for his partnership with Lyman Farwell, Dennis & Farwell, active from 1895 to 1913. Their work included prominent Los Angeles-area buildings such as the Hollywood Hotel and the residence now known as the Magic Castle; Dennis is represented in Riverside by the Collins-Seaton House.'
+  },
+  'Philip Esbensen': {
+    name: 'Philip Esbensen',
+    wikidataId: 'Q141401151',
+    bio: 'Philip Esbensen was a Riverside architect associated with the city’s mid-century Modern movement. His best-known local work is the 1965 house he designed for his own family on Quail Road, an accomplished West Coast post-and-beam residence whose integration with its steep site, extensive glazing and clearly expressed structural system led to its designation as a Riverside City Landmark.'
+  },
+  'H. L. Evans': {
+    name: 'H. L. Evans',
+    wikidataId: 'Q141194783',
+    bio: 'Little biographical information about architect H. L. Evans has been located, but his work is documented in Riverside during the early twentieth century. He designed the 1911 Fred Stebler House on Sixth Street, an unusually picturesque Craftsman residence with Swiss Chalet influences that remains one of the distinctive houses of the Mount Rubidoux neighborhood.'
+  },
+  'Knowlton Fernald Jr.': {
+    name: 'Knowlton Fernald Jr.',
+    wikidataId: 'Q141401257',
+    bio: 'Knowlton Fernald Jr. was a California architect and AIA member whose mid-century career included residential design and large-scale community planning. By the 1960s he served as director of architecture and planning for the Laguna Niguel Corporation, where he helped shape major coastal residential developments; Riverside’s Woolley Residence represents his work in the city.'
+  },
+  'Charles Ormrod Matcham Sr.': {
+    name: 'Charles Ormrod Matcham Sr.',
+    wikidataId: 'Q124959569',
+    bio: 'A Yale-trained architect who worked in New York before establishing his career in Southern California, Charles Ormrod Matcham, Sr. became a partner of Earl T. Heitschmidt and developed a substantial practice in residential and commercial architecture. His work included houses in Palm Springs and the landmark Robinson’s department store in Beverly Hills; in Riverside he designed the Boyd Residence.'
+  },
+  'Louis du Puget Millar': {
+    name: 'Louis du Puget Millar',
+    wikidataId: 'Q141401465',
+    bio: 'Irish-born Louis du Puget Millar studied engineering at Trinity College Dublin and trained in architecture in his father’s office before emigrating to California in 1907. He became known for Arts & Crafts architecture in Pasadena and Southern California; in Riverside, his office designed the William Childs House in association with George A. Clark, whose name appears on the original drawings as designer.'
   }
 };
 
