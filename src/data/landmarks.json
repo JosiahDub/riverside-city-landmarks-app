@@ -7762,8 +7762,12 @@
     "structuralEngineer": [],
     "builders": [],
     "builder": [],
-    "designers": [],
-    "designer": [],
+    "designers": [
+      "James C. Stanley"
+    ],
+    "designer": [
+      "James C. Stanley"
+    ],
     "architectureStyles": [
       "craftsman",
       "swiss_chalet"
@@ -10223,6 +10227,7 @@
       "addr:state": "CA",
       "addr:street": "Myrtle Avenue",
       "architect": "Walter C. See",
+      "architect:wikidata": "Q141401478",
       "building": "house",
       "building:architecture": "ranch",
       "heritage": "8",
@@ -10545,7 +10550,9 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
+    "architects": [
+      "Garrett Van Pelt"
+    ],
     "planners": [],
     "planner": [],
     "structuralEngineers": [],
@@ -11918,8 +11925,8 @@
     "lat": 33.9432067,
     "lon": -117.3699116,
     "description": "historic house in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1966",
+    "year": 1966,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -11927,7 +11934,9 @@
     "nationalHistoricLandmarkYear": null,
     "plaques": [],
     "hasPlaque": false,
-    "architects": [],
+    "architects": [
+      "Eugen Kurt Steinmann"
+    ],
     "planners": [],
     "planner": [],
     "structuralEngineers": [],
@@ -11936,7 +11945,9 @@
     "builder": [],
     "designers": [],
     "designer": [],
-    "architectureStyles": [],
+    "architectureStyles": [
+      "midcentury_modern"
+    ],
     "historicDistricts": [],
     "historicDistrict": [],
     "notableResidents": [],
@@ -11961,7 +11972,10 @@
       "addr:housenumber": "5958",
       "addr:state": "CA",
       "addr:street": "Edith Avenue",
+      "architect": "Eugen Kurt Steinmann",
+      "architect:wikidata": "Q141401676",
       "building": "house",
+      "building:architecture": "midcentury_modern",
       "building:levels": "1",
       "height": "2.8",
       "heritage": "8",
@@ -11971,6 +11985,7 @@
       "name": "Edie",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "155",
       "source": "esri/Riverside_CA_Buildings_v2",
+      "start_date": "1966",
       "wikidata": "Q140963880"
     }
   }
