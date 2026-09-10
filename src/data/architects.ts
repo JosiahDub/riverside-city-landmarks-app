@@ -53,7 +53,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     wikipediaTitle: 'James Knox Taylor',
     wikipediaUrl: 'https://en.wikipedia.org/wiki/James_Knox_Taylor',
     portraitUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/James_Knox_Taylor.jpg/330px-James_Knox_Taylor.jpg',
-    bio: 'American architect.'
+    bio: 'James Knox Taylor was a nationally prominent architect who served as Supervising Architect of the U.S. Treasury from 1897 to 1912, overseeing the federal government’s enormous building program of post offices, courthouses and customs houses. Riverside’s former Federal Post Office, now the Museum of Riverside, was produced under Taylor’s tenure and reflects the dignified classical architecture favored for federal buildings of the period.'
   },
   'Herman O. Ruhnau': {
     name: 'Herman O. Ruhnau',
@@ -86,7 +86,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   },
   'Lester S. Moore': {
     name: 'Lester S. Moore',
-    bio: 'American architect.'
+    bio: 'Los Angeles architect Lester Sherwood Moore was an early advocate of Mission-influenced and Craftsman architecture and developed a substantial residential practice in Southern California. He designed numerous Riverside houses, particularly in the Mount Rubidoux area, where several of his Craftsman and Mediterranean Revival residences survive, including Bigelow’s Bungalow.'
   },
   'John A. Walls': {
     name: 'John A. Walls',
@@ -109,7 +109,7 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   'Seehorn & Preston': {
     name: 'Seehorn & Preston',
     wikidataId: 'Q141193069',
-    bio: 'American architect.'
+    bio: 'Seehorn & Preston was the Los Angeles architectural partnership of Ira H. Seehorn and veteran architect Jasper Newton Preston, active in the first decade of the twentieth century. Preston had already established a prominent career designing public and residential buildings in Texas and Southern California before partnering with Seehorn; in Riverside the firm designed the 1906 Irvine House on Brockton Avenue.'
   },
   'Adam Clark Willard': {
     name: 'Adam Clark Willard',
@@ -170,6 +170,41 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
     name: 'Louis du Puget Millar',
     wikidataId: 'Q141401465',
     bio: 'Irish-born Louis du Puget Millar studied engineering at Trinity College Dublin and trained in architecture in his father’s office before emigrating to California in 1907. He became known for Arts & Crafts architecture in Pasadena and Southern California; in Riverside, his office designed the William Childs House in association with George A. Clark, whose name appears on the original drawings as designer.'
+  },
+  'Moise, Harbach and Hewlett': {
+    name: 'Moise, Harbach and Hewlett',
+    wikidataId: 'Q141260363',
+    bio: 'Moise, Harbach and Hewlett was a Riverside architectural firm active during the city’s postwar expansion. Principal Bolton Moise established his Riverside practice in 1947 and later worked in partnership with Wendell Harbach and James Hewlett; the firm’s best-known civic commission is Riverside’s 1964–65 Main Library, a major expression of the city’s mid-century modern architecture.'
+  },
+  'John C. Pelton Jr.': {
+    name: 'John C. Pelton Jr.',
+    wikidataId: 'Q55508624',
+    bio: 'John Cotter Pelton Jr. was an architect active in Southern California during Riverside’s late nineteenth-century building boom. His surviving Riverside work includes the 1888 Frank B. Devine House, an elaborate Queen Anne residence, and contemporary accounts also identify him as architect of the ambitious but unrealized Hotel Rubidoux project at Mount Rubidoux.'
+  },
+  'Seeley L. Pillar': {
+    name: 'Seeley L. Pillar',
+    wikidataId: 'Q140737813',
+    bio: 'Seeley L. Pillar was a Riverside architect active during the city’s early twentieth-century growth. His surviving local work includes the 1911 Craftsman-style Estudillo House and the 1909 Arlington Branch Library, a Classical Revival building that was Riverside’s first branch library and remains the city’s oldest surviving library building.'
+  },
+  'Walter C. See': {
+    name: 'Walter C. See',
+    wikidataId: 'Q141401478',
+    bio: 'Walter Chester See was a California architect active during the mid-twentieth century, although readily available biographical documentation of his career is limited. Riverside records credit him with the 1955 Willard and Elizabeth Winder House on Myrtle Avenue, a surviving example of the city’s postwar residential architecture.'
+  },
+  'James C. Stanley': {
+    name: 'James C. Stanley',
+    wikidataId: 'Q141401532',
+    bio: 'James Chester Stanley was a carpenter and builder active in Riverside during the turn of the twentieth century. He is documented as the designer of the Benjamin Rockhold Family House, but comparatively little biographical information about his wider practice has yet been located.'
+  },
+  'Eugen Kurt Steinmann': {
+    name: 'Eugen Kurt Steinmann',
+    wikidataId: 'Q141401676',
+    bio: 'Swiss-born Eugen Kurt Steinmann was a Modernist architect who joined Herman Ruhnau’s Riverside firm in the 1950s and later became a principal of Ruhnau, Evans and Steinmann. He led the firm’s design section and played a major role in Riverside City Hall, the Main Street Pedestrian Mall, and other civic projects; his residential work includes the 1966–67 Mid-century Modern house known as Edie. City historic-resource research describes him as an award-winning Swiss architect who had previously practiced in Switzerland and Italy.'
+  },
+  'Garrett Beekman Van Pelt Jr.': {
+    name: 'Garrett Beekman Van Pelt Jr.',
+    wikidataId: 'Q57272798',
+    bio: 'Garrett Beekman Van Pelt Jr. was a Pasadena architect whose career included partnerships with Sylvanus Marston, Edgar Maybury, and later George Lind. His work ranged from substantial Period Revival residences and churches to early Ranch-style architecture; in Riverside he designed Gore Manor. Van Pelt was a member of the Southern California Chapter of the AIA and maintained an independent practice after leaving Marston, Van Pelt and Maybury in 1927.'
   }
 };
 
