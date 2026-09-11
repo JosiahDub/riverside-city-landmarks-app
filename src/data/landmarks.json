@@ -3240,8 +3240,8 @@
     "lat": 33.98293964019687,
     "lon": -117.37381620922328,
     "description": "historic street in Riverside, California",
-    "startDate": null,
-    "year": null,
+    "startDate": "1870",
+    "year": 1870,
     "designationDate": null,
     "designationYear": null,
     "isNationalHistoricLandmark": false,
@@ -3289,6 +3289,7 @@
       "name": "Mission Inn Avenue",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "40",
       "route": "road",
+      "start_date": "1870",
       "type": "route",
       "wikidata": "Q140673001"
     }
@@ -5579,8 +5580,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14174412550",
+        "osmId": 14174412550,
+        "osmType": "node",
+        "name": "Shiels House City Landmark",
+        "lat": 33.9741327,
+        "lon": -117.378975,
+        "subjectWikidata": "Q140696095",
+        "commonsImage": "File:Shiels House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiels_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiels_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "100",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14174412550"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "planners": [],
     "planner": [],
@@ -6020,8 +6037,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14174392994",
+        "osmId": 14174392994,
+        "osmType": "node",
+        "name": "Hammer-Wallihan House City Landmark",
+        "lat": 33.9731169,
+        "lon": -117.3781882,
+        "subjectWikidata": "Q140742588",
+        "commonsImage": "File:Hammer-Wallihan House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammer-Wallihan_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammer-Wallihan_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "140",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14174392994"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Henry L. A. Jekel"
     ],
@@ -6044,9 +6077,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140742588",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Hammer-Wallihan House Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammer-Wallihan_House_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammer-Wallihan_House_Exterior.jpg?width=400",
     "historicalImages": [],
     "historicalImage": null,
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -6074,7 +6107,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "77",
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1926",
-      "wikidata": "Q140742588"
+      "wikidata": "Q140742588",
+      "wikimedia_commons": "File:Hammer-Wallihan House Exterior.jpg"
     }
   },
   {
@@ -9980,8 +10014,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14174191597",
+        "osmId": 14174191597,
+        "osmType": "node",
+        "name": "Patsy O'Toole City Landmark",
+        "lat": 33.9598397,
+        "lon": -117.3545458,
+        "subjectWikidata": "Q140935493",
+        "commonsImage": "File:Patsy O'Toole House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Patsy_O'Toole_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Patsy_O'Toole_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "190",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14174191597"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "Robert H. Spurgeon Jr."
     ],
@@ -10396,8 +10446,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14174216556",
+        "osmId": 14174216556,
+        "osmType": "node",
+        "name": "Nielsen Pool House City Landmark",
+        "lat": 33.9596975,
+        "lon": -117.3603878,
+        "subjectWikidata": "Q28455819",
+        "commonsImage": "File:Nielsen Pool House City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nielsen_Pool_House_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Nielsen_Pool_House_City_Landmark_Plaque.jpg?width=400",
+        "direction": "240",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14174216556"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "planners": [],
     "planner": [],
@@ -10548,10 +10614,26 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14174223962",
+        "osmId": 14174223962,
+        "osmType": "node",
+        "name": "Gore Manor City Landmark",
+        "lat": 33.9641229,
+        "lon": -117.3644261,
+        "subjectWikidata": "Q140917201",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "45",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14174223962"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
-      "Garrett Van Pelt"
+      "Garrett Beekman Van Pelt Jr."
     ],
     "planners": [],
     "planner": [],
@@ -10572,9 +10654,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140917201",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Gore Manor Exterior.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gore_Manor_Exterior.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Gore_Manor_Exterior.jpg?width=400",
     "historicalImages": [],
     "historicalImage": null,
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -10589,6 +10671,8 @@
       "addr:postcode": "92507",
       "addr:state": "CA",
       "addr:street": "Prince Albert Drive",
+      "architect": "Garrett Beekman Van Pelt Jr.",
+      "architect:wikidata": "Q57272798",
       "building": "house",
       "building:levels": "2",
       "height": "7.47",
@@ -10600,7 +10684,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "136",
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1930",
-      "wikidata": "Q140917201"
+      "wikidata": "Q140917201",
+      "wikimedia_commons": "File:Gore Manor Exterior.jpg"
     }
   },
   {
