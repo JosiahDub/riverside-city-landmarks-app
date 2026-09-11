@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Landmark, Plaque } from '../types';
+import { Landmark } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
 import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass } from 'lucide-react';
@@ -82,10 +82,18 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
     return list;
   }, [landmark]);
 
-  // Fetch Wikipedia summary if article title exists
+  // Fetch Wikipedia summary if article title exists and landmark does not have a custom description
   useEffect(() => {
     if (!landmark) {
       setWikiSummary(null);
+      setLoadingWiki(false);
+      return;
+    }
+
+    // If landmark has its own description, prioritize that and skip fetching Wikipedia extract
+    if (landmark.description && landmark.description.trim()) {
+      setWikiSummary(null);
+      setLoadingWiki(false);
       return;
     }
 
@@ -105,10 +113,24 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
         .finally(() => setLoadingWiki(false));
     } else {
       setWikiSummary(null);
+      setLoadingWiki(false);
     }
   }, [landmark]);
 
   if (!landmark) return null;
+
+  // Historical summary resolution priority:
+  // 1. Landmark description (user-supplied)
+  // 2. Wikipedia article summary (fetched via Wikipedia REST API)
+  // 3. Wikidata description (fallback)
+  const hasCustomDesc = Boolean(landmark.description && landmark.description.trim());
+  const summaryText = hasCustomDesc
+    ? landmark.description.trim()
+    : wikiSummary && wikiSummary.trim()
+    ? wikiSummary.trim()
+    : !loadingWiki && landmark.wikidataDescription && landmark.wikidataDescription.trim()
+    ? landmark.wikidataDescription.trim()
+    : null;
 
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${landmark.lat},${landmark.lon}`;
 
@@ -761,22 +783,20 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
             </div>
           )}
 
-          {/* Description & Wikipedia Excerpt */}
-          {(wikiSummary || landmark.description) && (
+          {/* Historical Summary: custom description -> Wikipedia article -> Wikidata description */}
+          {(summaryText || (loadingWiki && !hasCustomDesc)) && (
             <div className="space-y-2.5 bg-stone-50/70 p-4 rounded-xl border border-stone-200">
               <h3 className="text-xs font-bold uppercase tracking-wider text-stone-600 flex items-center gap-1.5">
                 <BookOpen className="w-3.5 h-3.5 text-stone-700" /> Historical Summary
               </h3>
-              {loadingWiki && <p className="text-xs text-stone-400 italic">Fetching article details...</p>}
-              {wikiSummary ? (
+              {loadingWiki && !hasCustomDesc && (
+                <p className="text-xs text-stone-400 italic">Fetching article details...</p>
+              )}
+              {summaryText && (
                 <p className="text-sm text-stone-700 leading-relaxed font-serif">
-                  {wikiSummary}
+                  {summaryText}
                 </p>
-              ) : landmark.description ? (
-                <p className="text-sm text-stone-700 leading-relaxed font-serif">
-                  {landmark.description}
-                </p>
-              ) : null}
+              )}
               {landmark.wikipediaUrl && (
                 <a
                   href={landmark.wikipediaUrl}

@@ -8,6 +8,7 @@ export interface Landmark {
   lat: number;
   lon: number;
   description: string;
+  wikidataDescription?: string | null;
   startDate: string | null;
   year: number | null;
   architects: string[];
@@ -46,7 +47,7 @@ export interface Landmark {
   nationalHistoricLandmarkYear?: number | null;
   plaques?: Plaque[];
   hasPlaque?: boolean;
-  allTags: Record<string, string>;
+  allTags: Record<string, string | undefined>;
   distanceMiles?: number;
 }
 

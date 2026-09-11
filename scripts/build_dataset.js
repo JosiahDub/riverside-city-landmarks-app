@@ -299,6 +299,19 @@ export async function processLandmarks() {
     return entity.claims.P31.some(stmt => stmt.mainsnak?.datavalue?.value?.id === 'Q15243209');
   }
 
+  const existingLandmarksMap = {};
+  if (fs.existsSync(outputPath)) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+      existing.forEach(l => {
+        if (l.id) existingLandmarksMap[l.id] = l;
+        if (l.ref) existingLandmarksMap[`ref-${l.ref}`] = l;
+      });
+    } catch (e) {
+      console.warn('Could not read existing landmarks from', outputPath, e.message);
+    }
+  }
+
   const landmarks = landmarkElements.map(el => {
     const tags = el.tags || {};
     let lat = el.lat ?? el.center?.lat;
@@ -338,8 +351,14 @@ export async function processLandmarks() {
       }
     }
 
-    // Determine description
-    let description = tags.description || wdEntity?.descriptions?.en?.value || '';
+    // Determine Wikidata description
+    const wikidataDescription = wdEntity?.descriptions?.en?.value || null;
+
+    // Determine custom landmark description (preserves user-filled summary, or falls back to tags.description)
+    const existingEntry = existingLandmarksMap[`osm-${el.type}-${el.id}`] || (ref ? existingLandmarksMap[`ref-${ref}`] : null);
+    let description = (existingEntry && typeof existingEntry.description === 'string' && existingEntry.description)
+      ? existingEntry.description
+      : (tags.description || '');
 
     // Determine year / start date
     let rawDate = tags.start_date || '';
@@ -748,6 +767,7 @@ export async function processLandmarks() {
       lat,
       lon,
       description,
+      wikidataDescription,
       startDate: rawDate || null,
       year: year || null,
       designationDate,

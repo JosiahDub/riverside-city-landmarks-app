@@ -13,7 +13,7 @@ import { LandmarkListView } from './components/LandmarkListView';
 import { StatusPage } from './components/StatusPage';
 
 export const App: React.FC = () => {
-  const [landmarksData, setLandmarksData] = useState<Landmark[]>(rawLandmarks as Landmark[]);
+  const [landmarksData, setLandmarksData] = useState<Landmark[]>(rawLandmarks as unknown as Landmark[]);
   const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(null);
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
   const [isLocating, setIsLocating] = useState(false);
@@ -73,7 +73,9 @@ export const App: React.FC = () => {
         const matchesStyle = landmark.architectureStyles.some((s) => s.toLowerCase().includes(query));
         const matchesDistrict = (landmark.historicDistricts || []).some((d) => d.toLowerCase().includes(query));
         const matchesAddress = landmark.address ? landmark.address.toLowerCase().includes(query) : false;
-        const matchesDesc = landmark.description.toLowerCase().includes(query);
+        const matchesDesc =
+          Boolean(landmark.description && landmark.description.toLowerCase().includes(query)) ||
+          Boolean(landmark.wikidataDescription && landmark.wikidataDescription.toLowerCase().includes(query));
 
         if (!matchesName && !matchesRef && !matchesArchitect && !matchesPlanner && !matchesEngineer && !matchesDesigner && !matchesBuilder && !matchesStyle && !matchesDistrict && !matchesAddress && !matchesDesc) {
           return false;
@@ -255,7 +257,7 @@ export const App: React.FC = () => {
 
       if (elements.length > 0) {
         setLandmarksData((prev) => {
-          const map = new Map(prev.map((l) => [`${l.osmType}-${l.osmId}`, l]));
+          const map = new globalThis.Map<string, Landmark>(prev.map((l) => [`${l.osmType}-${l.osmId}`, l]));
           elements.forEach((el: any) => {
             const key = `${el.type}-${el.id}`;
             const existing = map.get(key);
