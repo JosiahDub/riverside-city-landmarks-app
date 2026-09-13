@@ -123,6 +123,11 @@
     "building": "hotel",
     "historic": null,
     "amenity": null,
+    "openToPublic": true,
+    "offersTours": true,
+    "adaAccessible": true,
+    "hasRestrooms": true,
+    "website": "missioninn.com",
     "allTags": {
       "addr:housenumber": "3649",
       "addr:postcode": "92501",
@@ -144,12 +149,7 @@
       "website": "https://missioninn.com/",
       "wikidata": "Q1920529",
       "wikimedia_commons": "File:MissionInn SpanishWing.jpg"
-    },
-    "openToPublic": true,
-    "offersTours": true,
-    "adaAccessible": true,
-    "hasRestrooms": true,
-    "website": "missioninn.com"
+    }
   },
   {
     "id": "osm-way-118524342",
@@ -253,6 +253,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "courthouse",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "amenity": "courthouse",
       "architect": "Burnham and Bliesner",
@@ -273,12 +278,7 @@
       "start_date": "1903",
       "wikidata": "Q135923668",
       "wikimedia_commons": "File:Riverside County Court House 1903 2.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-315761840",
@@ -337,6 +337,11 @@
     "building": "church",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3525",
@@ -362,12 +367,7 @@
       "wikidata": "Q7894186",
       "wikimedia_commons": "File:All Souls Universalist Church.jpg",
       "wikipedia": "en:Universalist Unitarian Church of Riverside"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233401424",
@@ -422,6 +422,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "7200",
@@ -443,12 +448,7 @@
       "start_date": "1881",
       "wikidata": "Q140544722",
       "wikimedia_commons": "File:Magnolia United Presbyterian Church.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233663665",
@@ -503,6 +503,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "8193",
@@ -522,12 +527,7 @@
       "tourism": "museum",
       "wikidata": "Q25209703",
       "wikimedia_commons": "File:Riverside Heritage House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232568727",
@@ -617,6 +617,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "amenity": "place_of_worship",
       "architect": "Myron Hunt",
@@ -635,12 +640,7 @@
       "wikidata": "Q5452861",
       "wikimedia_commons": "File:FirstCongregationalChurch20090821f.jpg",
       "wikipedia": "en:First Congregational Church (Riverside, California)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232931257",
@@ -715,6 +715,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3606",
@@ -741,12 +746,7 @@
       "wikidata": "Q5452705",
       "wikimedia_commons": "File:First Church of Christ, Scientist Riverside.jpg",
       "wikipedia": "en:First Church of Christ, Scientist (Riverside, California)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-relation-21216992",
@@ -817,6 +817,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -828,12 +833,7 @@
       "wikidata": "Q7926571",
       "wikimedia_commons": "File:Spring bloom on Victoria Avenue, Riverside, CA.jpg",
       "wikipedia": "en:Victoria Avenue (Riverside, California)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232577123",
@@ -900,6 +900,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3751",
@@ -916,12 +921,7 @@
       "wikidata": "Q104215471",
       "wikimedia_commons": "File:North face of RR Depot, erected 1904 sign, also note street lights special to the down town Riverside area with a connection to Mission Inn.JPG",
       "wikipedia": "en:Riverside station (Union Pacific Railroad)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-234343008",
@@ -974,6 +974,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "Arthur Burnett Benton",
       "architect:wikidata": "Q24203374",
@@ -988,12 +993,7 @@
       "start_date": "1920",
       "wikidata": "Q140588399",
       "wikimedia_commons": "File:Fairmount park 6 band shell.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-119281494",
@@ -1066,6 +1066,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "8193",
@@ -1087,12 +1092,7 @@
       "website": "https://www.riversideca.gov/museum/",
       "wikidata": "Q7338538",
       "wikimedia_commons": "File:Museum of Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-960121108",
@@ -1143,6 +1143,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "7606",
@@ -1160,12 +1165,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1874",
       "wikidata": "Q140588604"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958250508",
@@ -1218,6 +1218,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "1850",
@@ -1234,12 +1239,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1921",
       "wikidata": "Q140588497"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-44486411",
@@ -1290,6 +1290,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "ele": "238",
       "gnis:feature_id": "1848630",
@@ -1310,12 +1315,7 @@
       "tiger:reviewed": "no",
       "wikidata": "Q49476985",
       "wikimedia_commons": "File:Carlson Park.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-5901186487",
@@ -1366,6 +1366,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "denotation": "landmark",
       "heritage": "8",
@@ -1380,12 +1385,7 @@
       "wikidata": "Q85814522",
       "wikimedia_commons": "File:Parent Navel Orange Tree Riverside.jpg",
       "wikipedia": "en:Washington navel orange tree (Riverside, California)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-278271423",
@@ -1442,6 +1442,11 @@
     "building": "school",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "9010",
@@ -1461,12 +1466,7 @@
       "website": "http://www.shermanindianmuseum.org/",
       "wikidata": "Q66503498",
       "wikimedia_commons": "File:Sherman Indian Museum Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-119281493",
@@ -1526,6 +1526,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "events_venue",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:housenumber": "3485",
       "addr:postcode": "92501",
@@ -1555,12 +1560,7 @@
       "wikidata": "Q7338545",
       "wikimedia_commons": "File:RiversideMunicipalAuditorium20090821z.jpg",
       "wikipedia": "en:Riverside Municipal Auditorium"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232931254",
@@ -1631,6 +1631,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3425",
@@ -1654,12 +1659,7 @@
       "wikidata": "Q7338423",
       "wikimedia_commons": "File:RiversideArtMuseum20090821g.JPG",
       "wikipedia": "en:Riverside Art Museum"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1540018593",
@@ -1726,6 +1726,11 @@
     "building": null,
     "historic": "archaeological_site",
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "access": "private",
       "archaeological_site": "settlement",
@@ -1738,12 +1743,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "19",
       "wikidata": "Q140591393",
       "wikimedia_commons": "File:Chinatown Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-893550902",
@@ -1818,6 +1818,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4532",
@@ -1838,12 +1843,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140610785",
       "wikimedia_commons": "File:Fred Stebler House View.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232930476",
@@ -1916,6 +1916,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "Adam C. Willard;G. Stanley Wilson",
       "architect:wikidata": "Q140778690;Q55126528",
@@ -1929,12 +1934,7 @@
       "start_date": "1890",
       "wikidata": "Q140610865",
       "wikimedia_commons": "File:Loring Building Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-777630347",
@@ -2004,6 +2004,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3645",
@@ -2022,12 +2027,7 @@
       "start_date": "1904-03-03",
       "wikidata": "Q140610933",
       "wikimedia_commons": "File:New Jerusalem Church Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-277749708",
@@ -2111,6 +2111,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Lemon",
       "addr:housenumber": "3356",
@@ -2129,12 +2134,7 @@
       "wikidata": "Q5653555",
       "wikimedia_commons": "File:Harada House 20091024c.jpg",
       "wikipedia": "en:Harada House"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-relation-21116252",
@@ -2185,6 +2185,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -2194,12 +2199,7 @@
       "type": "waterway",
       "waterway": "canal",
       "wikidata": "Q49248844"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958919610",
@@ -2250,6 +2250,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2320",
@@ -2267,12 +2272,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1891",
       "wikidata": "Q140612732"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-358796470",
@@ -2323,6 +2323,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "ele": "405",
       "gnis:feature_id": "255740",
@@ -2336,12 +2341,7 @@
       "wikidata": "Q8525771",
       "wikimedia_commons": "File:MountRubidoux-1.JPG",
       "wikipedia": "en:Mount Rubidoux"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-44486190",
@@ -2408,6 +2408,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "access": "yes",
       "ele": "264",
@@ -2431,12 +2436,7 @@
       "tiger:STATEFP": "06",
       "wikidata": "Q49532671",
       "wikimedia_commons": "File:North Park Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932290",
@@ -2511,6 +2511,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "G. Stanley Wilson",
       "architect:wikidata": "Q55126528",
@@ -2525,12 +2530,7 @@
       "start_date": "1924",
       "wikidata": "Q139083261",
       "wikimedia_commons": "File:Old Riverside City Hall.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959827245",
@@ -2583,6 +2583,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2812",
@@ -2601,12 +2606,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1889",
       "wikidata": "Q140640718"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-912475413",
@@ -2661,6 +2661,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4475",
@@ -2681,12 +2686,7 @@
       "start_date": "1888",
       "wikidata": "Q140640734",
       "wikimedia_commons": "File:Devine House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958301691",
@@ -2737,6 +2737,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2508",
@@ -2754,12 +2759,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1897",
       "wikidata": "Q140640775"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932296",
@@ -2830,6 +2830,11 @@
     "building": "retail",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3602",
@@ -2846,12 +2851,7 @@
       "start_date": "1928",
       "wikidata": "Q140640812",
       "wikimedia_commons": "File:Arcade Building Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932299",
@@ -2920,6 +2920,11 @@
     "building": "retail",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3800",
@@ -2936,12 +2941,7 @@
       "start_date": "1908",
       "wikidata": "Q140640830",
       "wikimedia_commons": "File:Bonnett Building Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-893550901",
@@ -3012,6 +3012,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4515",
@@ -3031,12 +3036,7 @@
       "start_date": "1911",
       "wikidata": "Q140640954",
       "wikimedia_commons": "File:Estudillo House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881139621",
@@ -3092,6 +3092,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3115",
@@ -3112,12 +3117,7 @@
       "start_date": "1906",
       "wikidata": "Q140640973",
       "wikimedia_commons": "File:Irvine House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-912126121",
@@ -3170,6 +3170,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3121",
@@ -3188,12 +3193,7 @@
       "start_date": "1890",
       "wikidata": "Q140672990",
       "wikimedia_commons": "File:Waite House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958302060",
@@ -3248,6 +3248,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3390",
@@ -3268,12 +3273,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140672995",
       "wikimedia_commons": "File:Cressman House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233254194",
@@ -3329,6 +3329,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "yes",
       "heritage": "8",
@@ -3337,12 +3342,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "38",
       "wikidata": "Q139545665",
       "wikimedia_commons": "File:Grant Elementary School Courtyard.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932288",
@@ -3435,6 +3435,11 @@
     "building": "retail",
     "historic": null,
     "amenity": "theatre",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3801",
@@ -3457,12 +3462,7 @@
       "start_date": "1929",
       "wikidata": "Q7338490",
       "wikimedia_commons": "File:Fox Theater, Riverside CA.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-relation-21132098",
@@ -3517,6 +3517,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -3527,12 +3532,7 @@
       "start_date": "1870",
       "type": "route",
       "wikidata": "Q140673001"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932962",
@@ -3603,6 +3603,11 @@
     "building": "retail",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3485",
@@ -3623,12 +3628,7 @@
       "wikidata": "Q8045931",
       "wikimedia_commons": "File:Historic Ymca aka life arts building.jpg",
       "wikipedia": "en:YMCA Building (Riverside, California)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958299634",
@@ -3681,6 +3681,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6190",
@@ -3698,12 +3703,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1902",
       "wikidata": "Q139257099"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232934005",
@@ -3773,6 +3773,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "commercial",
       "building:architecture": "italian_renaissance",
@@ -3784,12 +3789,7 @@
       "start_date": "1927",
       "wikidata": "Q140673036",
       "wikimedia_commons": "File:Lerner Building.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-874688363",
@@ -3842,6 +3842,11 @@
     "building": "church",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:state": "CA",
@@ -3857,12 +3862,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1915",
       "wikidata": "Q140680291"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921546966",
@@ -3933,6 +3933,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2374",
@@ -3954,12 +3959,7 @@
       "start_date": "1900",
       "wikidata": "Q140680297",
       "wikimedia_commons": "File:Collins-Seaton House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-118530713",
@@ -4014,6 +4014,11 @@
     "building": "public",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "Seeley L. Pillar",
       "architect:wikidata": "Q140737813",
@@ -4026,12 +4031,7 @@
       "start_date": "1909",
       "wikidata": "Q66364163",
       "wikimedia_commons": "File:Riverside Library.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-930081050",
@@ -4084,6 +4084,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4539",
@@ -4102,12 +4107,7 @@
       "start_date": "1896",
       "wikidata": "Q140680303",
       "wikimedia_commons": "File:Batkin-Chrysler House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-relation-3672539",
@@ -4179,6 +4179,11 @@
     "building": "college",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "college",
       "building:architecture": "italian_renaissance",
@@ -4190,12 +4195,7 @@
       "type": "multipolygon",
       "wikidata": "Q140680312",
       "wikimedia_commons": "File:Riverside City College Quadrangle Interior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233256024",
@@ -4254,6 +4254,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "community_centre",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2060",
@@ -4276,12 +4281,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "49",
       "start_date": "1928",
       "wikidata": "Q140680331"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232933223",
@@ -4352,6 +4352,11 @@
     "building": "office",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:housenumber": "3834",
       "addr:postcode": "92501",
@@ -4369,12 +4374,7 @@
       "wheelchair": "yes",
       "wikidata": "Q140680714",
       "wikimedia_commons": "File:UCR Photography Museum.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921546002",
@@ -4441,6 +4441,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2969",
@@ -4458,12 +4463,7 @@
       "start_date": "1887",
       "wikidata": "Q140680754",
       "wikimedia_commons": "File:Ward House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233257075",
@@ -4534,6 +4534,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "1510",
@@ -4559,12 +4564,7 @@
       "wikidata": "Q121590627",
       "wikimedia_commons": "File:Weber house at dawn.jpg",
       "wikipedia": "en:Peter J. Weber House"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-767837015",
@@ -4617,6 +4617,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "7335",
@@ -4633,12 +4638,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "53",
       "start_date": "1899",
       "wikidata": "Q140687911"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1351960466",
@@ -4709,6 +4709,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "bridge": "cantilever",
       "bridge:structure": "beam",
@@ -4722,12 +4727,7 @@
       "start_date": "1928-09-18",
       "wikidata": "Q136870322",
       "wikimedia_commons": "File:Victoria Bridge Landmark 54.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881090745",
@@ -4778,6 +4778,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3858",
@@ -4796,12 +4801,7 @@
       "start_date": "1908",
       "wikidata": "Q140689182",
       "wikimedia_commons": "File:Hoover House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-696810985",
@@ -4877,6 +4877,11 @@
     "building": "school",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6735",
@@ -4895,12 +4900,7 @@
       "start_date": "1927",
       "wikidata": "Q140689197",
       "wikimedia_commons": "File:Palm School.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-44486427",
@@ -4967,6 +4967,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "Tiger:MTFCC": "K2180",
       "access": "yes",
@@ -4991,12 +4996,7 @@
       "tiger:reviewed": "no",
       "wikidata": "Q49579974",
       "wikimedia_commons": "File:White Park View.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958302078",
@@ -5049,6 +5049,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6499",
@@ -5065,12 +5070,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "58",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140694906"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-900811382",
@@ -5121,6 +5121,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "7995",
@@ -5137,12 +5142,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "59",
       "start_date": "1892",
       "wikidata": "Q140694931"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-14025383332",
@@ -5209,6 +5209,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "denotation": "landmark",
       "genus": "Sequoia",
@@ -5223,12 +5228,7 @@
       "species": "Sequoia sempervirens",
       "wikidata": "Q140613826",
       "wikimedia_commons": "File:Chicago White Sox Redwood Tree and Low Park.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-14050417455",
@@ -5279,6 +5279,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "denotation": "park",
       "heritage": "8",
@@ -5294,12 +5299,7 @@
       "species:wikipedia": "en:Taxodium mucronatum",
       "wikidata": "Q140698450",
       "wikimedia_commons": "File:Montezuma Bald Cypruss Trees Fairmount Park.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1544725871",
@@ -5350,6 +5350,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -5359,12 +5364,7 @@
       "name": "Magnolia Avenue Parkways and Center Median venue Parkways and Center Media",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "62",
       "wikidata": "Q140698479"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1545150774",
@@ -5404,9 +5404,9 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q140723613",
     "wikipedia": null,
     "wikipediaUrl": null,
-    "commonsImage": null,
-    "imageUrl": null,
-    "thumbnail": null,
+    "commonsImage": "File:Grove of Palm Trees.jpg",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Grove_of_Palm_Trees.jpg?width=800",
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Grove_of_Palm_Trees.jpg?width=400",
     "historicalImages": [],
     "historicalImage": null,
     "heritageWebsite": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
@@ -5415,6 +5415,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -5425,13 +5430,9 @@
       "name": "Palm Grove",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "63",
       "start_date": "1962",
-      "wikidata": "Q140723613"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+      "wikidata": "Q140723613",
+      "wikimedia_commons": "File:Grove of Palm Trees.jpg"
+    }
   },
   {
     "id": "osm-node-14054389459",
@@ -5498,6 +5499,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "denotation": "urban",
       "heritage": "8",
@@ -5512,12 +5518,7 @@
       "species:wikidata": "Q55972542",
       "wikidata": "Q140723663",
       "wikimedia_commons": "File:Roosevelt Palm.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-14054465399",
@@ -5568,6 +5569,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "denotation": "urban",
       "heritage": "8",
@@ -5583,12 +5589,7 @@
       "species:wikipedia": "en:Platanus racemosa",
       "wikidata": "Q140723835",
       "wikimedia_commons": "File:Native Sycamore Tree.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-14083621540",
@@ -5639,6 +5640,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -5648,12 +5654,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "66",
       "species:wikidata": "Q130257124",
       "wikidata": "Q140723876"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-44486517",
@@ -5704,6 +5705,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "Tiger:MTFCC": "K2582",
       "heritage": "8",
@@ -5722,12 +5728,7 @@
       "website": "http://www.evergreen-cemetery.info/",
       "wikidata": "Q5417190",
       "wikipedia": "en:Evergreen Cemetery (Riverside, California)"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-912126099",
@@ -5780,6 +5781,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3209",
@@ -5799,12 +5805,7 @@
       "start_date": "1893",
       "wikidata": "Q140723972",
       "wikimedia_commons": "File:Mitchell House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-44486163",
@@ -5855,6 +5856,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2601",
@@ -5883,12 +5889,7 @@
       "tiger:reviewed": "no",
       "wikidata": "Q5430650",
       "wikimedia_commons": "File:Fairmount park 13 carousel playground.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881084635",
@@ -5957,6 +5958,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4570",
@@ -5976,12 +5982,7 @@
       "start_date": "1909",
       "wikidata": "Q140724534",
       "wikimedia_commons": "File:Harwood Hall House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-868426280",
@@ -6050,6 +6051,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3620",
@@ -6069,12 +6075,7 @@
       "start_date": "1887",
       "wikidata": "Q140696095",
       "wikimedia_commons": "File:Shiels House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233264649",
@@ -6127,6 +6128,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "house",
       "building:architecture": "Victorian",
@@ -6142,12 +6148,7 @@
       "start_date": "1892",
       "wikidata": "Q140696092",
       "wikimedia_commons": "File:McIntyre House Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-44486161",
@@ -6229,6 +6230,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "Tiger:MTFCC": "K2180",
       "access": "yes",
@@ -6251,12 +6257,7 @@
       "tiger:reviewed": "no",
       "wikidata": "Q49531392",
       "wikimedia_commons": "File:Newman Park and De Anza Statue.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1545218603",
@@ -6307,6 +6308,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "bridge": "yes",
       "heritage": "8",
@@ -6320,12 +6326,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "74",
       "wikidata": "Q140724477",
       "wikimedia_commons": "File:Buena_Vista_Bridge.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-913954241",
@@ -6378,6 +6379,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3241",
@@ -6396,12 +6402,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1929",
       "wikidata": "Q140725518"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921547011",
@@ -6452,6 +6453,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2110",
@@ -6469,12 +6475,7 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140725113",
       "wikimedia_commons": "File:Exselsen House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-868426322",
@@ -6545,6 +6546,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3563",
@@ -6566,12 +6572,7 @@
       "start_date": "1926",
       "wikidata": "Q140742588",
       "wikimedia_commons": "File:Hammer-Wallihan House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-912475386",
@@ -6640,6 +6641,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4492",
@@ -6658,12 +6664,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140731714",
       "wikimedia_commons": "File:Jarvis House Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-912126148",
@@ -6732,6 +6733,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3092",
@@ -6750,12 +6756,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "79",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140743068"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232934447",
@@ -6831,6 +6832,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3610",
@@ -6854,12 +6860,7 @@
       "start_date": "1925",
       "wikidata": "Q133440785",
       "wikimedia_commons": "File:M. H. Simon's Undertaking Chapel, front.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-923888988",
@@ -6914,6 +6915,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "1151",
@@ -6933,12 +6939,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1910",
       "wikidata": "Q140766068"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-868196014",
@@ -6989,6 +6990,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6475",
@@ -7006,12 +7012,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1892",
       "wikidata": "Q140766075"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921546005",
@@ -7078,6 +7079,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2933",
@@ -7094,12 +7100,7 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q139254877",
       "wikimedia_commons": "File:First Christian Church Parsonage Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232929922",
@@ -7158,6 +7159,11 @@
     "building": "retail",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "G. Stanley Wilson",
       "architect:wikidata": "Q55126528",
@@ -7172,12 +7178,7 @@
       "start_date": "1927",
       "wikidata": "Q140766076",
       "wikimedia_commons": "File:Aurea Vista Hotel Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-207537002",
@@ -7249,6 +7250,11 @@
     "building": "hotel",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:housenumber": "3425",
       "addr:street": "Market Street",
@@ -7264,12 +7270,7 @@
       "start_date": "1927",
       "wikidata": "Q140766084",
       "wikimedia_commons": "File:Casa De Anza Motel exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-880403086",
@@ -7322,6 +7323,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2575",
@@ -7339,12 +7345,7 @@
       "source": "microsoft/BuildingFootprints",
       "start_date": "1901",
       "wikidata": "Q140775747"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232941196",
@@ -7415,6 +7416,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "G. Stanley Wilson",
       "architect:wikidata": "Q55126528",
@@ -7429,12 +7435,7 @@
       "start_date": "1925",
       "wikidata": "Q140690551",
       "wikimedia_commons": "File:Tetley Building Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-926399865",
@@ -7489,6 +7490,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5211",
@@ -7506,12 +7512,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "88",
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140775760"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-869909368",
@@ -7567,6 +7568,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2490",
@@ -7587,12 +7593,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1891",
       "wikidata": "Q140778633"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932298",
@@ -7663,6 +7664,11 @@
     "building": "retail",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "Burnham and Bliesner",
       "architect:wikidata": "Q141249811",
@@ -7676,12 +7682,7 @@
       "start_date": "1904",
       "wikidata": "Q140187530",
       "wikimedia_commons": "File:Roosevelt Building Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1134383649",
@@ -7738,6 +7739,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3261",
@@ -7755,12 +7761,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "91",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140789699"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232941197",
@@ -7836,6 +7837,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4336",
@@ -7852,12 +7858,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "92",
       "wikidata": "Q140777120",
       "wikimedia_commons": "File:J.R. Willis Building.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958298260",
@@ -7926,6 +7927,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3050",
@@ -7945,12 +7951,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140790521",
       "wikimedia_commons": "File:John J. Hewitt House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-899617717",
@@ -8001,6 +8002,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4465",
@@ -8019,12 +8025,7 @@
       "start_date": "1950",
       "wikidata": "Q140878996",
       "wikimedia_commons": "File:Dr. Edmund Jaeger House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-777632335",
@@ -8093,6 +8094,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "amenity": "place_of_worship",
       "building": "yes",
@@ -8103,12 +8109,7 @@
       "religion": "christian",
       "wikidata": "Q140879120",
       "wikimedia_commons": "File:First United Brethren in Christ Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-386747563",
@@ -8175,6 +8176,11 @@
     "building": "school",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "school",
       "heritage": "8",
@@ -8184,12 +8190,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "96",
       "start_date": "1917",
       "wikidata": "Q140879305"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-14073920777",
@@ -8240,6 +8241,11 @@
     "building": null,
     "historic": "ruins",
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -8250,12 +8256,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "97",
       "ruins": "no",
       "wikidata": "Q140879492"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-545578462",
@@ -8324,6 +8325,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "commercial",
       "building:architecture": "mediterranean_revival",
@@ -8335,12 +8341,7 @@
       "start_date": "1924",
       "wikidata": "Q140650834",
       "wikimedia_commons": "File:White Park Building Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958017921",
@@ -8414,6 +8415,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4581",
@@ -8432,12 +8438,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1906",
       "wikidata": "Q139257161"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-125135482",
@@ -8506,6 +8507,11 @@
     "building": "yes",
     "historic": "building",
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3750",
@@ -8524,12 +8530,7 @@
       "start_date": "1924",
       "wikidata": "Q140588309",
       "wikimedia_commons": "File:Santa Fe Depot Riverside.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958297114",
@@ -8598,6 +8599,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3894",
@@ -8617,12 +8623,7 @@
       "start_date": "1895",
       "wikidata": "Q140882261",
       "wikimedia_commons": "File:Elmer A. Day House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-234707773",
@@ -8673,6 +8674,11 @@
     "building": "industrial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "industrial",
       "heritage": "8",
@@ -8680,12 +8686,7 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "102",
       "wikidata": "Q140892332"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-893550924",
@@ -8736,6 +8737,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4462",
@@ -8754,12 +8760,7 @@
       "start_date": "1907",
       "wikidata": "Q140690581",
       "wikimedia_commons": "File:Jaeger Family House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958017917",
@@ -8828,6 +8829,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4536",
@@ -8847,12 +8853,7 @@
       "start_date": "1913",
       "wikidata": "Q140892425",
       "wikimedia_commons": "File:Raymond Cree-Criddle House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921556170",
@@ -8921,6 +8922,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3504",
@@ -8939,12 +8945,7 @@
       "start_date": "1924",
       "wikidata": "Q140745351",
       "wikimedia_commons": "File:Mary and Emerson Holt House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958300966",
@@ -8997,6 +8998,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3245",
@@ -9015,12 +9021,7 @@
       "start_date": "1899",
       "wikidata": "Q140877874",
       "wikimedia_commons": "File:Alkire House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-893820351",
@@ -9073,6 +9074,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "7355",
@@ -9092,12 +9098,7 @@
       "start_date": "1923",
       "wikidata": "Q140892682",
       "wikimedia_commons": "File:Holden House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921552410",
@@ -9154,6 +9155,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4811",
@@ -9173,12 +9179,7 @@
       "start_date": "1888",
       "wikidata": "Q140676599",
       "wikimedia_commons": "File:Victorian Historical House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-relation-11240707",
@@ -9198,8 +9199,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14178532350",
+        "osmId": 14178532350,
+        "osmType": "node",
+        "name": "Riverside Canal County Landmark",
+        "lat": 34.0118056,
+        "lon": -117.3399911,
+        "subjectWikidata": "Q140936076",
+        "commonsImage": "File:Riverside Canal County Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_Canal_County_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_Canal_County_Landmark_Plaque.jpg?width=400",
+        "direction": "90",
+        "material": "stone",
+        "osmUrl": "https://www.openstreetmap.org/node/14178532350"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "planners": [],
     "planner": [],
@@ -9229,6 +9246,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -9240,12 +9262,7 @@
       "waterway": "drain",
       "wikidata": "Q140936076",
       "wikimedia_commons": "File:Riverside Canal in Wood Streets.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881134297",
@@ -9316,6 +9333,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4385",
@@ -9333,12 +9355,7 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140902179",
       "wikimedia_commons": "File:Piddington House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1135939560",
@@ -9407,6 +9424,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4648",
@@ -9426,12 +9448,7 @@
       "start_date": "1927",
       "wikidata": "Q140928251",
       "wikimedia_commons": "File:Lillian M. Spurgeon Residence Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-899617765",
@@ -9500,6 +9517,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4480",
@@ -9519,12 +9541,7 @@
       "start_date": "1908",
       "wikidata": "Q140928358",
       "wikimedia_commons": "File:Hammond House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-890783732",
@@ -9593,6 +9610,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4654",
@@ -9611,12 +9633,7 @@
       "start_date": "1900",
       "wikidata": "Q140894301",
       "wikimedia_commons": "File:John Swanson House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-232932293",
@@ -9683,6 +9700,11 @@
     "building": "retail",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "alt_name": "Harada Building",
       "building": "retail",
@@ -9694,12 +9716,7 @@
       "start_date": "1886",
       "wikidata": "Q140187508",
       "wikimedia_commons": "File:Jackson Building Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-910672661",
@@ -9762,6 +9779,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4527",
@@ -9783,12 +9805,7 @@
       "start_date": "1920",
       "wikidata": "Q140933084",
       "wikimedia_commons": "File:A. N. Sweet House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-921556161",
@@ -9857,6 +9874,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3456",
@@ -9874,12 +9896,7 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140745785",
       "wikimedia_commons": "File:Ernest and Louise Clarke House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958017911",
@@ -9950,6 +9967,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4622",
@@ -9970,12 +9992,7 @@
       "start_date": "1908",
       "wikidata": "Q140927703",
       "wikimedia_commons": "File:C.O. Evans Residence Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-node-14079713557",
@@ -10026,6 +10043,11 @@
     "building": null,
     "historic": "yes",
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "access": "yes",
       "heritage": "8",
@@ -10036,12 +10058,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "118",
       "tourism": "attraction",
       "wikidata": "Q140936103"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958028226",
@@ -10096,6 +10113,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3105",
@@ -10116,12 +10138,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140800730",
       "wikimedia_commons": "File:Walter C. Banks House.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-234338310",
@@ -10177,6 +10194,11 @@
     "building": "church",
     "historic": null,
     "amenity": "place_of_worship",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3847",
@@ -10201,12 +10223,7 @@
       "start_date": "1949",
       "wikidata": "Q140778170",
       "wikimedia_commons": "File:All Saints Episcopal Church Riverside California.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959802707",
@@ -10261,6 +10278,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2112",
@@ -10279,12 +10301,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1957",
       "wikidata": "Q140927560"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959808694",
@@ -10340,6 +10357,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5175",
@@ -10360,12 +10382,7 @@
       "start_date": "1966",
       "wikidata": "Q140903346",
       "wikimedia_commons": "File:Jasper Austin Payton Residence Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-619322270",
@@ -10418,6 +10435,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3747",
@@ -10432,12 +10454,7 @@
       "name": "Hawthorne House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "123",
       "wikidata": "Q140903463"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-233267697",
@@ -10492,6 +10509,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "Herman O. Ruhnau",
       "architect:wikidata": "Q16017899",
@@ -10506,12 +10528,7 @@
       "start_date": "1957",
       "wikidata": "Q140903531",
       "wikimedia_commons": "File:Old Marcy Library Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958302496",
@@ -10568,6 +10585,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6816",
@@ -10589,12 +10611,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1961",
       "wikidata": "Q140935478"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1134166352",
@@ -10651,6 +10668,11 @@
     "building": "school",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4259",
@@ -10670,12 +10692,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1965",
       "wikidata": "Q140893030"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959575710",
@@ -10730,6 +10747,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6140",
@@ -10752,12 +10774,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1971",
       "wikidata": "Q140916594"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-877846260",
@@ -10828,6 +10845,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "1945",
@@ -10849,12 +10871,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1926",
       "wikidata": "Q140935493"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-960848208",
@@ -10907,6 +10924,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "8410",
@@ -10926,12 +10948,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "129",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140916743"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-694156921",
@@ -10982,6 +10999,11 @@
     "building": "yes",
     "historic": "building",
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "building": "yes",
       "heritage": "8",
@@ -10991,12 +11013,7 @@
       "name": "Trujillo Adobe",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "130",
       "wikidata": "Q140916817"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1481614312",
@@ -11051,6 +11068,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5022",
@@ -11070,12 +11092,7 @@
       "source": "microsoft/BuildingFootprints;aerial imagery",
       "start_date": "1955",
       "wikidata": "Q140916909"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959809320",
@@ -11130,6 +11147,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5036",
@@ -11150,12 +11172,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1930",
       "wikidata": "Q140917040"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-960881702",
@@ -11206,6 +11223,11 @@
     "building": "community_center",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5797",
@@ -11220,12 +11242,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1942",
       "wikidata": "Q140898969"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959583620",
@@ -11294,6 +11311,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5050",
@@ -11314,12 +11336,7 @@
       "wikidata": "Q28455819",
       "wikimedia_commons": "File:Nielsen Pool House - Front PNG.png",
       "wikipedia": "en:Nielsen Pool House"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-119281492",
@@ -11378,6 +11395,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3581",
@@ -11400,12 +11422,7 @@
       "wheelchair": "yes",
       "wikidata": "Q140936130",
       "wikimedia_commons": "File:The Cheech Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-869909366",
@@ -11444,7 +11461,8 @@
     ],
     "hasPlaque": true,
     "architects": [
-      "Garrett Beekman Van Pelt Jr."
+      "Garrett Beekman Van Pelt Jr.",
+      "Garrett Van Pelt"
     ],
     "planners": [],
     "planner": [],
@@ -11476,6 +11494,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2530",
@@ -11497,12 +11520,7 @@
       "start_date": "1930",
       "wikidata": "Q140917201",
       "wikimedia_commons": "File:Gore Manor Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958924273",
@@ -11563,6 +11581,11 @@
     "building": "bungalow",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4625",
@@ -11584,12 +11607,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140963135",
       "wikimedia_commons": "File:Bigelow's Bungalow Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-235391948",
@@ -11640,6 +11658,11 @@
     "building": "yes",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3280",
@@ -11654,12 +11677,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "138",
       "wikidata": "Q140936194",
       "wikimedia_commons": "File:E.T. Wall Packing House 1 Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881134669",
@@ -11712,6 +11730,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "architect": "Henry L. A. Jekel",
       "building": "house",
@@ -11725,12 +11748,7 @@
       "start_date": "1931",
       "wikidata": "Q140917320",
       "wikimedia_commons": "File:The Harbor House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1082619483",
@@ -11781,6 +11799,11 @@
     "building": null,
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "heritage": "8",
       "heritage:operator": "city_of_riverside_cultural_heritage_board",
@@ -11789,12 +11812,7 @@
       "name": "Farm House Collective",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "140",
       "wikidata": "Q140893554"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-694168131",
@@ -11848,6 +11866,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "events_venue",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "amenity": "events_venue",
       "architect": "Peter J. Weber",
@@ -11862,12 +11885,7 @@
       "start_date": "1929",
       "wikidata": "Q140917556",
       "wikimedia_commons": "File:Freelander Tractor Co. Showroom Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-235391949",
@@ -11918,6 +11936,11 @@
     "building": "industrial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3230",
@@ -11932,12 +11955,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "142",
       "wikidata": "Q140936220",
       "wikimedia_commons": "File:E.T. Wall Packing House 2 Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-874757408",
@@ -12008,6 +12026,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4428",
@@ -12030,12 +12053,7 @@
       "start_date": "1924",
       "wikidata": "Q140963340",
       "wikimedia_commons": "File:David S. Bell House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958302816",
@@ -12090,6 +12108,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6744",
@@ -12109,12 +12132,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1966",
       "wikidata": "Q140927289"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959809319",
@@ -12169,6 +12187,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5050",
@@ -12188,12 +12211,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "145",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140927408"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-960876148",
@@ -12248,6 +12266,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3860",
@@ -12268,12 +12291,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "146",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140963411"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-930381200",
@@ -12326,6 +12344,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "6268",
@@ -12343,12 +12366,7 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140893838",
       "wikimedia_commons": "File:Walter Verly House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881086174",
@@ -12401,6 +12419,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3881",
@@ -12419,12 +12442,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1948",
       "wikidata": "Q140933106"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959175929",
@@ -12477,6 +12495,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2365",
@@ -12494,12 +12517,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1900",
       "wikidata": "Q140893704"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-234707786",
@@ -12550,6 +12568,11 @@
     "building": "commercial",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2933",
@@ -12565,12 +12588,7 @@
       "start_date": "1902",
       "wikidata": "Q140963474",
       "wikimedia_commons": "File:Mercantile Hall-Orange Valley Masonic Lodge 13 Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-881086175",
@@ -12625,6 +12643,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "4649",
@@ -12645,12 +12668,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1955",
       "wikidata": "Q140963535"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-relation-18163662",
@@ -12726,6 +12744,11 @@
     "building": "yes",
     "historic": null,
     "amenity": "townhall",
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3900",
@@ -12750,12 +12773,7 @@
       "website": "https://riversideca.gov/",
       "wikidata": "Q139083291",
       "wikimedia_commons": "File:Riverside City Hall Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-1135939550",
@@ -12825,6 +12843,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "3611",
@@ -12844,12 +12867,7 @@
       "start_date": "1903",
       "wikidata": "Q140933127",
       "wikimedia_commons": "File:Hays-Pattee House Exterior.jpg"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-958978942",
@@ -12900,6 +12918,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "2881",
@@ -12917,12 +12940,7 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "154",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140963770"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   },
   {
     "id": "osm-way-959573301",
@@ -12977,6 +12995,11 @@
     "building": "house",
     "historic": null,
     "amenity": null,
+    "openToPublic": false,
+    "offersTours": false,
+    "adaAccessible": false,
+    "hasRestrooms": false,
+    "website": null,
     "allTags": {
       "addr:city": "Riverside",
       "addr:housenumber": "5958",
@@ -12997,11 +13020,6 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1966",
       "wikidata": "Q140963880"
-    },
-    "openToPublic": false,
-    "offersTours": false,
-    "adaAccessible": false,
-    "hasRestrooms": false,
-    "website": null
+    }
   }
 ]
