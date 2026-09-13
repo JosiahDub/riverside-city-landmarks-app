@@ -73,11 +73,12 @@ export const App: React.FC = () => {
         const matchesStyle = landmark.architectureStyles.some((s) => s.toLowerCase().includes(query));
         const matchesDistrict = (landmark.historicDistricts || []).some((d) => d.toLowerCase().includes(query));
         const matchesAddress = landmark.address ? landmark.address.toLowerCase().includes(query) : false;
+        const matchesWebsite = landmark.website ? landmark.website.toLowerCase().includes(query) : false;
         const matchesDesc =
           Boolean(landmark.description && landmark.description.toLowerCase().includes(query)) ||
           Boolean(landmark.wikidataDescription && landmark.wikidataDescription.toLowerCase().includes(query));
 
-        if (!matchesName && !matchesRef && !matchesArchitect && !matchesPlanner && !matchesEngineer && !matchesDesigner && !matchesBuilder && !matchesStyle && !matchesDistrict && !matchesAddress && !matchesDesc) {
+        if (!matchesName && !matchesRef && !matchesArchitect && !matchesPlanner && !matchesEngineer && !matchesDesigner && !matchesBuilder && !matchesStyle && !matchesDistrict && !matchesAddress && !matchesDesc && !matchesWebsite) {
           return false;
         }
       }

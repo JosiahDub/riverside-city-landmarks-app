@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Landmark } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass, DoorOpen, Lock, CheckCircle2, Ticket, Accessibility, Bath, Globe } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
@@ -133,6 +133,11 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
     : null;
 
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${landmark.lat},${landmark.lon}`;
+  const websiteUrl = landmark.website
+    ? /^https?:\/\//i.test(landmark.website)
+      ? landmark.website
+      : `https://${landmark.website}`
+    : null;
 
   return (
     <>
@@ -486,6 +491,106 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
               </div>
             )}
           </div>
+
+          {/* Public Access & Visitor Information */}
+          {(landmark.openToPublic !== undefined || landmark.website) && (
+            <div className="space-y-3 bg-stone-50/80 p-4 rounded-xl border border-stone-200">
+              <div className="flex items-center justify-between gap-2 flex-wrap">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-stone-600 flex items-center gap-1.5">
+                  <DoorOpen className="w-4 h-4 text-stone-700" /> Public Access & Visitor Info
+                </h3>
+                {landmark.openToPublic !== undefined && (
+                  <span
+                    className={`inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-full border ${
+                      landmark.openToPublic
+                        ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
+                        : 'bg-stone-100 text-stone-600 border-stone-300'
+                    }`}
+                  >
+                    {landmark.openToPublic ? (
+                      <>
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                        <span>Open to the Public</span>
+                      </>
+                    ) : (
+                      <>
+                        <Lock className="w-3.5 h-3.5 text-stone-400" />
+                        <span>Not Open to Public</span>
+                      </>
+                    )}
+                  </span>
+                )}
+              </div>
+
+              {/* If open to the public, show whether it offers tours, ADA accessibility, and restrooms */}
+              {landmark.openToPublic && (
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+                  {/* Tours */}
+                  <div
+                    className={`flex items-center gap-2 p-2.5 rounded-lg border text-xs font-medium ${
+                      landmark.offersTours
+                        ? 'bg-white border-emerald-200 text-stone-800 shadow-2xs'
+                        : 'bg-stone-100/60 border-stone-200 text-stone-500'
+                    }`}
+                  >
+                    <Ticket className={`w-4 h-4 shrink-0 ${landmark.offersTours ? 'text-emerald-600' : 'text-stone-400'}`} />
+                    <div>
+                      <span className="block text-[10px] text-stone-500 uppercase tracking-wider">Tours</span>
+                      <span className="font-semibold">{landmark.offersTours ? 'Tours Offered' : 'No Tours'}</span>
+                    </div>
+                  </div>
+
+                  {/* ADA Accessible */}
+                  <div
+                    className={`flex items-center gap-2 p-2.5 rounded-lg border text-xs font-medium ${
+                      landmark.adaAccessible
+                        ? 'bg-white border-emerald-200 text-stone-800 shadow-2xs'
+                        : 'bg-stone-100/60 border-stone-200 text-stone-500'
+                    }`}
+                  >
+                    <Accessibility className={`w-4 h-4 shrink-0 ${landmark.adaAccessible ? 'text-emerald-600' : 'text-stone-400'}`} />
+                    <div>
+                      <span className="block text-[10px] text-stone-500 uppercase tracking-wider">Accessibility</span>
+                      <span className="font-semibold">{landmark.adaAccessible ? 'ADA Accessible' : 'Not ADA Accessible'}</span>
+                    </div>
+                  </div>
+
+                  {/* Restrooms */}
+                  <div
+                    className={`flex items-center gap-2 p-2.5 rounded-lg border text-xs font-medium ${
+                      landmark.hasRestrooms
+                        ? 'bg-white border-emerald-200 text-stone-800 shadow-2xs'
+                        : 'bg-stone-100/60 border-stone-200 text-stone-500'
+                    }`}
+                  >
+                    <Bath className={`w-4 h-4 shrink-0 ${landmark.hasRestrooms ? 'text-emerald-600' : 'text-stone-400'}`} />
+                    <div>
+                      <span className="block text-[10px] text-stone-500 uppercase tracking-wider">Restrooms</span>
+                      <span className="font-semibold">{landmark.hasRestrooms ? 'Restrooms Available' : 'No Restrooms'}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Website */}
+              {websiteUrl && (
+                <div className="pt-2 border-t border-stone-200/80">
+                  <a
+                    href={websiteUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-between w-full p-2.5 rounded-lg border border-amber-200 bg-amber-50/70 hover:bg-amber-100/80 text-amber-950 text-xs font-semibold transition shadow-2xs"
+                  >
+                    <span className="flex items-center gap-2">
+                      <Globe className="w-4 h-4 text-amber-700" />
+                      <span>Official Website: <span className="font-normal underline underline-offset-2">{landmark.website}</span></span>
+                    </span>
+                    <ExternalLink className="w-3.5 h-3.5 text-amber-600" />
+                  </a>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Historical Plaques Section */}
           {landmark.plaques && landmark.plaques.length > 0 && (
@@ -859,6 +964,21 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 <span>OpenStreetMap ({landmark.osmType})</span>
                 <ExternalLink className="w-3.5 h-3.5 text-stone-400" />
               </a>
+
+              {websiteUrl && (
+                <a
+                  href={websiteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="col-span-1 sm:col-span-2 flex items-center justify-between p-2.5 rounded-lg border border-amber-200 bg-amber-50/60 hover:bg-amber-100 text-amber-950 font-medium transition shadow-xs"
+                >
+                  <span className="flex items-center gap-2">
+                    <Globe className="w-3.5 h-3.5 text-amber-700" />
+                    <span>Official Website ({landmark.website})</span>
+                  </span>
+                  <ExternalLink className="w-3.5 h-3.5 text-amber-600" />
+                </a>
+              )}
 
               <a
                 href={directionsUrl}

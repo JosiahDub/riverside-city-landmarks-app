@@ -808,6 +808,11 @@ export async function processLandmarks() {
       building: tags.building || null,
       historic: tags.historic || null,
       amenity: tags.amenity || null,
+      openToPublic: existingEntry?.openToPublic ?? false,
+      offersTours: existingEntry?.offersTours ?? false,
+      adaAccessible: existingEntry?.adaAccessible ?? false,
+      hasRestrooms: existingEntry?.hasRestrooms ?? false,
+      website: existingEntry?.website ?? null,
       allTags: tags
     };
   });

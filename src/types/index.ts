@@ -47,6 +47,11 @@ export interface Landmark {
   nationalHistoricLandmarkYear?: number | null;
   plaques?: Plaque[];
   hasPlaque?: boolean;
+  openToPublic?: boolean;
+  offersTours?: boolean;
+  adaAccessible?: boolean;
+  hasRestrooms?: boolean;
+  website?: string | null;
   allTags: Record<string, string | undefined>;
   distanceMiles?: number;
 }

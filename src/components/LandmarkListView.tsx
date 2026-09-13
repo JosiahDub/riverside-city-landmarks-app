@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Landmark, UserLocation } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon } from 'lucide-react';
+import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon, DoorOpen } from 'lucide-react';
 
 interface LandmarkListViewProps {
   landmarks: Landmark[];
@@ -105,6 +105,15 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
                       >
                         <ScrollText className="w-2.5 h-2.5 text-emerald-600 shrink-0" />
                         Plaque
+                      </span>
+                    )}
+                    {landmark.openToPublic && (
+                      <span
+                        className="text-[10px] font-semibold bg-teal-50 text-teal-800 border border-teal-200 px-1.5 py-0.2 rounded flex items-center gap-0.5"
+                        title="Open to the Public"
+                      >
+                        <DoorOpen className="w-2.5 h-2.5 text-teal-600 shrink-0" />
+                        Open to Public
                       </span>
                     )}
                     {landmark.year && (

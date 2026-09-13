@@ -131,6 +131,18 @@ export async function fetchGoogleSheetDescriptions() {
     return false;
   }
 
+function parseBool(val) {
+  if (!val) return false;
+  const s = String(val).trim().toLowerCase();
+  return s === 'true' || s === 'yes' || s === 'y' || s === '1';
+}
+
+function parseWebsite(val) {
+  if (!val) return null;
+  const s = String(val).trim();
+  return s.length > 0 ? s : null;
+}
+
   const rows = parseCSV(csvText);
   if (rows.length < 2) {
     console.warn('[Google Sheet Sync] Warning: CSV has fewer than 2 rows. Skipping update.');
@@ -138,37 +150,71 @@ export async function fetchGoogleSheetDescriptions() {
   }
 
   const header = rows[0].map((h) => h.trim().toLowerCase());
-  let numberColIdx = header.findIndex((h) => /^(number|ref|refnumber|id|landmark\s*#?|#)$/i.test(h));
+  let numberColIdx = header.findIndex((h) => /^(city landmark number|number|ref|refnumber|id|landmark\s*#?|#)$/i.test(h));
   if (numberColIdx === -1 && rows.length > 1 && /^\d+$/.test(rows[1][0]?.trim())) {
     numberColIdx = 0;
   }
 
   let descColIdx = header.findIndex((h) => /^(description|summary|desc|historical\s*summary)$/i.test(h));
-  if (descColIdx === -1 && header.length > 2) {
+  if (descColIdx === -1 && header.length > 9) {
+    descColIdx = 9;
+  } else if (descColIdx === -1 && header.length > 2) {
     descColIdx = 2;
   }
+
+  // Column K (index 10): Open to the public
+  let openToPublicColIdx = header.findIndex((h) => /open\s*to\s*(the\s*)?public/i.test(h));
+  if (openToPublicColIdx === -1 && header.length > 10) openToPublicColIdx = 10;
+
+  // Column L (index 11): Tours available
+  let toursColIdx = header.findIndex((h) => /tour/i.test(h));
+  if (toursColIdx === -1 && header.length > 11) toursColIdx = 11;
+
+  // Column M (index 12): ADA accessible
+  let adaColIdx = header.findIndex((h) => /(ada|wheelchair|accessib)/i.test(h));
+  if (adaColIdx === -1 && header.length > 12) adaColIdx = 12;
+
+  // Column N (index 13): Restrooms
+  let restroomsColIdx = header.findIndex((h) => /(restroom|bathroom|toilet)/i.test(h));
+  if (restroomsColIdx === -1 && header.length > 13) restroomsColIdx = 13;
+
+  // Column O (index 14): Website
+  let websiteColIdx = header.findIndex((h) => /(website|url|web)/i.test(h));
+  if (websiteColIdx === -1 && header.length > 14) websiteColIdx = 14;
 
   if (numberColIdx === -1 || descColIdx === -1) {
     console.warn(`[Google Sheet Sync] Warning: Could not detect Number/Description columns (Number: ${numberColIdx}, Description: ${descColIdx}).`);
     return false;
   }
 
-  const descriptionsByRef = {};
+  const landmarkDataByRef = {};
   for (const row of rows.slice(1)) {
     const rawNum = row[numberColIdx]?.trim();
-    const desc = row[descColIdx];
-    if (rawNum && typeof desc === 'string') {
+    if (rawNum) {
       const num = parseInt(rawNum, 10);
       if (!isNaN(num)) {
-        // Do not edit the text at all
-        descriptionsByRef[num] = desc;
+        const desc = descColIdx !== -1 ? row[descColIdx] : undefined;
+        const openToPublic = openToPublicColIdx !== -1 ? parseBool(row[openToPublicColIdx]) : false;
+        const offersTours = toursColIdx !== -1 ? parseBool(row[toursColIdx]) : false;
+        const adaAccessible = adaColIdx !== -1 ? parseBool(row[adaColIdx]) : false;
+        const hasRestrooms = restroomsColIdx !== -1 ? parseBool(row[restroomsColIdx]) : false;
+        const website = websiteColIdx !== -1 ? parseWebsite(row[websiteColIdx]) : null;
+
+        landmarkDataByRef[num] = {
+          description: typeof desc === 'string' ? desc : undefined,
+          openToPublic,
+          offersTours,
+          adaAccessible,
+          hasRestrooms,
+          website
+        };
       }
     }
   }
 
-  const totalLoaded = Object.keys(descriptionsByRef).length;
+  const totalLoaded = Object.keys(landmarkDataByRef).length;
   if (totalLoaded === 0) {
-    console.warn('[Google Sheet Sync] Warning: No landmark descriptions found in parsed CSV.');
+    console.warn('[Google Sheet Sync] Warning: No landmark records found in parsed CSV.');
     return false;
   }
 
@@ -182,14 +228,22 @@ export async function fetchGoogleSheetDescriptions() {
 
   for (const landmark of landmarks) {
     const ref = parseInt(landmark.refNumber || landmark.ref, 10);
-    if (!isNaN(ref) && Object.prototype.hasOwnProperty.call(descriptionsByRef, ref)) {
-      landmark.description = descriptionsByRef[ref];
+    if (!isNaN(ref) && Object.prototype.hasOwnProperty.call(landmarkDataByRef, ref)) {
+      const data = landmarkDataByRef[ref];
+      if (data.description !== undefined) {
+        landmark.description = data.description;
+      }
+      landmark.openToPublic = data.openToPublic;
+      landmark.offersTours = data.offersTours;
+      landmark.adaAccessible = data.adaAccessible;
+      landmark.hasRestrooms = data.hasRestrooms;
+      landmark.website = data.website;
       updatedCount++;
     }
   }
 
   fs.writeFileSync(landmarksPath, JSON.stringify(landmarks, null, 2) + '\n', 'utf8');
-  console.log(`[Google Sheet Sync] Successfully pulled ${updatedCount} descriptions from Google Sheet (tab: landmarks) into landmarks.json.`);
+  console.log(`[Google Sheet Sync] Successfully pulled ${updatedCount} landmarks with descriptions and visitor fields (open, tours, ADA, restrooms, website) from Google Sheet into landmarks.json.`);
   return true;
 }
 
