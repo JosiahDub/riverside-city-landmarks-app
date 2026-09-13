@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "fetch-descriptions": "node scripts/fetch_descriptions.js",
+    "build": "node scripts/fetch_descriptions.js && vite build",
     "preview": "vite preview",
     "update-data": "node scripts/build_dataset.js"
   },

@@ -2,10 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+import { fetchGoogleSheetDescriptions } from './fetch_descriptions.js';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const overpassPath = path.resolve(__dirname, '../overpass_landmarks.json');
 const outputPath = path.resolve(__dirname, '../src/data/landmarks.json');
-const descriptionsCsvPath = path.resolve(__dirname, '../riverside_city_landmarks_1-155_with_descriptions.csv');
 
 // Convert Wikimedia Commons filename or Special:FilePath to direct CDN url
 export function getCommonsImageUrl(commonsVal, width = 800) {
@@ -313,43 +314,6 @@ export async function processLandmarks() {
     }
   }
 
-  const csvDescriptionsByRef = {};
-  if (fs.existsSync(descriptionsCsvPath)) {
-    try {
-      const content = fs.readFileSync(descriptionsCsvPath, 'utf8').replace(/\r\r\n/g, '\n').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-      let inQuotes = false;
-      let row = [];
-      let current = '';
-      for (let i = 0; i < content.length; i++) {
-        const c = content[i];
-        const next = content[i + 1];
-        if (c === '"' && inQuotes && next === '"') {
-          current += '"';
-          i++;
-        } else if (c === '"') {
-          inQuotes = !inQuotes;
-        } else if (c === ',' && !inQuotes) {
-          row.push(current);
-          current = '';
-        } else if (c === '\n' && !inQuotes) {
-          row.push(current);
-          current = '';
-          if (row.length >= 3 && row[0] !== 'Number') {
-            csvDescriptionsByRef[row[0].trim()] = row[2];
-          }
-          row = [];
-        } else {
-          current += c;
-        }
-      }
-      if (row.length >= 3 && row[0] !== 'Number') {
-        csvDescriptionsByRef[row[0].trim()] = row[2];
-      }
-    } catch (e) {
-      console.warn('Could not read descriptions CSV from', descriptionsCsvPath, e.message);
-    }
-  }
-
   const landmarks = landmarkElements.map(el => {
     const tags = el.tags || {};
     let lat = el.lat ?? el.center?.lat;
@@ -392,11 +356,11 @@ export async function processLandmarks() {
     // Determine Wikidata description
     const wikidataDescription = wdEntity?.descriptions?.en?.value || null;
 
-    // Determine custom landmark description (preserves user-filled summary, or falls back to CSV or tags.description)
+    // Determine custom landmark description (preserves user-filled summary, or falls back to tags.description)
     const existingEntry = existingLandmarksMap[`osm-${el.type}-${el.id}`] || (ref ? existingLandmarksMap[`ref-${ref}`] : null);
     let description = (existingEntry && typeof existingEntry.description === 'string' && existingEntry.description)
       ? existingEntry.description
-      : (csvDescriptionsByRef[ref] || tags.description || '');
+      : (tags.description || '');
 
     // Determine year / start date
     let rawDate = tags.start_date || '';
@@ -852,8 +816,11 @@ export async function processLandmarks() {
   landmarks.sort((a, b) => a.refNumber - b.refNumber);
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, JSON.stringify(landmarks, null, 2));
+  fs.writeFileSync(outputPath, JSON.stringify(landmarks, null, 2) + '\n');
   console.log(`Successfully generated ${landmarks.length} landmarks to ${outputPath}`);
+
+  // Fetch latest descriptions from Google Sheet if GOOGLE_SHEET_ID is configured
+  await fetchGoogleSheetDescriptions();
 }
 
 processLandmarks();
