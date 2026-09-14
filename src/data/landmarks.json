@@ -2292,8 +2292,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14179677478",
+        "osmId": 14179677478,
+        "osmType": "node",
+        "name": "Mount Rubidoux City Landmark",
+        "lat": 33.9858593,
+        "lon": -117.3861746,
+        "subjectWikidata": "Q8525771",
+        "commonsImage": "File:Mount Rubidoux City Landmark Plaque.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Rubidoux_City_Landmark_Plaque.jpg?width=1000",
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Rubidoux_City_Landmark_Plaque.jpg?width=400",
+        "direction": "110",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14179677478"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [],
     "planners": [],
     "planner": [],
