@@ -121,7 +121,7 @@ export async function processLandmarks() {
   try {
     const query = `[out:json][timeout:120];
     (
-      nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"];
+      nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"](33.80, -117.60, 34.10, -117.20);
       nwr["subject:wikidata"](33.80, -117.60, 34.10, -117.20);
       nwr["memorial"="plaque"](33.80, -117.60, 34.10, -117.20);
       nwr["historic"="memorial"](33.80, -117.60, 34.10, -117.20);
@@ -146,18 +146,24 @@ export async function processLandmarks() {
           method: 'POST',
           body: params,
           headers: {
-            'Accept': '*/*',
-            'User-Agent': 'curl/8.7.1'
+            'Accept': 'application/json',
+            'User-Agent': 'RiversideLandmarksTool/1.0'
           },
-          signal: AbortSignal.timeout(20000)
+          signal: AbortSignal.timeout(45000)
         });
         if (res.ok) {
           const rawOverpass = await res.json();
-          elements = rawOverpass.elements || [];
-          fs.writeFileSync(overpassPath, JSON.stringify(rawOverpass, null, 2));
-          console.log(`Successfully fetched ${elements.length} fresh elements live from ${endpoint}.`);
-          success = true;
-          break;
+          const fetchedElements = rawOverpass.elements || [];
+          const hasLandmarks = fetchedElements.some(e => e.tags?.['ref:US-CA:city_of_riverside_cultural_heritage_board']);
+          if (hasLandmarks) {
+            elements = fetchedElements;
+            fs.writeFileSync(overpassPath, JSON.stringify(rawOverpass, null, 2));
+            console.log(`Successfully fetched ${elements.length} fresh elements live from ${endpoint}.`);
+            success = true;
+            break;
+          } else {
+            console.warn(`Endpoint ${endpoint} returned 0 landmark elements with cultural heritage board ref. Trying next...`);
+          }
         }
       } catch (e) {
         console.warn(`Endpoint ${endpoint} failed, trying next...`);
@@ -187,6 +193,11 @@ export async function processLandmarks() {
     const isPlaque = t.memorial === 'plaque' || t.historic === 'plaque' || t['memorial:type'] === 'plaque' || (t.name && /plaque/i.test(t.name) && t['subject:wikidata']);
     return !isPlaque;
   });
+
+  if (landmarkElements.length === 0) {
+    console.error('Safety check failed: 0 landmark elements parsed. Aborting dataset generation to preserve landmarks.json.');
+    return;
+  }
 
   const rawPlaqueElements = elements.filter(e => {
     const t = e.tags || {};
@@ -277,6 +288,11 @@ export async function processLandmarks() {
     });
     // Designers and Planners (P287)
     ent.claims?.P287?.forEach(stmt => {
+      const qid = stmt.mainsnak?.datavalue?.value?.id;
+      if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
+    });
+    // Planners (P178)
+    ent.claims?.P178?.forEach(stmt => {
       const qid = stmt.mainsnak?.datavalue?.value?.id;
       if (qid && !wikidataEntities[qid]) secondaryQids.add(qid);
     });
@@ -379,13 +395,21 @@ export async function processLandmarks() {
       }
     }
 
-    // Planners (Wikidata P287 where qualifier P2868 is Q131062, plus OSM tags)
+    // Planners (Wikidata P178 planner/developer, Wikidata P287 where qualifier P2868 is Q131062, plus OSM tags)
     const plannerSet = new Set();
-    const rawOsmPlanners = tags.planner || tags.urban_planner;
+    const rawOsmPlanners = tags.planner || tags.urban_planner || tags.developer;
     if (rawOsmPlanners) {
       rawOsmPlanners.split(';').forEach(p => {
         const tr = p.trim();
         if (tr) plannerSet.add(tr);
+      });
+    }
+    if (wdEntity?.claims?.P178) {
+      wdEntity.claims.P178.forEach(stmt => {
+        const pQid = stmt.mainsnak?.datavalue?.value?.id;
+        if (pQid && wikidataEntities[pQid]?.labels?.en?.value) {
+          plannerSet.add(wikidataEntities[pQid].labels.en.value);
+        }
       });
     }
     if (wdEntity?.claims?.P287) {

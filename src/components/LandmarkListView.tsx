@@ -164,7 +164,7 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
                   ) : landmark.planners && landmark.planners.length > 0 ? (
                     <span
                       className="text-[10px] bg-teal-50 text-teal-800 border border-teal-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
-                      title={`Urban Planner: ${landmark.planners[0]}`}
+                      title={`Planner: ${landmark.planners[0]}`}
                     >
                       <Compass className="w-2.5 h-2.5 shrink-0 text-teal-600" />
                       <span className="truncate">{landmark.planners[0]}</span>
