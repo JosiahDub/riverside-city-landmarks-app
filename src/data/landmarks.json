@@ -3293,8 +3293,24 @@
     "isNationalHistoricLandmark": false,
     "nationalHistoricLandmarkDate": null,
     "nationalHistoricLandmarkYear": null,
-    "plaques": [],
-    "hasPlaque": false,
+    "plaques": [
+      {
+        "id": "osm-node-14179688709",
+        "osmId": 14179688709,
+        "osmType": "node",
+        "name": "Grant Elementary School City Landmark",
+        "lat": 33.978112,
+        "lon": -117.3821176,
+        "subjectWikidata": "Q139545665",
+        "commonsImage": null,
+        "imageUrl": null,
+        "thumbnail": null,
+        "direction": "305",
+        "material": "metal",
+        "osmUrl": "https://www.openstreetmap.org/node/14179688709"
+      }
+    ],
+    "hasPlaque": true,
     "architects": [
       "G. Stanley Wilson",
       "Peter J. Weber"
