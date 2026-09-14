@@ -2157,8 +2157,12 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [],
-    "planners": [],
-    "planner": [],
+    "planners": [
+      "Matthew Gage"
+    ],
+    "planner": [
+      "Matthew Gage"
+    ],
     "structuralEngineers": [],
     "structuralEngineer": [],
     "builders": [],
@@ -5890,7 +5894,9 @@
       }
     ],
     "hasPlaque": true,
-    "architects": [],
+    "architects": [
+      "Olmsted Brothers"
+    ],
     "planners": [],
     "planner": [],
     "structuralEngineers": [],
@@ -5930,6 +5936,8 @@
       "addr:postcode": "92501",
       "addr:state": "CA",
       "addr:street": "Fairmount Boulevard",
+      "architect": "Olmsted Brothers",
+      "architect:wikidata": "Q2021081",
       "ele": "238",
       "gnis:feature_id": "1848643",
       "heritage": "8",
@@ -6376,10 +6384,18 @@
     "architects": [],
     "planners": [],
     "planner": [],
-    "structuralEngineers": [],
-    "structuralEngineer": [],
-    "builders": [],
-    "builder": [],
+    "structuralEngineers": [
+      "Davidson and Fulmor"
+    ],
+    "structuralEngineer": [
+      "Davidson and Fulmor"
+    ],
+    "builders": [
+      "Matich Brothers"
+    ],
+    "builder": [
+      "Matich Brothers"
+    ],
     "designers": [],
     "designer": [],
     "architectureStyles": [],
@@ -11294,8 +11310,12 @@
     "plaques": [],
     "hasPlaque": false,
     "architects": [],
-    "planners": [],
-    "planner": [],
+    "planners": [
+      "Quartermaster Corps"
+    ],
+    "planner": [
+      "Quartermaster Corps"
+    ],
     "structuralEngineers": [],
     "structuralEngineer": [],
     "builders": [],

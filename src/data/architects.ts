@@ -129,7 +129,24 @@ export const ARCHITECTS_DIRECTORY: Record<string, ArchitectInfo> = {
   'John Crockett Goldsworthy': {
     name: 'John Crockett Goldsworthy',
     wikidataId: 'Q141379792',
-    bio: 'American surveyer.'
+    bio: 'John Crockett Goldsworthy was a civil engineer and surveyor who prepared the original 1870 town plat for the Southern California Colony Association, establishing the historic Mile Square grid that forms the core of downtown Riverside.'
+  },
+  'Matthew Gage': {
+    name: 'Matthew Gage',
+    wikidataId: 'Q141448955',
+    bio: 'Irish-American pallner'
+  },
+  'Franz Philip Hosp': {
+    name: 'Franz Philip Hosp',
+    wikidataId: 'Q112961231',
+    bio: 'German-American planner'
+  },
+  'Quartermaster Corps': {
+    name: 'Quartermaster Corps',
+    wikidataId: 'Q7269323',
+    wikipediaTitle: 'Quartermaster Corps (United States Army)',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Quartermaster_Corps_(United_States_Army)',
+    bio: 'Army planner'
   },
   'Robert V. Leeson': {
     name: 'Robert V. Leeson',
