@@ -64,7 +64,10 @@ export const App: React.FC = () => {
       // Search query
       if (filters.searchQuery.trim()) {
         const query = filters.searchQuery.toLowerCase().trim();
-        const matchesName = landmark.name.toLowerCase().includes(query);
+        const matchesName =
+          landmark.name.toLowerCase().includes(query) ||
+          Boolean(landmark.historicName && landmark.historicName.toLowerCase().includes(query)) ||
+          Boolean(landmark.allTags?.name && landmark.allTags.name.toLowerCase().includes(query));
         const matchesRef = landmark.ref.toLowerCase() === query || landmark.ref.includes(query);
 
         const checkCreatorMatch = (creators: string[]) => {

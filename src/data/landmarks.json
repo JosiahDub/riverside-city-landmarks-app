@@ -5,7 +5,7 @@
     "osmId": 206742226,
     "ref": "1",
     "refNumber": 1,
-    "name": "The Mission Inn",
+    "name": "Mission Inn",
     "lat": 33.983218,
     "lon": -117.3728468,
     "description": "Beginning with the Mission Inn’s original Mission-style wing in 1903, owner Frank A. Miller transformed a modest family hotel into an extraordinary architectural complex over the next three decades, occupying an entire city block. Architects Arthur B. Benton, Myron Hunt, G.  Stanley Wilson and Peter J. Weber contributed to its successive additions, combining Mission Revival, Spanish, Mediterranean and other influences in a vibrant fantasy environment. Miller created the Mission Inn as a place of cultural learning and appreciation: he and his family gathered art and artifacts from around the world to help foster international pacifism, held peace conferences, and hosted all manner of visual artists, writers, and muscians. After Miller's death in 1935, the hotel went through a series of subsequent owners. During a period of uncertainty and rapidly changing ownership in the 1970s and 1980s, and following decades of deferred maintenance, the idea of demolition was considered. Instead, Riverside Redevelopment Agency and the Carley Capital Group undertook a multi-million dollar restoration in the mid to late 1980s. The hotel was reopened in late 1992. The Mission Inn is thought of as \"the heart of Riverside.\"",
@@ -149,7 +149,8 @@
       "website": "https://missioninn.com/",
       "wikidata": "Q1920529",
       "wikimedia_commons": "File:MissionInn SpanishWing.jpg"
-    }
+    },
+    "historicName": "Mission Inn"
   },
   {
     "id": "osm-way-118524342",
@@ -157,7 +158,7 @@
     "osmId": 118524342,
     "ref": "2",
     "refNumber": 2,
-    "name": "Superior Court of California, County of Riverside - Riverside Historic Courthouse",
+    "name": "Riverside County Courthouse",
     "lat": 33.979227,
     "lon": -117.375556,
     "description": "Completed in the early twentieth century as Riverside County’s first permanent courthouse, this monumental Beaux-Arts building was designed by architect Franklin P. Burnham. Its classically composed façade, Ionic columns and sculptural ornament were inspired by the Grand Palais built for the 1900 Paris Exposition. The courthouse reflects Riverside’s rapid growth and rising civic ambitions following the creation of Riverside County in 1893.",
@@ -278,7 +279,8 @@
       "start_date": "1903",
       "wikidata": "Q135923668",
       "wikimedia_commons": "File:Riverside County Court House 1903 2.jpg"
-    }
+    },
+    "historicName": "Riverside County Courthouse"
   },
   {
     "id": "osm-way-315761840",
@@ -286,7 +288,7 @@
     "osmId": 315761840,
     "ref": "3",
     "refNumber": 3,
-    "name": "Universalist Unitarian Church of Riverside",
+    "name": "Universalist-Unitarian Church",
     "lat": 33.9822299,
     "lon": -117.3715081,
     "description": "Built in 1891–92 for Riverside’s Universalist congregation, this picturesque Gothic Revival church was designed by architect A. C. Willard. Constructed of brick faced with red Arizona sandstone, it features a prominent corner tower,  Steeply pitched roofs and  stained-glass windows recalling a medieval English parish church. It is one of downtown Riverside’s most distinctive surviving nineteenth-century religious buildings.",
@@ -367,7 +369,8 @@
       "wikidata": "Q7894186",
       "wikimedia_commons": "File:All Souls Universalist Church.jpg",
       "wikipedia": "en:Universalist Unitarian Church of Riverside"
-    }
+    },
+    "historicName": "Universalist-Unitarian Church"
   },
   {
     "id": "osm-way-233401424",
@@ -448,7 +451,8 @@
       "start_date": "1881",
       "wikidata": "Q140544722",
       "wikimedia_commons": "File:Magnolia United Presbyterian Church.jpg"
-    }
+    },
+    "historicName": "Magnolia Presbyterian Church"
   },
   {
     "id": "osm-way-233663665",
@@ -456,7 +460,7 @@
     "osmId": 233663665,
     "ref": "5",
     "refNumber": 5,
-    "name": "Heritage House",
+    "name": "Catherine Bettner House",
     "lat": 33.9345039,
     "lon": -117.4225571,
     "description": "Built in 1891 for the widow Catharine Bettner, this elaborate Queen Anne residence is one of the few surviving mansions that once lined Magnolia Avenue. Bettner commissioned Los Angeles architect John A. Walls of Morgan & Walls and contractor John Hanlon to create a house notable for its three-story domed tower, varied window forms, wood siding, richly detailed interiors, and original features including six tile fireplaces, oak paneling, parquet floors, and a servant bell system. The project proved contentious: local tradesmen reportedly refused to work for the difficult Bettner, and a later lawsuit over extra construction work preserved unusually detailed records of the house’s design and construction. Bettner lived here until her death in 1928. After later private ownership, the house was purchased by Riverside Museum Associates in 1969, restored as a historic house museum, designated City Landmark #5, and placed on the National Register of Historic Places in 1973.",
@@ -527,7 +531,8 @@
       "tourism": "museum",
       "wikidata": "Q25209703",
       "wikimedia_commons": "File:Riverside Heritage House.jpg"
-    }
+    },
+    "historicName": "Catherine Bettner House"
   },
   {
     "id": "osm-way-232568727",
@@ -640,7 +645,8 @@
       "wikidata": "Q5452861",
       "wikimedia_commons": "File:FirstCongregationalChurch20090821f.jpg",
       "wikipedia": "en:First Congregational Church (Riverside, California)"
-    }
+    },
+    "historicName": "First Congregational Church"
   },
   {
     "id": "osm-way-232931257",
@@ -746,7 +752,8 @@
       "wikidata": "Q5452705",
       "wikimedia_commons": "File:First Church of Christ, Scientist Riverside.jpg",
       "wikipedia": "en:First Church of Christ, Scientist (Riverside, California)"
-    }
+    },
+    "historicName": "First Church of Christ, Scientist"
   },
   {
     "id": "osm-relation-21216992",
@@ -833,7 +840,8 @@
       "wikidata": "Q7926571",
       "wikimedia_commons": "File:Spring bloom on Victoria Avenue, Riverside, CA.jpg",
       "wikipedia": "en:Victoria Avenue (Riverside, California)"
-    }
+    },
+    "historicName": "Victoria Avenue"
   },
   {
     "id": "osm-way-232577123",
@@ -841,7 +849,7 @@
     "osmId": 232577123,
     "ref": "9",
     "refNumber": 9,
-    "name": "Union Pacific Depot",
+    "name": "San Pedro, Los Angeles & Salt Lake Railroad Depot",
     "lat": 33.9798196,
     "lon": -117.3685754,
     "description": "Built in 1904 for the San Pedro, Los Angeles & Salt Lake Railroad, this Mission Revival depot reflects the importance of rail transportation to Riverside’s early twentieth-century growth and citrus economy. The railroad became part of the Union Pacific system in 1921, and the depot remained in passenger service until 1971. Its broad arches,  stucco walls and tile roof made the building a prominent architectural gateway to the city.",
@@ -921,7 +929,8 @@
       "wikidata": "Q104215471",
       "wikimedia_commons": "File:North face of RR Depot, erected 1904 sign, also note street lights special to the down town Riverside area with a connection to Mission Inn.JPG",
       "wikipedia": "en:Riverside station (Union Pacific Railroad)"
-    }
+    },
+    "historicName": "San Pedro, Los Angeles & Salt Lake Railroad Depot"
   },
   {
     "id": "osm-way-234343008",
@@ -929,7 +938,7 @@
     "osmId": 234343008,
     "ref": "10",
     "refNumber": 10,
-    "name": "Bandshell at Fairmount Park",
+    "name": "Fairmount Park Bandshell",
     "lat": 33.9945096,
     "lon": -117.3735135,
     "description": "Designed by architect Arthur B. Benton and completed in 1920, the Fairmount Park Bandshell was created as a permanent setting for Riverside’s popular public concerts. Its Mission-inspired tile roof and fieldstone construction harmonize with the park landscape and with Benton’s other Riverside work. The bandshell was dedicated before an audience of approximately 6,000 on September 26, 1920, and became an enduring center of civic entertainment in Fairmount Park.",
@@ -993,7 +1002,8 @@
       "start_date": "1920",
       "wikidata": "Q140588399",
       "wikimedia_commons": "File:Fairmount park 6 band shell.jpg"
-    }
+    },
+    "historicName": "Fairmount Park Bandshell"
   },
   {
     "id": "osm-way-119281494",
@@ -1001,7 +1011,7 @@
     "osmId": 119281494,
     "ref": "11",
     "refNumber": 11,
-    "name": "Museum of Riverside",
+    "name": "Former U.S. Post Office and Federal Building",
     "lat": 33.981957,
     "lon": -117.3724989,
     "description": "Built between 1912 and 1914 as Riverside’s U.S. Post Office and federal building, this Italian Renaissance Revival Streetructure later housed the Riverside Police Department before becoming the permanent home of the city museum. The Museum gradually expanded from space in the basement to occupy the entire building by 1966. Its substantial civic architecture reflects Riverside’s growth and importance as a regional center in the early twentieth century.",
@@ -1092,7 +1102,8 @@
       "website": "https://www.riversideca.gov/museum/",
       "wikidata": "Q7338538",
       "wikimedia_commons": "File:Museum of Riverside.jpg"
-    }
+    },
+    "historicName": "Former U.S. Post Office and Federal Building"
   },
   {
     "id": "osm-way-960121108",
@@ -1100,7 +1111,7 @@
     "osmId": 960121108,
     "ref": "12",
     "refNumber": 12,
-    "name": "S. C. Evans Residence",
+    "name": "S. C. Evans House",
     "lat": 33.938118,
     "lon": -117.4097174,
     "description": "Built about 1874 for Samuel C. Evans, president of the Riverside Land and Irrigating Company, this early adobe residence is attributed to architect W. R. Norton. Constructed largely from local natural materials, the house is a rare survivor of Riverside’s first years of development and represents a building tradition that largely disappeared as the young colony prospered and more permanent frame and masonry residences replaced adobe construction.",
@@ -1165,7 +1176,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1874",
       "wikidata": "Q140588604"
-    }
+    },
+    "historicName": "S. C. Evans House"
   },
   {
     "id": "osm-way-958250508",
@@ -1173,7 +1185,7 @@
     "osmId": 958250508,
     "ref": "13",
     "refNumber": 13,
-    "name": "Benedict Castle",
+    "name": "“Castillo Isabella” Benedict Castle",
     "lat": 33.9500675,
     "lon": -117.3474704,
     "description": "Designed by Riverside architect Henry L. A. Jekel for Charles W. Benedict, this imposing residence was constructed in  stages between 1921 and 1931. Jekel combined Spanish and Mediterranean forms with pronounced Moorish influences, creating one of Riverside’s most distinctive examples of romantic revival architecture. Conceived as a luxurious private residence, the castle later became associated with Teen Challenge and remains one of Jekel’s best-known works.",
@@ -1239,7 +1251,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1921",
       "wikidata": "Q140588497"
-    }
+    },
+    "historicName": "“Castillo Isabella” Benedict Castle"
   },
   {
     "id": "osm-way-44486411",
@@ -1247,7 +1260,7 @@
     "osmId": 44486411,
     "ref": "14",
     "refNumber": 14,
-    "name": "Carlson Bark Park",
+    "name": "Former Buena Vista Drive & St. Francis Fountain Gateway",
     "lat": 33.9896427,
     "lon": -117.3909914,
     "description": "This linear landmark preserves remnants of Riverside’s historic western gateway along the former approach to the Santa Ana River bridge at the foot of Mount Rubidoux. Surviving features include the Mission Revival bridge towers, Raincross Streetlights and balustrades,  stone retaining walls and walkways, Buena Vista Bridge, Carlson Park and the remains of the   St. Francis water feature. Together they reflect several decades of civic improvement and the deliberate creation of a picturesque entrance to Riverside.",
@@ -1315,7 +1328,8 @@
       "tiger:reviewed": "no",
       "wikidata": "Q49476985",
       "wikimedia_commons": "File:Carlson Park.jpg"
-    }
+    },
+    "historicName": "Former Buena Vista Drive & St. Francis Fountain Gateway"
   },
   {
     "id": "osm-node-5901186487",
@@ -1323,7 +1337,7 @@
     "osmId": 5901186487,
     "ref": "15",
     "refNumber": 15,
-    "name": "Washington navel orange tree",
+    "name": "Parent Navel Orange Tree",
     "lat": 33.9461008,
     "lon": -117.4017369,
     "description": "One of the original Washington navel orange trees sent to Riverside in 1873, this tree helped launch the citrus industry that transformed the city and much of Southern California. Eliza and Luther Tibbets successfully cultivated the new variety, whose seedless, easily peeled fruit proved exceptionally well suited to the region. Budwood from their trees was widely propagated, making Riverside the center of a vast commercial citrus industry. The surviving tree is both Riverside City Landmark No. 15 and California Historical Landmark No. 20.",
@@ -1385,7 +1399,8 @@
       "wikidata": "Q85814522",
       "wikimedia_commons": "File:Parent Navel Orange Tree Riverside.jpg",
       "wikipedia": "en:Washington navel orange tree (Riverside, California)"
-    }
+    },
+    "historicName": "Parent Navel Orange Tree"
   },
   {
     "id": "osm-way-278271423",
@@ -1393,7 +1408,7 @@
     "osmId": 278271423,
     "ref": "16",
     "refNumber": 16,
-    "name": "Sherman Institute Administration Building",
+    "name": "Former Sherman Institute Administration Building",
     "lat": 33.925059,
     "lon": -117.4373804,
     "description": "Built in 1901 as the administration building of the Sherman Institute, this Mission Revival Streetructure is the principal surviving building from the school’s original campus of more than thirty buildings. The federal boarding school was established to educate Native American  students from California and throughout the West as part of a national assimilation program that sought to separate Indigenous children from their languages, families and cultures. Today the building houses the Sherman Indian Museum and documents the history and experiences of the school and its  students.",
@@ -1466,7 +1481,8 @@
       "website": "http://www.shermanindianmuseum.org/",
       "wikidata": "Q66503498",
       "wikimedia_commons": "File:Sherman Indian Museum Exterior.jpg"
-    }
+    },
+    "historicName": "Former Sherman Institute Administration Building"
   },
   {
     "id": "osm-way-119281493",
@@ -1474,7 +1490,7 @@
     "osmId": 119281493,
     "ref": "17",
     "refNumber": 17,
-    "name": "Riverside Municipal Auditorium",
+    "name": "Soldiers’ Memorial & Municipal Auditorium Building",
     "lat": 33.9820933,
     "lon": -117.3708155,
     "description": "Dedicated in 1929 as a memorial to Riverside residents who died in World War I, the Municipal Auditorium was designed as a major civic gathering place for the growing city. Its architecture combines Mission Revival and Moorish influences and includes a large auditorium, arcaded passages and landscaped grounds. Now known as the Riverside Municipal Auditorium, the building has hosted public ceremonies, concerts, performances and community events for nearly a century.",
@@ -1560,7 +1576,8 @@
       "wikidata": "Q7338545",
       "wikimedia_commons": "File:RiversideMunicipalAuditorium20090821z.jpg",
       "wikipedia": "en:Riverside Municipal Auditorium"
-    }
+    },
+    "historicName": "Soldiers’ Memorial & Municipal Auditorium Building"
   },
   {
     "id": "osm-way-232931254",
@@ -1568,7 +1585,7 @@
     "osmId": 232931254,
     "ref": "18",
     "refNumber": 18,
-    "name": "Riverside Art Museum",
+    "name": "Former YWCA",
     "lat": 33.9817835,
     "lon": -117.3704953,
     "description": "Designed by architect Julia Morgan and completed in 1929 for Riverside’s Young Women’s Christian Association, this Spanish Colonial Revival building originally provided meeting rooms, recreation facilities and an indoor swimming pool for women and girls. The Riverside Art Association acquired the building in the 1960s and adapted it as the Riverside Art Museum. It is significant both for its civic and social history and as one of Riverside’s important works by a nationally prominent architect.",
@@ -1659,7 +1676,8 @@
       "wikidata": "Q7338423",
       "wikimedia_commons": "File:RiversideArtMuseum20090821g.JPG",
       "wikipedia": "en:Riverside Art Museum"
-    }
+    },
+    "historicName": "Former YWCA"
   },
   {
     "id": "osm-way-1540018593",
@@ -1667,7 +1685,7 @@
     "osmId": 1540018593,
     "ref": "19",
     "refNumber": 19,
-    "name": "Chinatown",
+    "name": "Riverside Chinatown Site",
     "lat": 33.9771319,
     "lon": -117.3859647,
     "description": "Riverside’s principal Chinatown developed here beginning in 1885 after Chinese residents and businesses relocated from an earlier settlement near downtown. The community included  stores, residences, boarding houses, a temple and other buildings centered along a Street historically known as Mongol Street. Although its last surviving building was demolished in 1978, archaeological investigations beginning in the 1980s demonstrated the site’s exceptional ability to document Chinese immigrant life and the indispensable role Chinese workers played in Riverside’s early agricultural and commercial development.",
@@ -1743,7 +1761,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "19",
       "wikidata": "Q140591393",
       "wikimedia_commons": "File:Chinatown Riverside.jpg"
-    }
+    },
+    "historicName": "Riverside Chinatown Site"
   },
   {
     "id": "osm-way-893550902",
@@ -1843,7 +1862,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140610785",
       "wikimedia_commons": "File:Fred Stebler House View.jpg"
-    }
+    },
+    "historicName": "Fred Stebler House"
   },
   {
     "id": "osm-way-232930476",
@@ -1934,7 +1954,8 @@
       "start_date": "1890",
       "wikidata": "Q140610865",
       "wikimedia_commons": "File:Loring Building Exterior.jpg"
-    }
+    },
+    "historicName": "Loring Building"
   },
   {
     "id": "osm-way-777630347",
@@ -2027,7 +2048,8 @@
       "start_date": "1904-03-03",
       "wikidata": "Q140610933",
       "wikimedia_commons": "File:New Jerusalem Church Riverside.jpg"
-    }
+    },
+    "historicName": "New Jerusalem Church"
   },
   {
     "id": "osm-way-277749708",
@@ -2134,7 +2156,8 @@
       "wikidata": "Q5653555",
       "wikimedia_commons": "File:Harada House 20091024c.jpg",
       "wikipedia": "en:Harada House"
-    }
+    },
+    "historicName": "Harada House"
   },
   {
     "id": "osm-relation-21116252",
@@ -2203,7 +2226,8 @@
       "type": "waterway",
       "waterway": "canal",
       "wikidata": "Q49248844"
-    }
+    },
+    "historicName": "Gage Canal"
   },
   {
     "id": "osm-way-958919610",
@@ -2211,7 +2235,7 @@
     "osmId": 958919610,
     "ref": "25",
     "refNumber": 25,
-    "name": "Edgewild",
+    "name": "“Edgewild”",
     "lat": 33.9257778,
     "lon": -117.3811627,
     "description": "Built in 1891 for brothers William and Edward Gulick, Edgewild originally  stood within their forty-acre citrus ranch and nursery. The large New England-influenced residence recalls the prosperous agricultural estates that once characterized the Hawarden Hills area. After Leroy and Margaret Austin acquired the property in 1922, they extensively improved the house and grounds; their gardens received national recognition in the 1930s.",
@@ -2276,7 +2300,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1891",
       "wikidata": "Q140612732"
-    }
+    },
+    "historicName": "“Edgewild”"
   },
   {
     "id": "osm-node-358796470",
@@ -2361,7 +2386,8 @@
       "wikidata": "Q8525771",
       "wikimedia_commons": "File:MountRubidoux-1.JPG",
       "wikipedia": "en:Mount Rubidoux"
-    }
+    },
+    "historicName": "Mount Rubidoux"
   },
   {
     "id": "osm-way-44486190",
@@ -2369,7 +2395,7 @@
     "osmId": 44486190,
     "ref": "27",
     "refNumber": 27,
-    "name": "North Park",
+    "name": "John W. North Park",
     "lat": 33.9796143,
     "lon": -117.368028,
     "description": "This small park marks the site where John Wesley North, principal founder of Riverside, maintained his home from 1871 to 1880 during the formative years of the new colony. North helped organize the Southern California Colony Association and played a central role in establishing Riverside as a planned community. The property became a City park in 1927, preserving a tangible association with Riverside’s founding.",
@@ -2456,7 +2482,8 @@
       "tiger:STATEFP": "06",
       "wikidata": "Q49532671",
       "wikimedia_commons": "File:North Park Riverside.jpg"
-    }
+    },
+    "historicName": "John W. North Park"
   },
   {
     "id": "osm-way-232932290",
@@ -2464,7 +2491,7 @@
     "osmId": 232932290,
     "ref": "28",
     "refNumber": 28,
-    "name": "Old City Hall",
+    "name": "Former City Hall",
     "lat": 33.9822431,
     "lon": -117.3730116,
     "description": "Completed in 1924, this Spanish Renaissance Revival building was Riverside’s first municipally owned City Hall. Its construction followed voter approval of a 1923 bond issue and provided permanent quarters for a city government that had previously occupied leased space. It remained Riverside’s governmental center until the present City Hall opened in 1975. The historic building was restored for private office use in the 1980s.",
@@ -2550,7 +2577,8 @@
       "start_date": "1924",
       "wikidata": "Q139083261",
       "wikimedia_commons": "File:Old Riverside City Hall.jpg"
-    }
+    },
+    "historicName": "Former City Hall"
   },
   {
     "id": "osm-way-959827245",
@@ -2558,7 +2586,7 @@
     "osmId": 959827245,
     "ref": "29",
     "refNumber": 29,
-    "name": "Rockledge",
+    "name": "“Rockledge”",
     "lat": 33.9589062,
     "lon": -117.3729873,
     "description": "Built in 1891 for citrus grower and developer Priestley Hall and his wife, Agnes Overton Hall, Rockledge occupies a prominent site overlooking the entrance to the Arlington Heights development. Hall, himself a designer and builder, constructed the imposing Victorian-era residence largely of thick adobe brick manufactured on the property. Its hilltop location was deliberately chosen to create an impressive architectural gateway to the newly developing citrus district beyond Victoria Avenue.",
@@ -2626,7 +2654,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1889",
       "wikidata": "Q140640718"
-    }
+    },
+    "historicName": "“Rockledge”"
   },
   {
     "id": "osm-way-912475413",
@@ -2706,7 +2735,8 @@
       "start_date": "1888",
       "wikidata": "Q140640734",
       "wikimedia_commons": "File:Devine House.jpg"
-    }
+    },
+    "historicName": "Devine House"
   },
   {
     "id": "osm-way-958301691",
@@ -2714,7 +2744,7 @@
     "osmId": 958301691,
     "ref": "31",
     "refNumber": 31,
-    "name": "Raeburn",
+    "name": "“Raeburn Place”",
     "lat": 33.9321105,
     "lon": -117.3753053,
     "description": "Built in 1897 for William Irving, president of the Gage Canal Company, Raeburn is an imposing Queen Anne residence set within Riverside’s historic citrus greenbelt. Described by the City as the area’s first “grove mansion,” the house reflects the wealth generated by the irrigation and citrus industries that transformed Arlington Heights during the late nineteenth century.",
@@ -2779,7 +2809,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1897",
       "wikidata": "Q140640775"
-    }
+    },
+    "historicName": "“Raeburn Place”"
   },
   {
     "id": "osm-way-232932296",
@@ -2871,7 +2902,8 @@
       "start_date": "1928",
       "wikidata": "Q140640812",
       "wikimedia_commons": "File:Arcade Building Exterior.jpg"
-    }
+    },
+    "historicName": "Arcade Building"
   },
   {
     "id": "osm-way-232932299",
@@ -2961,7 +2993,8 @@
       "start_date": "1908",
       "wikidata": "Q140640830",
       "wikimedia_commons": "File:Bonnett Building Exterior.jpg"
-    }
+    },
+    "historicName": "Bonnett Building"
   },
   {
     "id": "osm-way-893550901",
@@ -3056,7 +3089,8 @@
       "start_date": "1911",
       "wikidata": "Q140640954",
       "wikimedia_commons": "File:Estudillo House.jpg"
-    }
+    },
+    "historicName": "Estudillo House"
   },
   {
     "id": "osm-way-881139621",
@@ -3137,7 +3171,8 @@
       "start_date": "1906",
       "wikidata": "Q140640973",
       "wikimedia_commons": "File:Irvine House.jpg"
-    }
+    },
+    "historicName": "Irvine House"
   },
   {
     "id": "osm-way-912126121",
@@ -3213,7 +3248,8 @@
       "start_date": "1890",
       "wikidata": "Q140672990",
       "wikimedia_commons": "File:Waite House Exterior.jpg"
-    }
+    },
+    "historicName": "Waite House"
   },
   {
     "id": "osm-way-958302060",
@@ -3293,7 +3329,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140672995",
       "wikimedia_commons": "File:Cressman House.jpg"
-    }
+    },
+    "historicName": "Cressman House"
   },
   {
     "id": "osm-way-233254194",
@@ -3301,7 +3338,7 @@
     "osmId": 233254194,
     "ref": "38",
     "refNumber": 38,
-    "name": "Grant Elementary School",
+    "name": "Grant School",
     "lat": 33.9783014,
     "lon": -117.3820807,
     "description": "Designed by Riverside architect G.  Stanley Wilson, Grant School opened in 1935 after the original 1889 school building was demolished following damage from the 1933 Long Beach earthquake. The Mission Revival campus continued a  style Streetrongly associated with Riverside’s civic architecture. A fountain installed in 1896 survives from the earlier school grounds, providing a tangible link between the two generations of buildings on the site.",
@@ -3378,7 +3415,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "38",
       "wikidata": "Q139545665",
       "wikimedia_commons": "File:Grant Elementary School Courtyard.jpg"
-    }
+    },
+    "historicName": "Grant School"
   },
   {
     "id": "osm-way-232932288",
@@ -3386,7 +3424,7 @@
     "osmId": 232932288,
     "ref": "39",
     "refNumber": 39,
-    "name": "Fox Theatre",
+    "name": "Fox Theater",
     "lat": 33.983972,
     "lon": -117.3752735,
     "description": "Designed by the architectural firm Balch &  stanbery, the Fox Theater opened in 1929 as a Spanish Colonial Revival movie and vaudeville palace. Its  stage hosted performers including Bing Crosby and Judy Garland, while its proximity to Hollywood made it an important preview theater for motion pictures. In 1939, the Fox hosted the first public screening of Gone with the Wind. Restored by the City, it now operates as the Fox Performing Arts Center.",
@@ -3498,7 +3536,8 @@
       "start_date": "1929",
       "wikidata": "Q7338490",
       "wikimedia_commons": "File:Fox Theater, Riverside CA.jpg"
-    }
+    },
+    "historicName": "Fox Theater"
   },
   {
     "id": "osm-relation-21132098",
@@ -3506,7 +3545,7 @@
     "osmId": 21132098,
     "ref": "40",
     "refNumber": 40,
-    "name": "Mission Inn Avenue",
+    "name": "Seventh Street Historic District",
     "lat": 33.98293964019687,
     "lon": -117.37381620922328,
     "description": "Extending along present-day Mission Inn Avenue from the railroad district toward the Buena Vista Bridge, the Seventh Street Historic District preserves one of Riverside’s most important historic corridors. Developed primarily from the late nineteenth century through the 1930s and ’40s, it contains notable residential, commercial and civic architecture as well as Raincross Streetlights and historic Streetscape features. The former Seventh Street served as Riverside’s principal east-west gateway between its railroad, citrus-packing and downtown districts.",
@@ -3568,7 +3607,8 @@
       "start_date": "1870",
       "type": "route",
       "wikidata": "Q140673001"
-    }
+    },
+    "historicName": "Seventh Street Historic District"
   },
   {
     "id": "osm-way-232932962",
@@ -3576,7 +3616,7 @@
     "osmId": 232932962,
     "ref": "41",
     "refNumber": 41,
-    "name": "YMCA Building",
+    "name": "Former YMCA",
     "lat": 33.9810554,
     "lon": -117.3715925,
     "description": "Built in 1909 as Riverside’s second YMCA building, this Italian Renaissance palazzo–inspired Streetructure served the organization until 1968. In addition to recreational facilities, the building included guest rooms and other spaces intended to support the YMCA’s educational and social mission. It later became the Life Arts Center, continuing its long history as a community-oriented building.",
@@ -3664,7 +3704,8 @@
       "wikidata": "Q8045931",
       "wikimedia_commons": "File:Historic Ymca aka life arts building.jpg",
       "wikipedia": "en:YMCA Building (Riverside, California)"
-    }
+    },
+    "historicName": "Former YMCA"
   },
   {
     "id": "osm-way-958299634",
@@ -3672,7 +3713,7 @@
     "osmId": 958299634,
     "ref": "42",
     "refNumber": 42,
-    "name": "Greystone House",
+    "name": "“Greystones”",
     "lat": 33.9358458,
     "lon": -117.3684674,
     "description": "Built in 1902 for John Mylne, a Canadian immigrant and assistant engineer on the Gage Canal, Greystones is a Classical Revival residence set amid the historic citrus landscape of Hawarden Hills. Its name comes from the locally quarried granite used for the foundation and for retaining walls along the garden and drive. The house reflects both Riverside’s citrus-era prosperity and the development of substantial country residences in Arlington Heights.",
@@ -3739,7 +3780,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1902",
       "wikidata": "Q139257099"
-    }
+    },
+    "historicName": "“Greystones”"
   },
   {
     "id": "osm-way-232934005",
@@ -3825,7 +3867,8 @@
       "start_date": "1927",
       "wikidata": "Q140673036",
       "wikimedia_commons": "File:Lerner Building.jpg"
-    }
+    },
+    "historicName": "Lerner Building"
   },
   {
     "id": "osm-way-874688363",
@@ -3898,7 +3941,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1915",
       "wikidata": "Q140680291"
-    }
+    },
+    "historicName": "Hole Mansion"
   },
   {
     "id": "osm-way-921546966",
@@ -3995,7 +4039,8 @@
       "start_date": "1900",
       "wikidata": "Q140680297",
       "wikimedia_commons": "File:Collins-Seaton House Exterior.jpg"
-    }
+    },
+    "historicName": "Collins-Seaton House"
   },
   {
     "id": "osm-way-118530713",
@@ -4067,7 +4112,8 @@
       "start_date": "1909",
       "wikidata": "Q66364163",
       "wikimedia_commons": "File:Riverside Library.jpg"
-    }
+    },
+    "historicName": "Arlington Branch Library"
   },
   {
     "id": "osm-way-930081050",
@@ -4143,7 +4189,8 @@
       "start_date": "1896",
       "wikidata": "Q140680303",
       "wikimedia_commons": "File:Batkin-Chrysler House.jpg"
-    }
+    },
+    "historicName": "Batkin-Chrysler House"
   },
   {
     "id": "osm-relation-3672539",
@@ -4151,7 +4198,7 @@
     "osmId": 3672539,
     "ref": "48",
     "refNumber": 48,
-    "name": "Quadrangle",
+    "name": "Riverside City College Quadrangle",
     "lat": 33.97086195681867,
     "lon": -117.38220795940896,
     "description": "Begun in 1924 from designs by Riverside architect G.  Stanley Wilson, the Riverside City College Quadrangle developed in  stages around a central courtyard, recalling the organization and appearance of an Italian Renaissance palazzo. The first buildings provided dedicated facilities for the young Riverside Junior College, which until then had shared space with Riverside Polytechnic High School. Additional wings, including the auditorium, gradually completed the complex during the 1920s and early 1930s.",
@@ -4231,7 +4278,8 @@
       "type": "multipolygon",
       "wikidata": "Q140680312",
       "wikimedia_commons": "File:Riverside City College Quadrangle Interior.jpg"
-    }
+    },
+    "historicName": "Riverside City College Quadrangle"
   },
   {
     "id": "osm-way-233256024",
@@ -4239,7 +4287,7 @@
     "osmId": 233256024,
     "ref": "49",
     "refNumber": 49,
-    "name": "Cesar E. Chavez Community Center",
+    "name": "Former University Heights Junior High School",
     "lat": 33.9750037,
     "lon": -117.3564233,
     "description": "Designed by John C. Austin of the Los Angeles firm Austin & Ashley, University Heights Junior High School opened in 1928 as an imposing Spanish Colonial Revival campus. Its opening coincided with the end of gender-segregated junior-high instruction in Riverside. After the school closed in 1972, the City acquired the property for community use; the main building now serves as the César Chávez Community Center at Bobby Bonds Park. It is also listed in the National Register of Historic Places.",
@@ -4317,7 +4365,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "49",
       "start_date": "1928",
       "wikidata": "Q140680331"
-    }
+    },
+    "historicName": "Former University Heights Junior High School"
   },
   {
     "id": "osm-way-232933223",
@@ -4325,7 +4374,7 @@
     "osmId": 232933223,
     "ref": "50",
     "refNumber": 50,
-    "name": "Former Rouse's Department Store",
+    "name": "Former Rouse’s Department  store",
     "lat": 33.9812332,
     "lon": -117.3744729,
     "description": "Originally built in 1895, this Main Street commercial building was remodeled several times as Rouse’s grew into one of downtown Riverside’s leading department  stores. Its most important transformation came in 1924, when architect G.  Stanley Wilson redesigned the façade with details inspired by fifteenth-century Spanish Renaissance architecture. Portions of Wilson’s work survive on the upper  story, preserving the building’s association with Riverside’s early twentieth-century retail district.",
@@ -4410,7 +4459,8 @@
       "wheelchair": "yes",
       "wikidata": "Q140680714",
       "wikimedia_commons": "File:UCR Photography Museum.jpg"
-    }
+    },
+    "historicName": "Former Rouse’s Department  store"
   },
   {
     "id": "osm-way-921546002",
@@ -4499,7 +4549,8 @@
       "start_date": "1887",
       "wikidata": "Q140680754",
       "wikimedia_commons": "File:Ward House Exterior.jpg"
-    }
+    },
+    "historicName": "Ward House"
   },
   {
     "id": "osm-way-233257075",
@@ -4600,7 +4651,8 @@
       "wikidata": "Q121590627",
       "wikimedia_commons": "File:Weber house at dawn.jpg",
       "wikipedia": "en:Peter J. Weber House"
-    }
+    },
+    "historicName": "Peter J. Weber House"
   },
   {
     "id": "osm-way-767837015",
@@ -4674,7 +4726,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "53",
       "start_date": "1899",
       "wikidata": "Q140687911"
-    }
+    },
+    "historicName": "Moulton House"
   },
   {
     "id": "osm-way-1351960466",
@@ -4763,7 +4816,8 @@
       "start_date": "1928-09-18",
       "wikidata": "Q136870322",
       "wikimedia_commons": "File:Victoria Bridge Landmark 54.jpg"
-    }
+    },
+    "historicName": "Victoria Bridge"
   },
   {
     "id": "osm-way-881090745",
@@ -4837,7 +4891,8 @@
       "start_date": "1908",
       "wikidata": "Q140689182",
       "wikimedia_commons": "File:Hoover House Exterior.jpg"
-    }
+    },
+    "historicName": "Hoover House"
   },
   {
     "id": "osm-way-696810985",
@@ -4845,7 +4900,7 @@
     "osmId": 696810985,
     "ref": "56",
     "refNumber": 56,
-    "name": "Palm Elementary School",
+    "name": "Former Palm School",
     "lat": 33.9516212,
     "lon": -117.3983165,
     "description": "Designed by Riverside architect G.  Stanley Wilson and completed in 1927, Palm Elementary School is a Spanish Colonial Revival campus characteristic of Wilson’s civic work during the period. It served generations of Riverside  students before closing as a conventional elementary school in the 1970s and later housed Riverside Unified School District programs. Its architecture reflects the widespread use of Spanish and Mission-inspired forms in Riverside’s early twentieth-century public buildings.",
@@ -4936,7 +4991,8 @@
       "start_date": "1927",
       "wikidata": "Q140689197",
       "wikimedia_commons": "File:Palm School.jpg"
-    }
+    },
+    "historicName": "Former Palm School"
   },
   {
     "id": "osm-way-44486427",
@@ -5032,7 +5088,8 @@
       "tiger:reviewed": "no",
       "wikidata": "Q49579974",
       "wikimedia_commons": "File:White Park View.jpg"
-    }
+    },
+    "historicName": "White Park"
   },
   {
     "id": "osm-way-958302078",
@@ -5106,7 +5163,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "58",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140694906"
-    }
+    },
+    "historicName": "Orchard House"
   },
   {
     "id": "osm-way-900811382",
@@ -5114,7 +5172,7 @@
     "osmId": 900811382,
     "ref": "59",
     "refNumber": 59,
-    "name": "Robert Bettner House",
+    "name": "“La Ventanilla” Robert Bettner House",
     "lat": 33.9366877,
     "lon": -117.4190351,
     "description": "Built in 1892 for Robert and Lucy Bettner, this picturesque single-story residence is one of the few surviving houses from the period when Magnolia Avenue was lined with elegant homes and citrus estates. The Bettners called the house “La Ventanilla,” or “the house of little windows.” Robert Bettner, a member of one of Riverside’s prominent citrus families, later entered the real-estate business. The house and its landscaped grounds preserve an increasingly rare glimpse of nineteenth-century Magnolia Avenue.",
@@ -5178,7 +5236,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "59",
       "start_date": "1892",
       "wikidata": "Q140694931"
-    }
+    },
+    "historicName": "“La Ventanilla” Robert Bettner House"
   },
   {
     "id": "osm-node-14025383332",
@@ -5264,7 +5323,8 @@
       "species": "Sequoia sempervirens",
       "wikidata": "Q140613826",
       "wikimedia_commons": "File:Chicago White Sox Redwood Tree and Low Park.jpg"
-    }
+    },
+    "historicName": "Chicago White Sox Redwood Tree"
   },
   {
     "id": "osm-node-14050417455",
@@ -5335,7 +5395,8 @@
       "species:wikipedia": "en:Taxodium mucronatum",
       "wikidata": "Q140698450",
       "wikimedia_commons": "File:Montezuma Bald Cypruss Trees Fairmount Park.jpg"
-    }
+    },
+    "historicName": "Montezuma Bald Cypress Trees"
   },
   {
     "id": "osm-way-1544725871",
@@ -5343,7 +5404,7 @@
     "osmId": 1544725871,
     "ref": "62",
     "refNumber": 62,
-    "name": "Magnolia Avenue Parkways and Center Median venue Parkways and Center Media",
+    "name": "Magnolia Avenue Parkways & Center Median",
     "lat": 33.945467411506336,
     "lon": -117.40236894089193,
     "description": "This landscaped section of Magnolia Avenue preserves the character of one of Riverside’s earliest and most influential scenic boulevards. Beginning in 1876, eucalyptus, oaks, palms and other plantings were used to create a broad, park-like avenue through the growing community. Its combination of roadway, landscaped median and parkways helped establish a model for ornamental urban Streetscapes and remains an important part of Riverside’s historic landscape identity.",
@@ -5400,7 +5461,8 @@
       "name": "Magnolia Avenue Parkways and Center Median venue Parkways and Center Media",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "62",
       "wikidata": "Q140698479"
-    }
+    },
+    "historicName": "Magnolia Avenue Parkways & Center Median"
   },
   {
     "id": "osm-way-1545150774",
@@ -5468,7 +5530,8 @@
       "start_date": "1962",
       "wikidata": "Q140723613",
       "wikimedia_commons": "File:Grove of Palm Trees.jpg"
-    }
+    },
+    "historicName": "Palm Grove"
   },
   {
     "id": "osm-node-14054389459",
@@ -5554,7 +5617,8 @@
       "species:wikidata": "Q55972542",
       "wikidata": "Q140723663",
       "wikimedia_commons": "File:Roosevelt Palm.jpg"
-    }
+    },
+    "historicName": "Roosevelt Palm"
   },
   {
     "id": "osm-node-14054465399",
@@ -5625,7 +5689,8 @@
       "species:wikipedia": "en:Platanus racemosa",
       "wikidata": "Q140723835",
       "wikimedia_commons": "File:Native Sycamore Tree.jpg"
-    }
+    },
+    "historicName": "Native Sycamore Tree"
   },
   {
     "id": "osm-node-14083621540",
@@ -5633,7 +5698,7 @@
     "osmId": 14083621540,
     "ref": "66",
     "refNumber": 66,
-    "name": "Horse Chestnut Tree",
+    "name": "Former Horse Chestnut Tree",
     "lat": 33.9320459,
     "lon": -117.3857213,
     "description": "Local horticulturist Captain Charles Montagu Dammers originally planted this horse chestnut at his home near Mary Street and Victoria Avenue. When Mary Street was widened in 1978, the City transplanted the mature tree into the center divider of Victoria Avenue at Mary Street rather than remove it. The tree lived another 25 years before it became diseased and was removed. ",
@@ -5690,7 +5755,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "66",
       "species:wikidata": "Q130257124",
       "wikidata": "Q140723876"
-    }
+    },
+    "historicName": "Former Horse Chestnut Tree"
   },
   {
     "id": "osm-way-44486517",
@@ -5698,7 +5764,7 @@
     "osmId": 44486517,
     "ref": "67",
     "refNumber": 67,
-    "name": "Evergreen Cemetery",
+    "name": "Evergreen Cemetery & Riverside Mausoleum",
     "lat": 33.9795576,
     "lon": -117.3868443,
     "description": "Established in 1872, Evergreen is Riverside’s oldest cemetery and the burial place of many people central to the city’s history, including John W. North, Frank A. Miller, and Luther and Eliza Tibbets. The Egyptian Revival mausoleum was built in 1914 by W. C. Crowell of Pasadena. Together, the cemetery and mausoleum form an exceptionally important historic landscape documenting Riverside’s founding generation and subsequent civic development.",
@@ -5764,7 +5830,8 @@
       "website": "http://www.evergreen-cemetery.info/",
       "wikidata": "Q5417190",
       "wikipedia": "en:Evergreen Cemetery (Riverside, California)"
-    }
+    },
+    "historicName": "Evergreen Cemetery & Riverside Mausoleum"
   },
   {
     "id": "osm-way-912126099",
@@ -5841,7 +5908,8 @@
       "start_date": "1893",
       "wikidata": "Q140723972",
       "wikimedia_commons": "File:Mitchell House Exterior.jpg"
-    }
+    },
+    "historicName": "Mitchell House"
   },
   {
     "id": "osm-way-44486163",
@@ -5960,7 +6028,8 @@
       "tiger:reviewed": "no",
       "wikidata": "Q5430650",
       "wikimedia_commons": "File:Fairmount park 13 carousel playground.jpg"
-    }
+    },
+    "historicName": "Fairmount Park"
   },
   {
     "id": "osm-way-881084635",
@@ -5968,7 +6037,7 @@
     "osmId": 881084635,
     "ref": "70",
     "refNumber": 70,
-    "name": "Harwood Hall House",
+    "name": "“Harwood Hall”",
     "lat": 33.9866956,
     "lon": -117.3855291,
     "description": "Built in 1904 for Harwood Hall, the first superintendent of the Sherman Institute, this one-and-a-half-story residence is an excellent example of the California bungalow. Hall oversaw the federal Indian boarding school during its early years, making the house significant not only architecturally but also for its association with the administration of a federal institution created as part of the broader assimilationist boarding-school system imposed on Native American  students.",
@@ -6053,7 +6122,8 @@
       "start_date": "1909",
       "wikidata": "Q140724534",
       "wikimedia_commons": "File:Harwood Hall House.jpg"
-    }
+    },
+    "historicName": "“Harwood Hall”"
   },
   {
     "id": "osm-way-868426280",
@@ -6146,7 +6216,8 @@
       "start_date": "1887",
       "wikidata": "Q140696095",
       "wikimedia_commons": "File:Shiels House.jpg"
-    }
+    },
+    "historicName": "Shiels House"
   },
   {
     "id": "osm-way-233264649",
@@ -6219,7 +6290,8 @@
       "start_date": "1892",
       "wikidata": "Q140696092",
       "wikimedia_commons": "File:McIntyre House Riverside.jpg"
-    }
+    },
+    "historicName": "McIntyre House"
   },
   {
     "id": "osm-way-44486161",
@@ -6227,7 +6299,7 @@
     "osmId": 44486161,
     "ref": "73",
     "refNumber": 73,
-    "name": "Newman Park",
+    "name": "Newman Park & De Anza  statue",
     "lat": 33.976338,
     "lon": -117.379418,
     "description": "Created in 1940 with support from the Works Progress Administration, the De Anza monument commemorates Spanish explorer Juan Bautista de Anza. Artist Dorr Bothwell designed the work and Sherry Peticolas sculpted it, using Ed J. Loustanau, a descendant of De Anza’s brother, as the model. Set within Newman Park, the sculpture is a notable example of Riverside’s Depression-era public art.",
@@ -6328,7 +6400,8 @@
       "tiger:reviewed": "no",
       "wikidata": "Q49531392",
       "wikimedia_commons": "File:Newman Park and De Anza Statue.jpg"
-    }
+    },
+    "historicName": "Newman Park & De Anza  statue"
   },
   {
     "id": "osm-way-1545218603",
@@ -6436,7 +6509,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "74",
       "wikidata": "Q140724477",
       "wikimedia_commons": "File:Buena_Vista_Bridge.jpg"
-    }
+    },
+    "historicName": "Buena Vista Bridge"
   },
   {
     "id": "osm-way-913954241",
@@ -6444,7 +6518,7 @@
     "osmId": 913954241,
     "ref": "75",
     "refNumber": 75,
-    "name": "Wilson House",
+    "name": "Stone House",
     "lat": 33.9404197,
     "lon": -117.3920051,
     "description": "Built in 1929, this modest residence is one of Riverside’s best surviving examples of the vernacular  stone houses and bungalows constructed in the region during the 1910s and 1920s. Its use of exposed local  stone reflects a building tradition that combined inexpensive native materials with the informal scale and craftsmanship associated with California bungalow architecture.",
@@ -6512,7 +6586,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1929",
       "wikidata": "Q140725518"
-    }
+    },
+    "historicName": "Stone House"
   },
   {
     "id": "osm-way-921547011",
@@ -6520,7 +6595,7 @@
     "osmId": 921547011,
     "ref": "76",
     "refNumber": 76,
-    "name": "Exselsen House",
+    "name": "Stone House",
     "lat": 33.9770475,
     "lon": -117.357388,
     "description": "Constructed in 1926, this residence is another important example of Riverside’s vernacular  stone-building tradition. Its walls of local  stone and modest bungalow form typify a once more common regional construction method of the early twentieth century. The house also contributes to the historic character of the Seventh Street East Historic District, where the City identifies it as one of the area’s notable landmarks.",
@@ -6585,7 +6660,8 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140725113",
       "wikimedia_commons": "File:Exselsen House Exterior.jpg"
-    }
+    },
+    "historicName": "Stone House"
   },
   {
     "id": "osm-way-868426322",
@@ -6682,7 +6758,8 @@
       "start_date": "1926",
       "wikidata": "Q140742588",
       "wikimedia_commons": "File:Hammer-Wallihan House Exterior.jpg"
-    }
+    },
+    "historicName": "Hammer-Wallihan House"
   },
   {
     "id": "osm-way-912475386",
@@ -6774,7 +6851,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140731714",
       "wikimedia_commons": "File:Jarvis House Riverside.jpg"
-    }
+    },
+    "historicName": "Jarvis House"
   },
   {
     "id": "osm-way-912126148",
@@ -6782,7 +6860,7 @@
     "osmId": 912126148,
     "ref": "79",
     "refNumber": 79,
-    "name": "Collier House",
+    "name": "William Collier House",
     "lat": 33.9869477,
     "lon": -117.3657529,
     "description": "Built for Riverside attorney William Collier around 1892, this Queen Anne residence is associated with a prominent early lawyer and developer who helped establish the communities of Lake Elsinore and Wildomar. R. H. Polkinghorn, later Riverside County’s first County Administrator, subsequently occupied the house. Threatened with demolition, it was moved from Prospect Avenue to its present location on Lime Street in 1987.",
@@ -6866,7 +6944,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "79",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140743068"
-    }
+    },
+    "historicName": "William Collier House"
   },
   {
     "id": "osm-way-232934447",
@@ -6970,7 +7049,8 @@
       "start_date": "1925",
       "wikidata": "Q133440785",
       "wikimedia_commons": "File:M. H. Simon's Undertaking Chapel, front.jpg"
-    }
+    },
+    "historicName": "M. H. Simons Undertaking Chapel"
   },
   {
     "id": "osm-way-923888988",
@@ -7049,7 +7129,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1910",
       "wikidata": "Q140766068"
-    }
+    },
+    "historicName": "William Childs House"
   },
   {
     "id": "osm-way-868196014",
@@ -7057,7 +7138,7 @@
     "osmId": 868196014,
     "ref": "82",
     "refNumber": 82,
-    "name": "Hartree Grove",
+    "name": "“Hartree Grove”",
     "lat": 33.9370064,
     "lon": -117.3779144,
     "description": "Hartree Grove began as an adobe residence constructed in 1892. Its second owner, Herman Wilson, acquired the property in 1899 and named it after a family castle in Scotland. In 1901 he remodeled the house to resemble a Scottish country house, giving the property the distinctive appearance it retains today.",
@@ -7122,7 +7203,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1892",
       "wikidata": "Q140766075"
-    }
+    },
+    "historicName": "“Hartree Grove”"
   },
   {
     "id": "osm-way-921546005",
@@ -7210,7 +7292,8 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q139254877",
       "wikimedia_commons": "File:First Christian Church Parsonage Exterior.jpg"
-    }
+    },
+    "historicName": "First Christian Church Parsonage"
   },
   {
     "id": "osm-way-232929922",
@@ -7218,7 +7301,7 @@
     "osmId": 232929922,
     "ref": "84",
     "refNumber": 84,
-    "name": "Aurea Vista Hotel Building",
+    "name": "Former Aurea Vista Hotel",
     "lat": 33.9804244,
     "lon": -117.3721681,
     "description": "Designed by Riverside architect G.  Stanley Wilson and completed in 1927, the Aurea Vista Hotel is a Spanish-Moorish  style building created primarily for long-term residential guests. Its richly  styled exterior reflects the popularity of Spanish and Mediterranean revival architecture in Riverside during the 1920s and Wilson’s important role in shaping the city’s architectural character.",
@@ -7288,7 +7371,8 @@
       "start_date": "1927",
       "wikidata": "Q140766076",
       "wikimedia_commons": "File:Aurea Vista Hotel Exterior.jpg"
-    }
+    },
+    "historicName": "Former Aurea Vista Hotel"
   },
   {
     "id": "osm-way-207537002",
@@ -7296,7 +7380,7 @@
     "osmId": 207537002,
     "ref": "85",
     "refNumber": 85,
-    "name": "Santa Cruz Inn",
+    "name": "Former Casa de Anza Hotel & Apartments",
     "lat": 33.9861664,
     "lon": -117.3735717,
     "description": "Casa de Anza developed around an earlier duplex that was moved to the site about 1923. In 1939, architect G.  Stanley Wilson designed the Spanish Colonial Revival motel complex that incorporated the older building. The property reflects the rise of automobile tourism and roadside lodging in Riverside during the early twentieth century.",
@@ -7380,7 +7464,8 @@
       "start_date": "1927",
       "wikidata": "Q140766084",
       "wikimedia_commons": "File:Casa De Anza Motel exterior.jpg"
-    }
+    },
+    "historicName": "Former Casa de Anza Hotel & Apartments"
   },
   {
     "id": "osm-way-880403086",
@@ -7455,7 +7540,8 @@
       "source": "microsoft/BuildingFootprints",
       "start_date": "1901",
       "wikidata": "Q140775747"
-    }
+    },
+    "historicName": "Rockledge Cottage"
   },
   {
     "id": "osm-way-232941196",
@@ -7463,7 +7549,7 @@
     "osmId": 232941196,
     "ref": "87",
     "refNumber": 87,
-    "name": "Tetley Buildings",
+    "name": "Tetley Building",
     "lat": 33.9770762,
     "lon": -117.3788973,
     "description": "This building of reinforced concrete was a Spanish Colonial Revival design for the business of Bell Cleaning Company owned by James R. Willis on land purchased from citrus grower and landowner Frank Tetley. A newspaper article admired how the “worthless dump-hole” had been transformed into “one of the most attractive business centers of the city.”",
@@ -7545,7 +7631,8 @@
       "start_date": "1925",
       "wikidata": "Q140690551",
       "wikimedia_commons": "File:Tetley Building Riverside.jpg"
-    }
+    },
+    "historicName": "Tetley Building"
   },
   {
     "id": "osm-way-926399865",
@@ -7553,7 +7640,7 @@
     "osmId": 926399865,
     "ref": "88",
     "refNumber": 88,
-    "name": "Henry M. Streeter House",
+    "name": "Henry M.  ster House",
     "lat": 33.9539685,
     "lon": -117.4167035,
     "description": "Designed and built by Henry A. Westbrook in 1888, this Victorian farmhouse was constructed for Henry M.  ster, a prominent Riverside attorney and politician.  ster served in both the California Assembly and Senate and authored the legislation that created Riverside County in 1893. The house is significant both for its architecture and for its association with one of the county’s principal founders.",
@@ -7622,7 +7709,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "88",
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140775760"
-    }
+    },
+    "historicName": "Henry M.  ster House"
   },
   {
     "id": "osm-way-869909368",
@@ -7703,7 +7791,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1891",
       "wikidata": "Q140778633"
-    }
+    },
+    "historicName": "James M. Wood House"
   },
   {
     "id": "osm-way-232932298",
@@ -7792,7 +7881,8 @@
       "start_date": "1904",
       "wikidata": "Q140187530",
       "wikimedia_commons": "File:Roosevelt Building Exterior.jpg"
-    }
+    },
+    "historicName": "Roosevelt Building"
   },
   {
     "id": "osm-way-1134383649",
@@ -7800,7 +7890,7 @@
     "osmId": 1134383649,
     "ref": "91",
     "refNumber": 91,
-    "name": "Ridgecourt",
+    "name": "“Ridgecourt”",
     "lat": 33.9976458,
     "lon": -117.3566323,
     "description": "Built in 1913 for Clinton Hickok, a piano dealer from Toledo, Ohio, Ridgecourt is a Mission Revival residence with an especially whimsical feature: its patio was designed in the shape of a grand piano. The house reflects the popularity of Mission-inspired residential architecture in Riverside during the early twentieth century.",
@@ -7871,7 +7961,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "91",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140789699"
-    }
+    },
+    "historicName": "“Ridgecourt”"
   },
   {
     "id": "osm-way-232941197",
@@ -7879,7 +7970,7 @@
     "osmId": 232941197,
     "ref": "92",
     "refNumber": 92,
-    "name": "J.R. Willis Building",
+    "name": "J. R. Willis Building",
     "lat": 33.9772321,
     "lon": -117.3789162,
     "description": "Designed by G.  Stanley Wilson in 1927 for the Bell Cleaning Company, this Spanish Colonial Revival commercial building reflects Riverside’s Streetrong preference for Spanish and Mediterranean architectural forms during the 1920s. Originally built for a dry-cleaning business, it is one of Wilson’s surviving contributions to the city’s commercial Streetscape.",
@@ -7968,7 +8059,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "92",
       "wikidata": "Q140777120",
       "wikimedia_commons": "File:J.R. Willis Building.jpg"
-    }
+    },
+    "historicName": "J. R. Willis Building"
   },
   {
     "id": "osm-way-958298260",
@@ -8061,7 +8153,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140790521",
       "wikimedia_commons": "File:John J. Hewitt House Exterior.jpg"
-    }
+    },
+    "historicName": "John J. Hewitt House"
   },
   {
     "id": "osm-way-899617717",
@@ -8135,7 +8228,8 @@
       "start_date": "1950",
       "wikidata": "Q140878996",
       "wikimedia_commons": "File:Dr. Edmund Jaeger House Exterior.jpg"
-    }
+    },
+    "historicName": "Dr. Edmund Jaeger House"
   },
   {
     "id": "osm-way-777632335",
@@ -8219,7 +8313,8 @@
       "religion": "christian",
       "wikidata": "Q140879120",
       "wikimedia_commons": "File:First United Brethren in Christ Exterior.jpg"
-    }
+    },
+    "historicName": "First United Brethren in Christ"
   },
   {
     "id": "osm-way-386747563",
@@ -8227,7 +8322,7 @@
     "osmId": 386747563,
     "ref": "96",
     "refNumber": 96,
-    "name": "Boxing gym",
+    "name": "Former Irving School",
     "lat": 33.970829,
     "lon": -117.3662836,
     "description": "The surviving Craftsman-style school building was constructed in 1917. A Streetreamline Moderne auditorium designed by G.  Stanley Wilson was added in 1940. The campus once contained nine buildings, but a 1955 fire destroyed the others, leaving these Streetructures as the principal remnants of the historic school.",
@@ -8300,7 +8395,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "96",
       "start_date": "1917",
       "wikidata": "Q140879305"
-    }
+    },
+    "historicName": "Former Irving School"
   },
   {
     "id": "osm-node-14073920777",
@@ -8366,7 +8462,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "97",
       "ruins": "no",
       "wikidata": "Q140879492"
-    }
+    },
+    "historicName": "Chudzikowski Home Site"
   },
   {
     "id": "osm-way-545578462",
@@ -8374,7 +8471,7 @@
     "osmId": 545578462,
     "ref": "98",
     "refNumber": 98,
-    "name": "White Park Building",
+    "name": "Former Potter Hotel",
     "lat": 33.9811875,
     "lon": -117.3763167,
     "description": "Built in 1924 by Walter Lewis at a reported cost of $15,000, the White Park Building is a Mediterranean-style commercial Streetructure facing Riverside’s historic White Park. Its design reflects the Spanish and Mediterranean architectural vocabulary that became increasingly common in Riverside commercial development during the 1920s.",
@@ -8451,7 +8548,8 @@
       "start_date": "1924",
       "wikidata": "Q140650834",
       "wikimedia_commons": "File:White Park Building Exterior.jpg"
-    }
+    },
+    "historicName": "Former Potter Hotel"
   },
   {
     "id": "osm-way-958017921",
@@ -8548,7 +8646,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1906",
       "wikidata": "Q139257161"
-    }
+    },
+    "historicName": "Benjamin Rockhold Family House"
   },
   {
     "id": "osm-way-125135482",
@@ -8645,7 +8744,8 @@
       "start_date": "1924",
       "wikidata": "Q140588309",
       "wikimedia_commons": "File:Santa Fe Depot Riverside.jpg"
-    }
+    },
+    "historicName": "Santa Fe Depot"
   },
   {
     "id": "osm-way-958297114",
@@ -8738,7 +8838,8 @@
       "start_date": "1895",
       "wikidata": "Q140882261",
       "wikimedia_commons": "File:Elmer A. Day House Exterior.jpg"
-    }
+    },
+    "historicName": "Elmer A. Day House"
   },
   {
     "id": "osm-way-234707773",
@@ -8746,7 +8847,7 @@
     "osmId": 234707773,
     "ref": "102",
     "refNumber": 102,
-    "name": "Food Manufacturing Corporation",
+    "name": "Former Food Manufacturing Corporation Building",
     "lat": 33.9751501,
     "lon": -117.3691723,
     "description": "Constructed between 1938 and 1943, this group of industrial buildings was designed with distinctive sawtooth roofs oriented north to provide even, diffused natural light. The complex is associated with the Food Manufacturing Corporation, later part of FMC, and represents Riverside’s twentieth-century industrial development alongside the citrus packing and agricultural industries that shaped the city’s economy.",
@@ -8801,7 +8902,8 @@
       "heritage:website": "https://riversideca.gov/cityclerk/boards-commissions/cultural-heritage-board",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "102",
       "wikidata": "Q140892332"
-    }
+    },
+    "historicName": "Former Food Manufacturing Corporation Building"
   },
   {
     "id": "osm-way-893550924",
@@ -8875,7 +8977,8 @@
       "start_date": "1907",
       "wikidata": "Q140690581",
       "wikimedia_commons": "File:Jaeger Family House.jpg"
-    }
+    },
+    "historicName": "Jaeger Family House"
   },
   {
     "id": "osm-way-958017917",
@@ -8883,7 +8986,7 @@
     "osmId": 958017917,
     "ref": "104",
     "refNumber": 104,
-    "name": "Raymond Cree-Criddle House",
+    "name": "Raymond Cree–Criddle House",
     "lat": 33.990948,
     "lon": -117.382682,
     "description": "Built in 1913, this Craftsman bungalow is an important contributor to the Mount Rubidoux Historic District and was home to several prominent Riverside residents. Original owner Raymond Cree served as Riverside County Superintendent of Schools. Later owner Eugene B. Criddle was vice president of the Southern Sierras Power Company and served as mayor of Riverside from 1933 to 1937.",
@@ -8968,7 +9071,8 @@
       "start_date": "1913",
       "wikidata": "Q140892425",
       "wikimedia_commons": "File:Raymond Cree-Criddle House Exterior.jpg"
-    }
+    },
+    "historicName": "Raymond Cree–Criddle House"
   },
   {
     "id": "osm-way-921556170",
@@ -8976,7 +9080,7 @@
     "osmId": 921556170,
     "ref": "105",
     "refNumber": 105,
-    "name": "Mary and Emerson Holt House",
+    "name": "“St. Valentine Hall” Mary & Emerson Holt House",
     "lat": 33.9671445,
     "lon": -117.3809565,
     "description": "Built in 1924, this Spanish Colonial Revival residence was home to Emerson and Mary Holt, both active in Riverside civic life. Emerson was a businessman, Masonic chaplain and co-founder of Riverside’s Sierra Club chapter. Mary was a writer, artist and women’s-club leader who wrote the lyrics to the Riverside County Song. The house is an important contributor to the Wood Streets Historic District.",
@@ -9060,7 +9164,8 @@
       "start_date": "1924",
       "wikidata": "Q140745351",
       "wikimedia_commons": "File:Mary and Emerson Holt House.jpg"
-    }
+    },
+    "historicName": "“St. Valentine Hall” Mary & Emerson Holt House"
   },
   {
     "id": "osm-way-958300966",
@@ -9136,7 +9241,8 @@
       "start_date": "1899",
       "wikidata": "Q140877874",
       "wikimedia_commons": "File:Alkire House Exterior.jpg"
-    }
+    },
+    "historicName": "Alkire House"
   },
   {
     "id": "osm-way-893820351",
@@ -9213,7 +9319,8 @@
       "start_date": "1923",
       "wikidata": "Q140892682",
       "wikimedia_commons": "File:Holden House Exterior.jpg"
-    }
+    },
+    "historicName": "Holden House"
   },
   {
     "id": "osm-way-921552410",
@@ -9221,7 +9328,7 @@
     "osmId": 921552410,
     "ref": "108",
     "refNumber": 108,
-    "name": "Ames-Westbrook House",
+    "name": "Ames–Westbrook House",
     "lat": 33.973841,
     "lon": -117.3887105,
     "description": "Built in 1888 for citrus grower Samuel A. Ames, this Queen Anne residence is one of Riverside’s notable surviving Victorian houses. It is most closely associated with longtime owners John R. and Lucie Westbrook. John Westbrook helped establish Franzen Brothers Hardware, which later became the J. R. Westbrook Company. The house retains much of the elaborate form and decorative character typical of late nineteenth-century Queen Anne architecture.",
@@ -9294,7 +9401,8 @@
       "start_date": "1888",
       "wikidata": "Q140676599",
       "wikimedia_commons": "File:Victorian Historical House.jpg"
-    }
+    },
+    "historicName": "Ames–Westbrook House"
   },
   {
     "id": "osm-relation-11240707",
@@ -9302,7 +9410,7 @@
     "osmId": 11240707,
     "ref": "109",
     "refNumber": 109,
-    "name": "Riverside Canal",
+    "name": "Highgrove Drop & Upper Riverside Canal",
     "lat": 34.011792856833985,
     "lon": -117.3396295537537,
     "description": "The Upper Riverside Canal is closely associated with the development of Riverside’s irrigation system and citrus industry. At the Highgrove Drop, where the canal descended approximately forty feet near Iowa Avenue, engineers harnessed the falling water to create one of California’s earliest commercially significant hydroelectric plants. Beginning in 1888, its generators supplied electricity for Street lighting in Riverside and Colton, linking this site to both the city’s agricultural and electrical history.",
@@ -9377,7 +9485,8 @@
       "waterway": "drain",
       "wikidata": "Q140936076",
       "wikimedia_commons": "File:Riverside Canal in Wood Streets.jpg"
-    }
+    },
+    "historicName": "Highgrove Drop & Upper Riverside Canal"
   },
   {
     "id": "osm-way-881134297",
@@ -9470,7 +9579,8 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140902179",
       "wikimedia_commons": "File:Piddington House Exterior.jpg"
-    }
+    },
+    "historicName": "Piddington House"
   },
   {
     "id": "osm-way-1135939560",
@@ -9478,7 +9588,7 @@
     "osmId": 1135939560,
     "ref": "111",
     "refNumber": 111,
-    "name": "Lillian M. Spurgeon Residence",
+    "name": "Lillian M. Spurgeon House",
     "lat": 33.9895169,
     "lon": -117.386092,
     "description": "Designed in 1927 by architect Robert H. Spurgeon for his mother, Lillian M. Spurgeon, this Spanish Colonial Revival residence is an excellent example of the  style’s adaptation to domestic architecture in Riverside. Spurgeon practiced in New York, Los Angeles, Riverside and Santa Barbara, with much of his career centered in Riverside. The house is notable both for its architectural quality and for its association with one of the city’s important twentieth-century architects.",
@@ -9563,7 +9673,8 @@
       "start_date": "1927",
       "wikidata": "Q140928251",
       "wikimedia_commons": "File:Lillian M. Spurgeon Residence Exterior.jpg"
-    }
+    },
+    "historicName": "Lillian M. Spurgeon House"
   },
   {
     "id": "osm-way-899617765",
@@ -9571,7 +9682,7 @@
     "osmId": 899617765,
     "ref": "112",
     "refNumber": 112,
-    "name": "R.D. Brough/Harry W. Hammond residence",
+    "name": "R. D. Brough–Harry W. Hammond House",
     "lat": 33.9870558,
     "lon": -117.3833887,
     "description": "Constructed in 1908, this Craftsman residence is significant both for its architecture and for its association with Harry W. Hammond, a longtime principal of the Riverside Press. Hammond lived here for seventeen years during a forty-nine-year career with the newspaper. The house is a Streetrong example of the Craftsman  style that became popular in Riverside during the early twentieth century.",
@@ -9656,7 +9767,8 @@
       "start_date": "1908",
       "wikidata": "Q140928358",
       "wikimedia_commons": "File:Hammond House Exterior.jpg"
-    }
+    },
+    "historicName": "R. D. Brough–Harry W. Hammond House"
   },
   {
     "id": "osm-way-890783732",
@@ -9748,7 +9860,8 @@
       "start_date": "1900",
       "wikidata": "Q140894301",
       "wikimedia_commons": "File:John Swanson House Exterior.jpg"
-    }
+    },
+    "historicName": "John Swanson House"
   },
   {
     "id": "osm-way-232932293",
@@ -9831,7 +9944,8 @@
       "start_date": "1886",
       "wikidata": "Q140187508",
       "wikimedia_commons": "File:Jackson Building Exterior.jpg"
-    }
+    },
+    "historicName": "Jackson Building"
   },
   {
     "id": "osm-way-910672661",
@@ -9839,7 +9953,7 @@
     "osmId": 910672661,
     "ref": "115",
     "refNumber": 115,
-    "name": "A. N. Sweet Residence",
+    "name": "Arthur N. Sweet House",
     "lat": 33.9879568,
     "lon": -117.3838418,
     "description": "Built in 1927 for A. N. Sweet, this substantial two-story residence was designed by prominent Riverside architect Henry L. A. Jekel. The house is one of several Jekel-designed residences that helped define the character of what was then West Seventh Street, an important residential approach to downtown Riverside. A 1950 Riverside Daily Press profile of Jekel specifically identified the Arthur Sweet home among his notable designs along the Street. The residence retains its tile roof and substantial massing characteristic of Jekel’s residential work of the period.",
@@ -9920,7 +10034,8 @@
       "start_date": "1920",
       "wikidata": "Q140933084",
       "wikimedia_commons": "File:A. N. Sweet House Exterior.jpg"
-    }
+    },
+    "historicName": "Arthur N. Sweet House"
   },
   {
     "id": "osm-way-921556161",
@@ -9928,7 +10043,7 @@
     "osmId": 921556161,
     "ref": "116",
     "refNumber": 116,
-    "name": "Ernest and Louise Clarke House",
+    "name": "Ernest & Louise Clarke House",
     "lat": 33.9663435,
     "lon": -117.381471,
     "description": "Henry L. A. Jekel designed this Spanish Colonial Revival residence for Ernest and Louise Clarke in 1928. Ernest Clarke served for decades as editor of the Riverside Daily Press and later headed the combined Press-Enterprise. Dr. Louise Harvey Clarke was the first woman president of the Riverside County Medical Association and the only woman physician among the sixteen founders of Riverside Community Hospital. The house is significant for both its Jekel design and its association with two prominent Riverside residents.",
@@ -10011,7 +10126,8 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140745785",
       "wikimedia_commons": "File:Ernest and Louise Clarke House.jpg"
-    }
+    },
+    "historicName": "Ernest & Louise Clarke House"
   },
   {
     "id": "osm-way-958017911",
@@ -10019,7 +10135,7 @@
     "osmId": 958017911,
     "ref": "117",
     "refNumber": 117,
-    "name": "C.O. Evans Residence",
+    "name": "C. O. Evans House",
     "lat": 33.9915663,
     "lon": -117.3832949,
     "description": "Designed and built in 1908 by Riverside architect G.  Stanley Wilson for Charles Orrick Evans and his family, this residence combines California bungalow forms with Tudor influences. Constructed of redwood, brick and concrete, it is an important example of Wilson’s early residential work. Evans was a prominent Riverside businessman and civic figure, adding an important historical association to the house’s architectural significance.",
@@ -10107,7 +10223,8 @@
       "start_date": "1908",
       "wikidata": "Q140927703",
       "wikimedia_commons": "File:C.O. Evans Residence Exterior.jpg"
-    }
+    },
+    "historicName": "C. O. Evans House"
   },
   {
     "id": "osm-node-14079713557",
@@ -10173,7 +10290,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "118",
       "tourism": "attraction",
       "wikidata": "Q140936103"
-    }
+    },
+    "historicName": "Five Points Intersection"
   },
   {
     "id": "osm-way-958028226",
@@ -10253,7 +10371,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140800730",
       "wikimedia_commons": "File:Walter C. Banks House.jpg"
-    }
+    },
+    "historicName": "Walter C. Banks House"
   },
   {
     "id": "osm-way-234338310",
@@ -10338,7 +10457,8 @@
       "start_date": "1949",
       "wikidata": "Q140778170",
       "wikimedia_commons": "File:All Saints Episcopal Church Riverside California.jpg"
-    }
+    },
+    "historicName": "All Saints Episcopal Church"
   },
   {
     "id": "osm-way-959802707",
@@ -10346,7 +10466,7 @@
     "osmId": 959802707,
     "ref": "121",
     "refNumber": 121,
-    "name": "Bobby Bonds Residence",
+    "name": "Bobby Bonds House",
     "lat": 33.9693344,
     "lon": -117.3574329,
     "description": "Robert and Elizabeth Bonds moved to this modest Eastside residence in 1957 with their four children. Their son Bobby Bonds became one of Riverside’s most accomplished professional athletes, combining exceptional power and speed during a seventeen-year Major League Baseball career. His sister Rosie competed in the 1964 Olympics, and his son Barry Bonds, born in Riverside while the family lived here, later became one of baseball’s most prominent players. The City designated the property for its association with Riverside-born athletes of national significance.",
@@ -10416,7 +10536,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1957",
       "wikidata": "Q140927560"
-    }
+    },
+    "historicName": "Bobby Bonds House"
   },
   {
     "id": "osm-way-959808694",
@@ -10424,7 +10545,7 @@
     "osmId": 959808694,
     "ref": "122",
     "refNumber": 122,
-    "name": "Jasper Austin Payton Residence",
+    "name": "Jasper Austin Payton House",
     "lat": 33.9576106,
     "lon": -117.3712398,
     "description": "Built in 1954–55 for Jasper Austin Payton, this substantial two-story residence was designed by Riverside architect Marty Williamson. The original building permit describes an eight-room, approximately 5,100-square-foot house with an attached garage and lists Payton as both owner and contractor. The house reflects Williamson’s mid-century residential work, combining traditional European influences with the broad proportions and informal character of postwar Southern California design.",
@@ -10497,7 +10618,8 @@
       "start_date": "1966",
       "wikidata": "Q140903346",
       "wikimedia_commons": "File:Jasper Austin Payton Residence Exterior.jpg"
-    }
+    },
+    "historicName": "Jasper Austin Payton House"
   },
   {
     "id": "osm-way-619322270",
@@ -10505,7 +10627,7 @@
     "osmId": 619322270,
     "ref": "123",
     "refNumber": 123,
-    "name": "Hawthorne House",
+    "name": "Archibald C. E. Hawthorne House",
     "lat": 33.928157,
     "lon": -117.4301541,
     "description": "Built in 1889–90 for Archibald C. E. Hawthorne and designed by architect A. C. Willard, this Swiss Chalet–influenced residence is a rare survivor of the grove houses that once lined Magnolia Avenue. Its broad eaves, decorative braces and unusual cross-shaped plan distinguish the house from Riverside’s more elaborate Victorian residences. The City recognized it as an important remnant of the agricultural residential landscape that characterized areas beyond Riverside’s early town center.",
@@ -10569,7 +10691,8 @@
       "name": "Hawthorne House",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "123",
       "wikidata": "Q140903463"
-    }
+    },
+    "historicName": "Archibald C. E. Hawthorne House"
   },
   {
     "id": "osm-way-233267697",
@@ -10577,7 +10700,7 @@
     "osmId": 233267697,
     "ref": "124",
     "refNumber": 124,
-    "name": "Old Marcy Library",
+    "name": "Former Marcy Branch Library",
     "lat": 33.9538603,
     "lon": -117.3946888,
     "description": "Designed by Riverside architect Herman Ruhnau and completed in 1957, the former Marcy Branch Library reflects Riverside’s rapid postwar growth and the expansion of municipal services into developing neighborhoods. Construction was funded in part by a bequest from Riverside resident Charles F. Marcy. The building is an important local example of Midcentury modern civic architecture and was identified by the City as significant for its design, craftsmanship and association with Ruhnau.",
@@ -10643,7 +10766,8 @@
       "start_date": "1957",
       "wikidata": "Q140903531",
       "wikimedia_commons": "File:Old Marcy Library Exterior.jpg"
-    }
+    },
+    "historicName": "Former Marcy Branch Library"
   },
   {
     "id": "osm-way-958302496",
@@ -10651,7 +10775,7 @@
     "osmId": 958302496,
     "ref": "125",
     "refNumber": 125,
-    "name": "Clinton and Geraldine Marr Residence",
+    "name": "Clinton & Geraldine Marr House #2",
     "lat": 33.9249544,
     "lon": -117.3773489,
     "description": "Architect Clinton Marr designed this Midcentury modern residence for his own family in 1960. The post-and-beam house exemplifies the modern residential architecture that developed in Riverside’s Hawarden Hills during the postwar period, emphasizing exposed Streetructural systems and a close relationship between interior spaces and the surrounding landscape. The City designated the property both as an important example of Midcentury modern design and for its association with Marr, one of Riverside’s leading twentieth-century architects.",
@@ -10726,7 +10850,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1961",
       "wikidata": "Q140935478"
-    }
+    },
+    "historicName": "Clinton & Geraldine Marr House #2"
   },
   {
     "id": "osm-way-1134166352",
@@ -10807,7 +10932,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1965",
       "wikidata": "Q140893030"
-    }
+    },
+    "historicName": "Philip Esbensen House"
   },
   {
     "id": "osm-way-959575710",
@@ -10889,7 +11015,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1971",
       "wikidata": "Q140916594"
-    }
+    },
+    "historicName": "Mackey House"
   },
   {
     "id": "osm-way-877846260",
@@ -10897,7 +11024,7 @@
     "osmId": 877846260,
     "ref": "128",
     "refNumber": 128,
-    "name": "Wells-O'Toole House",
+    "name": "Wells–O’Toole House",
     "lat": 33.960643,
     "lon": -117.3542091,
     "description": "Built in 1926 overlooking the Victoria Club golf course, this Spanish Colonial Revival residence was designed by Riverside architect Robert H. Spurgeon, Jr. Character-defining features include  stucco walls, a clay-tile roof, a round entry tower, cantilevered balcony, wood-framed windows, heavy timber beams, wrought-iron details, and  stained glass. The house later became closely associated with artist and preservation activist Patsy O’Toole, who owned it from 1948 to 1971. In 1969 it served as the first headquarters of the newly founded Friends of the Mission Inn, linking the property directly to Riverside’s modern historic-preservation movement.",
@@ -10986,7 +11113,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1926",
       "wikidata": "Q140935493"
-    }
+    },
+    "historicName": "Wells–O’Toole House"
   },
   {
     "id": "osm-way-960848208",
@@ -10994,7 +11122,7 @@
     "osmId": 960848208,
     "ref": "129",
     "refNumber": 129,
-    "name": "James E. and Jessie C. Shaw House",
+    "name": "“Acadia Grove” James E. & Jessie C. Shaw House",
     "lat": 33.9128243,
     "lon": -117.4106477,
     "description": "Built in 1899 for James Edward and Jessie Cameron Shaw, this Foursquare residence originally  stood on a ten-acre orange grove in Arlington Heights. James Shaw came to Riverside from Nova Scotia with his family in 1892 and purchased the property that same year. He took out a $3,200 building permit in October 1899, shortly after marrying Jessie Cameron, whom he brought west from Nova Scotia. Shaw became a successful orange grower and remained on the property until his death in 1930. Jessie died in 1933. The couple had no children and are buried at Olivewood Memorial Park. The original ten-acre grove was divided into two five-acre parcels in 1979; the house remains on the northerly parcel.",
@@ -11063,7 +11191,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "129",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140916743"
-    }
+    },
+    "historicName": "“Acadia Grove” James E. & Jessie C. Shaw House"
   },
   {
     "id": "osm-way-694156921",
@@ -11128,7 +11257,8 @@
       "name": "Trujillo Adobe",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "130",
       "wikidata": "Q140916817"
-    }
+    },
+    "historicName": "Trujillo Adobe"
   },
   {
     "id": "osm-way-1481614312",
@@ -11136,7 +11266,7 @@
     "osmId": 1481614312,
     "ref": "131",
     "refNumber": 131,
-    "name": "Willard and Elizabeth Winder House",
+    "name": "Willard & Elizabeth Winder House",
     "lat": 33.9606793,
     "lon": -117.3710587,
     "description": "Built in 1954–55 for Riverside attorney Willard H. Winder and his family, this one-story residence was constructed by prominent local builder Harry Marsh. Winder, born in Riverside in 1915,  studied law at Hastings and returned to his hometown to establish a private legal practice. The original City building permit describes a six-room, approximately 2,130-square-foot house with an attached garage. Set on a generous lot near Victoria Avenue, the residence reflects Riverside’s postwar residential development and the continuity of an established local family within the city.",
@@ -11207,7 +11337,8 @@
       "source": "microsoft/BuildingFootprints;aerial imagery",
       "start_date": "1955",
       "wikidata": "Q140916909"
-    }
+    },
+    "historicName": "Willard & Elizabeth Winder House"
   },
   {
     "id": "osm-way-959809320",
@@ -11287,7 +11418,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1930",
       "wikidata": "Q140917040"
-    }
+    },
+    "historicName": "Eugene Best House"
   },
   {
     "id": "osm-way-960881702",
@@ -11295,7 +11427,7 @@
     "osmId": 960881702,
     "ref": "133",
     "refNumber": 133,
-    "name": "Camp Anza Officer’s Club",
+    "name": "Former Camp Anza Officer’s Club",
     "lat": 33.9403035,
     "lon": -117.4622299,
     "description": "Built in 1942, the Camp Anza Officers Club is one of the most significant surviving buildings from Riverside’s World War II Army installation. Designed in the utilitarian Military Cantonment  style, it served officers  stationed at Camp Anza and later became known as the Moose Lodge. Before the Army acquired the site in 1942, the property formed part of the Willits J. Hole Ranch, where the surrounding acreage was used primarily for barley and wheat farming on lands historically associated with Rancho La Sierra. After decades of alteration and changing use, the building was rehabilitated as part of the Home Front at Camp Anza veterans’ housing development and today serves as its community center.",
@@ -11361,7 +11493,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1942",
       "wikidata": "Q140898969"
-    }
+    },
+    "historicName": "Former Camp Anza Officer’s Club"
   },
   {
     "id": "osm-way-959583620",
@@ -11455,7 +11588,8 @@
       "wikidata": "Q28455819",
       "wikimedia_commons": "File:Nielsen Pool House - Front PNG.png",
       "wikipedia": "en:Nielsen Pool House"
-    }
+    },
+    "historicName": "Nielsen Pool House"
   },
   {
     "id": "osm-way-119281492",
@@ -11463,7 +11597,7 @@
     "osmId": 119281492,
     "ref": "135",
     "refNumber": 135,
-    "name": "Old Riverside Main Library",
+    "name": "Former Main Library",
     "lat": 33.9827589,
     "lon": -117.371588,
     "description": "Completed during Riverside’s postwar expansion, the former Main Library is an important local example of New Formalism. Its symmetrical composition, broad projecting roofline, brick walls and distinctive patterned concrete screens give the building a monumental but restrained civic character. City historic-resource  studies identified the library as eligible for landmark designation for its architecture and its role in Riverside’s twentieth-century civic development.",
@@ -11541,7 +11675,8 @@
       "wheelchair": "yes",
       "wikidata": "Q140936130",
       "wikimedia_commons": "File:The Cheech Exterior.jpg"
-    }
+    },
+    "historicName": "Former Main Library"
   },
   {
     "id": "osm-way-869909366",
@@ -11639,7 +11774,8 @@
       "start_date": "1930",
       "wikidata": "Q140917201",
       "wikimedia_commons": "File:Gore Manor Exterior.jpg"
-    }
+    },
+    "historicName": "Gore Manor"
   },
   {
     "id": "osm-way-958924273",
@@ -11647,7 +11783,7 @@
     "osmId": 958924273,
     "ref": "137",
     "refNumber": 137,
-    "name": "Bigelow's Bungalow",
+    "name": "“Bigelow’s Bungalow”",
     "lat": 33.9791429,
     "lon": -117.3930297,
     "description": "Built in 1911 for George Tyler Bigelow, this rustic California Craftsman bungalow was designed by architect Lester S. Moore and constructed by Riverside’s Cresmer Manufacturing Company. One of the early residences in the Huntington Park subdivision on Mount Rubidoux, the house was oriented to take advantage of sweeping views over downtown Riverside and the surrounding mountains. Granite blasted from the hillside to create the building site was reused for winding  stairways, retaining walls, terraces, and other landscape features, giving the property a Streetrong connection to its setting. Broad porches, tall windows, hardwood floors, extensive woodwork, and two fireplaces further express the Arts and Crafts character of the house.",
@@ -11726,7 +11862,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140963135",
       "wikimedia_commons": "File:Bigelow's Bungalow Exterior.jpg"
-    }
+    },
+    "historicName": "“Bigelow’s Bungalow”"
   },
   {
     "id": "osm-way-235391948",
@@ -11734,7 +11871,7 @@
     "osmId": 235391948,
     "ref": "138",
     "refNumber": 138,
-    "name": "E. T. Wall Packing House",
+    "name": "E. T. Wall Packing House #1",
     "lat": 33.9842037,
     "lon": -117.3650028,
     "description": "One of two surviving E. T. Wall citrus-packing buildings along Vine Street, Packing House #1 reflects Riverside’s once-dominant citrus industry and the railroad-oriented industrial district that supported it. Generations of workers graded and packed oranges here for shipment to distant markets. After the decline of local packing operations, the historic building was rehabilitated for new commercial use in the late 1990s.",
@@ -11796,7 +11933,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "138",
       "wikidata": "Q140936194",
       "wikimedia_commons": "File:E.T. Wall Packing House 1 Exterior.jpg"
-    }
+    },
+    "historicName": "E. T. Wall Packing House #1"
   },
   {
     "id": "osm-way-881134669",
@@ -11804,7 +11942,7 @@
     "osmId": 881134669,
     "ref": "139",
     "refNumber": 139,
-    "name": "The Harbor",
+    "name": "“The Harbor”",
     "lat": 33.9932091,
     "lon": -117.3772147,
     "description": "Designed by Henry L. A. Jekel around 1931, The Harbor is a Normandy-inspired residence distinguished by an elaborate nautical theme. Built for the Parker family, the house incorporates porthole windows, ship motifs, leaded glass, massive timber beams, and extensive handcrafted woodwork. Its dramatic interiors include a soaring living room, monumental  stone fireplace, and dining-room cabinetry concealing a hidden bar. The Harbor is one of Jekel’s most imaginative Riverside residences and a notable example of his highly individualized approach to period-revival architecture.",
@@ -11867,7 +12005,8 @@
       "start_date": "1931",
       "wikidata": "Q140917320",
       "wikimedia_commons": "File:The Harbor House Exterior.jpg"
-    }
+    },
+    "historicName": "“The Harbor”"
   },
   {
     "id": "osm-way-1082619483",
@@ -11875,7 +12014,7 @@
     "osmId": 1082619483,
     "ref": "140",
     "refNumber": 140,
-    "name": "Farm House Collective",
+    "name": "Farm House Motel",
     "lat": 33.9763946,
     "lon": -117.3419768,
     "description": "Constructed in 1953, the Farm House Motel is a surviving example of the postwar motor-court motel and California Ranch architecture. Its farmhouse theme is expressed through gambrel roofs, board-and-batten siding, multi-light windows and doors, and a distinctive gambrel-roof-shaped neon pole sign added in 1958. Located along what was then a major highway route, the motel reflects the automobile tourism that once shaped development along University Avenue.",
@@ -11931,7 +12070,8 @@
       "name": "Farm House Collective",
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "140",
       "wikidata": "Q140893554"
-    }
+    },
+    "historicName": "Farm House Motel"
   },
   {
     "id": "osm-way-694168131",
@@ -11939,7 +12079,7 @@
     "osmId": 694168131,
     "ref": "141",
     "refNumber": 141,
-    "name": "Avila's Historic 1929",
+    "name": "Former Freeland Tractor & Equipment Company",
     "lat": 33.9802408,
     "lon": -117.3689363,
     "description": "Built in 1929 for James E. Freeland’s tractor and equipment business, this Spanish Colonial Revival showroom was designed around the display of large-scale agricultural machinery. Tall windows facing Seventh Street—now Mission Inn Avenue—showcased Caterpillar tractors, Killefer tillage tools, Holt harvesters, and other equipment. The building occupied a Streetrategic location along the pedestrian route between downtown and the railroad  station, at the transition from Riverside’s original Mile Square to the more rural landscape beyond.",
@@ -12004,7 +12144,8 @@
       "start_date": "1929",
       "wikidata": "Q140917556",
       "wikimedia_commons": "File:Freelander Tractor Co. Showroom Exterior.jpg"
-    }
+    },
+    "historicName": "Former Freeland Tractor & Equipment Company"
   },
   {
     "id": "osm-way-235391949",
@@ -12074,7 +12215,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "142",
       "wikidata": "Q140936220",
       "wikimedia_commons": "File:E.T. Wall Packing House 2 Exterior.jpg"
-    }
+    },
+    "historicName": "E. T. Wall Packing House #2"
   },
   {
     "id": "osm-way-874757408",
@@ -12172,7 +12314,8 @@
       "start_date": "1924",
       "wikidata": "Q140963340",
       "wikimedia_commons": "File:David S. Bell House Exterior.jpg"
-    }
+    },
+    "historicName": "David S. Bell House"
   },
   {
     "id": "osm-way-958302816",
@@ -12180,7 +12323,7 @@
     "osmId": 958302816,
     "ref": "144",
     "refNumber": 144,
-    "name": "Neblett Residence",
+    "name": "Neblett House",
     "lat": 33.9245559,
     "lon": -117.3766079,
     "description": "Designed by Riverside architect Clinton Marr in the mid-1960s for Dr. and Mrs. Edward Neblett, this Midcentury modern residence is a notable example of post-and-beam residential architecture in Hawarden Hills. Its low profile, exposed Streetructural expression and close relationship to its landscaped setting reflect the modern residential design that characterized some of Riverside’s most architecturally ambitious postwar neighborhoods.",
@@ -12251,7 +12394,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1966",
       "wikidata": "Q140927289"
-    }
+    },
+    "historicName": "Neblett House"
   },
   {
     "id": "osm-way-959809319",
@@ -12259,7 +12403,7 @@
     "osmId": 959809319,
     "ref": "145",
     "refNumber": 145,
-    "name": "Woolley Residence",
+    "name": "Woolley House",
     "lat": 33.9600237,
     "lon": -117.3712072,
     "description": "The Woolley Residence is a notably intact midcentury modern post-and-beam house built in 1956 near Victoria Avenue. Its design emphasizes exposed Streetructural framing, broad expanses of glass, open interior spaces, and a Streetrong visual connection between the house, patio, pool, and landscaped grounds. The split-level arrangement responds to the site while large windows and sliding glass doors bring light deep into the living spaces.",
@@ -12330,7 +12474,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "145",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140927408"
-    }
+    },
+    "historicName": "Woolley House"
   },
   {
     "id": "osm-way-960876148",
@@ -12338,7 +12483,7 @@
     "osmId": 960876148,
     "ref": "146",
     "refNumber": 146,
-    "name": "Powell-Wheeler Residence",
+    "name": "Powell–Wheeler House",
     "lat": 33.9452565,
     "lon": -117.4060229,
     "description": "Designed by Henry L. A. Jekel and constructed in 1930 for Percy and Margaret Powell, this Monterey Revival residence combines Spanish Colonial influences with the broad balconies and restrained forms associated with the  style. Powell was active in Riverside beautification efforts, including projects along Magnolia Avenue. The house was later owned by physician Dr. Omer Wheeler, who served as president of the California Medical Board in the 1950s.",
@@ -12410,7 +12555,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "146",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140963411"
-    }
+    },
+    "historicName": "Powell–Wheeler House"
   },
   {
     "id": "osm-way-930381200",
@@ -12418,7 +12564,7 @@
     "osmId": 930381200,
     "ref": "147",
     "refNumber": 147,
-    "name": "Walter Verly House",
+    "name": "Walter Verley House",
     "lat": 33.957567,
     "lon": -117.4007765,
     "description": "Built in 1919, the Walter Verley House is a rare Riverside example of the Airplane Bungalow, a distinctive variation of Craftsman architecture. Its defining feature is the small second-story “pop-up,” set back from the first floor beneath a low-pitched gable roof. The house also displays Streetrong horizontal lines, Asian architectural influences, wide overhanging eaves, gable-end outlookers, wood-shingle and  stucco cladding, original wood-framed windows, and an open porch supported by square posts on battered piers. Walter Franklin Verley, for whom the house is named, was a Riverside automobile mechanic who later worked for Lockheed Aircraft during World War II.",
@@ -12485,7 +12631,8 @@
       "source": "microsoft/BuildingFootprints",
       "wikidata": "Q140893838",
       "wikimedia_commons": "File:Walter Verly House Exterior.jpg"
-    }
+    },
+    "historicName": "Walter Verley House"
   },
   {
     "id": "osm-way-881086174",
@@ -12493,7 +12640,7 @@
     "osmId": 881086174,
     "ref": "148",
     "refNumber": 148,
-    "name": "Lewis Residence",
+    "name": "Paul A. Lewis House",
     "lat": 33.9863977,
     "lon": -117.3869107,
     "description": "The Paul A. Lewis Residence is a rare Riverside example of Hollywood Regency, also known as Regency Revival. The  style blends modern simplicity with theatrical classical influences associated with Southern California’s postwar residential architecture. The house is distinguished by its Streetrong horizontal composition, expansive glazing, and sophisticated indoor-outdoor relationship, while retaining the polished,  stylized character that distinguishes Hollywood Regency from more austere forms of Midcentury modernism.",
@@ -12561,7 +12708,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1948",
       "wikidata": "Q140933106"
-    }
+    },
+    "historicName": "Paul A. Lewis House"
   },
   {
     "id": "osm-way-959175929",
@@ -12569,7 +12717,7 @@
     "osmId": 959175929,
     "ref": "149",
     "refNumber": 149,
-    "name": "Okubo Residence",
+    "name": "Miné Okubo House",
     "lat": 33.9729343,
     "lon": -117.3608631,
     "description": "Built about 1900, this residence was home to Japanese-American artist and author Miné Okubo and her family beginning in 1925. The family purchased the property in 1930 in the name of Okubo’s American-born sibling, an ownership arrangement made legally possible by the 1918 People v. Harada decision. In 1942, Executive Order 9066 forced the Okubo family from Riverside. Miné Okubo later documented her wartime incarceration in the influential 1946 book \"Citizen 13660.\"",
@@ -12636,7 +12784,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1900",
       "wikidata": "Q140893704"
-    }
+    },
+    "historicName": "Miné Okubo House"
   },
   {
     "id": "osm-way-234707786",
@@ -12644,7 +12793,7 @@
     "osmId": 234707786,
     "ref": "150",
     "refNumber": 150,
-    "name": "Orange Valley Lodge #13",
+    "name": "Mercantile Hall & Orange Valley Masonic Lodge #13",
     "lat": 33.9738664,
     "lon": -117.3676345,
     "description": "Built and opened in 1905 by David  stokes and other Black investors, Mercantile Hall became an important commercial and social center for Riverside’s African American community.  stokes and Aaron Wiley operated a grocery on the first floor, alongside other businesses, while the upper floor provided meeting space for community organizations and Black fraternal orders, including Orange Valley Masonic Lodge No. 13. Contemporary accounts described the hall as one of Riverside’s most ambitious Black-owned enterprises.",
@@ -12707,7 +12856,8 @@
       "start_date": "1902",
       "wikidata": "Q140963474",
       "wikimedia_commons": "File:Mercantile Hall-Orange Valley Masonic Lodge 13 Exterior.jpg"
-    }
+    },
+    "historicName": "Mercantile Hall & Orange Valley Masonic Lodge #13"
   },
   {
     "id": "osm-way-881086175",
@@ -12715,7 +12865,7 @@
     "osmId": 881086175,
     "ref": "151",
     "refNumber": 151,
-    "name": "Boyd Residence",
+    "name": "Boyd House",
     "lat": 33.9860422,
     "lon": -117.3869997,
     "description": "Designed in 1957 by architect Charles O. Matcham and completed in 1959 by builder Harry Marsh for Philip and Dorothy Boyd, this Hollywood Regency residence remains remarkably intact. Philip Boyd was a businessman, former mayor of Palm Springs,  state legislator and a leading advocate for the establishment of the University of California, Riverside, later serving as a UC Regent. Dorothy Boyd was also active in Riverside civic and charitable organizations. The house is significant for both its architectural character and its association with a couple who played an important role in UCR’s development.",
@@ -12787,7 +12937,8 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1955",
       "wikidata": "Q140963535"
-    }
+    },
+    "historicName": "Boyd House"
   },
   {
     "id": "osm-relation-18163662",
@@ -12892,7 +13043,8 @@
       "website": "https://riversideca.gov/",
       "wikidata": "Q139083291",
       "wikimedia_commons": "File:Riverside City Hall Exterior.jpg"
-    }
+    },
+    "historicName": "Riverside City Hall"
   },
   {
     "id": "osm-way-1135939550",
@@ -12986,7 +13138,8 @@
       "start_date": "1903",
       "wikidata": "Q140933127",
       "wikimedia_commons": "File:Hays-Pattee House Exterior.jpg"
-    }
+    },
+    "historicName": "Hays-Pattee House"
   },
   {
     "id": "osm-way-958978942",
@@ -12994,7 +13147,7 @@
     "osmId": 958978942,
     "ref": "154",
     "refNumber": 154,
-    "name": "Lionhead",
+    "name": "“Lionhead”",
     "lat": 33.9548218,
     "lon": -117.3732589,
     "description": "Designed by Riverside architect Henry L. A. Jekel and built in 1926, Lionhead is a substantial Spanish Eclectic residence set within the historic residential landscape near Victoria Avenue. Its design reflects Jekel’s highly individual interpretation of Spanish and Mediterranean revival architecture during one of the most productive periods of his Riverside career. The property was historically given the name “Lionhead,” which the City retained as part of its landmark designation. City records identify the house as a significant example of Jekel’s residential work and Riverside’s 1920s architectural development.",
@@ -13059,7 +13212,8 @@
       "ref:US-CA:city_of_riverside_cultural_heritage_board": "154",
       "source": "esri/Riverside_CA_Buildings_v2",
       "wikidata": "Q140963770"
-    }
+    },
+    "historicName": "“Lionhead”"
   },
   {
     "id": "osm-way-959573301",
@@ -13067,7 +13221,7 @@
     "osmId": 959573301,
     "ref": "155",
     "refNumber": 155,
-    "name": "Edie",
+    "name": "“Edie”",
     "lat": 33.9432067,
     "lon": -117.3699116,
     "description": "Designed by Swiss-born architect E. Kurt  steinmann for Dr. Robert R. and Margaret R. Robinson and constructed in 1966–67, Edie is a well-preserved example of Midcentury modern residential design. The post-and-beam house features a flat roof, expansive glazing and a Streetrong relationship between its interior spaces and surrounding landscape. The City found the residence significant both as an intact expression of Midcentury modern architecture and as a rare surviving Riverside residence by  steinmann, who later contributed to the design of Riverside City Hall and the Main Street pedestrian mall.",
@@ -13139,6 +13293,7 @@
       "source": "esri/Riverside_CA_Buildings_v2",
       "start_date": "1966",
       "wikidata": "Q140963880"
-    }
+    },
+    "historicName": "“Edie”"
   }
 ]

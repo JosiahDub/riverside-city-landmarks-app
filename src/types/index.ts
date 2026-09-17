@@ -5,6 +5,7 @@ export interface Landmark {
   ref: string;
   refNumber: number;
   name: string;
+  historicName?: string | null;
   lat: number;
   lon: number;
   description: string;

@@ -156,6 +156,12 @@ function parseWebsite(val) {
     numberColIdx = 0;
   }
 
+  // Column B: Historic Name
+  let historicNameColIdx = header.findIndex((h) => /historic(al)?\s*name/i.test(h));
+  if (historicNameColIdx === -1 && header.length > 1) {
+    historicNameColIdx = 1;
+  }
+
   let descColIdx = header.findIndex((h) => /^(description|summary|desc|historical\s*summary)$/i.test(h));
   if (descColIdx === -1 && header.length > 9) {
     descColIdx = 9;
@@ -194,6 +200,7 @@ function parseWebsite(val) {
     if (rawNum) {
       const num = parseInt(rawNum, 10);
       if (!isNaN(num)) {
+        const historicName = historicNameColIdx !== -1 ? row[historicNameColIdx]?.trim() : undefined;
         const desc = descColIdx !== -1 ? row[descColIdx] : undefined;
         const openToPublic = openToPublicColIdx !== -1 ? parseBool(row[openToPublicColIdx]) : false;
         const offersTours = toursColIdx !== -1 ? parseBool(row[toursColIdx]) : false;
@@ -202,6 +209,7 @@ function parseWebsite(val) {
         const website = websiteColIdx !== -1 ? parseWebsite(row[websiteColIdx]) : null;
 
         landmarkDataByRef[num] = {
+          historicName: historicName || undefined,
           description: typeof desc === 'string' ? desc : undefined,
           openToPublic,
           offersTours,
@@ -231,6 +239,10 @@ function parseWebsite(val) {
     const ref = parseInt(landmark.refNumber || landmark.ref, 10);
     if (!isNaN(ref) && Object.prototype.hasOwnProperty.call(landmarkDataByRef, ref)) {
       const data = landmarkDataByRef[ref];
+      if (data.historicName) {
+        landmark.name = data.historicName;
+        landmark.historicName = data.historicName;
+      }
       if (data.description !== undefined) {
         landmark.description = data.description;
       }
@@ -244,7 +256,7 @@ function parseWebsite(val) {
   }
 
   fs.writeFileSync(landmarksPath, JSON.stringify(landmarks, null, 2) + '\n', 'utf8');
-  console.log(`[Google Sheet Sync] Successfully pulled ${updatedCount} landmarks with descriptions and visitor fields (open, tours, ADA, restrooms, website) from Google Sheet into landmarks.json.`);
+  console.log(`[Google Sheet Sync] Successfully pulled ${updatedCount} landmarks with historic names, descriptions, and visitor fields (open, tours, ADA, restrooms, website) from Google Sheet into landmarks.json.`);
   return true;
 }
 
