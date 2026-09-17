@@ -21,13 +21,34 @@ export const ArchitectModal: React.FC<ArchitectModalProps> = ({
   if (!architectName) return null;
 
   const info = getArchitectInfo(architectName);
-  const works = landmarks.filter((l) =>
-    l.architects.some((a) => a.toLowerCase() === architectName.toLowerCase()) ||
-    (l.planners || []).some((p) => p.toLowerCase() === architectName.toLowerCase()) ||
-    (l.structuralEngineers || []).some((e) => e.toLowerCase() === architectName.toLowerCase()) ||
-    (l.designers || []).some((d) => d.toLowerCase() === architectName.toLowerCase()) ||
-    (l.builders || []).some((b) => b.toLowerCase() === architectName.toLowerCase())
-  );
+  const targetNames = [
+    architectName,
+    info.name,
+    info.displayName,
+    info.wikidataName,
+    info.firm
+  ]
+    .filter(Boolean)
+    .map((n) => n!.toLowerCase());
+
+  const works = landmarks.filter((l) => {
+    const creators = [
+      ...(l.architects || []),
+      ...(l.planners || []),
+      ...(l.structuralEngineers || []),
+      ...(l.designers || []),
+      ...(l.builders || [])
+    ];
+    return creators.some((c) => {
+      const cLower = c.toLowerCase();
+      if (targetNames.includes(cLower)) return true;
+      const cInfo = getArchitectInfo(c);
+      const cNames = [cInfo.name, cInfo.displayName, cInfo.wikidataName, cInfo.firm]
+        .filter(Boolean)
+        .map((n) => n!.toLowerCase());
+      return targetNames.some((t) => cNames.includes(t));
+    });
+  });
 
   return (
     <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fade-in">
@@ -38,20 +59,25 @@ export const ArchitectModal: React.FC<ArchitectModalProps> = ({
             {info.portraitUrl ? (
               <img
                 src={info.portraitUrl}
-                alt={info.name}
+                alt={info.displayName || info.name}
                 className="w-16 h-16 rounded-full object-cover border-2 border-purple-300 shadow-sm shrink-0"
               />
             ) : (
               <div className="w-16 h-16 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-2xl border border-purple-200 shrink-0">
-                {info.name.charAt(0)}
+                {(info.displayName || info.name).charAt(0)}
               </div>
             )}
             <div>
               <span className="text-xs uppercase font-bold tracking-wider text-purple-700 block">
-                Architect / Creator
+                {info.role || 'Architect / Creator'}
               </span>
               <h2 className="font-serif font-bold text-2xl text-stone-900 leading-tight">
-                {info.name}
+                {info.displayName || info.name}
+                {info.years && info.years.trim() ? (
+                  <span className="font-sans font-normal text-lg text-stone-500 ml-2">
+                    ({info.years.trim()})
+                  </span>
+                ) : null}
               </h2>
               <span className="inline-block text-xs text-stone-500 font-medium mt-0.5">
                 {works.length} Riverside designated landmark{works.length === 1 ? '' : 's'}
@@ -107,7 +133,7 @@ export const ArchitectModal: React.FC<ArchitectModalProps> = ({
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition shadow-sm"
             >
               <Filter className="w-3.5 h-3.5" />
-              <span>Show Only {info.name}'s Works on Map</span>
+              <span>Show Only {info.displayName || info.name}'s Works on Map</span>
             </button>
           </div>
 

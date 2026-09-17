@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { fetchGoogleSheetDescriptions } from './fetch_descriptions.js';
+import { fetchGoogleSheetDescriptions, fetchGoogleSheetCreators } from './fetch_descriptions.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const overpassPath = path.resolve(__dirname, '../overpass_landmarks.json');
@@ -848,8 +848,9 @@ export async function processLandmarks() {
   fs.writeFileSync(outputPath, JSON.stringify(landmarks, null, 2) + '\n');
   console.log(`Successfully generated ${landmarks.length} landmarks to ${outputPath}`);
 
-  // Fetch latest descriptions from Google Sheet if GOOGLE_SHEET_ID is configured
+  // Fetch latest descriptions and creators from Google Sheet if GOOGLE_SHEET_ID is configured
   await fetchGoogleSheetDescriptions();
+  await fetchGoogleSheetCreators();
 }
 
 processLandmarks();

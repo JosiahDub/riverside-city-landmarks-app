@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Landmark } from '../types';
-import { ARCHITECTS_DIRECTORY, getArchitectInfo } from '../data/architects';
-import { ARCHITECTURE_STYLES, getStyleInfo } from '../data/architecturalStyles';
+import { getArchitectInfo } from '../data/architects';
+import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
 import { X, User, Layers, Calendar, Trees, ExternalLink, Filter, Search, Landmark as LandmarkIcon } from 'lucide-react';
 
@@ -29,67 +29,40 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
   const [activeTab, setActiveTab] = useState<TabType>('creators');
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Extract all unique creators (architects, planners, structural engineers) with counts and roles
+  // Extract all unique creators (architects, planners, structural engineers, builders, designers) with counts and roles
   const creatorCounts = useMemo(() => {
-    const creatorsMap: Record<string, { landmarkIds: Set<string>; roles: Set<string> }> = {};
+    const creatorsMap: Record<string, { landmarkIds: Set<string>; roles: Set<string>; canonicalName: string }> = {};
+
+    const addCreator = (rawName: string, role: string, landmarkId: string) => {
+      const trimmed = rawName.trim();
+      if (!trimmed) return;
+      const info = getArchitectInfo(trimmed);
+      const canonicalName = info.displayName || info.name || trimmed;
+      if (!creatorsMap[canonicalName]) {
+        creatorsMap[canonicalName] = { landmarkIds: new Set(), roles: new Set(), canonicalName };
+      }
+      creatorsMap[canonicalName].landmarkIds.add(landmarkId);
+      creatorsMap[canonicalName].roles.add(role);
+    };
 
     landmarks.forEach((l) => {
-      // Architects
-      (l.architects || []).forEach((arch) => {
-        const name = arch.trim();
-        if (!name) return;
-        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
-        creatorsMap[name].landmarkIds.add(l.id);
-        creatorsMap[name].roles.add('Architect');
-      });
-
-      // Urban Planners
-      (l.planners || []).forEach((planner) => {
-        const name = planner.trim();
-        if (!name) return;
-        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
-        creatorsMap[name].landmarkIds.add(l.id);
-        creatorsMap[name].roles.add('Urban Planner');
-      });
-
-      // Structural Engineers
-      (l.structuralEngineers || []).forEach((eng) => {
-        const name = eng.trim();
-        if (!name) return;
-        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
-        creatorsMap[name].landmarkIds.add(l.id);
-        creatorsMap[name].roles.add('Structural Engineer');
-      });
-
-      // Designers
-      (l.designers || []).forEach((designer) => {
-        const name = designer.trim();
-        if (!name) return;
-        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
-        creatorsMap[name].landmarkIds.add(l.id);
-        creatorsMap[name].roles.add('Designer');
-      });
-
-      // Builders
-      (l.builders || []).forEach((builder) => {
-        const name = builder.trim();
-        if (!name) return;
-        if (!creatorsMap[name]) creatorsMap[name] = { landmarkIds: new Set(), roles: new Set() };
-        creatorsMap[name].landmarkIds.add(l.id);
-        creatorsMap[name].roles.add('Builder');
-      });
+      (l.architects || []).forEach((arch) => addCreator(arch, 'Architect', l.id));
+      (l.planners || []).forEach((planner) => addCreator(planner, 'Urban Planner', l.id));
+      (l.structuralEngineers || []).forEach((eng) => addCreator(eng, 'Structural Engineer', l.id));
+      (l.designers || []).forEach((designer) => addCreator(designer, 'Designer', l.id));
+      (l.builders || []).forEach((builder) => addCreator(builder, 'Builder', l.id));
     });
 
-    return Object.entries(creatorsMap)
-      .map(([name, data]) => {
-        const info = getArchitectInfo(name);
+    return Object.values(creatorsMap)
+      .map((data) => {
+        const info = getArchitectInfo(data.canonicalName);
         return {
           ...info,
           count: data.landmarkIds.size,
           roles: Array.from(data.roles),
         };
       })
-      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+      .sort((a, b) => b.count - a.count || (a.displayName || a.name).localeCompare(b.displayName || b.name));
   }, [landmarks]);
 
   // Extract all unique styles with counts
@@ -246,13 +219,19 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
           {activeTab === 'creators' && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {creatorCounts
-                .filter((c) =>
-                  c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                  c.roles.some((r) => r.toLowerCase().includes(searchTerm.toLowerCase()))
-                )
+                .filter((c) => {
+                  const q = searchTerm.toLowerCase();
+                  return (
+                    c.name.toLowerCase().includes(q) ||
+                    (c.displayName && c.displayName.toLowerCase().includes(q)) ||
+                    (c.wikidataName && c.wikidataName.toLowerCase().includes(q)) ||
+                    (c.firm && c.firm.toLowerCase().includes(q)) ||
+                    c.roles.some((r) => r.toLowerCase().includes(q))
+                  );
+                })
                 .map((creator) => (
                   <div
-                    key={creator.name}
+                    key={creator.displayName || creator.name}
                     className="bg-white rounded-xl p-4 border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between"
                   >
                     <div>
@@ -261,17 +240,22 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
                           {creator.portraitUrl ? (
                             <img
                               src={creator.portraitUrl}
-                              alt={creator.name}
+                              alt={creator.displayName || creator.name}
                               className="w-14 h-14 rounded-full object-cover border-2 border-purple-200 shadow-sm shrink-0"
                             />
                           ) : (
                             <div className="w-14 h-14 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-lg border border-purple-200 shrink-0">
-                              {creator.name.charAt(0)}
+                              {(creator.displayName || creator.name).charAt(0)}
                             </div>
                           )}
                           <div>
                             <h3 className="font-serif font-bold text-base text-stone-900">
-                              {creator.name}
+                              {creator.displayName || creator.name}
+                              {creator.years && creator.years.trim() ? (
+                                <span className="ml-1.5 text-xs font-normal text-stone-500">
+                                  ({creator.years.trim()})
+                                </span>
+                              ) : null}
                             </h3>
                             <div className="flex flex-wrap items-center gap-1.5 mt-1">
                               {creator.roles.map((role) => {
@@ -335,7 +319,7 @@ export const TagExplorerModal: React.FC<TagExplorerModalProps> = ({
                       </div>
                       <button
                         onClick={() => {
-                          onSelectArchitect(creator.name);
+                          onSelectArchitect(creator.displayName || creator.name);
                           onClose();
                         }}
                         className="inline-flex items-center gap-1 text-xs bg-purple-600 hover:bg-purple-700 text-white font-medium px-3 py-1.5 rounded-lg shadow-sm transition"

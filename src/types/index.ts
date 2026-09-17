@@ -100,6 +100,12 @@ export interface UserLocation {
 
 export interface ArchitectInfo {
   name: string;
+  displayName?: string;
+  wikidataName?: string;
+  firm?: string;
+  years?: string;
+  role?: string;
+  shortcode?: string;
   wikidataId?: string;
   wikipediaTitle?: string;
   wikipediaUrl?: string;

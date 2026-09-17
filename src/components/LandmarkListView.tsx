@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Landmark, UserLocation } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
-import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon, DoorOpen } from 'lucide-react';
+import { getArchitectInfo } from '../data/architects';
+import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon, DoorOpen, Hammer, Wrench, DraftingCompass } from 'lucide-react';
 
 interface LandmarkListViewProps {
   landmarks: Landmark[];
@@ -144,39 +145,71 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
 
                 <div className="flex flex-wrap gap-1 mt-1.5">
                   {landmark.architects.length > 0 ? (
-                    landmark.architects.slice(0, 1).map((arch) => (
-                      <span
-                        key={arch}
-                        className="text-[10px] bg-purple-50 text-purple-800 border border-purple-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
-                      >
-                        <User className="w-2.5 h-2.5 shrink-0" />
-                        <span className="truncate">{arch}</span>
-                      </span>
-                    ))
+                    landmark.architects.slice(0, 1).map((arch) => {
+                      const display = getArchitectInfo(arch).displayName || arch;
+                      return (
+                        <span
+                          key={arch}
+                          className="text-[10px] bg-purple-50 text-purple-800 border border-purple-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                          title={`Architect: ${display}`}
+                        >
+                          <User className="w-2.5 h-2.5 shrink-0" />
+                          <span className="truncate">{display}</span>
+                        </span>
+                      );
+                    })
                   ) : landmark.structuralEngineers && landmark.structuralEngineers.length > 0 ? (
-                    <span
-                      className="text-[10px] bg-sky-50 text-sky-800 border border-sky-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
-                      title={`Structural Engineer: ${landmark.structuralEngineers[0]}`}
-                    >
-                      <User className="w-2.5 h-2.5 shrink-0 text-sky-600" />
-                      <span className="truncate">{landmark.structuralEngineers[0]}</span>
-                    </span>
+                    (() => {
+                      const display = getArchitectInfo(landmark.structuralEngineers[0]).displayName || landmark.structuralEngineers[0];
+                      return (
+                        <span
+                          className="text-[10px] bg-sky-50 text-sky-800 border border-sky-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                          title={`Structural Engineer: ${display}`}
+                        >
+                          <Wrench className="w-2.5 h-2.5 shrink-0 text-sky-600" />
+                          <span className="truncate">{display}</span>
+                        </span>
+                      );
+                    })()
                   ) : landmark.planners && landmark.planners.length > 0 ? (
-                    <span
-                      className="text-[10px] bg-teal-50 text-teal-800 border border-teal-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
-                      title={`Planner: ${landmark.planners[0]}`}
-                    >
-                      <Compass className="w-2.5 h-2.5 shrink-0 text-teal-600" />
-                      <span className="truncate">{landmark.planners[0]}</span>
-                    </span>
+                    (() => {
+                      const display = getArchitectInfo(landmark.planners[0]).displayName || landmark.planners[0];
+                      return (
+                        <span
+                          className="text-[10px] bg-teal-50 text-teal-800 border border-teal-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                          title={`Planner: ${display}`}
+                        >
+                          <Compass className="w-2.5 h-2.5 shrink-0 text-teal-600" />
+                          <span className="truncate">{display}</span>
+                        </span>
+                      );
+                    })()
                   ) : landmark.builders && landmark.builders.length > 0 ? (
-                    <span
-                      className="text-[10px] bg-amber-50 text-amber-800 border border-amber-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
-                      title={`Builder: ${landmark.builders[0]}`}
-                    >
-                      <User className="w-2.5 h-2.5 shrink-0 text-amber-600" />
-                      <span className="truncate">{landmark.builders[0]}</span>
-                    </span>
+                    (() => {
+                      const display = getArchitectInfo(landmark.builders[0]).displayName || landmark.builders[0];
+                      return (
+                        <span
+                          className="text-[10px] bg-amber-50 text-amber-800 border border-amber-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                          title={`Builder: ${display}`}
+                        >
+                          <Hammer className="w-2.5 h-2.5 shrink-0 text-amber-600" />
+                          <span className="truncate">{display}</span>
+                        </span>
+                      );
+                    })()
+                  ) : landmark.designers && landmark.designers.length > 0 ? (
+                    (() => {
+                      const display = getArchitectInfo(landmark.designers[0]).displayName || landmark.designers[0];
+                      return (
+                        <span
+                          className="text-[10px] bg-indigo-50 text-indigo-800 border border-indigo-200 px-1.5 py-0.5 rounded font-medium flex items-center gap-0.5 truncate max-w-[150px]"
+                          title={`Designer: ${display}`}
+                        >
+                          <DraftingCompass className="w-2.5 h-2.5 shrink-0 text-indigo-600" />
+                          <span className="truncate">{display}</span>
+                        </span>
+                      );
+                    })()
                   ) : null}
                   {landmark.architectureStyles.slice(0, 1).map((style) => (
                     <span

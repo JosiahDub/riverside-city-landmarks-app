@@ -11,6 +11,7 @@ import { StyleModal } from './components/StyleModal';
 import { Navbar } from './components/Navbar';
 import { LandmarkListView } from './components/LandmarkListView';
 import { StatusPage } from './components/StatusPage';
+import { getArchitectInfo } from './data/architects';
 
 export const App: React.FC = () => {
   const [landmarksData, setLandmarksData] = useState<Landmark[]>(rawLandmarks as unknown as Landmark[]);
@@ -65,11 +66,24 @@ export const App: React.FC = () => {
         const query = filters.searchQuery.toLowerCase().trim();
         const matchesName = landmark.name.toLowerCase().includes(query);
         const matchesRef = landmark.ref.toLowerCase() === query || landmark.ref.includes(query);
-        const matchesArchitect = landmark.architects.some((a) => a.toLowerCase().includes(query));
-        const matchesPlanner = (landmark.planners || []).some((p) => p.toLowerCase().includes(query));
-        const matchesEngineer = (landmark.structuralEngineers || []).some((e) => e.toLowerCase().includes(query));
-        const matchesDesigner = (landmark.designers || []).some((d) => d.toLowerCase().includes(query));
-        const matchesBuilder = (landmark.builders || []).some((b) => b.toLowerCase().includes(query));
+
+        const checkCreatorMatch = (creators: string[]) => {
+          return creators.some((c) => {
+            if (c.toLowerCase().includes(query)) return true;
+            const info = getArchitectInfo(c);
+            return Boolean(
+              (info.displayName && info.displayName.toLowerCase().includes(query)) ||
+              (info.wikidataName && info.wikidataName.toLowerCase().includes(query)) ||
+              (info.firm && info.firm.toLowerCase().includes(query))
+            );
+          });
+        };
+
+        const matchesArchitect = checkCreatorMatch(landmark.architects);
+        const matchesPlanner = checkCreatorMatch(landmark.planners || []);
+        const matchesEngineer = checkCreatorMatch(landmark.structuralEngineers || []);
+        const matchesDesigner = checkCreatorMatch(landmark.designers || []);
+        const matchesBuilder = checkCreatorMatch(landmark.builders || []);
         const matchesStyle = landmark.architectureStyles.some((s) => s.toLowerCase().includes(query));
         const matchesDistrict = (landmark.historicDistricts || []).some((d) => d.toLowerCase().includes(query));
         const matchesAddress = landmark.address ? landmark.address.toLowerCase().includes(query) : false;
@@ -85,13 +99,37 @@ export const App: React.FC = () => {
 
       // Creator filter (supports multiple selection, matches if landmark has any selected creator: architect, planner, engineer, designer, builder)
       if (filters.selectedArchitects.length > 0) {
+        const landmarkCreators = [
+          ...landmark.architects,
+          ...(landmark.planners || []),
+          ...(landmark.structuralEngineers || []),
+          ...(landmark.designers || []),
+          ...(landmark.builders || []),
+        ];
+
         const hasCreator = filters.selectedArchitects.some((targetCreator) => {
-          const target = targetCreator.toLowerCase();
-          return landmark.architects.some((a) => a.toLowerCase() === target) ||
-                 (landmark.planners || []).some((p) => p.toLowerCase() === target) ||
-                 (landmark.structuralEngineers || []).some((e) => e.toLowerCase() === target) ||
-                 (landmark.designers || []).some((d) => d.toLowerCase() === target) ||
-                 (landmark.builders || []).some((b) => b.toLowerCase() === target);
+          const target = targetCreator.toLowerCase().trim();
+          const targetInfo = getArchitectInfo(targetCreator);
+          const targetAliases = [
+            target,
+            targetInfo.name?.toLowerCase().trim(),
+            targetInfo.displayName?.toLowerCase().trim(),
+            targetInfo.wikidataName?.toLowerCase().trim(),
+            targetInfo.firm?.toLowerCase().trim(),
+          ].filter(Boolean) as string[];
+
+          return landmarkCreators.some((c) => {
+            const cLower = c.toLowerCase().trim();
+            if (targetAliases.includes(cLower)) return true;
+            const cInfo = getArchitectInfo(c);
+            const cAliases = [
+              cInfo.name?.toLowerCase().trim(),
+              cInfo.displayName?.toLowerCase().trim(),
+              cInfo.wikidataName?.toLowerCase().trim(),
+              cInfo.firm?.toLowerCase().trim(),
+            ].filter(Boolean) as string[];
+            return targetAliases.some((t) => cAliases.includes(t));
+          });
         });
         if (!hasCreator) return false;
       }
@@ -173,10 +211,12 @@ export const App: React.FC = () => {
 
   // Filter actions
   const handleSelectArchitect = (architect: string) => {
-    if (!filters.selectedArchitects.includes(architect)) {
+    const info = getArchitectInfo(architect);
+    const canonical = info.displayName || info.name || architect;
+    if (!filters.selectedArchitects.includes(canonical) && !filters.selectedArchitects.includes(architect)) {
       setFilters((prev) => ({
         ...prev,
-        selectedArchitects: [...prev.selectedArchitects, architect],
+        selectedArchitects: [...prev.selectedArchitects, canonical],
       }));
     }
   };

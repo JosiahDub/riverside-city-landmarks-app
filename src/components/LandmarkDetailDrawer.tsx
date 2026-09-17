@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Landmark } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
+import { getArchitectInfo } from '../data/architects';
 import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass, DoorOpen, Lock, CheckCircle2, Ticket, Accessibility, Bath, Globe } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
@@ -689,27 +690,31 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 <User className="w-3.5 h-3.5" /> Architect{landmark.architects.length > 1 ? 's' : ''}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {landmark.architects.map((arch) => (
-                  <div
-                    key={arch}
-                    className="inline-flex items-center gap-1.5 bg-purple-50 text-purple-900 border border-purple-200 px-3 py-1.5 rounded-lg text-sm font-medium"
-                  >
-                    <button
-                      onClick={() => onShowArchitectBio(arch)}
-                      className="hover:underline text-left font-semibold"
-                      title="View architect biography"
+                {landmark.architects.map((arch) => {
+                  const info = getArchitectInfo(arch);
+                  const display = info.displayName || arch;
+                  return (
+                    <div
+                      key={arch}
+                      className="inline-flex items-center gap-1.5 bg-purple-50 text-purple-900 border border-purple-200 px-3 py-1.5 rounded-lg text-sm font-medium"
                     >
-                      {arch}
-                    </button>
-                    <button
-                      onClick={() => onSelectArchitect(arch)}
-                      className="text-xs bg-purple-200 hover:bg-purple-300 text-purple-900 px-1.5 py-0.5 rounded transition"
-                      title={`Filter map to landmarks by ${arch}`}
-                    >
-                      Filter
-                    </button>
-                  </div>
-                ))}
+                      <button
+                        onClick={() => onShowArchitectBio(arch)}
+                        className="hover:underline text-left font-semibold"
+                        title="View architect biography"
+                      >
+                        {display}
+                      </button>
+                      <button
+                        onClick={() => onSelectArchitect(display)}
+                        className="text-xs bg-purple-200 hover:bg-purple-300 text-purple-900 px-1.5 py-0.5 rounded transition"
+                        title={`Filter map to landmarks by ${display}`}
+                      >
+                        Filter
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -721,27 +726,31 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 <Compass className="w-3.5 h-3.5 text-teal-700" /> Planner{landmark.planners.length > 1 ? 's' : ''}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {landmark.planners.map((planner) => (
-                  <div
-                    key={planner}
-                    className="inline-flex items-center gap-1.5 bg-teal-50 text-teal-900 border border-teal-200 px-3 py-1.5 rounded-lg text-sm font-medium"
-                  >
-                    <button
-                      onClick={() => onShowArchitectBio(planner)}
-                      className="hover:underline text-left font-semibold"
-                      title="View planner biography"
+                {landmark.planners.map((planner) => {
+                  const info = getArchitectInfo(planner);
+                  const display = info.displayName || planner;
+                  return (
+                    <div
+                      key={planner}
+                      className="inline-flex items-center gap-1.5 bg-teal-50 text-teal-900 border border-teal-200 px-3 py-1.5 rounded-lg text-sm font-medium"
                     >
-                      {planner}
-                    </button>
-                    <button
-                      onClick={() => onSelectArchitect(planner)}
-                      className="text-xs bg-teal-200 hover:bg-teal-300 text-teal-900 px-1.5 py-0.5 rounded transition"
-                      title={`Filter map to landmarks by ${planner}`}
-                    >
-                      Filter
-                    </button>
-                  </div>
-                ))}
+                      <button
+                        onClick={() => onShowArchitectBio(planner)}
+                        className="hover:underline text-left font-semibold"
+                        title="View planner biography"
+                      >
+                        {display}
+                      </button>
+                      <button
+                        onClick={() => onSelectArchitect(display)}
+                        className="text-xs bg-teal-200 hover:bg-teal-300 text-teal-900 px-1.5 py-0.5 rounded transition"
+                        title={`Filter map to landmarks by ${display}`}
+                      >
+                        Filter
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -753,27 +762,31 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 <Wrench className="w-3.5 h-3.5 text-sky-700" /> Structural Engineer{landmark.structuralEngineers.length > 1 ? 's' : ''}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {landmark.structuralEngineers.map((eng) => (
-                  <div
-                    key={eng}
-                    className="inline-flex items-center gap-1.5 bg-sky-50 text-sky-900 border border-sky-200 px-3 py-1.5 rounded-lg text-sm font-medium"
-                  >
-                    <button
-                      onClick={() => onShowArchitectBio(eng)}
-                      className="hover:underline text-left font-semibold"
-                      title="View engineer biography"
+                {landmark.structuralEngineers.map((eng) => {
+                  const info = getArchitectInfo(eng);
+                  const display = info.displayName || eng;
+                  return (
+                    <div
+                      key={eng}
+                      className="inline-flex items-center gap-1.5 bg-sky-50 text-sky-900 border border-sky-200 px-3 py-1.5 rounded-lg text-sm font-medium"
                     >
-                      {eng}
-                    </button>
-                    <button
-                      onClick={() => onSelectArchitect(eng)}
-                      className="text-xs bg-sky-200 hover:bg-sky-300 text-sky-900 px-1.5 py-0.5 rounded transition"
-                      title={`Filter map to landmarks by ${eng}`}
-                    >
-                      Filter
-                    </button>
-                  </div>
-                ))}
+                      <button
+                        onClick={() => onShowArchitectBio(eng)}
+                        className="hover:underline text-left font-semibold"
+                        title="View engineer biography"
+                      >
+                        {display}
+                      </button>
+                      <button
+                        onClick={() => onSelectArchitect(display)}
+                        className="text-xs bg-sky-200 hover:bg-sky-300 text-sky-900 px-1.5 py-0.5 rounded transition"
+                        title={`Filter map to landmarks by ${display}`}
+                      >
+                        Filter
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -785,27 +798,31 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 <Hammer className="w-3.5 h-3.5 text-amber-700" /> Builder{landmark.builders.length > 1 ? 's' : ''} / Contractor
               </h3>
               <div className="flex flex-wrap gap-2">
-                {landmark.builders.map((builder) => (
-                  <div
-                    key={builder}
-                    className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-900 border border-amber-200 px-3 py-1.5 rounded-lg text-sm font-medium"
-                  >
-                    <button
-                      onClick={() => onShowArchitectBio(builder)}
-                      className="hover:underline text-left font-semibold"
-                      title="View builder biography"
+                {landmark.builders.map((builder) => {
+                  const info = getArchitectInfo(builder);
+                  const display = info.displayName || builder;
+                  return (
+                    <div
+                      key={builder}
+                      className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-900 border border-amber-200 px-3 py-1.5 rounded-lg text-sm font-medium"
                     >
-                      {builder}
-                    </button>
-                    <button
-                      onClick={() => onSelectArchitect(builder)}
-                      className="text-xs bg-amber-200 hover:bg-amber-300 text-amber-900 px-1.5 py-0.5 rounded transition"
-                      title={`Filter map to landmarks by ${builder}`}
-                    >
-                      Filter
-                    </button>
-                  </div>
-                ))}
+                      <button
+                        onClick={() => onShowArchitectBio(builder)}
+                        className="hover:underline text-left font-semibold"
+                        title="View builder biography"
+                      >
+                        {display}
+                      </button>
+                      <button
+                        onClick={() => onSelectArchitect(display)}
+                        className="text-xs bg-amber-200 hover:bg-amber-300 text-amber-900 px-1.5 py-0.5 rounded transition"
+                        title={`Filter map to landmarks by ${display}`}
+                      >
+                        Filter
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -817,27 +834,31 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 <DraftingCompass className="w-3.5 h-3.5 text-indigo-700" /> Designer{landmark.designers.length > 1 ? 's' : ''}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {landmark.designers.map((designer) => (
-                  <div
-                    key={designer}
-                    className="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-900 border border-indigo-200 px-3 py-1.5 rounded-lg text-sm font-medium"
-                  >
-                    <button
-                      onClick={() => onShowArchitectBio(designer)}
-                      className="hover:underline text-left font-semibold"
-                      title="View designer biography"
+                {landmark.designers.map((designer) => {
+                  const info = getArchitectInfo(designer);
+                  const display = info.displayName || designer;
+                  return (
+                    <div
+                      key={designer}
+                      className="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-900 border border-indigo-200 px-3 py-1.5 rounded-lg text-sm font-medium"
                     >
-                      {designer}
-                    </button>
-                    <button
-                      onClick={() => onSelectArchitect(designer)}
-                      className="text-xs bg-indigo-200 hover:bg-indigo-300 text-indigo-900 px-1.5 py-0.5 rounded transition"
-                      title={`Filter map to landmarks by ${designer}`}
-                    >
-                      Filter
-                    </button>
-                  </div>
-                ))}
+                      <button
+                        onClick={() => onShowArchitectBio(designer)}
+                        className="hover:underline text-left font-semibold"
+                        title="View designer biography"
+                      >
+                        {display}
+                      </button>
+                      <button
+                        onClick={() => onSelectArchitect(display)}
+                        className="text-xs bg-indigo-200 hover:bg-indigo-300 text-indigo-900 px-1.5 py-0.5 rounded transition"
+                        title={`Filter map to landmarks by ${display}`}
+                      >
+                        Filter
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}

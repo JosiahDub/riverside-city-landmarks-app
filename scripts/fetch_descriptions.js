@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const landmarksPath = path.resolve(__dirname, '../src/data/landmarks.json');
+const creatorsPath = path.resolve(__dirname, '../src/data/creators.json');
 
 // Helper to load env variables from .env.local or .env if not already present
 function loadEnv() {
@@ -247,9 +248,107 @@ function parseWebsite(val) {
   return true;
 }
 
+export async function fetchGoogleSheetCreators() {
+  loadEnv();
+
+  const sheetId = process.env.GOOGLE_SHEET_ID;
+  if (!sheetId) {
+    console.log('[Google Sheet Sync] Notice: GOOGLE_SHEET_ID environment variable is not set.');
+    console.log('[Google Sheet Sync] Skipping creators sync and retaining existing creators.json.');
+    return false;
+  }
+
+  const urls = [
+    `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=creators`,
+    `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv&sheet=creators`
+  ];
+
+  let csvText = null;
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; LandmarksApp/1.0; +https://riversidelandmarks.com)'
+        }
+      });
+      if (res.ok) {
+        const text = await res.text();
+        if (
+          !text.trim().startsWith('<!DOCTYPE html') &&
+          !text.trim().startsWith('<html') &&
+          !text.includes('accounts.google.com/ServiceLogin')
+        ) {
+          csvText = text;
+          break;
+        }
+      }
+    } catch (err) {
+      // Continue to next URL fallback
+    }
+  }
+
+  if (!csvText) {
+    console.warn('\n[Google Sheet Sync] WARNING: Unable to fetch creators CSV from Google Sheet.');
+    console.warn('[Google Sheet Sync] Proceeding with existing creators.json.\n');
+    return false;
+  }
+
+  const rows = parseCSV(csvText);
+  if (rows.length < 2) {
+    console.warn('[Google Sheet Sync] Warning: Creators CSV has fewer than 2 rows. Skipping update.');
+    return false;
+  }
+
+  const header = rows[0].map((h) => h.trim().toLowerCase());
+  const colShortcode = header.findIndex((h) => /shortcode/i.test(h));
+  const colDisplayName = header.findIndex((h) => /display\s*name/i.test(h));
+  const colWikidataName = header.findIndex((h) => /wikidata\s*name/i.test(h));
+  const colFirm = header.findIndex((h) => /firm/i.test(h));
+  const colYears = header.findIndex((h) => /year/i.test(h));
+  const colRole = header.findIndex((h) => /role/i.test(h));
+  const colBio = header.findIndex((h) => /(bio|description|summary)/i.test(h));
+
+  const creators = [];
+  for (const row of rows.slice(1)) {
+    const shortcode = colShortcode !== -1 ? row[colShortcode]?.trim() || '' : '';
+    const rawDisplayName = colDisplayName !== -1 ? row[colDisplayName]?.trim() || '' : '';
+    const rawWikidataName = colWikidataName !== -1 ? row[colWikidataName]?.trim() || '' : '';
+    const rawFirm = colFirm !== -1 ? row[colFirm]?.trim() || '' : '';
+    const years = colYears !== -1 ? row[colYears]?.trim() || '' : '';
+    const role = colRole !== -1 ? row[colRole]?.trim() || '' : '';
+    const bio = colBio !== -1 ? row[colBio]?.trim() || '' : '';
+
+    // "Create a new field called "Display name" (B) that might be different from "wikidata name" (column C).
+    //  Use wikidata name to connect to the creator from wikidata, but display with the display name.
+    //  If wikidata name is missing, default to display name.
+    //  If columns B and C are missing, use Firm (column D)."
+    const displayName = rawDisplayName || rawFirm || rawWikidataName;
+    const connectKey = rawWikidataName || rawDisplayName || rawFirm;
+
+    if (displayName || connectKey) {
+      creators.push({
+        shortcode: shortcode || undefined,
+        displayName,
+        wikidataName: rawWikidataName || undefined,
+        firm: rawFirm || undefined,
+        years: years || undefined,
+        role: role || undefined,
+        bio: bio || undefined
+      });
+    }
+  }
+
+  fs.writeFileSync(creatorsPath, JSON.stringify(creators, null, 2) + '\n', 'utf8');
+  console.log(`[Google Sheet Sync] Successfully pulled ${creators.length} creators with display names, years, and bios into creators.json.`);
+  return true;
+}
+
 // If invoked directly from command line
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  fetchGoogleSheetDescriptions()
+  Promise.allSettled([
+    fetchGoogleSheetDescriptions(),
+    fetchGoogleSheetCreators()
+  ])
     .then(() => process.exit(0))
     .catch((err) => {
       console.error('[Google Sheet Sync] Error:', err);

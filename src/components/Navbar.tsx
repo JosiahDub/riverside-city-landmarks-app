@@ -1,5 +1,6 @@
 import React from 'react';
 import { FilterState } from '../types';
+import { getArchitectInfo } from '../data/architects';
 import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, RefreshCw, ClipboardCheck } from 'lucide-react';
 
 interface NavbarProps {
@@ -211,7 +212,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={arch}
                 className="inline-flex items-center gap-1 bg-purple-100 text-purple-900 border border-purple-300 px-2 py-0.5 rounded-full font-medium"
               >
-                <span>Creator: {arch}</span>
+                <span>Creator: {getArchitectInfo(arch).displayName || arch}</span>
                 <button
                   onClick={() =>
                     onFilterChange({
