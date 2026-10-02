@@ -190,44 +190,53 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       'HasImage', 'HasHistoricalPhoto', 'HistoricalPhotoCount', 'HistoricalPhotoYear',
       'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'
     ];
+
+    const escapeField = (val: string | number | boolean | null | undefined): string => {
+      if (val === null || val === undefined) return '""';
+      const str = String(val);
+      return `"${str.replace(/"/g, '""')}"`;
+    };
+
     const rows = sortedLandmarks.map((l) => [
-      `"${l.ref}"`,
-      `"${l.name.replace(/"/g, '""')}"`,
-      `"${l.year || l.startDate || ''}"`,
-      l.year || l.startDate ? 'YES' : 'NO',
-      `"${l.designationDate || ''}"`,
-      l.designationDate ? 'YES' : 'NO',
-      l.isNationalHistoricLandmark ? 'YES' : 'NO',
-      `"${l.nationalHistoricLandmarkDate || ''}"`,
-      l.hasPlaque ? 'YES' : 'NO',
-      l.plaques?.length || 0,
-      `"${l.architectureStyles.join('; ')}"`,
-      l.architectureStyles.length > 0 ? 'YES' : 'NO',
-      `"${l.architects.join('; ')}"`,
-      l.architects.length > 0 ? 'YES' : ((l.planners?.length || 0) > 0 || (l.structuralEngineers?.length || 0) > 0 || (l.builders?.length || 0) > 0 || (l.designers?.length || 0) > 0 ? 'N/A' : 'NO'),
-      `"${(l.planners || []).join('; ')}"`,
-      `"${(l.structuralEngineers || []).join('; ')}"`,
-      `"${(l.builders || []).join('; ')}"`,
-      `"${(l.designers || []).join('; ')}"`,
-      l.imageUrl ? 'YES' : 'NO',
-      l.historicalImages && l.historicalImages.length > 0 ? 'YES' : 'NO',
-      l.historicalImages?.length || 0,
-      `"${(l.historicalImages || []).map((img) => img.pointInTime).filter(Boolean).join('; ')}"`,
-      `"${(l.notableResidents || []).join('; ')}"`,
-      `"${(l.historicDistricts || []).join('; ')}"`,
-      l.historicDistricts && l.historicDistricts.length > 0 ? 'YES' : 'NO',
-      `"${l.wikidata || ''}"`,
-      `"${l.osmUrl}"`,
+      escapeField(l.ref),
+      escapeField(l.name),
+      escapeField(l.year || l.startDate || ''),
+      escapeField(l.year || l.startDate ? 'YES' : 'NO'),
+      escapeField(l.designationDate || ''),
+      escapeField(l.designationDate ? 'YES' : 'NO'),
+      escapeField(l.isNationalHistoricLandmark ? 'YES' : 'NO'),
+      escapeField(l.nationalHistoricLandmarkDate || ''),
+      escapeField(l.hasPlaque ? 'YES' : 'NO'),
+      escapeField(l.plaques?.length || 0),
+      escapeField(l.architectureStyles.join('; ')),
+      escapeField(l.architectureStyles.length > 0 ? 'YES' : 'NO'),
+      escapeField(l.architects.join('; ')),
+      escapeField(l.architects.length > 0 ? 'YES' : ((l.planners?.length || 0) > 0 || (l.structuralEngineers?.length || 0) > 0 || (l.builders?.length || 0) > 0 || (l.designers?.length || 0) > 0 ? 'N/A' : 'NO')),
+      escapeField((l.planners || []).join('; ')),
+      escapeField((l.structuralEngineers || []).join('; ')),
+      escapeField((l.builders || []).join('; ')),
+      escapeField((l.designers || []).join('; ')),
+      escapeField(l.imageUrl ? 'YES' : 'NO'),
+      escapeField(l.historicalImages && l.historicalImages.length > 0 ? 'YES' : 'NO'),
+      escapeField(l.historicalImages?.length || 0),
+      escapeField((l.historicalImages || []).map((img) => img.pointInTime).filter(Boolean).join('; ')),
+      escapeField((l.notableResidents || []).join('; ')),
+      escapeField((l.historicDistricts || []).join('; ')),
+      escapeField(l.historicDistricts && l.historicDistricts.length > 0 ? 'YES' : 'NO'),
+      escapeField(l.wikidata || ''),
+      escapeField(l.osmUrl),
     ]);
 
-    const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map((e) => e.join(','))].join('\n');
-    const encodedUri = encodeURI(csvContent);
+    const csvContent = '\uFEFF' + [headers.join(','), ...rows.map((e) => e.join(','))].join('\r\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.setAttribute('href', encodedUri);
+    link.setAttribute('href', url);
     link.setAttribute('download', `riverside-landmarks-data-status-${filterType}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   // Copy missing ref numbers to clipboard
