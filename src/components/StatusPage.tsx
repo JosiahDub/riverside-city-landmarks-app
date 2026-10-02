@@ -4,26 +4,35 @@ import { getStyleInfo } from '../data/architecturalStyles';
 import { 
   CheckCircle2, XCircle, AlertCircle, ExternalLink, Search, 
   ArrowLeft, Download, Copy, Check, Filter, Layers, User, Calendar, Image as ImageIcon, Users,
-  RefreshCw, HelpCircle, Info, Award, Star, ScrollText, Landmark as LandmarkIcon
+  History, HelpCircle, Info, Award, Star, ScrollText, Landmark as LandmarkIcon
 } from 'lucide-react';
 
 interface StatusPageProps {
   landmarks: Landmark[];
   onBackToMap: () => void;
   onSelectLandmarkOnMap: (landmark: Landmark) => void;
-  onSyncLive?: () => void;
-  isSyncing?: boolean;
 }
 
-type MissingFilter = 'all' | 'missing_any' | 'missing_date' | 'missing_designation' | 'missing_style' | 'missing_architect' | 'missing_image' | 'missing_residents' | 'has_district' | 'missing_district' | 'complete';
+type MissingFilter = 
+  | 'all' 
+  | 'missing_any' 
+  | 'missing_date' 
+  | 'missing_designation' 
+  | 'missing_style' 
+  | 'missing_architect' 
+  | 'missing_image' 
+  | 'has_historical_photo'
+  | 'missing_historical_photo'
+  | 'missing_residents' 
+  | 'has_district' 
+  | 'missing_district' 
+  | 'complete';
 type SortField = 'ref' | 'name' | 'missingCount';
 
 export const StatusPage: React.FC<StatusPageProps> = ({
   landmarks,
   onBackToMap,
   onSelectLandmarkOnMap,
-  onSyncLive,
-  isSyncing,
 }) => {
   const [filterType, setFilterType] = useState<MissingFilter>('missing_any');
   const [searchQuery, setSearchQuery] = useState('');
@@ -51,6 +60,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
     let hasStyle = 0;
     let hasArchitect = 0;
     let hasImage = 0;
+    let hasHistoricalPhoto = 0;
     let hasResidents = 0;
     let hasDistrict = 0;
     let fullyComplete = 0;
@@ -69,6 +79,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       // If landmark has one of planner, structural engineer, builder, or designer, architect is not required / not considered missing
       const archOk = hasArch || hasAltCreator;
       const imgOk = Boolean(l.imageUrl);
+      const histPhotoOk = Boolean(l.historicalImages && l.historicalImages.length > 0);
       const resOk = Boolean(l.notableResidents && l.notableResidents.length > 0);
       const distOk = Boolean(l.historicDistricts && l.historicDistricts.length > 0);
 
@@ -77,6 +88,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       if (styleOk) hasStyle++;
       if (archOk) hasArchitect++;
       if (imgOk) hasImage++;
+      if (histPhotoOk) hasHistoricalPhoto++;
       if (resOk) hasResidents++;
       if (distOk) hasDistrict++;
       if (dateOk && styleOk && archOk) fullyComplete++;
@@ -94,6 +106,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       missingArchitect: total - hasArchitect,
       hasImage,
       missingImage: total - hasImage,
+      hasHistoricalPhoto,
+      missingHistoricalPhoto: total - hasHistoricalPhoto,
       hasResidents,
       missingResidents: total - hasResidents,
       hasDistrict,
@@ -117,6 +131,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       );
       const archOk = hasArch || hasAltCreator;
       const hasImage = Boolean(l.imageUrl);
+      const hasHistoricalPhoto = Boolean(l.historicalImages && l.historicalImages.length > 0);
       const hasResidents = Boolean(l.notableResidents && l.notableResidents.length > 0);
       const hasDistrict = Boolean(l.historicDistricts && l.historicDistricts.length > 0);
 
@@ -127,6 +142,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       if (filterType === 'missing_style' && hasStyle) return false;
       if (filterType === 'missing_architect' && archOk) return false;
       if (filterType === 'missing_image' && hasImage) return false;
+      if (filterType === 'has_historical_photo' && !hasHistoricalPhoto) return false;
+      if (filterType === 'missing_historical_photo' && hasHistoricalPhoto) return false;
       if (filterType === 'missing_residents' && hasResidents) return false;
       if (filterType === 'has_district' && !hasDistrict) return false;
       if (filterType === 'missing_district' && hasDistrict) return false;
@@ -170,7 +187,8 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       'RefNumber', 'Name', 'YearBuilt', 'HasDate', 'OfficialDesignationDate', 'HasDesignation',
       'IsNationalHistoricLandmark', 'NationalHistoricLandmarkDate', 'HasPlaque', 'PlaqueCount',
       'ArchitectureStyle', 'HasStyle', 'Architects', 'HasArchitect', 'Planners', 'StructuralEngineers', 'Builders', 'Designers',
-      'HasImage', 'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'
+      'HasImage', 'HasHistoricalPhoto', 'HistoricalPhotoCount', 'HistoricalPhotoYear',
+      'NotableResidents', 'HistoricDistricts', 'HasHistoricDistrict', 'WikidataID', 'OSMUrl'
     ];
     const rows = sortedLandmarks.map((l) => [
       `"${l.ref}"`,
@@ -192,6 +210,9 @@ export const StatusPage: React.FC<StatusPageProps> = ({
       `"${(l.builders || []).join('; ')}"`,
       `"${(l.designers || []).join('; ')}"`,
       l.imageUrl ? 'YES' : 'NO',
+      l.historicalImages && l.historicalImages.length > 0 ? 'YES' : 'NO',
+      l.historicalImages?.length || 0,
+      `"${(l.historicalImages || []).map((img) => img.pointInTime).filter(Boolean).join('; ')}"`,
       `"${(l.notableResidents || []).join('; ')}"`,
       `"${(l.historicDistricts || []).join('; ')}"`,
       l.historicDistricts && l.historicDistricts.length > 0 ? 'YES' : 'NO',
@@ -247,18 +268,6 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
           {/* Quick Actions */}
           <div className="flex items-center gap-2 self-end sm:self-auto flex-wrap">
-            {onSyncLive && (
-              <button
-                onClick={onSyncLive}
-                disabled={isSyncing}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs font-semibold shadow-sm transition"
-                title="Fetch latest edits live from OpenStreetMap Overpass API"
-              >
-                <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-terracotta' : 'text-amber-700'}`} />
-                <span>{isSyncing ? 'Syncing...' : 'Sync Live'}</span>
-              </button>
-            )}
-
             <button
               onClick={() => setShowWorkflowGuide(!showWorkflowGuide)}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-medium shadow-sm transition ${
@@ -325,13 +334,13 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
               <div className="bg-stone-800/80 p-3.5 rounded-xl border border-stone-700/60 space-y-1.5">
                 <span className="inline-block bg-blue-500/20 text-blue-300 font-bold px-2 py-0.5 rounded text-[11px]">
-                  Step 2: Preview in Browser (~2 min)
+                  Step 2: Sync Data (~2 min)
                 </span>
                 <p className="text-stone-300 leading-relaxed">
                   Once you save your changeset, OpenStreetMap replicates to the Overpass API in about 1–3 minutes.
                 </p>
                 <p className="text-stone-400 leading-relaxed">
-                  Click the <strong className="text-white">"Sync Live"</strong> button in the header above to pull the fresh tags directly into your active browser session!
+                  Run <code className="text-amber-200">npm run update-data</code> in your terminal to fetch the latest OSM tags and Google Sheet descriptions.
                 </p>
               </div>
 
@@ -352,7 +361,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
           </div>
         )}
         {/* Progress Metric Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-3">
           {/* Total */}
           <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
             <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500">Total Audited</span>
@@ -490,6 +499,31 @@ export const StatusPage: React.FC<StatusPageProps> = ({
             <div className="text-[10px] text-stone-500 mt-1">{Math.round((stats.hasImage / stats.total) * 100)}% filled</div>
           </div>
 
+          {/* Historical Photos */}
+          <div 
+            onClick={() => setFilterType(filterType === 'has_historical_photo' ? 'all' : 'has_historical_photo')}
+            className={`p-3.5 rounded-xl border shadow-sm cursor-pointer transition flex flex-col justify-between ${
+              filterType === 'has_historical_photo' || filterType === 'missing_historical_photo' ? 'bg-amber-50/80 border-amber-400 ring-2 ring-amber-400/20' : 'bg-white border-stone-200 hover:border-stone-300'
+            }`}
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1">
+                <History className="w-3 h-3 text-amber-700" /> Hist. Photo
+              </span>
+              <span className="text-xs font-bold text-amber-900">{stats.hasHistoricalPhoto}/{stats.total}</span>
+            </div>
+            <div className="mt-2">
+              <div className="flex items-baseline gap-1">
+                <span className="text-xl font-bold text-stone-900">{stats.hasHistoricalPhoto}</span>
+                <span className="text-[11px] font-semibold text-amber-700">has photo</span>
+              </div>
+              <div className="w-full bg-stone-100 rounded-full h-1.5 mt-2 overflow-hidden">
+                <div className="bg-amber-600 h-1.5 rounded-full" style={{ width: `${(stats.hasHistoricalPhoto / stats.total) * 100}%` }}></div>
+              </div>
+            </div>
+            <div className="text-[10px] text-stone-500 mt-1">{stats.missingHistoricalPhoto} without hist. photo</div>
+          </div>
+
           {/* Notable Residents */}
           <div 
             onClick={() => setFilterType('missing_residents')}
@@ -595,6 +629,22 @@ export const StatusPage: React.FC<StatusPageProps> = ({
               }`}
             >
               Missing Photo ({stats.missingImage})
+            </button>
+            <button
+              onClick={() => setFilterType('has_historical_photo')}
+              className={`text-xs px-2.5 py-1 rounded-lg font-medium transition ${
+                filterType === 'has_historical_photo' ? 'bg-amber-700 text-white shadow-xs' : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+              }`}
+            >
+              Has Historical Photo ({stats.hasHistoricalPhoto})
+            </button>
+            <button
+              onClick={() => setFilterType('missing_historical_photo')}
+              className={`text-xs px-2.5 py-1 rounded-lg font-medium transition ${
+                filterType === 'missing_historical_photo' ? 'bg-amber-600 text-white shadow-xs' : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+              }`}
+            >
+              Missing Historical Photo ({stats.missingHistoricalPhoto})
             </button>
             <button
               onClick={() => setFilterType('has_district')}
@@ -705,6 +755,7 @@ export const StatusPage: React.FC<StatusPageProps> = ({
                   <th className="py-3 px-3 min-w-[150px]">Architecture Style</th>
                   <th className="py-3 px-3 min-w-[160px]">Architect / Creator</th>
                   <th className="py-3 px-3 w-20">Photo</th>
+                  <th className="py-3 px-3 min-w-[130px]">Hist. Photo</th>
                   <th className="py-3 px-3 min-w-[130px]">Notable Residents</th>
                   <th className="py-3 px-3 min-w-[150px]">Historic District</th>
                   <th className="py-3 px-4 text-right w-36">Contribute / Edit</th>
@@ -900,27 +951,39 @@ export const StatusPage: React.FC<StatusPageProps> = ({
 
                       {/* Photo */}
                       <td className="py-3 px-3">
-                        <div className="flex flex-col gap-1 items-start">
-                          {hasImage ? (
-                            <span className="inline-flex items-center gap-1 text-emerald-800 text-[11px] font-medium">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                              Photo
+                        {hasImage ? (
+                          <span className="inline-flex items-center gap-1 text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-medium">
+                            <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                            Yes
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded font-medium">
+                            <XCircle className="w-3 h-3 text-rose-500" />
+                            Missing
+                          </span>
+                        )}
+                      </td>
+
+                      {/* Hist. Photo */}
+                      <td className="py-3 px-3">
+                        {landmark.historicalImages && landmark.historicalImages.length > 0 ? (
+                          <div className="flex flex-col gap-1 items-start">
+                            <span className="inline-flex items-center gap-1 text-amber-900 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded font-medium">
+                              <History className="w-3 h-3 text-amber-600" />
+                              <span>{landmark.historicalImages.length} photo{landmark.historicalImages.length > 1 ? 's' : ''}</span>
                             </span>
-                          ) : (
-                            <span className="inline-flex items-center gap-1 text-stone-400 text-[11px]">
-                              <XCircle className="w-3.5 h-3.5 text-stone-300" />
-                              None
-                            </span>
-                          )}
-                          {landmark.historicalImages && landmark.historicalImages.length > 0 && (
-                            <span
-                              className="inline-flex items-center gap-1 text-amber-900 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded text-[10px] font-medium"
-                              title={`Historical image (${landmark.historicalImages[0].pointInTime})`}
-                            >
-                              Hist ({landmark.historicalImages[0].pointInTime})
-                            </span>
-                          )}
-                        </div>
+                            {landmark.historicalImages.some((img) => img.pointInTime) && (
+                              <span className="text-[10px] text-stone-500">
+                                {landmark.historicalImages.map((img) => img.pointInTime).filter(Boolean).join(', ')}
+                              </span>
+                            )}
+                          </div>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 text-stone-400 bg-stone-50 border border-stone-200 px-2 py-0.5 rounded text-[11px]">
+                            <XCircle className="w-3 h-3 text-stone-300" />
+                            None
+                          </span>
+                        )}
                       </td>
 
                       {/* Notable Residents */}

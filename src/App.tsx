@@ -14,7 +14,7 @@ import { StatusPage } from './components/StatusPage';
 import { getArchitectInfo } from './data/architects';
 
 export const App: React.FC = () => {
-  const [landmarksData, setLandmarksData] = useState<Landmark[]>(rawLandmarks as unknown as Landmark[]);
+  const landmarksData = rawLandmarks as unknown as Landmark[];
   const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(null);
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
   const [isLocating, setIsLocating] = useState(false);
@@ -23,8 +23,6 @@ export const App: React.FC = () => {
   const [viewMode, setViewMode] = useState<'split' | 'map' | 'list'>('split');
   const [selectedArchitectModal, setSelectedArchitectModal] = useState<string | null>(null);
   const [selectedStyleModal, setSelectedStyleModal] = useState<string | null>(null);
-  const [isSyncing, setIsSyncing] = useState(false);
-  const [syncNotice, setSyncNotice] = useState<string | null>(null);
   const [showStatusPage, setShowStatusPage] = useState<boolean>(() => {
     return typeof window !== 'undefined' && window.location.hash === '#status';
   });
@@ -263,92 +261,6 @@ export const App: React.FC = () => {
     });
   };
 
-  // Live Sync with OpenStreetMap Overpass & Wikidata
-  const handleLiveSync = async () => {
-    setIsSyncing(true);
-    setSyncNotice('Connecting to OpenStreetMap Overpass API...');
-    try {
-      const overpassQuery = `[out:json][timeout:60]; nwr["ref:US-CA:city_of_riverside_cultural_heritage_board"]; out center tags;`;
-      const params = new URLSearchParams();
-      params.append('data', overpassQuery);
-
-      let data: any = null;
-      const endpoints = [
-        'https://overpass-api.de/api/interpreter',
-        'https://overpass.kumi.systems/api/interpreter'
-      ];
-
-      for (const endpoint of endpoints) {
-        try {
-          const res = await fetch(endpoint, {
-            method: 'POST',
-            body: params,
-            headers: {
-              'Accept': '*/*',
-            },
-          });
-          if (res.ok) {
-            data = await res.json();
-            break;
-          }
-        } catch (e) {
-          // try next
-        }
-      }
-
-      if (!data || !data.elements) throw new Error('Overpass sync request failed');
-      const elements = data.elements || [];
-
-      if (elements.length > 0) {
-        setLandmarksData((prev) => {
-          const map = new globalThis.Map<string, Landmark>(prev.map((l) => [`${l.osmType}-${l.osmId}`, l]));
-          elements.forEach((el: any) => {
-            const key = `${el.type}-${el.id}`;
-            const existing = map.get(key);
-            if (existing && el.tags) {
-              const tags = el.tags;
-              const architects = tags.architect
-                ? tags.architect.split(';').map((a: string) => a.trim()).filter(Boolean)
-                : existing.architects;
-              const styles = tags['building:architecture']
-                ? tags['building:architecture'].split(';').map((s: string) => s.trim().toLowerCase().replace(/[\s-]/g, '_')).filter(Boolean)
-                : existing.architectureStyles;
-              let year = existing.year;
-              if (tags.start_date) {
-                const match = tags.start_date.match(/(\d{4})/);
-                if (match) year = parseInt(match[1], 10);
-              }
-              const residents = tags.notable_resident || tags.resident
-                ? (tags.notable_resident || tags.resident).split(';').map((r: string) => r.trim()).filter(Boolean)
-                : existing.notableResidents;
-
-              map.set(key, {
-                ...existing,
-                name: tags.name || existing.name,
-                startDate: tags.start_date || existing.startDate,
-                year,
-                architects,
-                architectureStyles: styles,
-                notableResidents: residents,
-                allTags: tags,
-              });
-            }
-          });
-          return Array.from(map.values());
-        });
-      }
-
-      setSyncNotice(`Synced ${elements.length} live landmark features from OSM!`);
-      setTimeout(() => setSyncNotice(null), 4000);
-    } catch (err: any) {
-      console.warn('Live sync fallback to local cache:', err.message);
-      setSyncNotice('Using verified local dataset (155 landmarks)');
-      setTimeout(() => setSyncNotice(null), 4000);
-    } finally {
-      setIsSyncing(false);
-    }
-  };
-
   if (showStatusPage) {
     return (
       <StatusPage
@@ -367,8 +279,6 @@ export const App: React.FC = () => {
           }
           setViewMode('split');
         }}
-        onSyncLive={handleLiveSync}
-        isSyncing={isSyncing}
       />
     );
   }
@@ -389,22 +299,12 @@ export const App: React.FC = () => {
         onLocateUser={handleLocateUser}
         isLocating={isLocating}
         onResetFilters={handleResetFilters}
-        onSyncLive={handleLiveSync}
-        isSyncing={isSyncing}
         onOpenStatusPage={() => {
           setShowStatusPage(true);
           window.location.hash = '#status';
         }}
         isStatusPage={showStatusPage}
       />
-
-      {/* Sync notification toast */}
-      {syncNotice && (
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-50 bg-stone-900 text-white text-xs px-4 py-2 rounded-full shadow-lg flex items-center gap-2 animate-bounce">
-          <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-          <span>{syncNotice}</span>
-        </div>
-      )}
 
       {/* Main Content Area */}
       <div className="flex-1 relative flex overflow-hidden">

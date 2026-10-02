@@ -1,7 +1,7 @@
 import React from 'react';
 import { FilterState } from '../types';
 import { getArchitectInfo } from '../data/architects';
-import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, RefreshCw, ClipboardCheck } from 'lucide-react';
+import { Search, Tag, Calendar, Compass, List, Map as MapIcon, X, SlidersHorizontal, ClipboardCheck } from 'lucide-react';
 
 interface NavbarProps {
   filters: FilterState;
@@ -16,8 +16,6 @@ interface NavbarProps {
   onLocateUser: () => void;
   isLocating: boolean;
   onResetFilters: () => void;
-  onSyncLive: () => void;
-  isSyncing: boolean;
   onOpenStatusPage: () => void;
   isStatusPage?: boolean;
 }
@@ -35,8 +33,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onLocateUser,
   isLocating,
   onResetFilters,
-  onSyncLive,
-  isSyncing,
   onOpenStatusPage,
   isStatusPage,
 }) => {
@@ -152,16 +148,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <Compass className={`w-3.5 h-3.5 text-blue-600 ${isLocating ? 'animate-spin' : ''}`} />
             <span>{isLocating ? 'Locating...' : 'Near Me'}</span>
-          </button>
-
-          {/* Sync / Refresh */}
-          <button
-            onClick={onSyncLive}
-            disabled={isSyncing}
-            title="Refresh latest tags from OpenStreetMap & Wikidata"
-            className="p-2 rounded-lg border border-stone-200 bg-white hover:bg-stone-50 text-stone-600 hover:text-stone-900 shadow-sm transition shrink-0"
-          >
-            <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-terracotta' : ''}`} />
           </button>
 
           {/* View Mode Desktop Toggle */}
