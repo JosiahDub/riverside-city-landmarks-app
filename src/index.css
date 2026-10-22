@@ -95,3 +95,34 @@ h1, h2, h3, .font-serif-title {
 .user-location-marker {
   animation: user-pulse 2s infinite;
 }
+
+/* Historical Photo Marker styles */
+.historical-photo-marker {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.historical-photo-marker:hover {
+  transform: scale(1.2);
+  z-index: 1000 !important;
+}
+
+.historical-photo-marker.focused {
+  transform: scale(1.3);
+  z-index: 1100 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

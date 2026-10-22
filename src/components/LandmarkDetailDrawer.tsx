@@ -1,28 +1,41 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Landmark } from '../types';
+import { Landmark, YesterdaysPhoto, YesterdaysAerialPolygon } from '../types';
+import { getCompassDirection } from '../services/yesterdaysApi';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getDistrictInfo } from '../data/historicDistricts';
 import { getArchitectInfo } from '../data/architects';
-import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass, DoorOpen, Lock, CheckCircle2, Ticket, Accessibility, Bath, Globe } from 'lucide-react';
+import { X, ExternalLink, MapPin, Calendar, Compass, User, BookOpen, Layers, ChevronDown, ChevronUp, Image as ImageIcon, Award, Star, ScrollText, ChevronLeft, ChevronRight, Landmark as LandmarkIcon, Wrench, Hammer, History, DraftingCompass, DoorOpen, Lock, CheckCircle2, Ticket, Accessibility, Bath, Globe, Camera, Minimize2, Maximize2 } from 'lucide-react';
 
 interface LandmarkDetailDrawerProps {
   landmark: Landmark | null;
   onClose: () => void;
+  isMinimized?: boolean;
+  onToggleMinimize?: () => void;
   onSelectArchitect: (architect: string) => void;
   onSelectStyle: (styleKey: string) => void;
   onSelectDistrict: (district: string) => void;
   onShowArchitectBio: (architect: string) => void;
   onShowStyleInfo: (styleKey: string) => void;
+  yesterdaysPhotos?: YesterdaysPhoto[];
+  yesterdaysAerials?: YesterdaysAerialPolygon[];
+  loadingYesterdaysPhotos?: boolean;
+  onFocusPhotoOnMap?: (photoId: number) => void;
 }
 
 export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
   landmark,
   onClose,
+  isMinimized = false,
+  onToggleMinimize,
   onSelectArchitect,
   onSelectStyle,
   onSelectDistrict,
   onShowArchitectBio,
   onShowStyleInfo,
+  yesterdaysPhotos = [],
+  yesterdaysAerials = [],
+  loadingYesterdaysPhotos = false,
+  onFocusPhotoOnMap,
 }) => {
   const [wikiSummary, setWikiSummary] = useState<string | null>(null);
   const [loadingWiki, setLoadingWiki] = useState(false);
@@ -80,8 +93,20 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
       }
     });
 
+    (yesterdaysPhotos || []).forEach((photo) => {
+      if (photo.thumbnail) {
+        list.push({
+          url: photo.thumbnail,
+          title: photo.title,
+          subtitle: `Historical View${photo.dateDisplay ? ` (${photo.dateDisplay})` : ''} • Yesterdays`,
+          type: 'historical',
+          pointInTime: photo.dateDisplay,
+        });
+      }
+    });
+
     return list;
-  }, [landmark]);
+  }, [landmark, yesterdaysPhotos]);
 
   // Fetch Wikipedia summary if article title exists and landmark does not have a custom description
   useEffect(() => {
@@ -142,28 +167,80 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
 
   return (
     <>
-      <div className="fixed inset-y-0 right-0 z-40 w-full sm:w-[480px] lg:w-[520px] bg-white shadow-2xl border-l border-stone-200 flex flex-col transform transition-transform duration-300 ease-in-out">
-        {/* Header Bar */}
-        <div className="p-4 sm:p-5 border-b border-stone-200 flex items-center justify-between bg-stone-50/80 backdrop-blur">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">
-              Landmark #{landmark.ref || landmark.refNumber}
-            </span>
-            {landmark.distanceMiles !== undefined && (
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-800 border border-blue-200">
-                <Compass className="w-3 h-3 text-blue-600" />
-                {landmark.distanceMiles} mi away
-              </span>
-            )}
+      {/* Minimized Docked Floating Card */}
+      {isMinimized ? (
+        <div className="fixed bottom-6 right-4 sm:right-6 z-40 max-w-sm sm:max-w-md bg-white/95 backdrop-blur-md border border-amber-300/80 rounded-2xl shadow-2xl p-3 sm:p-3.5 flex items-center justify-between gap-3 animate-fade-in border-l-4 border-l-amber-600">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-amber-900 font-bold text-xs shrink-0 border border-amber-300">
+              #{landmark.ref || landmark.refNumber}
+            </div>
+            <div className="min-w-0">
+              <h4 className="font-serif font-bold text-xs text-stone-900 truncate">{landmark.name}</h4>
+              <div className="text-[11px] text-amber-800 flex items-center gap-1.5 font-medium truncate">
+                {yesterdaysPhotos && yesterdaysPhotos.length > 0 ? (
+                  <span>📷 {yesterdaysPhotos.length} historical photos</span>
+                ) : landmark.year ? (
+                  <span className="text-stone-500">Built {landmark.year}</span>
+                ) : (
+                  <span className="text-stone-500">Landmark Details</span>
+                )}
+              </div>
+            </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-200 transition"
-            title="Close details"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-1.5 shrink-0">
+            {onToggleMinimize && (
+              <button
+                onClick={onToggleMinimize}
+                className="px-2.5 py-1.5 rounded-lg bg-amber-700 hover:bg-amber-800 text-white font-semibold text-xs shadow-xs transition flex items-center gap-1"
+                title="Expand full landmark details"
+              >
+                <Maximize2 className="w-3.5 h-3.5" />
+                <span className="hidden xs:inline">Details</span>
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="p-1.5 rounded-lg text-stone-400 hover:text-stone-700 hover:bg-stone-100 transition"
+              title="Close landmark panel"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
         </div>
+      ) : (
+        <div className="fixed inset-y-0 right-0 z-40 w-full sm:w-[480px] lg:w-[520px] bg-white shadow-2xl border-l border-stone-200 flex flex-col transform transition-transform duration-300 ease-in-out">
+          {/* Header Bar */}
+          <div className="p-4 sm:p-5 border-b border-stone-200 flex items-center justify-between bg-stone-50/80 backdrop-blur">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">
+                Landmark #{landmark.ref || landmark.refNumber}
+              </span>
+              {landmark.distanceMiles !== undefined && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-800 border border-blue-200">
+                  <Compass className="w-3 h-3 text-blue-600" />
+                  {landmark.distanceMiles} mi away
+                </span>
+              )}
+            </div>
+            <div className="flex items-center gap-1">
+              {onToggleMinimize && (
+                <button
+                  onClick={onToggleMinimize}
+                  className="p-1.5 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-200 transition"
+                  title="Minimize details to view full map"
+                >
+                  <Minimize2 className="w-4 h-4" />
+                </button>
+              )}
+              <button
+                onClick={onClose}
+                className="p-1.5 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-200 transition"
+                title="Close details"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
 
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
@@ -588,6 +665,122 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                     </span>
                     <ExternalLink className="w-3.5 h-3.5 text-amber-600" />
                   </a>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Yesterdays.today Historical Photos Section */}
+          {((yesterdaysPhotos && yesterdaysPhotos.length > 0) || (yesterdaysAerials && yesterdaysAerials.length > 0) || loadingYesterdaysPhotos) && (
+            <div className="space-y-3 bg-amber-50/50 p-4 rounded-xl border border-amber-200/80">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-2">
+                  <Camera className="w-4 h-4 text-amber-700" />
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-amber-900">
+                    Georeferenced Photos ({yesterdaysPhotos?.length || 0})
+                  </h3>
+                </div>
+                <a
+                  href={`https://yesterdays.today/subjects/${landmark.wikidata || ''}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[11px] font-medium text-amber-800 hover:text-amber-950 flex items-center gap-1 hover:underline"
+                >
+                  <span>Yesterdays.today</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+
+              <p className="text-xs text-stone-600 leading-relaxed">
+                Historical photographs with verified camera coordinates, directional angles, and archival sources.
+              </p>
+
+              {yesterdaysAerials && yesterdaysAerials.length > 0 && (
+                <div className="text-[11px] bg-amber-100/70 border border-amber-300/80 rounded-lg p-2 text-amber-900 flex items-center justify-between">
+                  <span>✈️ {yesterdaysAerials.length} Historical Aerial Footprint{yesterdaysAerials.length > 1 ? 's' : ''} mapped</span>
+                  <span className="font-semibold text-amber-800">Available on Map</span>
+                </div>
+              )}
+
+              {loadingYesterdaysPhotos ? (
+                <div className="py-6 flex items-center justify-center gap-2 text-xs text-amber-800">
+                  <svg className="w-4 h-4 animate-spin text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                  </svg>
+                  <span>Loading georeferenced photos from Yesterdays...</span>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-96 overflow-y-auto pr-1">
+                  {yesterdaysPhotos?.map((photo) => (
+                    <div
+                      key={photo.id}
+                      className="bg-white rounded-lg border border-amber-200/80 overflow-hidden shadow-2xs flex flex-col justify-between group hover:border-amber-300 transition"
+                    >
+                      <div
+                        className="relative h-32 bg-stone-900 overflow-hidden cursor-pointer"
+                        onClick={() => {
+                          const pIdx = galleryImages.findIndex(g => g.url === photo.thumbnail);
+                          if (pIdx !== -1) {
+                            setModalImageIndex(pIdx);
+                            setImageModalOpen(true);
+                          }
+                        }}
+                      >
+                        <img
+                          src={photo.thumbnail}
+                          alt={photo.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                        />
+                        {photo.dateDisplay && (
+                          <div className="absolute top-2 left-2 bg-stone-900/85 text-amber-100 text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur">
+                            {photo.dateDisplay}
+                          </div>
+                        )}
+                        {photo.direction !== null && (
+                          <div className="absolute top-2 right-2 bg-amber-900/85 text-white text-[10px] font-semibold px-1.5 py-0.5 rounded backdrop-blur flex items-center gap-0.5">
+                            <Compass className="w-3 h-3 text-amber-300" />
+                            <span>{getCompassDirection(photo.direction)}</span>
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="p-2.5 space-y-2">
+                        <div>
+                          <h4 className="font-serif font-bold text-xs text-stone-900 leading-tight line-clamp-2">
+                            {photo.title}
+                          </h4>
+                          {(photo.collectionName || photo.sourceName) && (
+                            <p className="text-[10px] text-stone-500 truncate mt-0.5">
+                              {[photo.collectionName, photo.sourceName].filter(Boolean).join(' • ')}
+                            </p>
+                          )}
+                        </div>
+
+                        <div className="flex items-center justify-between gap-1.5 pt-1.5 border-t border-stone-100 text-[11px]">
+                          <button
+                            onClick={() => onFocusPhotoOnMap?.(photo.id)}
+                            className="inline-flex items-center gap-1 text-amber-800 hover:text-amber-950 font-semibold transition"
+                            title="Locate camera position on map"
+                          >
+                            <MapPin className="w-3 h-3 text-amber-600" />
+                            <span>Show on Map</span>
+                          </button>
+
+                          <a
+                            href={photo.yesterdaysUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-stone-500 hover:text-stone-800 inline-flex items-center gap-0.5 text-[10px] ml-auto transition"
+                            title="Open photo details on Yesterdays.today"
+                          >
+                            <span>Inspect</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
@@ -1074,6 +1267,7 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
           </div>
         </div>
       </div>
+      )}
 
       {/* Gallery / Full Image Modal (Building + Plaques) */}
       {imageModalOpen && galleryImages.length > 0 && (

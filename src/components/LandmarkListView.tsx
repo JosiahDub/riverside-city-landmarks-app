@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Landmark, UserLocation } from '../types';
 import { getStyleInfo } from '../data/architecturalStyles';
 import { getArchitectInfo } from '../data/architects';
-import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon, DoorOpen, Hammer, Wrench, DraftingCompass } from 'lucide-react';
+import { MapPin, User, Layers, Calendar, Compass, ArrowUpDown, Star, ScrollText, Landmark as LandmarkIcon, DoorOpen, Hammer, Wrench, DraftingCompass, PanelLeftClose } from 'lucide-react';
 
 interface LandmarkListViewProps {
   landmarks: Landmark[];
   selectedLandmark: Landmark | null;
   onSelectLandmark: (landmark: Landmark) => void;
   userLocation: UserLocation | null;
+  onCollapse?: () => void;
 }
 
 type SortOption = 'ref' | 'name' | 'year' | 'distance';
@@ -18,6 +19,7 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
   selectedLandmark,
   onSelectLandmark,
   userLocation,
+  onCollapse,
 }) => {
   const [sortBy, setSortBy] = useState<SortOption>('ref');
 
@@ -39,11 +41,22 @@ export const LandmarkListView: React.FC<LandmarkListViewProps> = ({
 
   return (
     <div className="flex flex-col h-full bg-stone-50 border-r border-stone-200">
-      {/* Header with Sort dropdown */}
+      {/* Header with Sort dropdown & Collapse */}
       <div className="p-3 border-b border-stone-200 bg-white flex items-center justify-between">
-        <span className="text-xs font-semibold text-stone-600">
-          {landmarks.length} Landmark{landmarks.length === 1 ? '' : 's'}
-        </span>
+        <div className="flex items-center gap-2">
+          {onCollapse && (
+            <button
+              onClick={onCollapse}
+              className="p-1 rounded text-stone-400 hover:text-stone-800 hover:bg-stone-100 transition hidden md:flex items-center"
+              title="Minimize landmarks list"
+            >
+              <PanelLeftClose className="w-4 h-4" />
+            </button>
+          )}
+          <span className="text-xs font-semibold text-stone-600">
+            {landmarks.length} Landmark{landmarks.length === 1 ? '' : 's'}
+          </span>
+        </div>
         <div className="flex items-center gap-1.5 text-xs">
           <ArrowUpDown className="w-3.5 h-3.5 text-stone-400" />
           <select

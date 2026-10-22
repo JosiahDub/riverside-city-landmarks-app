@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import rawLandmarks from './data/landmarks.json';
-import { Landmark, FilterState, UserLocation } from './types';
+import { Landmark, FilterState, UserLocation, YesterdaysPhoto, YesterdaysAerialPolygon } from './types';
+import { fetchLandmarkPhotos } from './services/yesterdaysApi';
 import { calculateDistanceMiles } from './utils/distance';
 import { Map } from './components/Map';
 import { LandmarkDetailDrawer } from './components/LandmarkDetailDrawer';
@@ -26,6 +27,18 @@ export const App: React.FC = () => {
   const [showStatusPage, setShowStatusPage] = useState<boolean>(() => {
     return typeof window !== 'undefined' && window.location.hash === '#status';
   });
+
+  // Yesterdays.today georeferenced historical photos state
+  const [photosLandmark, setPhotosLandmark] = useState<Landmark | null>(null);
+  const [yesterdaysPhotos, setYesterdaysPhotos] = useState<YesterdaysPhoto[]>([]);
+  const [yesterdaysAerials, setYesterdaysAerials] = useState<YesterdaysAerialPolygon[]>([]);
+  const [loadingPhotos, setLoadingPhotos] = useState<boolean>(false);
+  const [showHistoricalPhotos, setShowHistoricalPhotos] = useState<boolean>(true);
+  const [focusedPhotoId, setFocusedPhotoId] = useState<number | null>(null);
+
+  // Panel minimize / collapse state
+  const [isDrawerMinimized, setIsDrawerMinimized] = useState<boolean>(false);
+  const [leftPanelCollapsed, setLeftPanelCollapsed] = useState<boolean>(false);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -174,6 +187,71 @@ export const App: React.FC = () => {
     return landmarksWithDistance.find((l) => l.id === selectedLandmark.id) || selectedLandmark;
   }, [selectedLandmark, landmarksWithDistance]);
 
+  // Synchronize photosLandmark with updated distance or details
+  const currentPhotosLandmark = useMemo(() => {
+    if (!photosLandmark) return null;
+    return landmarksWithDistance.find((l) => l.id === photosLandmark.id) || photosLandmark;
+  }, [photosLandmark, landmarksWithDistance]);
+
+  const handleSelectLandmark = useCallback((landmark: Landmark | null) => {
+    setSelectedLandmark(landmark);
+    if (landmark) {
+      setIsDrawerMinimized(false);
+      if (landmark.wikidata) {
+        setPhotosLandmark(landmark);
+      }
+    }
+  }, []);
+
+  const handleClearHistoricalPhotos = useCallback(() => {
+    setPhotosLandmark(null);
+    setYesterdaysPhotos([]);
+    setYesterdaysAerials([]);
+    setFocusedPhotoId(null);
+  }, []);
+
+  const handleReopenLandmarkDetails = useCallback(() => {
+    if (currentPhotosLandmark) {
+      setSelectedLandmark(currentPhotosLandmark);
+      setIsDrawerMinimized(false);
+    }
+  }, [currentPhotosLandmark]);
+
+  // Fetch Yesterdays georeferenced historical photos when photosLandmark changes
+  useEffect(() => {
+    setFocusedPhotoId(null);
+    if (!currentPhotosLandmark || !currentPhotosLandmark.wikidata) {
+      setYesterdaysPhotos([]);
+      setYesterdaysAerials([]);
+      setLoadingPhotos(false);
+      return;
+    }
+
+    let active = true;
+    setLoadingPhotos(true);
+
+    fetchLandmarkPhotos(currentPhotosLandmark.wikidata)
+      .then((result) => {
+        if (!active) return;
+        setYesterdaysPhotos(result.photos);
+        setYesterdaysAerials(result.aerials);
+      })
+      .catch((err) => {
+        console.error('Error fetching historical photos:', err);
+        if (!active) return;
+        setYesterdaysPhotos([]);
+        setYesterdaysAerials([]);
+      })
+      .finally(() => {
+        if (!active) return;
+        setLoadingPhotos(false);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [currentPhotosLandmark?.id, currentPhotosLandmark?.wikidata]);
+
   // Geolocation Handler
   const handleLocateUser = useCallback(() => {
     if (!navigator.geolocation) {
@@ -272,7 +350,7 @@ export const App: React.FC = () => {
           }
         }}
         onSelectLandmarkOnMap={(landmark) => {
-          setSelectedLandmark(landmark);
+          handleSelectLandmark(landmark);
           setShowStatusPage(false);
           if (window.location.hash === '#status') {
             window.history.pushState(null, '', window.location.pathname);
@@ -295,7 +373,12 @@ export const App: React.FC = () => {
         totalCount={landmarksData.length}
         filteredCount={filteredLandmarks.length}
         viewMode={viewMode}
-        onViewModeChange={setViewMode}
+        onViewModeChange={(mode) => {
+          setViewMode(mode);
+          if (mode === 'split') {
+            setLeftPanelCollapsed(false);
+          }
+        }}
         onLocateUser={handleLocateUser}
         isLocating={isLocating}
         onResetFilters={handleResetFilters}
@@ -321,7 +404,7 @@ export const App: React.FC = () => {
         )}
 
         {/* Side List View (when in split mode or full list mode) */}
-        {(viewMode === 'split' || viewMode === 'list') && (
+        {(viewMode === 'split' || viewMode === 'list') && !leftPanelCollapsed && (
           <div
             className={`${
               viewMode === 'list' ? 'w-full' : 'hidden md:block w-96 lg:w-[420px]'
@@ -330,8 +413,9 @@ export const App: React.FC = () => {
             <LandmarkListView
               landmarks={filteredLandmarks}
               selectedLandmark={currentSelectedLandmark}
-              onSelectLandmark={setSelectedLandmark}
+              onSelectLandmark={handleSelectLandmark}
               userLocation={userLocation}
+              onCollapse={() => setLeftPanelCollapsed(true)}
             />
           </div>
         )}
@@ -342,10 +426,29 @@ export const App: React.FC = () => {
             <Map
               landmarks={filteredLandmarks}
               selectedLandmark={currentSelectedLandmark}
-              onSelectLandmark={setSelectedLandmark}
+              onSelectLandmark={handleSelectLandmark}
               userLocation={userLocation}
               onLocateUser={handleLocateUser}
               isLocating={isLocating}
+              yesterdaysPhotos={yesterdaysPhotos}
+              yesterdaysAerials={yesterdaysAerials}
+              loadingPhotos={loadingPhotos}
+              showHistoricalPhotos={showHistoricalPhotos}
+              onToggleHistoricalPhotos={() => setShowHistoricalPhotos(!showHistoricalPhotos)}
+              focusedPhotoId={focusedPhotoId}
+              onSelectHistoricalPhoto={(photo) => setFocusedPhotoId(photo.id)}
+              photosLandmark={currentPhotosLandmark}
+              onClearHistoricalPhotos={handleClearHistoricalPhotos}
+              onReopenLandmarkDetails={handleReopenLandmarkDetails}
+              isLeftPanelCollapsed={leftPanelCollapsed || viewMode === 'map'}
+              onToggleLeftPanel={() => {
+                if (viewMode === 'map') {
+                  setViewMode('split');
+                  setLeftPanelCollapsed(false);
+                } else {
+                  setLeftPanelCollapsed((prev) => !prev);
+                }
+              }}
             />
           </div>
         )}
@@ -353,12 +456,28 @@ export const App: React.FC = () => {
         {/* Landmark Detail Drawer */}
         <LandmarkDetailDrawer
           landmark={currentSelectedLandmark}
-          onClose={() => setSelectedLandmark(null)}
+          onClose={() => {
+            setSelectedLandmark(null);
+            setIsDrawerMinimized(false);
+          }}
+          isMinimized={isDrawerMinimized}
+          onToggleMinimize={() => setIsDrawerMinimized(!isDrawerMinimized)}
           onSelectArchitect={handleSelectArchitect}
           onSelectStyle={handleSelectStyle}
           onSelectDistrict={handleSelectDistrict}
           onShowArchitectBio={(arch) => setSelectedArchitectModal(arch)}
           onShowStyleInfo={(styleKey) => setSelectedStyleModal(styleKey)}
+          yesterdaysPhotos={yesterdaysPhotos}
+          yesterdaysAerials={yesterdaysAerials}
+          loadingYesterdaysPhotos={loadingPhotos}
+          onFocusPhotoOnMap={(photoId) => {
+            setFocusedPhotoId(photoId);
+            setShowHistoricalPhotos(true);
+            setIsDrawerMinimized(true);
+            if (viewMode === 'list') {
+              setViewMode('split');
+            }
+          }}
         />
       </div>
 
@@ -379,7 +498,7 @@ export const App: React.FC = () => {
         onClose={() => setSelectedArchitectModal(null)}
         landmarks={landmarksData}
         onSelectLandmark={(landmark) => {
-          setSelectedLandmark(landmark);
+          handleSelectLandmark(landmark);
           setViewMode('split');
         }}
         onFilterByArchitect={handleSelectArchitect}
@@ -391,7 +510,7 @@ export const App: React.FC = () => {
         onClose={() => setSelectedStyleModal(null)}
         landmarks={landmarksData}
         onSelectLandmark={(landmark) => {
-          setSelectedLandmark(landmark);
+          handleSelectLandmark(landmark);
           setViewMode('split');
         }}
         onFilterByStyle={handleSelectStyle}

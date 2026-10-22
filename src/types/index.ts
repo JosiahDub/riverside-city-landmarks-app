@@ -125,3 +125,5 @@ export interface HistoricDistrictInfo {
   hasPolygon: boolean;
   landmarkCount?: number;
 }
+
+export type { YesterdaysPhoto, YesterdaysAerialPolygon, LandmarkPhotosResult } from '../services/yesterdaysApi';
