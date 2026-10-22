@@ -137,7 +137,7 @@ export async function fetchLandmarkPhotos(subjectOrWikidata: string): Promise<La
         lon: coords[0],
         lat: coords[1],
         detailUrl: `https://yesterdays.today/api/v2/images/${imageId}/`,
-        yesterdaysUrl: `https://yesterdays.today/images/${imageId}/`,
+        yesterdaysUrl: `https://yesterdays.today/${imageId}/`,
         originalDate: meta.originalDate,
         dateDisplay: meta.dateDisplay,
         collectionName: meta.collectionName,
@@ -158,7 +158,7 @@ export async function fetchLandmarkPhotos(subjectOrWikidata: string): Promise<La
         confidence: p.confidence || 'medium',
         coordinates: feat.geometry?.coordinates || [],
         detailUrl: `https://yesterdays.today/api/v2/images/${imageId}/`,
-        yesterdaysUrl: `https://yesterdays.today/images/${imageId}/`,
+        yesterdaysUrl: `https://yesterdays.today/${imageId}/`,
       };
     });
 
