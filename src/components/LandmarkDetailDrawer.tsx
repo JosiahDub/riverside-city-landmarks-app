@@ -1180,7 +1180,7 @@ export const LandmarkDetailDrawer: React.FC<LandmarkDetailDrawerProps> = ({
                 rel="noreferrer"
                 className="flex items-center justify-between p-2.5 rounded-lg border border-stone-200 bg-white hover:bg-stone-50 text-stone-800 transition shadow-sm"
               >
-                <span>City Heritage Board</span>
+                <span>Cultural Heritage Board</span>
                 <ExternalLink className="w-3.5 h-3.5 text-stone-400" />
               </a>
 

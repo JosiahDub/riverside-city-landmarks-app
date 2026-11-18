@@ -38,7 +38,7 @@ An interactive map application for exploring designated historic landmarks in th
   - City of Riverside Cultural Heritage Board landmark designation badges.
   - Live Wikipedia article excerpt lookup via the Wikipedia REST API.
   - Clickable architect and architectural style badges that open biographical cards.
-  - One-click links to the official City Heritage Board website, Wikidata, Wikipedia, Wikimedia Commons, and OpenStreetMap.
+  - One-click links to the official Cultural Heritage Board website, Wikidata, Wikipedia, Wikimedia Commons, and OpenStreetMap.
   - Directions button for instant turn-by-turn navigation.
 - **Data Quality & Completeness Audit Page**:
   - Live progress dashboard tracking missing construction dates, architectural styles, architects, photos, and notable residents across all 155 landmarks.
